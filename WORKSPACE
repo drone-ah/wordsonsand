@@ -61,6 +61,60 @@ protobuf_deps()
 
 ############################################################
 ############################################################
+## Hugo
+
+# Update these to latest
+RULES_HUGO_COMMIT = "294a8ec626a394011d35397108c930be631ab9fa"
+RULES_HUGO_SHA256 = "8df370f374dc72701b65b7c8a8add8ccb8423a845e973993fa9c68f8b516c9be"
+
+http_archive(
+    name = "build_stack_rules_hugo",
+    url = "https://github.com/stackb/rules_hugo/archive/%s.zip" % RULES_HUGO_COMMIT,
+    sha256 = RULES_HUGO_SHA256,
+    strip_prefix = "rules_hugo-%s" % RULES_HUGO_COMMIT
+)
+
+load("@build_stack_rules_hugo//hugo:rules.bzl", "hugo_repository", "github_hugo_theme")
+
+#
+# Load hugo binary itself
+#
+# Optionally, load a specific version of Hugo, with the 'version' argument
+hugo_repository(
+    name = "hugo",
+)
+
+#
+# This makes a filegroup target "@com_github_yihui_hugo_xmin//:files"
+# available to your build files
+#
+github_hugo_theme(
+    name = "com_github_yihui_hugo_xmin",
+    owner = "yihui",
+    repo = "hugo-xmin",
+    commit = "c14ca049d0dd60386264ea68c91d8495809cc4c6",
+)
+
+#
+# This creates a filegroup target from a released archive from GitHub
+# this is useful when a theme uses compiled / aggregated sources NOT found
+# in a source root.
+#
+http_archive(
+    name = "com_github_thegeeklab_hugo_geekdoc",
+    url = "https://github.com/thegeeklab/hugo-geekdoc/releases/download/v0.34.2/hugo-geekdoc.tar.gz",
+    sha256 = "7fdd57f7d4450325a778629021c0fff5531dc8475de6c4ec70ab07e9484d400e",
+    build_file_content="""
+filegroup(
+    name = "files",
+    srcs = glob(["**"]),
+    visibility = ["//visibility:public"]
+)
+    """
+)
+
+############################################################
+############################################################
 ## Python
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
