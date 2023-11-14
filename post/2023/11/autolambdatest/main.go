@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"github.com/aws/aws-sdk-go-v2/service/ssm"
 )
 
@@ -13,6 +14,14 @@ type SSMGetParameterAPI interface {
 
 func handleRequest(api SSMGetParameterAPI, subjectNameParamPath string) string {
 
-	return ""
+	subjectNameParam, err := api.GetParameter(context.TODO(), &ssm.GetParameterInput{
+		Name: &subjectNameParamPath,
+	})
+
+	if err != nil {
+		return fmt.Sprintf("Error Accessing Parameter: %s", err)
+	}
+
+	return fmt.Sprintf("Hello %s", *subjectNameParam.Parameter.Value)
 
 }
