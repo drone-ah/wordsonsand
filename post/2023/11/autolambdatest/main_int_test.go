@@ -87,7 +87,7 @@ func deployFunc(ctx *pulumi.Context) error {
 							"lambda.amazonaws.com",
 						},
 					},
-					{
+					{ // Allow any "user" with permissions to assume this role
 						Type: "AWS",
 						Identifiers: []string{
 							fmt.Sprintf("arn:aws:iam::%s:root", current.AccountId),
