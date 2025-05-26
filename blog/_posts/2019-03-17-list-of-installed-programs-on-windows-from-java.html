@@ -1,0 +1,27 @@
+---
+layout: post
+title: List of Installed Programs on Windows from java
+date: 2019-03-17 15:13:53.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _publicize_job_id: '28738414385'
+  timeline_notification: '1552835634'
+  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:55:03'
+permalink: "/2019/03/17/list-of-installed-programs-on-windows-from-java/"
+---
+<p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
+<html><body>
+<p>I was recently in need of a way to pick up the list of installed software on a windows computer from Java. It was shrouded in a veil a mystery. There did not seem to be a functional call that I could make, which makes sense since Java is cross-platform and there is not universal way to pick up all the installed packages on an OS.</p>
+<p>In fact, picking up all the installed packages on Windows seems be a bit cryptic. There are API calls you can make and I considered JNI. I suspect this might be a superior solution, but I haven't tried it and I read that it may be slow.</p>
+<p>After much research, I came across <a href="https://github.com/mavenlin/ListPrograms">ListPrograms.</a> My initial thought was to link to it using JNI. However, it seemed simple enough to warrant a rewrite in Java if I could access the registry somehow.</p>
+<p>This is where <a href="https://github.com/java-native-access/jna">JNA</a> and the <a href="https://java-native-access.github.io/jna/4.2.0/com/sun/jna/platform/win32/Advapi32Util.html">Advapi32Util </a>class came in handy.</p>
+<p>It didn't take me long to put together a quick replica of behaviour. I skipped out the part about user installed programs because it isn't relevant for me (yet).</p>
+<p>I also missed out issues which will be around when running it as part of a 32bit VM within a 64bit OS.</p>
+<p>You can find <a href="https://github.com/drone-ah/JavaListApps">JavaListApps at GitHub</a></p>
+<p></body></html></p>
