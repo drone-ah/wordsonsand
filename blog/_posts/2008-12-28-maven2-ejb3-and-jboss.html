@@ -1,0 +1,110 @@
+---
+layout: post
+title: Maven2, EJB3 and JBoss
+date: 2008-12-28 18:53:50.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Java (EE)
+tags:
+- Eclipse
+- EJB3
+- ERP
+- InVision
+- Maven 2
+- Out of Container Testing
+- Process Dashboard
+- Request Tracker
+meta:
+  _edit_last: '48492462'
+  restapi_import_id: 591d994f7aad5
+  original_post_id: '110'
+  _wp_old_slug: '110'
+  _publicize_job_id: '5181443435'
+  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:35'
+permalink: "/2008/12/28/maven2-ejb3-and-jboss/"
+---
+<p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
+<html><body></p>
+<p>I started work on a project called InVision about a year ago but have probably spent about a week or two worth of effort on it in total... :-(</p>
+<p>The Project aim was to bring together the easy time logging capabilities of <a title="The Software Process Dashboard Initiative" href="http://processdash.sourceforge.net/" target="_blank">Process Dashboard</a> along with the project management capabilities of Microsoft Project (including the Server Component). It is also to be integrated into our request tracking System - <a title="Request Tracker" href="http://bestpractical.com/rt/" target="_blank">Request Tracker</a>. Eventually, it is also to integrate with our accounting system and turn into an ERP (Enterprise Resource Planning) system and MIS (Management Information System). There are plans to integrate with our Wiki and our Document Management System too.</p>
+<p>But these are all lofty goals.  One of our recent projects introduced me to the <a title="Spring.NET Application Framework" href="http://www.springframework.net/" target="_blank">Spring Framework</a>. While I am still not a fan of Spring, the scale of the project and the way of approaching it gave me some ideas and additional tools to work with. I wanted to bring these into the InVision Project.</p>
+<p>The key one here was Maven 2. InVision already used EJB3 and JBoss (4.2 as it happened). There was one additional issue for me to resolve and that was out of container testing. Something that is very easy to do with Spring but a little more troublesome with EJB3 since it doesn't have an out of container framework...</p>
+<p>I have grown to be a big fan of Maven 2 and using Maven 2 to configure an EJB project is not as easy or straightforward as I would have liked: I wanted to separate the whole project into four parts</p>
+<ul>
+<li>Domain Model (or just the entity beans); Also referred to as a Hibernate Archive (HAR)</li>
+<li>Stateful/Stateless Beans (Just the Beans, since I don't consider entities beans in EJB3)</li>
+<li>Application Client (J2SE Application)</li>
+<li>Web App (Using SEAM)</li>
+<li>I would also need an EAR project to deploy the DomainModel, Beans &amp; WebApp as one pacakge into JBoss.</li>
+</ul>
+<p>I have not got as far as the SEAM project yet but the other ones were straightforward enough to set up with Maven 2.</p>
+<p>Both the Domain Model and the Beans project had to be set up as ejb projects and use the maven-ejb-plugin</p>
+<blockquote>
+<pre>&lt;build&gt;
+&lt;plugins&gt;
+&lt;plugin&gt;
+&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+&lt;artifactId&gt;maven-ejb-plugin&lt;/artifactId&gt;
+&lt;configuration&gt;
+&lt;ejbVersion&gt;3.0&lt;/ejbVersion&gt;
+&lt;/configuration&gt;
+&lt;/plugin&gt;
+&lt;/plugins&gt;
+&lt;/build&gt;</pre>
+</blockquote>
+<p>I set up the persistence context within the Domain Model</p>
+<blockquote><p>&lt;persistence-unit name="em"&gt;<br />
+&lt;provider&gt;org.hibernate.ejb.HibernatePersistence&lt;/provider&gt;<br />
+&lt;jta-data-source&gt;java:/datasource&lt;/jta-data-source&gt;<br />
+&lt;/persistence-unit&gt;</p></blockquote>
+<p>I could then reference the context from the Beans project by injecting it with</p>
+<blockquote><p>@PersistenceContext(unitName="em")</p></blockquote>
+<p>Easy enough!</p>
+<p>Now configuring the EAR project: This was configured as an ear package which depended on the other two projects with the following configuration</p>
+<blockquote><p>&lt;build&gt;<br />
+&lt;plugins&gt;<br />
+&lt;plugin&gt;<br />
+&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;<br />
+&lt;artifactId&gt;maven-ear-plugin&lt;/artifactId&gt;<br />
+&lt;configuration&gt;<br />
+&lt;version&gt;5&lt;/version&gt;<br />
+&lt;modules&gt;<br />
+&lt;ejbModule&gt;<br />
+&lt;groupId&gt;uk.co.kraya.invision&lt;/groupId&gt;<br />
+&lt;artifactId&gt;beans&lt;/artifactId&gt;<br />
+&lt;/ejbModule&gt;<br />
+&lt;ejbModule&gt;<br />
+&lt;groupId&gt;uk.co.kraya.invision&lt;/groupId&gt;<br />
+&lt;artifactId&gt;DomainModel&lt;/artifactId&gt;<br />
+&lt;/ejbModule&gt;<br />
+&lt;/modules&gt;<br />
+&lt;jboss&gt;<br />
+&lt;version&gt;4.2&lt;/version&gt;<br />
+&lt;data-sources&gt;<br />
+&lt;data-source&gt;invision-ds.xml&lt;/data-source&gt;<br />
+&lt;/data-sources&gt;<br />
+&lt;/jboss&gt;<br />
+&lt;/configuration&gt;<br />
+&lt;/plugin&gt;<br />
+&lt;plugin&gt;<br />
+&lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;<br />
+&lt;artifactId&gt;jboss-maven-plugin&lt;/artifactId&gt;<br />
+&lt;configuration&gt;<br />
+&lt;jbossHome&gt;&lt;jboss-home-path&gt;&lt;/jbossHome&gt;<br />
+&lt;hostName&gt;&lt;hostname&gt;&lt;/hostName&gt;<br />
+&lt;port&gt;8080&lt;/port&gt;<br />
+&lt;/configuration&gt;<br />
+&lt;/plugin&gt;<br />
+&lt;/plugins&gt;<br />
+&lt;/build&gt;</p></blockquote>
+<p>With this configured, from the EAR project, I could do mvn ear:deploy to deploy to JBoss.</p>
+<p>Additionally, within eclipse, I created a new run-type that ran ear:undeploy package ear:deploy to re-deploy the package to JBoss. Works a treat</p>
+<p>There are still a few kinks to be ironed out.</p>
+<p>I still need to install (mvn install) the two projects before the EAR will pick it up to deploy. I need to get the ear re-deploy to re-build the other projects. Something to look at another day.</p>
+<p>I had manually deployed the DataSource file to JBoss. It might be possible to do this via Maven.</p>
+<p>I also very much liked the Eclipse automatic deploy feature. It is possible to use the eclipse plugin on maven to get Eclipse to identify this as a JBoss deployable project but I ran into some problems and gave up. Ideally, Eclipse would auto-deploy the project.</p>
+<p>However, the above is less relevant once Out-Of-Container testing is in place. Now, this does work, but I will leave that to another day...</body></html></p>

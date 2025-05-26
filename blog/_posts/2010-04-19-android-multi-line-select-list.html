@@ -1,0 +1,211 @@
+---
+layout: post
+title: Android - Multi-line Select List
+date: 2010-04-19 23:37:54.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Android Development
+tags:
+- Android
+- Google
+- Java
+- Smartphones
+- ViewGroup
+- XML
+meta:
+  _publicize_pending: '1'
+  _edit_last: '48492462'
+  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'android': {\"text\":\"Android\",\"slug\":\"android\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/2\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Android\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'google': {\"text\":\"Google\",\"slug\":\"google\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Google\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'smartphones': {\"text\":\"Smartphones\",\"slug\":\"smartphones\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Smartphones\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'java': {\"text\":\"Java\",\"slug\":\"java\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Java\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'xml': {\"text\":\"XML\",\"slug\":\"xml\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/8\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"XML\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'viewgroup': {\"text\":\"ViewGroup\",\"slug\":\"viewgroup\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/comphash-1/e355b7a6-3bc5-3c57-af40-6e091c4db8c1\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/Company\",\"name\":\"Company\"},\"name\":\"ViewGroup\",\"rawRelevance\":0.785,\"normalizedRelevance\":0.785},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'twolinetextitem': {\"text\":\"TwoLineTextitem\",\"slug\":\"twolinetextitem\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
+  oc_commit_id: http://drone-ah.com/2010/04/19/android-multi-line-select-list/1271720282
+  restapi_import_id: 591d994f7aad5
+  original_post_id: '319'
+  _wp_old_slug: '319'
+  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:39'
+permalink: "/2010/04/19/android-multi-line-select-list/"
+---
+<p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
+<html><body></p>
+<p>It turns out that it is surprisingly easy to add a multi line select list to the UI.<br />
+There are four main parts to it. The layout file, a subclass to the adapter, the activity and of course the data itself.</p>
+<p><!--more--></p>
+<p>Lets start with the data. For the sake of this demo, lets use a simple contact list:</p>
+<pre>package uk.co.kraya.android.demos.MultiLineList.domain;
+
+public class Contact {
+
+	private String firstName;
+
+	private String lastName;
+
+	private String mobile;
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+}</pre>
+<p>Some straightforward fields and getters/setters</p>
+<p>Next, we need an Adapter. For this one, we will use a <a id="aptureLink_Fi189q6cva" href="http://developer.android.com/reference/android/widget/ArrayAdapter.html">ArrayAdapter</a>. We will extend it so that we can override the <a id="aptureLink_6vKdUkyf4M" href="http://developer.android.com/reference/android/widget/Adapter.html#getView(int,%20android.view.View,%20android.view.ViewGroup)">getView method.</a></p>
+<pre>package uk.co.kraya.android.demos.MultiLineList.domain.adapters;
+
+import java.util.List;
+
+import uk.co.kraya.android.demos.MultiLineList.domain.Contact;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TwoLineListItem;
+
+public class ContactArrayAdapter extends ArrayAdapter {
+
+	private final int resourceId;
+
+	public ContactArrayAdapter(Context context, int textViewResourceId, List objects) {
+		super(context, textViewResourceId, objects);
+		resourceId = textViewResourceId;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+
+		Contact c = getItem(position);
+
+		// if the array item is null, nothing to display, just return null
+		if (c == null) {
+			return null;
+		}
+
+		// We need the layoutinflater to pick up the view from xml
+		LayoutInflater inflater = (LayoutInflater)
+						getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+		// Pick up the TwoLineListItem defined in the xml file
+		TwoLineListItem view;
+		if (convertView == null) {
+			view = (TwoLineListItem) inflater.inflate(resourceId, parent, false);
+		} else {
+			view = (TwoLineListItem) convertView;
+		}
+
+		// Set value for the first text field
+		if (view.getText1() != null) {
+			view.getText1().setText(c.getFirstName() + " " + c.getLastName());
+		}
+
+		// set value for the second text field
+		if (view.getText2() != null) {
+			view.getText2().setText("mobile: " + c.getMobile());
+		}
+
+		return view;
+	}
+
+}</pre>
+<p>The key bit here is the getView method. We pick up the <a id="aptureLink_cCqnuLO8cB" href="http://developer.android.com/reference/android/view/LayoutInflater.html">LayoutInflater</a> which we can use to pick up the view that defines the <a id="aptureLink_PdguO7eWA6" href="http://developer.android.com/reference/android/widget/TwoLineListItem.html">TwoLineListItem</a> view. This allows us to use two different snippets of text as part of the list. We then pick up the each of the <a id="aptureLink_giPiTVaEFZ" href="http://developer.android.com/reference/android/widget/TextView.html">TextView</a> items and set the text against them. The formatting of these item are defined in the xml file.</p>
+<p>The TwoLineListItem class also defines a placeholder for the selectedIcon. Check the documentation for more info.</p>
+<p>The xml file for the layout goes as follows:</p>
+<pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"&gt;
+
+    &lt;TextView android:id="@android:id/text1"
+        android:layout_marginTop="1dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold" /&gt;
+
+    &lt;TextView android:id="@android:id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_alignLeft="@android:id/text1"
+        android:paddingBottom="4dip"
+        android:includeFontPadding="false"
+        android:textSize="15sp"
+        android:textStyle="normal" /&gt;
+
+&lt;/TwoLineListItem&gt;</pre>
+<p>As you can see, we are just defining a TwoLineListItem element with two embedded TextItems. Tthe android:id parts are important. It ensures that the getText1() and getText2() methods work as expected!</p>
+<p>Finally, we have the activity. In fact, we will be using a <a id="aptureLink_ZT7CrXDQAo" href="http://developer.android.com/reference/android/app/ListActivity.html">ListActivity</a> as follows:</p>
+<pre>package uk.co.kraya.android.demos.MultiLineList;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import uk.co.kraya.android.demos.MultiLineList.domain.Contact;
+import uk.co.kraya.android.demos.MultiLineList.domain.adapters.ContactArrayAdapter;
+import android.app.ListActivity;
+import android.os.Bundle;
+
+public class MultiLineListDemo extends ListActivity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		setListAdapter(new ContactArrayAdapter(this, R.layout.main, getContacts()));
+    }
+
+    private List getContacts() {
+
+    	List contacts = new ArrayList();
+
+    	Contact c;
+
+    	c = new Contact();
+    	c.setFirstName("Shriram");
+    	c.setLastName("Shrikumar");
+    	c.setMobile("07777777777");
+
+    	contacts.add(c);
+
+    	c = new Contact();
+    	c.setFirstName("John");
+    	c.setLastName("Doe");
+    	c.setMobile("MOBILE.NUMBER");
+
+    	contacts.add(c);
+
+    	return contacts;
+
+    }
+}</pre>
+<p>getContacts clearly just creates a couple of contacts for the sake of the demo. its the setListAdapter that is the key here. It creates a new ContactArrayAdapter that we have written, passes in the context (which is just the current activity), a resource ID and a List of items to display.</p>
+<p>Run it and you should see something like:</p>
+<p>[caption id="attachment_359" align="aligncenter" width="542" caption="Final Output"]<img class="size-full wp-image-359 " title="MultiLineSelectDemo" src="{{site.baseurl}}/assets/2010/04/multilineselectdemo.png" alt="Final Output" width="542" height="461">[/caption]</p>
+<p>So easy when you know how. I believe could use a View or a ViewGroup as needed instead of the TwoLineListItem but I shall leave that to you to discover.</p>
+<p>I have included all the files that I created/modified but if you want the whole project tarred up, just drop me a note ;-)</body></html></p>

@@ -1,0 +1,56 @@
+---
+layout: post
+title: How to fix terminal title after disconnecting from ssh
+date: 2020-06-25 08:47:45.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Systems (Administration)
+tags:
+- bash
+meta:
+  _publicize_job_id: '45837663329'
+  timeline_notification: '1593074865'
+  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:55:04'
+permalink: "/2020/06/25/how-to-terminal-title-after-disconnecting-from-ssh/"
+---
+<p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
+<!-- wp:paragraph --><html><body></p>
+<p>For some reason, ssh does not clean up after itself in terms of updating the terminal title when you disconnect.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Here is a simple solution, a combination of <a href="https://unix.stackexchange.com/a/341277/25975">https://unix.stackexchange.com/a/341277/25975 </a>and <a href="https://unix.stackexchange.com/a/28520/25975">https://unix.stackexchange.com/a/28520/25975</a></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Add the following functions into your <code>~/.bashrc</code> It will push the current title and icon into a stack and pop it afterwards.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:syntaxhighlighter/code {"language":"bash"} --></p>
+<pre class="wp-block-syntaxhighlighter-code">function ssh()
+{
+    # push current title and icon to stack
+    echo -ne '\e[22t'
+    # Execute ssh as expected
+    /usr/bin/ssh "$@"
+    # revert the window title after the ssh command
+    echo -ne '\e[23t'
+}</pre>
+<p><!-- /wp:syntaxhighlighter/code --></p>
+<p><!-- wp:paragraph --></p>
+<p>Restart bash / log out and back in, and it should work.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>For security reasons, it is not possible to query the current title of the terminal. However, with the following command, you can push the current one on to a stack</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:syntaxhighlighter/code {"language":"bash"} --></p>
+<pre class="wp-block-syntaxhighlighter-code">echo -ne '\e[22t'</pre>
+<p><!-- /wp:syntaxhighlighter/code --></p>
+<p><!-- wp:paragraph --></p>
+<p>The title can then be set to anything, by ssh for example. You can then pop that back from the stack using</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:syntaxhighlighter/code {"language":"bash"} --></p>
+<pre class="wp-block-syntaxhighlighter-code">echo -ne '\e[23t'</pre>
+<p><!-- /wp:syntaxhighlighter/code --><br />
+</body></html></p>
