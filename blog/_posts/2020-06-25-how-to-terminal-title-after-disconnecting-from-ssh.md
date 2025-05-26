@@ -57,4 +57,3 @@ pop that back from the stack using
 echo -ne '\e[23t'
 ```
 
-\

@@ -55,8 +55,6 @@ The easiest way to achieve this for golang and bazel is to tag your
 source code files. You can do this by adding the following to the top of
 your integration test files
 
-\
-\
 
 `something_integration_test.go`
 
@@ -170,4 +168,3 @@ You can find sample source code demonstrating this in [my github
 repo](https://github.com/drone-ah/wordsonsand), under
 [post/2023/11/separatetests](https://github.com/drone-ah/wordsonsand/tree/main/post/2023/11/separatetests)
 
-\

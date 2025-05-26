@@ -38,7 +38,6 @@ excerpt: Accessing configuration / preferences / setttings globally within an ap
   it globally accessible has a few options. One of these options is covered here
 ---
 
-\
 **The Problem**
 
 Accessing preferences / configuration / settings from Android is

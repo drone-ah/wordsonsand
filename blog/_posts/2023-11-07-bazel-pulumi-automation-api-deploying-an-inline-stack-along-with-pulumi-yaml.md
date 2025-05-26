@@ -47,8 +47,6 @@ Another benefit from the Automation API is to pick up the stack outputs
 automatically when running integration/e2e tests, making the test
 configuration smoother.
 
-\
-\
 
 The first step is to be able to define a stack within a product, hook it
 into the main iac executable and have it working. My directory structure
@@ -178,4 +176,3 @@ target](https://drone-ah.com/2023/11/01/including-a-built-artifact-in-another-ta
 for an example of this), though when I tried it, it was missing one of
 the yaml files and I didn\'t investigate further.
 
-\

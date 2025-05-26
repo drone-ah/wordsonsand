@@ -24,7 +24,6 @@ meta:
 permalink: "/2009/02/10/accepting-google/"
 ---
 
-\
 [Jeff Atwood (Coding
 Horror)](http://www.codinghorror.com/blog/archives/001224.html "Google monoculture"){target="_blank"}
 correctly points out that when we refer to search engines, we are really

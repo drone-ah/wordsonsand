@@ -47,7 +47,6 @@ meta:
 permalink: "/2008/12/15/breaking-software-down/"
 ---
 
-\
 [Jeff Atwood likens software development to tending a
 garden.](http://www.codinghorror.com/blog/archives/000987.html "Tending Your Software Garden"){target="_blank"
 rel="noopener"} I can relate to this. In fact, I would like to ask, if

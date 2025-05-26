@@ -48,7 +48,6 @@ meta:
 permalink: "/2011/11/24/my-thoughts-on-ocfs2-understanding-ocfs2-1110/"
 ---
 
-\
 [As mentioned
 earlier](http://drone-ah.com/2011/11/24/glusterfs-howto/ "GlusterFS HOWTO [1108]"),
 we have been considered networked filesystems instead of NFS to

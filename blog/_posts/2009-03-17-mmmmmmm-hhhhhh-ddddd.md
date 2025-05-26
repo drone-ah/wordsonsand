@@ -32,7 +32,6 @@ meta:
 permalink: "/2009/03/17/mmmmmmm-hhhhhh-ddddd/"
 ---
 
-\
 [Krish](http://krish.blog.kraya.co.uk "Krish's Blog"){target="_blank"},
 my little brother ;-) recently [wrote about
 HD](http://krish.blog.kraya.co.uk/2009/03/13/hd-oh-no/ "HD OH NO"){target="_blank"}

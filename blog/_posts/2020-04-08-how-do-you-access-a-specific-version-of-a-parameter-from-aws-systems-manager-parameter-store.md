@@ -36,4 +36,3 @@ This was a bit tricky to find and doesn\'t seem to be well documented.
     });
 ```
 
-\

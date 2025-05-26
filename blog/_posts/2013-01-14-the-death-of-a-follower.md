@@ -28,7 +28,6 @@ meta:
 permalink: "/2013/01/14/the-death-of-a-follower/"
 ---
 
-\
 *Back in 2011, starting from the 11th November, i.e. 11.11.11, I had
 booked a weeks holiday. I planned to travel a brand new world and so I
 did - for a whole week. Skyrim was released at midnight and I started

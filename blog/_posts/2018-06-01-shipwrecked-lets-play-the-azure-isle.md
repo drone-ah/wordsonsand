@@ -18,7 +18,6 @@ meta:
 permalink: "/2018/06/01/shipwrecked-lets-play-the-azure-isle/"
 ---
 
-\
 [I stumbled across this game on
 [gamejolt.com](https://gamejolt.com/games/theazureisle/295076) and tried
 it out. It sucked me in and I was smitten. See what

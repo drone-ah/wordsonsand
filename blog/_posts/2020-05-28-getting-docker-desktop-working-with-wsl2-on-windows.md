@@ -52,4 +52,3 @@ Unable to run `docker` as non-root user - fixed by 3.
 
 Docker hangs when run as non-root user - fixed by 2.
 
-\

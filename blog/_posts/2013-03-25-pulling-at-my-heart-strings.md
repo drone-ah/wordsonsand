@@ -29,7 +29,6 @@ meta:
 permalink: "/2013/03/25/pulling-at-my-heart-strings/"
 ---
 
-\
 *This the story of a Wood Elf, he woke up in a cart, his memories fuzzy
 and faded, little knowledge of who he was and what he was doing. He
 wanders the frozen wastes of Skyrim doing as he feels. Without a clue as

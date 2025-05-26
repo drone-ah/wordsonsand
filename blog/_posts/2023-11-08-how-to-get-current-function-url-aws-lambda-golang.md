@@ -43,4 +43,3 @@ There are other [defined lambda function environment
 variables](https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html#configuration-envvars-runtime)
 as well that you can use.
 
-\

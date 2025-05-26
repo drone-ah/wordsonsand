@@ -30,7 +30,6 @@ meta:
 permalink: "/2011/12/20/expanding-glusterfs-volumes-1112/"
 ---
 
-\
 [Once you have set up a glusterfs
 volume](http://drone-ah.com/2011/11/24/glusterfs-howto/ "GlusterFS HOWTO [1108]"),
 you might want to expand the volume to add storage. This is an

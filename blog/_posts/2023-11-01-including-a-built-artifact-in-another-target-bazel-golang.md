@@ -52,8 +52,6 @@ go_binary(
 )
 ```
 
-\
-\
 
 There are two key parameters here to note:
 
@@ -120,4 +118,3 @@ I found the above link from [a stackoverflow post about feeding bazel
 output to another bazel
 rule](https://stackoverflow.com/questions/70193581/feed-bazel-output-to-another-bazel-rule)
 
-\

@@ -27,7 +27,6 @@ meta:
 permalink: "/2014/06/02/a-renegade-in-skyrim-part-1/"
 ---
 
-\
 *Skyrim has been modded here to include Frostfall, Imps more complex
 needs, alternate start and a few other mods (which should be largely
 inconsequential to this log). From alternate start, random was chosen. *

@@ -33,4 +33,3 @@ there are a few other caveats
 -   [You have to **export default** your module
     classes](https://github.com/championswimmer/vuex-module-decorators/issues/179)
 
-\

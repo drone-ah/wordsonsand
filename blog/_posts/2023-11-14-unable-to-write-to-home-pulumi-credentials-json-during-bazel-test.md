@@ -40,8 +40,6 @@ outside the sandbox. This restrictions results in this error
 error: open /home/<username>/.pulumi/credentials.json: read-only file system
 ```
 
-\
-\
 
 # The Solution {#the-solution}
 
