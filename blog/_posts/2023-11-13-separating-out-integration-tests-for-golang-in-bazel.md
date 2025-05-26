@@ -3,21 +3,21 @@ layout: post
 title: Separating out integration tests for golang in Bazel
 date: 2023-11-13 13:47:53.000000000 +00:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories: []
 tags:
-- bazel
-- golang
-- Testing
+  - bazel
+  - golang
+  - Testing
 meta:
   _last_editor_used_jetpack: block-editor
   wordads_ufa: s:wpcom-ufa-v4:1699886196
-  _publicize_job_id: '89325811494'
-  timeline_notification: '1699883275'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:55:05'
+  _publicize_job_id: "89325811494"
+  timeline_notification: "1699883275"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:05"
 permalink: "/2023/11/13/separating-out-integration-tests-for-golang-in-bazel/"
 ---
 
@@ -55,10 +55,9 @@ The easiest way to achieve this for golang and bazel is to tag your
 source code files. You can do this by adding the following to the top of
 your integration test files
 
-
 `something_integration_test.go`
 
-``` wp-block-syntaxhighlighter-code
+```go
 //go:build integration_test
 
 package somepackage
@@ -73,26 +72,17 @@ You will likely need to add this source file into the IDEs build
 constraints to get the IDE to treat it as a source file. In IntelliJ
 (IDEA/Goland), you will be warned of this
 
-<figure class="wp-block-image size-large">
-<a href="https://drone-ah.com/wp-content/uploads/2023/11/image.png"><img
-src="%7B%7Bsite.baseurl%7D%7D/assets/2023/11/image.png?w=678"
-class="wp-image-1322" /></a>
-</figure>
+![idea screenshot, main_test.go is ignored by build tool](/assets/2023/11/image.png)
 
 If you click `Edit settings`, you can add the tag in
 
-<figure class="wp-block-image size-large">
-<a
-href="https://drone-ah.com/wp-content/uploads/2023/11/image-1.png"><img
-src="%7B%7Bsite.baseurl%7D%7D/assets/2023/11/image-1.png?w=394"
-class="wp-image-1324" /></a>
-</figure>
+![set custom tags in build tags](/assets/2023/11/image-1.png)
 
 When running `gazelle`, you want to include the files with these tags
 
 ## Gazelle {#gazelle}
 
-``` wp-block-syntaxhighlighter-code
+```bash
 bazel run //:gazelle -- -build_tags=integration_test
 ```
 
@@ -104,13 +94,13 @@ dependencies
 
 To run only the unit tests, you test as normal:
 
-``` wp-block-syntaxhighlighter-code
+```bash
 bazel test ... # or the specific target, and it'll run only the unit tests
 ```
 
 To run the integration tests as well, include that tag
 
-``` wp-block-syntaxhighlighter-code
+```bash
 bazel test ... --define  gotags=integration_test # Will run unit & integration tests
 ```
 
@@ -120,11 +110,11 @@ This setup will currently not allow you to run ONLY the integration
 tests. To be able to do that you\'ll need to add a `unit_test` tag to
 the unit test files so that you can exclude them.
 
-``` wp-block-syntaxhighlighter-code
+```
 something_test.go
 ```
 
-``` wp-block-syntaxhighlighter-code
+```go
 //go:build integration_test
 
 package somepackage
@@ -132,19 +122,19 @@ package somepackage
 
 You can then run only the unit tests with
 
-``` wp-block-syntaxhighlighter-code
+```bash
 bazel test … --define gotags=unit_test # Will run unit & integration tests
 ```
 
 Only the integration tests
 
-``` wp-block-syntaxhighlighter-code
+```bash
 bazel test … --define gotags=integration_test # Will run unit & integration tests
 ```
 
 Or both:
 
-``` wp-block-syntaxhighlighter-code
+```bash
 bazel test … --define gotags=unit_test,integration_test # Will run unit & integration tests
 ```
 
@@ -155,7 +145,7 @@ don\'t have to pass the tags into gazelle each time.
 
 `BUILD`
 
-``` wp-block-syntaxhighlighter-code
+```starlark
 # gazelle:build_tags unit_test,integration_test
 ```
 
@@ -167,4 +157,3 @@ tags enabled.
 You can find sample source code demonstrating this in [my github
 repo](https://github.com/drone-ah/wordsonsand), under
 [post/2023/11/separatetests](https://github.com/drone-ah/wordsonsand/tree/main/post/2023/11/separatetests)
-
