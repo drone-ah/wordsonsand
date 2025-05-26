@@ -3,21 +3,21 @@ layout: post
 title: Streaming Progress With Pulumi Automation API
 date: 2023-11-08 12:38:32.000000000 +00:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories: []
 tags:
-- golang
-- pulumi
-- pulumi-automation-api
+  - golang
+  - pulumi
+  - pulumi-automation-api
 meta:
   _last_editor_used_jetpack: block-editor
   wordads_ufa: s:wpcom-ufa-v4:1699447355
-  _publicize_job_id: '89181397227'
-  timeline_notification: '1699447113'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:55:05'
+  _publicize_job_id: "89181397227"
+  timeline_notification: "1699447113"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:05"
 permalink: "/2023/11/08/streaming-progress-with-pulumi-automation-api/"
 ---
 
@@ -31,7 +31,7 @@ code](https://github.com/pulumi/automation-api-examples/blob/3114b754ea84ebd0cc1
 so if you\'re working in another language - you should be able to find
 the relevant code in the same repo
 
-``` wp-block-syntaxhighlighter-code
+```go
    // wire up our update to stream progress to stdout
     stdoutStreamer := optup.ProgressStreams(os.Stdout)
 
@@ -41,4 +41,3 @@ the relevant code in the same repo
         fmt.Printf("Failed to update stack: %v\n\n", err)
     }
 ```
-
