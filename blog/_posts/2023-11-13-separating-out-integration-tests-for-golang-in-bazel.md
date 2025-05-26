@@ -21,7 +21,7 @@ meta:
 permalink: "/2023/11/13/separating-out-integration-tests-for-golang-in-bazel/"
 ---
 
-# Why {#why .wp-block-heading}
+# Why {#why}
 
 There are many kinds of automated tests and two main kinds are
 integration tests and unit tests.
@@ -41,7 +41,7 @@ What this does mean though, is that you want to be able to run only the
 unit tests or run the integration tests as well. You might also want to
 have smoke tests, which are run on your live production environment.
 
-# How {#how .wp-block-heading}
+# How {#how}
 
 You could define a separate target in your `BUILD` file with the unit
 tests and let `gazelle` automatically build your default test target
@@ -49,7 +49,7 @@ with all the tests. I found this frustrating to use as I had to keep
 tweaking the dependencies manually whenever anything changed (which
 happened often)
 
-## Tagging {#tagging .wp-block-heading}
+## Tagging {#tagging}
 
 The easiest way to achieve this for golang and bazel is to tag your
 source code files. You can do this by adding the following to the top of
@@ -69,7 +69,7 @@ package somepackage
 You can pick any tag name you want instead of `integration_test` like
 `integration`, `smoke_test` etc.
 
-## IDE Support {#ide-support .wp-block-heading}
+## IDE Support {#ide-support}
 
 You will likely need to add this source file into the IDEs build
 constraints to get the IDE to treat it as a source file. In IntelliJ
@@ -92,7 +92,7 @@ class="wp-image-1324" /></a>
 
 When running `gazelle`, you want to include the files with these tags
 
-## Gazelle {#gazelle .wp-block-heading}
+## Gazelle {#gazelle}
 
 ``` wp-block-syntaxhighlighter-code
 bazel run //:gazelle -- -build_tags=integration_test
@@ -102,7 +102,7 @@ If you have multiple tags, you can separate them with commas. This
 command will generate a test target with all of the source files and its
 dependencies
 
-## Bazel Integration on test {#bazel-integration-on-test .wp-block-heading}
+## Bazel Integration on test {#bazel-integration-on-test}
 
 To run only the unit tests, you test as normal:
 
@@ -116,7 +116,7 @@ To run the integration tests as well, include that tag
 bazel test ... --define  gotags=integration_test # Will run unit & integration tests
 ```
 
-## Run only Unit Tests {#run-only-unit-tests .wp-block-heading}
+## Run only Unit Tests {#run-only-unit-tests}
 
 This setup will currently not allow you to run ONLY the integration
 tests. To be able to do that you\'ll need to add a `unit_test` tag to
@@ -150,7 +150,7 @@ Or both:
 bazel test … --define gotags=unit_test,integration_test # Will run unit & integration tests
 ```
 
-## Simpler gazelle command {#simpler-gazelle-command .wp-block-heading}
+## Simpler gazelle command {#simpler-gazelle-command}
 
 You can enable the tags by default in the `BUILD` file so that you
 don\'t have to pass the tags into gazelle each time.
@@ -164,7 +164,7 @@ don\'t have to pass the tags into gazelle each time.
 You can then just run `bazel run //:gazelle` which will run with these
 tags enabled.
 
-# Sample Source {#sample-source .wp-block-heading}
+# Sample Source {#sample-source}
 
 You can find sample source code demonstrating this in [my github
 repo](https://github.com/drone-ah/wordsonsand), under

@@ -105,7 +105,7 @@ root WORKSPACE file with `workspace(name = "workspace_name")`
 
 Finally, resolve the Symlink to get the actual file path
 
-## References {#references .wp-block-heading}
+## References {#references}
 
 There are similar mechanisms to find the rLocation in other languages, a
 couple of which are described in [its design

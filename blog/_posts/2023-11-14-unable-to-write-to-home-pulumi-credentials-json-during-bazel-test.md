@@ -43,7 +43,7 @@ error: open /home/<username>/.pulumi/credentials.json: read-only file system
 \
 \
 
-# The Solution {#the-solution .wp-block-heading}
+# The Solution {#the-solution}
 
 The easiest way to solve this is to ask `bazel` to allow writing to this
 location, which you can do with:
@@ -54,7 +54,7 @@ bazel test ... --sandbox_writable_path=$HOME/.pulumi
 
 `bazel` needs to the path to be absolute, so `~/.pulumi` won\'t work.
 
-# Automation {#automation .wp-block-heading}
+# Automation {#automation}
 
 It is annoying to add this flag into all the tests, but there is an way
 to automatically add it to all tests. You can add it to `.bazelrc`. Due

@@ -68,7 +68,7 @@ it\'s probably not hugely different in other languages.
             -   BUILD
             -   main.go
 
-# `iac_auth/BUILD` {#iac_authbuild .wp-block-heading}
+# `iac_auth/BUILD` {#iac_authbuild}
 
 ``` wp-block-syntaxhighlighter-code
 # load etc.
@@ -87,7 +87,7 @@ go_library(
 )
 ```
 
-# `iac_auth/deploy.go` {#iac_authdeploy.go .wp-block-heading}
+# `iac_auth/deploy.go` {#iac_authdeploy.go}
 
 ``` wp-block-syntaxhighlighter-code
 package iac_sync
@@ -110,7 +110,7 @@ func DeployGithubLambda(ctx *pulumi.Context) error {
 }
 ```
 
-# `iac/BUILD` {#iacbuild .wp-block-heading}
+# `iac/BUILD` {#iacbuild}
 
 ``` wp-block-syntaxhighlighter-code
 # other config including standard config of :iac_lib by gazelle
@@ -132,7 +132,7 @@ go_binary(
 Worth noting the `args` bit, which is what we use to identify the path
 where the `Pulumi.yaml` and `Pulumi.<stack>.yaml` files are:
 
-# `iac/main.go` {#iacmain.go .wp-block-heading}
+# `iac/main.go` {#iacmain.go}
 
 ``` wp-block-syntaxhighlighter-code
 package main

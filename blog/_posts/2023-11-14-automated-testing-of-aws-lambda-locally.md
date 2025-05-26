@@ -44,7 +44,7 @@ The code samples are in golang(only because it happens to be my current
 language of choice), but the idea should be equally applicable in other
 languages.
 
-# Assuming The Role {#assuming-the-role .wp-block-heading}
+# Assuming The Role {#assuming-the-role}
 
 ```go
   roleToAssume := os.Getenv("AUTH_LAMBDA_ROLE_ARN")
@@ -71,7 +71,7 @@ interested in. e.g.:
    ssmClient := ssm.NewFromConfig(cfg)
 ```
 
-# Working Example {#working-example .wp-block-heading}
+# Working Example {#working-example}
 
 You can find a full, working example test in [my github
 repo](https://github.com/drone-ah/wordsonsand) under
@@ -87,7 +87,7 @@ You will likely need to log into pulumi to get this test to work.
 
 If you run into permissions issue for AssumeRole, read on.
 
-# AssumeRole Permissions {#assumerole-permissions .wp-block-heading}
+# AssumeRole Permissions {#assumerole-permissions}
 
 For this to work, the user running the tests need to have permissions to
 `AssumeRole`.
