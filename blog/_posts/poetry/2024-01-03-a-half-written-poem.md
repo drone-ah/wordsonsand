@@ -8,7 +8,7 @@ published: true
 password: ""
 status: publish
 categories:
-  - Poetry
+  - poetry
 tags: []
 meta:
   _last_editor_used_jetpack: block-editor

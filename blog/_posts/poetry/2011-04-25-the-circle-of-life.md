@@ -3,22 +3,22 @@ layout: post
 title: The Circle Of Life
 date: 2011-04-25 17:23:43.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Poetry
+  - poetry
 tags: []
 meta:
-  _edit_last: '48492462'
+  _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2011/04/25/the-circle-of-life/1303752225
   oc_metadata: "{\t\tversion:'1.1',\t\ttags: {}\t}"
   restapi_import_id: 591d994f7aad5
-  original_post_id: '451'
-  _wp_old_slug: '451'
-  _publicize_job_id: '5187226688'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:42'
+  original_post_id: "451"
+  _wp_old_slug: "451"
+  _publicize_job_id: "5187226688"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:42"
 permalink: "/2011/04/25/the-circle-of-life/"
 ---
 

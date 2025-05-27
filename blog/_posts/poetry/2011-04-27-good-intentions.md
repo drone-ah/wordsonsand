@@ -3,22 +3,22 @@ layout: post
 title: Good Intentions
 date: 2011-04-27 00:11:22.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Poetry
+  - poetry
 tags: []
 meta:
   oc_metadata: "{\t\tversion:'1.1',\t\ttags: {}\t}"
   oc_commit_id: http://drone-ah.com/2011/04/27/good-intentions/1303859486
-  _edit_last: '48492462'
+  _edit_last: "48492462"
   restapi_import_id: 591d994f7aad5
-  original_post_id: '477'
-  _wp_old_slug: '477'
-  _publicize_job_id: '5187226529'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:43'
+  original_post_id: "477"
+  _wp_old_slug: "477"
+  _publicize_job_id: "5187226529"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:43"
 permalink: "/2011/04/27/good-intentions/"
 ---
 

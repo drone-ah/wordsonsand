@@ -7,7 +7,7 @@ parent_id: "0"
 published: true
 password: ""
 status: publish
-categories: []
+categories: [poetry]
 tags: []
 meta:
   _publicize_job_id: "96731599614"

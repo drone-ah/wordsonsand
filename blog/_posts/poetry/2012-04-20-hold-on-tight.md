@@ -3,24 +3,24 @@ layout: post
 title: Hold on tight
 date: 2012-04-20 12:51:30.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Poetry
+  - poetry
 tags: []
 meta:
-  _edit_last: '48492462'
+  _edit_last: "48492462"
   oc_metadata: "{\t\tversion:'1.1',\t\ttags: {}\t}"
   oc_commit_id: http://drone-ah.com/2012/04/20/hold-on-tight/1334922693
   restapi_import_id: 591d994f7aad5
-  original_post_id: '779'
-  _wp_old_slug: '779'
-  geo_public: '0'
-  _publicize_job_id: '5186971410'
+  original_post_id: "779"
+  _wp_old_slug: "779"
+  geo_public: "0"
+  _publicize_job_id: "5186971410"
   _last_editor_used_jetpack: block-editor
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:53'
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:53"
 permalink: "/2012/04/20/hold-on-tight/"
 ---
 
