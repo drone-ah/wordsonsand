@@ -191,3 +191,7 @@ I would like to share it with the world and am looking for feedback, thoughts
 ideas and supporters.
 
 If the idea or any of the concepts resonate with you, I’d love to hear from you.
+
+## Updates
+
+2025-05-21: Added an [itch.io page](https://droneah.itch.io/triangle)
