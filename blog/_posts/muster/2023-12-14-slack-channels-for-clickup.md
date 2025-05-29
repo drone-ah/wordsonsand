@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slack Channels for ClickUp Tickets
-date: 2023-11-21 16:07
+date: 2023-12-14 15:18
 type: post
 published: true
 status: publish
