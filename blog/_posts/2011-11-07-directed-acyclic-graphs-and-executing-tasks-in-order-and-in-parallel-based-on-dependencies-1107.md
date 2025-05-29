@@ -1,55 +1,64 @@
 ---
 layout: post
-title: Directed Acyclic Graphs and Executing Tasks in Order (and in Parallel) Based
+title:
+  Directed Acyclic Graphs and Executing Tasks in Order (and in Parallel) Based
   on Dependencies [1107]
 date: 2011-11-07 23:44:36.000000000 +00:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Software Development
+  - Software Development
 tags:
-- DAG
-- Dependency
-- Directed Acyclic Graph
-- Graphs
-- Java
-- Pointer
-- Task
+  - DAG
+  - Dependency
+  - Directed Acyclic Graph
+  - Graphs
+  - java
+  - Pointer
+  - Task
 meta:
-  _publicize_pending: '1'
-  _edit_last: '48492462'
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'task': {\"text\":\"Task\",\"slug\":\"task\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59537e67-9929-3185-8eed-5517511be8e5/SocialTag/2\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Task\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'pointer': {\"text\":\"Pointer\",\"slug\":\"pointer\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59537e67-9929-3185-8eed-5517511be8e5/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Pointer\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'dependency': {\"text\":\"Dependency\",\"slug\":\"dependency\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59537e67-9929-3185-8eed-5517511be8e5/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Dependency\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'directed-acyclic-graph': {\"text\":\"Directed Acyclic Graph\",\"slug\":\"directed-acyclic-graph\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'dag': {\"text\":\"DAG\",\"slug\":\"dag\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'graphs': {\"text\":\"Graphs\",\"slug\":\"graphs\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'java': {\"text\":\"Java\",\"slug\":\"java\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
+  _publicize_pending: "1"
+  _edit_last: "48492462"
+  oc_metadata:
+    "{\t\tversion:'1.1',\t\ttags: {'task':
+    {\"text\":\"Task\",\"slug\":\"task\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59537e67-9929-3185-8eed-5517511be8e5/SocialTag/2\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Task\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'pointer':
+    {\"text\":\"Pointer\",\"slug\":\"pointer\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59537e67-9929-3185-8eed-5517511be8e5/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Pointer\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'dependency':
+    {\"text\":\"Dependency\",\"slug\":\"dependency\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59537e67-9929-3185-8eed-5517511be8e5/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Dependency\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'directed-acyclic-graph': {\"text\":\"Directed Acyclic
+    Graph\",\"slug\":\"directed-acyclic-graph\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'dag':
+    {\"text\":\"DAG\",\"slug\":\"dag\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'graphs':
+    {\"text\":\"Graphs\",\"slug\":\"graphs\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'java':
+    {\"text\":\"Java\",\"slug\":\"java\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   oc_commit_id: http://drone-ah.com/2011/11/07/directed-acyclic-graphs-and-executing-tasks-in-order-and-in-parallel-based-on-dependencies-1107/1320709479
   restapi_import_id: 591d994f7aad5
-  original_post_id: '723'
-  _wp_old_slug: '723'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:52'
+  original_post_id: "723"
+  _wp_old_slug: "723"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:52"
 permalink: "/2011/11/07/directed-acyclic-graphs-and-executing-tasks-in-order-and-in-parallel-based-on-dependencies-1107/"
 ---
 
-A little while ago, there was a requirement to write a tool that could
-take a number of tasks each with a set of dependencies and execute them
-in parallel while taking the dependencies into account.
+A little while ago, there was a requirement to write a tool that could take a
+number of tasks each with a set of dependencies and execute them in parallel
+while taking the dependencies into account.
 
-The tasks themselves were meant for data migration but that is not
-particularly relevant. We were writing a number of tasks which all had a
-set of dependencies (some of the tasks did not have any dependencies or
-the process could of course never start).
+The tasks themselves were meant for data migration but that is not particularly
+relevant. We were writing a number of tasks which all had a set of dependencies
+(some of the tasks did not have any dependencies or the process could of course
+never start).
 
-It was assumed that there were no cyclic dependencies (which would be
-error in this particular case anyway)
+It was assumed that there were no cyclic dependencies (which would be error in
+this particular case anyway)
 
-Bearing in mind that this was a quick and dirty tool for use three
-times, some of the bits in here could do with tidying up.
+Bearing in mind that this was a quick and dirty tool for use three times, some
+of the bits in here could do with tidying up.
 
 Each task was defined to implement the following interface
 
@@ -61,18 +70,17 @@ Each task was defined to implement the following interface
 
     }
 
-It should all be self explanatory. Extending the Runnable interface
-ensure that we can pass it into threads and other relevant bits of code.
-The getDependencies is expected to return the name of the tasks that it
-depends on.
+It should all be self explanatory. Extending the Runnable interface ensure that
+we can pass it into threads and other relevant bits of code. The getDependencies
+is expected to return the name of the tasks that it depends on.
 
 The basic task runner which I describe below does not check if the task
 described in any list of dependencies actually exist. If an non-existing
-dependency is defined, it will likely just throw a Null Pointer
-Exception. I wrote this a long time ago, so don\'t actually remember.
+dependency is defined, it will likely just throw a Null Pointer Exception. I
+wrote this a long time ago, so don\'t actually remember.
 
-The BasicTaskRunner which we used to run the tasks implemented the
-TaskRunner Interface
+The BasicTaskRunner which we used to run the tasks implemented the TaskRunner
+Interface
 
     public interface TaskRunner {
 
@@ -85,8 +93,8 @@ TaskRunner Interface
         public void waitToComplete();
     }
 
-the addTask method simply added it to a map from String -\> Task and
-threw an exception in the event of a duplicate task being added in.
+the addTask method simply added it to a map from String -\> Task and threw an
+exception in the event of a duplicate task being added in.
 
        @Override
         public synchronized boolean addTask(Task task) {
@@ -99,9 +107,9 @@ threw an exception in the event of a duplicate task being added in.
             return true;
         }
 
-the prepare method just calls a method to buildGraph. This uses the
-jGrapht library to build a [Directed Acyclic
-Graph](http://en.wikipedia.org/wiki/Directed_acyclic_graph "Directed Acyclic Graph"){target="_blank"}
+the prepare method just calls a method to buildGraph. This uses the jGrapht
+library to build a
+[Directed Acyclic Graph](http://en.wikipedia.org/wiki/Directed_acyclic_graph "Directed Acyclic Graph"){target="\_blank"}
 
        private boolean buildGraph() {
 
@@ -133,9 +141,9 @@ Graph](http://en.wikipedia.org/wiki/Directed_acyclic_graph "Directed Acyclic Gra
             return true;
         }
 
-So we create a simple directed graph, loop through the tasks, then each
-of its dependencies to create an edge, which we then add to the graph.
-Simple stuff really.
+So we create a simple directed graph, loop through the tasks, then each of its
+dependencies to create an edge, which we then add to the graph. Simple stuff
+really.
 
 the start method, which actually executes the task is as follows:
 
@@ -155,10 +163,9 @@ the start method, which actually executes the task is as follows:
 
         }
 
-As a basic algorithm, we pick up the number of available processors and
-use that many threads. scheduleTasks is a pseudo-recursive function
-whose role is to add the currently executable list of tasks into the
-executor to execute.
+As a basic algorithm, we pick up the number of available processors and use that
+many threads. scheduleTasks is a pseudo-recursive function whose role is to add
+the currently executable list of tasks into the executor to execute.
 
        private void scheduleTasks() {
             if (graph.vertexSet().size() == 0) {
@@ -183,10 +190,10 @@ executor to execute.
 
         }
 
-If there are no tasks left to execute, we shut the executor down. All
-being well, we add every single task in the graph that has no
-dependencies to be executed. The threadpool ensures that any tasks that
-cannot currently be executed are queued.
+If there are no tasks left to execute, we shut the executor down. All being
+well, we add every single task in the graph that has no dependencies to be
+executed. The threadpool ensures that any tasks that cannot currently be
+executed are queued.
 
 We use a custom version of the threadpool as follows:
 
@@ -209,11 +216,11 @@ We use a custom version of the threadpool as follows:
 
         }
 
-The main purpose of this is to use the completed and failed callbacks to
-ensure that on complete, dependent tasks can be executed. On fail, we
-ensure that dependent tasks are not executed. The code currently does
-not allow for tasks that are left behind and will hang indefinitely
-after executing all tasks it can.
+The main purpose of this is to use the completed and failed callbacks to ensure
+that on complete, dependent tasks can be executed. On fail, we ensure that
+dependent tasks are not executed. The code currently does not allow for tasks
+that are left behind and will hang indefinitely after executing all tasks it
+can.
 
        public void completed(Task t) {
             LOG.info("Completed Task: " + t.getName());
@@ -243,19 +250,18 @@ after executing all tasks it can.
             scheduleTasks();
         }
 
-On completion of a task, we simply remove the task from the graph. The
-frees up all its dependencies to be executed. We add these tasks into
-the list by calling scheduleTasks again. There is nothing more for us to
-do when a task fails except to schedule any other tasks that can be
-executed. In theory, this call is redundant since any tasks that could
-be executed before the failure are already in the queue. Any tasks that
-can be completed on the completion of another item will be initiated on
-the completion of that task.
+On completion of a task, we simply remove the task from the graph. The frees up
+all its dependencies to be executed. We add these tasks into the list by calling
+scheduleTasks again. There is nothing more for us to do when a task fails except
+to schedule any other tasks that can be executed. In theory, this call is
+redundant since any tasks that could be executed before the failure are already
+in the queue. Any tasks that can be completed on the completion of another item
+will be initiated on the completion of that task.
 
-I hope the above makes sense and has been helpful. The code for the full
-class including further logging statements follows. Please bear in mind
-that this was hacked together over a couple of hours for something that
-was to be executed a grand total of three times.
+I hope the above makes sense and has been helpful. The code for the full class
+including further logging statements follows. Please bear in mind that this was
+hacked together over a couple of hours for something that was to be executed a
+grand total of three times.
 
     public class BasicTaskRunner implements TaskRunner {
 

@@ -24,22 +24,19 @@ permalink: "/2023/11/14/unable-to-write-to-home-pulumi-credentials-json-during-b
 
 You can add it to your \~/.bazelrc (it needs the path to be absolute)
 
-From our integration tests, we run `pulumi stack output` (or in some
-cases `pulumi up`) through the automation API before we run the tests so
-that we can
+From our integration tests, we run `pulumi stack output` (or in some cases
+`pulumi up`) through the automation API before we run the tests so that we can
 
 - Confirm that the stack is up
-- Get the relevant parameters (actual names of lambdas / dynamo db
-  tables etc.)
+- Get the relevant parameters (actual names of lambdas / dynamo db tables etc.)
 
-However, since we use bazel for our tests, we ran into a small problem
-in that Bazel (rightly) prevents the tests from writing to anything
-outside the sandbox. This restrictions results in this error
+However, since we use bazel for our tests, we ran into a small problem in that
+Bazel (rightly) prevents the tests from writing to anything outside the sandbox.
+This restrictions results in this error
 
 ```
 error: open /home/<username>/.pulumi/credentials.json: read-only file system
 ```
-
 
 # The Solution {#the-solution}
 
@@ -54,11 +51,11 @@ bazel test ... --sandbox_writable_path=$HOME/.pulumi
 
 # Automation {#automation}
 
-It is annoying to add this flag into all the tests, but there is an way
-to automatically add it to all tests. You can add it to `.bazelrc`. Due
-to the aforementioned requirement for the path to be absolute, it is not
-possible to put it into the git repo root. However, you can put it into
-your home directory rool `.bazelrc`
+It is annoying to add this flag into all the tests, but there is an way to
+automatically add it to all tests. You can add it to `.bazelrc`. Due to the
+aforementioned requirement for the path to be absolute, it is not possible to
+put it into the git repo root. However, you can put it into your home directory
+rool `.bazelrc`
 
 `$HOME/.bazelrc`
 

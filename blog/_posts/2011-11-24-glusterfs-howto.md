@@ -3,76 +3,77 @@ layout: post
 title: GlusterFS HOWTO [1108]
 date: 2011-11-24 20:53:33.000000000 +00:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 tags:
-- disk cloud
-- GlusterFS
-- Ubuntu
+  - disk cloud
+  - GlusterFS
+  - Ubuntu
 meta:
-  _edit_last: '48492462'
+  _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2011/11/24/glusterfs-howto/1322168013
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'glusterfs': {\"text\":\"GlusterFS\",\"slug\":\"glusterfs\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/4f5fb253-9344-3212-862b-f252bf981378/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"GlusterFS\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'ubuntu': {\"text\":\"Ubuntu\",\"slug\":\"ubuntu\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/4f5fb253-9344-3212-862b-f252bf981378/SocialTag/9\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Ubuntu\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'disk-cloud': {\"text\":\"disk cloud\",\"slug\":\"disk-cloud\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
+  oc_metadata:
+    "{\t\tversion:'1.1',\t\ttags: {'glusterfs':
+    {\"text\":\"GlusterFS\",\"slug\":\"glusterfs\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/4f5fb253-9344-3212-862b-f252bf981378/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"GlusterFS\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'ubuntu':
+    {\"text\":\"Ubuntu\",\"slug\":\"ubuntu\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/4f5fb253-9344-3212-862b-f252bf981378/SocialTag/9\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Ubuntu\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'disk-cloud': {\"text\":\"disk
+    cloud\",\"slug\":\"disk-cloud\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   restapi_import_id: 591d994f7aad5
-  original_post_id: '738'
-  _wp_old_slug: '738'
-  _publicize_job_id: '5181540343'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:52'
+  original_post_id: "738"
+  _wp_old_slug: "738"
+  _publicize_job_id: "5181540343"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:52"
 permalink: "/2011/11/24/glusterfs-howto/"
 ---
 
-So, I  am catching up a bit on the technical documentation. A week taken
-to play Skyrim combined with various other bits and pieces made this a
-little difficult.
+So, I  am catching up a bit on the technical documentation. A week taken to play
+Skyrim combined with various other bits and pieces made this a little difficult.
 
-On the bright side, there are a few new things that have been worked on
-so hopefully plenty of things to cover soon.
+On the bright side, there are a few new things that have been worked on so
+hopefully plenty of things to cover soon.
 
-We manage a number of servers and all over the place and all of them
-require to be backed up. We also have a number of desktops all with
-mirrored disks also getting backed up.
+We manage a number of servers and all over the place and all of them require to
+be backed up. We also have a number of desktops all with mirrored disks also
+getting backed up.
 
-I like things to be all nicely efficient and its annoying when one
-server / desktop runs out of space when another two (or ten) has plenty
-of space. We grew to dislike NFS particularly due to the single point of
-failure and there were few other options.
+I like things to be all nicely efficient and its annoying when one server /
+desktop runs out of space when another two (or ten) has plenty of space. We grew
+to dislike NFS particularly due to the single point of failure and there were
+few other options.
 
-We had tried
-[glusterfs](http://www.gluster.org/ "GlusterFS"){target="_blank"} a few
-years ago (think it was at version 1.3 or something) and there were
-various issues particularly around small files and configuration was an
-absolute nightmare.
+We had tried [glusterfs](http://www.gluster.org/ "GlusterFS"){target="\_blank"}
+a few years ago (think it was at version 1.3 or something) and there were
+various issues particularly around small files and configuration was an absolute
+nightmare.
 
-With high hopes that version 3.2 was exactly what we were looking for,
-we set up three basic machines for testing
+With high hopes that version 3.2 was exactly what we were looking for, we set up
+three basic machines for testing
 
-Previously,
-[glusterfs](http://www.gluster.org/ "GlusterFS"){target="_blank"}
-required all the configuration to be completed manually and with text
-files. It also required a fairly detailed knowledge of what they called
-translators and a lot of tweaking and fiddling with parameters.
+Previously, [glusterfs](http://www.gluster.org/ "GlusterFS"){target="\_blank"}
+required all the configuration to be completed manually and with text files. It
+also required a fairly detailed knowledge of what they called translators and a
+lot of tweaking and fiddling with parameters.
 
 I am very happy to report that this is no longer the case with 3.2.
 
-The three servers(cserver\[1-3\]) are running Ubuntu and was updated to
-Natty (11.10) to get access to glusterfs 3.2 (11.04 only had 3.0). One
-thing to bear in mind is that the glusterfs website seemed to only have
-the 64 bit version but Ubuntu 11.10 also has the 32bit version.
+The three servers(cserver\[1-3\]) are running Ubuntu and was updated to Natty
+(11.10) to get access to glusterfs 3.2 (11.04 only had 3.0). One thing to bear
+in mind is that the glusterfs website seemed to only have the 64 bit version but
+Ubuntu 11.10 also has the 32bit version.
 
 Installing the server part of glusterfs was simple and straightfoward
 
     $ sudo aptitude install glusterfs-server
 
 Once this was done all three servers
-([terminator](http://www.tenshu.net/p/terminator.html "Terminator"){target="_blank"}
-is a godsend when doing these things across a number of servers), adding
-the servers into a \"cluster\" was easy enough.
+([terminator](http://www.tenshu.net/p/terminator.html "Terminator"){target="\_blank"}
+is a godsend when doing these things across a number of servers), adding the
+servers into a \"cluster\" was easy enough.
 
     shri@cserver1:~$ gluster peer probe cserver2
     Probe successful
@@ -80,8 +81,8 @@ the servers into a \"cluster\" was easy enough.
     shri@cserver1:~$ sudo gluster peer probe cserver3
     Probe successful
 
-The thing to note is that these probe statements are two way. In other
-words, all three servers are now part of the same cluster.
+The thing to note is that these probe statements are two way. In other words,
+all three servers are now part of the same cluster.
 
     shri@cserver3:~$ sudo gluster peer status
     Number of Peers: 2
@@ -96,9 +97,9 @@ words, all three servers are now part of the same cluster.
     Uuid: 275ce612-2dd8-4e2a-8cc8-3115ad18c594
     State: Peer in Cluster (Connected)
 
-The thing is that if you type in an incorrect hostname, the probe will
-keep trying to connect to it. I haven\'t left it running long enough to
-know if it every returns.
+The thing is that if you type in an incorrect hostname, the probe will keep
+trying to connect to it. I haven\'t left it running long enough to know if it
+every returns.
 
     shri@cserver3:~# sudo gluster peer probe does-not-exist
     ^C
@@ -132,20 +133,19 @@ Thankfully, removing host does-not-exist is simple enough
     Uuid: 275ce612-2dd8-4e2a-8cc8-3115ad18c594
     State: Peer in Cluster (Connected)
 
-Creating a volume is straightforward. There are a number of different
-types of volumes which you can find out from the documentation. In this
-particular instance, we are creating a distributed replicated
+Creating a volume is straightforward. There are a number of different types of
+volumes which you can find out from the documentation. In this particular
+instance, we are creating a distributed replicated
 
     shri@cserver3:~$ sudo gluster volume create testvol replica 2 transport tcp cserver1:/gdata cserver2:/gdata
     Creation of testvol has been successful
     Please start the volume to access data
 
-The reason I have not included cserver3 in here is that the volume needs
-a multiple of the replica number of bricks. In the case, the there needs
-to be a muliple of 2 number of bricks.
+The reason I have not included cserver3 in here is that the volume needs a
+multiple of the replica number of bricks. In the case, the there needs to be a
+muliple of 2 number of bricks.
 
-Additionally, you could use rdma instead of tcp if you are using
-infiniband
+Additionally, you could use rdma instead of tcp if you are using infiniband
 
 Starting the volume is simple enough
 
@@ -169,9 +169,9 @@ Mounting this from another box is easy
     $ sudo aptitude install glusterfs-client
     $ sudo mount -t glusterfs /mnt cserver:/testvol
 
-If you get the error of \"endpoint not connected\" when listing the
-content of the mount, it is likely because the volume is not started.
+If you get the error of \"endpoint not connected\" when listing the content of
+the mount, it is likely because the volume is not started.
 
-If you are curious, check the gdata folders in the bricks after copying
-some files into the mount and you\'ll find them show up intact and on
-both bricks in the above example.
+If you are curious, check the gdata folders in the bricks after copying some
+files into the mount and you\'ll find them show up intact and on both bricks in
+the above example.

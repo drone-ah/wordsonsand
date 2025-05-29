@@ -3,26 +3,25 @@ layout: post
 title: Unfolding the Story | Let's Play Epistory
 date: 2018-05-28 10:11:37.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories: []
 tags: []
 meta:
-  _rest_api_published: '1'
+  _rest_api_published: "1"
   _rest_api_client_id: "-1"
-  _publicize_job_id: '18341983828'
-  timeline_notification: '1527502297'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:55:03'
+  _publicize_job_id: "18341983828"
+  timeline_notification: "1527502297"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:03"
 permalink: "/2018/05/28/unfolding-the-story-lets-play-epistory/"
 ---
 
-The other day I stumbled across Origin All Access and saw that it had a
-bunch of games I wanted to play. One of these was Epistory, which had
-been in my wishlist for a long time. When trying the game out, I fell in
-love with it. It is absolutely a treat, so I decided to go through it as
-part of a let\'s play.
+The other day I stumbled across Origin All Access and saw that it had a bunch of
+games I wanted to play. One of these was Epistory, which had been in my wishlist
+for a long time. When trying the game out, I fell in love with it. It is
+absolutely a treat, so I decided to go through it as part of a let\'s play.
 
 ### #01 - Signal Fires
 

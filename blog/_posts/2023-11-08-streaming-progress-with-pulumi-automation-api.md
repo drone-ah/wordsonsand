@@ -21,15 +21,15 @@ meta:
 permalink: "/2023/11/08/streaming-progress-with-pulumi-automation-api/"
 ---
 
-When using the pulumi automation API, you lose some of the niceties of
-the pulumi CLI, like having to set up command line args processing and
-the output is not as friendly or pretty as before. It also doesn\'t
-stream the output - though this one is easier to fix.
+When using the pulumi automation API, you lose some of the niceties of the
+pulumi CLI, like having to set up command line args processing and the output is
+not as friendly or pretty as before. It also doesn\'t stream the output - though
+this one is easier to fix.
 
-This is lifted straight out of [their golang example
-code](https://github.com/pulumi/automation-api-examples/blob/3114b754ea84ebd0cc1e1b67f128df75795bd4c3/go/local_program/automation/main.go#L74C2-L82C3),
-so if you\'re working in another language - you should be able to find
-the relevant code in the same repo
+This is lifted straight out of
+[their golang example code](https://github.com/pulumi/automation-api-examples/blob/3114b754ea84ebd0cc1e1b67f128df75795bd4c3/go/local_program/automation/main.go#L74C2-L82C3),
+so if you\'re working in another language - you should be able to find the
+relevant code in the same repo
 
 ```go
    // wire up our update to stream progress to stdout
