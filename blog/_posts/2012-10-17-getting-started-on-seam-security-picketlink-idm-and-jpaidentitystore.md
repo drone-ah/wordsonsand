@@ -3,62 +3,68 @@ layout: post
 title: Getting started on seam-security, picketlink IDM and JPAIdentityStore
 date: 2012-10-17 10:40:28.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Java (EE)
+  - Java (EE)
 tags:
-- Identity management
-- idm
-- picketlink
-- seam
-- seam-security
-- seam3
+  - Identity management
+  - idm
+  - picketlink
+  - seam
+  - seam-security
+  - seam3
 meta:
-  _publicize_pending: '1'
-  _edit_last: '48492462'
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'seam': {\"text\":\"seam\",\"slug\":\"seam\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'seam3': {\"text\":\"seam3\",\"slug\":\"seam3\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'seam-security': {\"text\":\"seam-security\",\"slug\":\"seam-security\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'picketlink': {\"text\":\"picketlink\",\"slug\":\"picketlink\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'idm': {\"text\":\"idm\",\"slug\":\"idm\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'identity-management': {\"text\":\"Identity management\",\"slug\":\"identity-management\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
+  _publicize_pending: "1"
+  _edit_last: "48492462"
+  oc_metadata:
+    "{\t\tversion:'1.1',\t\ttags: {'seam':
+    {\"text\":\"seam\",\"slug\":\"seam\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'seam3':
+    {\"text\":\"seam3\",\"slug\":\"seam3\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'seam-security':
+    {\"text\":\"seam-security\",\"slug\":\"seam-security\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'picketlink':
+    {\"text\":\"picketlink\",\"slug\":\"picketlink\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'idm':
+    {\"text\":\"idm\",\"slug\":\"idm\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'identity-management': {\"text\":\"Identity
+    management\",\"slug\":\"identity-management\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   oc_commit_id: http://drone-ah.com/2012/10/17/getting-started-on-seam-security-picketlink-idm-and-jpaidentitystore/1350466831
   restapi_import_id: 591d994f7aad5
-  original_post_id: '886'
-  _wp_old_slug: '886'
+  original_post_id: "886"
+  _wp_old_slug: "886"
   _last_editor_used_jetpack: block-editor
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:56'
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:56"
 permalink: "/2012/10/17/getting-started-on-seam-security-picketlink-idm-and-jpaidentitystore/"
 ---
 
-I love how JBoss 7(.1) has everything working out of the box - not much
-fiddling with jars or suchlike and with Arquillian, everything really
-was a treat to get started on a new project. This was until I had to
-sort out security with seam-security.
+I love how JBoss 7(.1) has everything working out of the box - not much fiddling
+with jars or suchlike and with Arquillian, everything really was a treat to get
+started on a new project. This was until I had to sort out security with
+seam-security.
 
-To be fair, the main issue was just poor documentation. It took me a day
-to sort out what should essentially have taken an hour(or two)
+To be fair, the main issue was just poor documentation. It took me a day to sort
+out what should essentially have taken an hour(or two)
 
 The documentation you get to from
-<http://www.seamframework.org/Seam3/SecurityModule> seems to be out of
-date. The fact that the page referes to version 3.0.0.Alpha1 and Alpha2
-should have tipped me off but the url for the doc suggested it was the
-latest.
+<http://www.seamframework.org/Seam3/SecurityModule> seems to be out of date. The
+fact that the page referes to version 3.0.0.Alpha1 and Alpha2 should have tipped
+me off but the url for the doc suggested it was the latest.
 
 The more up to date documentation I found was
 at <http://docs.jboss.org/seam/3/3.1.0.Final/reference/en-US/html/pt04.html>
 
-I followed [chapter
-33](http://docs.jboss.org/seam/3/3.1.0.Final/reference/en-US/html/security-identitymanagement.html "Identity Management")
+I followed
+[chapter 33](http://docs.jboss.org/seam/3/3.1.0.Final/reference/en-US/html/security-identitymanagement.html "Identity Management")
 on there and I won\'t repeat it here for the sake of brevity.
 
 What follows are the additional steps I had to take to get it to work.
 
-I ran into a javax.enterprise.inject.CreationException, the relevant
-part of the stack trace being:
+I ran into a javax.enterprise.inject.CreationException, the relevant part of the
+stack trace being:
 
     Caused by: java.lang.IllegalArgumentException: targetClass parameter may not be null
         at org.jboss.solder.properties.query.PropertyQuery.(PropertyQuery.java:54) [solder-impl-3.1.0.Final.jar:3.1.0.Final]
@@ -78,20 +84,19 @@ IdentityObjectType class
     public class IdentityObjectType {
     ...
 
-The next exception
-was org.picketlink.idm.common.exception.IdentityException: Error
-creating identity object. The relevant part of the strack trace being:
+The next exception was org.picketlink.idm.common.exception.IdentityException:
+Error creating identity object. The relevant part of the strack trace being:
 
     Caused by: java.lang.NullPointerException
         at org.jboss.seam.security.management.picketlink.JpaIdentityStore.lookupIdentityType(JpaIdentityStore.java:966) [seam-security-3.1.0.Final.jar:3.1.0.Final]
         at org.jboss.seam.security.management.picketlink.JpaIdentityStore.createIdentityObject(JpaIdentityStore.java:999) [seam-security-3.1.0.Final.jar:3.1.0.Final]
         ... 87 more
 
-It turned out that the entitymanager was not being picked up and it was
-null. This part was probably in the documentation earlier with regards
-to configuring seam but I had skipped directly to the security section
-so missed it. We need to define the persistence unit with the beans.xml.
-I have included my full file below.
+It turned out that the entitymanager was not being picked up and it was null.
+This part was probably in the documentation earlier with regards to configuring
+seam but I had skipped directly to the security section so missed it. We need to
+define the persistence unit with the beans.xml. I have included my full file
+below.
 
     <?xml version="1.0"?>
     <beans xmlns="http://java.sun.com/xml/ns/javaee"
@@ -120,14 +125,14 @@ This brought us further forward still. The next exception was:
         at org.picketlink.idm.impl.repository.WrapperIdentityStoreRepository.updateCredential(WrapperIdentityStoreRepository.java:310) [picketlink-idm-core-1.5.0.Alpha02.jar:1.5.0.Alpha02]
         at org.picketlink.idm.impl.api.session.managers.AttributesManagerImpl.updatePassword(AttributesManagerImpl.java:563) [picketlink-idm-core-1.5.0.Alpha02.jar:1.5.0.Alpha02]
 
-This was related to missing data in the database. It needed a credential
-type. I created one for password.
+This was related to missing data in the database. It needed a credential type. I
+created one for password.
 
     INSERT INTO CredentialType(id, name) VALUES (1, 'password');
 
 This brought us forward on to the next exception:
-org.picketlink.idm.common.exception.IdentityException: Exception
-creating relationship
+org.picketlink.idm.common.exception.IdentityException: Exception creating
+relationship
 
 with the relevant part of
 
@@ -142,8 +147,8 @@ This was solved by adding in a relationship type
 
     INSERT INTO RelationshipType(id, name) VALUES (1, 'JBOSS_IDENTITY_MEMBERSHIP');
 
-Both the sql statements were put into import.sql and hibernate is
-configured to create tables. My test case is as follows. It was taken
+Both the sql statements were put into import.sql and hibernate is configured to
+create tables. My test case is as follows. It was taken
 from <https://github.com/seam/seam-example-confbuzz/blob/develop/src/test/java/seam/example/confbuzz/test/integration/LoginIntegrationTest.java> and
 modified.
 

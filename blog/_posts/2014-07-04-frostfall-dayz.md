@@ -3,50 +3,48 @@ layout: post
 title: Frostfall &amp; DayZ
 date: 2014-07-04 03:24:55.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Gaming
+  - Gaming
 tags: []
 meta:
   _wpt_short_url: http://drone-ah.com/2014/07/04/frostfall-dayz/
-  _edit_last: '48492462'
+  _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2014/07/04/frostfall-dayz/1404440697
   oc_metadata: "{\t\tversion:'1.1',\t\ttags: {}\t}"
-  oc_tag_data: ''
+  oc_tag_data: ""
   restapi_import_id: 591d994f7aad5
-  original_post_id: '981'
-  _wp_old_slug: '981'
-  _publicize_job_id: '5185321864'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:59'
+  original_post_id: "981"
+  _wp_old_slug: "981"
+  _publicize_job_id: "5185321864"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:59"
 permalink: "/2014/07/04/frostfall-dayz/"
 ---
 
-When it comes to gaming, my preferences seem to lie in the RPG Genre
-with Strategy and Simulators coming in second. It is not often that I
-dabble in First Person shooters. While I have some fond memories of the
-multiplayer mods that came out of Half Life, I did not find myself
-curious about the [features of Battlefield
-4](https://www.playne.com/games/battlefield-4 "Features of Battlefield 4").
+When it comes to gaming, my preferences seem to lie in the RPG Genre with
+Strategy and Simulators coming in second. It is not often that I dabble in First
+Person shooters. While I have some fond memories of the multiplayer mods that
+came out of Half Life, I did not find myself curious about the
+[features of Battlefield 4](https://www.playne.com/games/battlefield-4 "Features of Battlefield 4").
 
-The [features of
-DayZ](https://www.playne.com/games/dayz-standalone "Features of DayZ (Standalone)"),
+The
+[features of DayZ](https://www.playne.com/games/dayz-standalone "Features of DayZ (Standalone)"),
 on the other hand are interesting. While it doesn\'t really have any RPG
-elements, it does seem to have unusual features and when the mod came
-out, it was noticed for being different\... and difficult\...
+elements, it does seem to have unusual features and when the mod came out, it
+was noticed for being different\... and difficult\...
 
-My brother has been trying to get me to play DayZ for a little while and
-I did try the mod a while back. I found it to be a bit \"too real\" to
-be really enjoyable. From the near explosion of similarly themed games
-recently, it does seem like a popular genre though\...
+My brother has been trying to get me to play DayZ for a little while and I did
+try the mod a while back. I found it to be a bit \"too real\" to be really
+enjoyable. From the near explosion of similarly themed games recently, it does
+seem like a popular genre though\...
 
-The new hunting and weather mechanics that they are talking about -
-particularly the ones being compared to Frostfall in Skyrim is
-particularly interesting. I thoroughly enjoyed playing through hardcore
-mode in Fallout: NV and the Frostfall and the more complex needs of
-Skyrim.
+The new hunting and weather mechanics that they are talking about - particularly
+the ones being compared to Frostfall in Skyrim is particularly interesting. I
+thoroughly enjoyed playing through hardcore mode in Fallout: NV and the
+Frostfall and the more complex needs of Skyrim.
 
-The permadeath part of the game is unattractive for me though - but
-maybe one day this will change..
+The permadeath part of the game is unattractive for me though - but maybe one
+day this will change..

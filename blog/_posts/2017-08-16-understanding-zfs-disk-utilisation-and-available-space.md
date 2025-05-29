@@ -3,23 +3,23 @@ layout: post
 title: Understanding ZFS Disk Utilisation and available space
 date: 2017-08-16 12:02:07.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 tags: []
 meta:
-  _edit_last: '48492462'
-  geo_public: '0'
-  _publicize_job_id: '8320377172'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:55:01'
+  _edit_last: "48492462"
+  geo_public: "0"
+  _publicize_job_id: "8320377172"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:01"
 permalink: "/2017/08/16/understanding-zfs-disk-utilisation-and-available-space/"
 ---
 
-I am hopeful the following will help someone scratch their head a little
-less in trying to understand the info returned by zfs.
+I am hopeful the following will help someone scratch their head a little less in
+trying to understand the info returned by zfs.
 
 I set up a pool using 4 2TB SATA disks.
 
@@ -34,15 +34,15 @@ sdc2 - - - - - -\
 sdd2 - - - - - -\
 \[/code\]
 
-The total size displayed here is the total size of the 4 disks. The
-maths works as 4\*2TB = 8TB = \~7.25TiB
+The total size displayed here is the total size of the 4 disks. The maths works
+as 4\*2TB = 8TB = \~7.25TiB
 
-RAIDZ2 is like RAID6 and it uses two disks for parity. Thus, I would
-expect to have \~4TB or 3.63TiB of available space. I haven\'t been able
-to find this number displayed anywhere.
+RAIDZ2 is like RAID6 and it uses two disks for parity. Thus, I would expect to
+have \~4TB or 3.63TiB of available space. I haven\'t been able to find this
+number displayed anywhere.
 
-**However**, you can find the amount of disk space still available using
-the following command.
+**However**, you can find the amount of disk space still available using the
+following command.
 
 \[code\]\
 \$# zfs list\
@@ -64,8 +64,8 @@ rpool/data/vm-105-disk-1 4.16G 2.19T 4.16G -\
 rpool/swap 8.66G 2.19T 8.66G -\
 \[/code\]
 
-The value of **2.19T** is the amount of unallocated space available in
-the pool. To verify this, you can run
+The value of **2.19T** is the amount of unallocated space available in the pool.
+To verify this, you can run
 
 \[code\]
 

@@ -20,21 +20,21 @@ meta:
 permalink: "/2020/05/28/getting-docker-desktop-working-with-wsl2-on-windows/"
 ---
 
-I ran into several issues while trying to get this to work. Here are the
-steps I had to complete to get it working. Hopefully this will save some
-hair on your head ;)
+I ran into several issues while trying to get this to work. Here are the steps I
+had to complete to get it working. Hopefully this will save some hair on your
+head ;)
 
-The main step is to go into the settings in Docker Desktop -\> Resources
-and make sure that your distribution is enabled for docker.
+The main step is to go into the settings in Docker Desktop -\> Resources and
+make sure that your distribution is enabled for docker.
 
 ![enable your distro on docker](/assets/2020/05/image.png)
 
 1.  Make sure that you have no docker packages installed on your WSL
     distribution. Docker Desktop will deploy its own binaries, and any
-    pre-existing binaries will confuse it. This issue exhibited itself
-    for me with errors related to missing files around credentials.
-2.  Remove any `DOCKER_HOST `environment variables. Docker Desktop will
-    sort it out. Docker kept hanging for me until I fixed this.
+    pre-existing binaries will confuse it. This issue exhibited itself for me
+    with errors related to missing files around credentials.
+2.  Remove any `DOCKER_HOST `environment variables. Docker Desktop will sort it
+    out. Docker kept hanging for me until I fixed this.
 3.  If you want to use docker as non-root user, add yourself to the
     `docker `group.
 

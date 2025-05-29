@@ -3,48 +3,51 @@ layout: post
 title: Drupal Entities - PHP Class per bundle
 date: 2014-04-17 11:18:08.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- drupal
+  - drupal
 tags:
-- drupal-entities
-- PHP
+  - drupal-entities
+  - PHP
 meta:
-  _publicize_pending: '1'
-  _edit_last: '48492462'
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'php': {\"text\":\"PHP\",\"slug\":\"php\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/1b06d5f3-b782-3c04-abe4-28797123ccb4/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"PHP\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'drupal': {\"text\":\"drupal\",\"slug\":\"drupal\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'drupal-entities': {\"text\":\"drupal-entities\",\"slug\":\"drupal-entities\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
+  _publicize_pending: "1"
+  _edit_last: "48492462"
+  oc_metadata:
+    "{\t\tversion:'1.1',\t\ttags: {'php':
+    {\"text\":\"PHP\",\"slug\":\"php\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/1b06d5f3-b782-3c04-abe4-28797123ccb4/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"PHP\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'drupal':
+    {\"text\":\"drupal\",\"slug\":\"drupal\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'drupal-entities':
+    {\"text\":\"drupal-entities\",\"slug\":\"drupal-entities\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   _wpt_short_url: http://drone-ah.com/2014/04/17/drupal-entities-php-class-per-bundle/
   oc_commit_id: http://drone-ah.com/2014/04/17/drupal-entities-php-class-per-bundle/1397729891
   restapi_import_id: 591d994f7aad5
-  original_post_id: '953'
-  _wp_old_slug: '953'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:59'
+  original_post_id: "953"
+  _wp_old_slug: "953"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:59"
 permalink: "/2014/04/17/drupal-entities-php-class-per-bundle/"
 ---
 
-If you would like a bit more polymorphism in your drupal entities, this
-might cheer you up :-D
+If you would like a bit more polymorphism in your drupal entities, this might
+cheer you up :-D
 
-[I was looking for a way to have a class hierarchy that matched the
-bundle \"hierarchy\" of entities in drupal. Yes, they are all
-\"subclasses\" of ONE parent, but it is still useful to be able to have
-a class per bundle.]{style="font-size:13px;"}
+[I was looking for a way to have a class hierarchy that matched the bundle
+\"hierarchy\" of entities in drupal. Yes, they are all \"subclasses\" of ONE
+parent, but it is still useful to be able to have a class per
+bundle.]{style="font-size:13px;"}
 
-The [entity bundle
-plugin](https://drupal.org/project/entity_bundle_plugin "entity bundle plugin") does
-a good job of providing a plugin framework to instantiate classes per
-bundle type. There is also [an example of how to use
-this](http://bojanz.wordpress.com/2013/07/19/entity-bundle-plugin/ "how to use entity bundle plugin").
-However, this was a bit of overkill for me. I did however borrow the
-idea (and some code) to implement it in a simpler fashion.
+The
+[entity bundle plugin](https://drupal.org/project/entity_bundle_plugin "entity bundle plugin") does
+a good job of providing a plugin framework to instantiate classes per bundle
+type. There is also
+[an example of how to use this](http://bojanz.wordpress.com/2013/07/19/entity-bundle-plugin/ "how to use entity bundle plugin").
+However, this was a bit of overkill for me. I did however borrow the idea (and
+some code) to implement it in a simpler fashion.
 
-Implement a custom controller and override the create and the query
-methods
+Implement a custom controller and override the create and the query methods
 
  
 
@@ -92,8 +95,7 @@ methods
 
     }
 
-I can now define a PHP class for each bundle as follows in
-hook_entity_info
+I can now define a PHP class for each bundle as follows in hook_entity_info
 
  
 
@@ -119,7 +121,6 @@ hook_entity_info
           ),
         ),
 
-Don\'t forget to clear the cache and you should be able to get bundle
-specific classes instantiated. It will fall back to the \'entity class\'
-defined for the entity if the bundle \'entity class\' is not defined or
-cannot be found.
+Don\'t forget to clear the cache and you should be able to get bundle specific
+classes instantiated. It will fall back to the \'entity class\' defined for the
+entity if the bundle \'entity class\' is not defined or cannot be found.

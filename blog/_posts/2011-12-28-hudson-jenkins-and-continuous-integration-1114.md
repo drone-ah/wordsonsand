@@ -3,74 +3,76 @@ layout: post
 title: Hudson / Jenkins and Continuous Integration [1114]
 date: 2011-12-28 14:51:31.000000000 +00:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Software Development
+  - Software Development
 tags:
-- Apache Maven
-- Continuous integration
-- Hudson
-- Maven
-- PMD
-- Subversion
+  - Apache Maven
+  - Continuous integration
+  - Hudson
+  - Maven
+  - PMD
+  - Subversion
 meta:
-  _publicize_pending: '1'
-  _edit_last: '48492462'
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'pmd': {\"text\":\"PMD\",\"slug\":\"pmd\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"PMD\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'continuous-integration': {\"text\":\"Continuous integration\",\"slug\":\"continuous-integration\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Continuous
+  _publicize_pending: "1"
+  _edit_last: "48492462"
+  oc_metadata:
+    "{\t\tversion:'1.1',\t\ttags: {'pmd':
+    {\"text\":\"PMD\",\"slug\":\"pmd\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"PMD\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'continuous-integration': {\"text\":\"Continuous
+    integration\",\"slug\":\"continuous-integration\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Continuous
     integration\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'subversion': {\"text\":\"Subversion\",\"slug\":\"subversion\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Subversion\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'maven': {\"text\":\"Maven\",\"slug\":\"maven\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/8\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Maven\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'apache-maven': {\"text\":\"Apache Maven\",\"slug\":\"apache-maven\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/9\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Apache
+    'subversion':
+    {\"text\":\"Subversion\",\"slug\":\"subversion\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Subversion\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'maven':
+    {\"text\":\"Maven\",\"slug\":\"maven\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/8\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Maven\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'apache-maven': {\"text\":\"Apache
+    Maven\",\"slug\":\"apache-maven\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/9\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Apache
     Maven\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'hudson': {\"text\":\"Hudson\",\"slug\":\"hudson\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/pershash-1/07845f25-13cd-3937-8b42-24eea2bd187c\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/Person\",\"name\":\"Person\"},\"name\":\"Hudson\",\"rawRelevance\":0.389,\"normalizedRelevance\":0.389},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
+    'hudson':
+    {\"text\":\"Hudson\",\"slug\":\"hudson\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/pershash-1/07845f25-13cd-3937-8b42-24eea2bd187c\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/Person\",\"name\":\"Person\"},\"name\":\"Hudson\",\"rawRelevance\":0.389,\"normalizedRelevance\":0.389},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   oc_commit_id: http://drone-ah.com/2011/12/28/hudson-jenkins-and-continuous-integration-1114/1325083894
   restapi_import_id: 591d994f7aad5
-  original_post_id: '754'
-  _wp_old_slug: '754'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:53'
+  original_post_id: "754"
+  _wp_old_slug: "754"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:53"
 permalink: "/2011/12/28/hudson-jenkins-and-continuous-integration-1114/"
 ---
 
-Fair Warning: This is more notes for me to remember and document how to
-do these things rather than particularly detailed instructions.
-Therefore, it might be missing sections and will assume a reasonable
-knowledge of hudson/jenkins and not to mention the benefits of
-continuous integration and builds.
+Fair Warning: This is more notes for me to remember and document how to do these
+things rather than particularly detailed instructions. Therefore, it might be
+missing sections and will assume a reasonable knowledge of hudson/jenkins and
+not to mention the benefits of continuous integration and builds.
 
-Installing hudson / jenkins is easy enough. I deployed as part of a
-pre-existing tomcat6 installation so was as simple as popping the war
-file into the webapps folder. Tomcat automatically started it up without
-issues.
+Installing hudson / jenkins is easy enough. I deployed as part of a pre-existing
+tomcat6 installation so was as simple as popping the war file into the webapps
+folder. Tomcat automatically started it up without issues.
 
-I chose to have hudson use /home/hudson as its home directory. Since I
-am running an ubuntu system, I added a line into /etc/defaults/tomcat6.
-There are various other ways of doing this but it was a quick fix for
-me.
+I chose to have hudson use /home/hudson as its home directory. Since I am
+running an ubuntu system, I added a line into /etc/defaults/tomcat6. There are
+various other ways of doing this but it was a quick fix for me.
 
-You of course need to make sure the directory exists. I also popped in a
-.m2 folder from my home directory to save it from downloading all the
-various jar files and included a settings.xml file with appropriate
-configurations.
+You of course need to make sure the directory exists. I also popped in a .m2
+folder from my home directory to save it from downloading all the various jar
+files and included a settings.xml file with appropriate configurations.
 
-Hudson 2.2 uses maven 3 but I use maven 3 locally as well even though
-the projects pom files were built for maven 2. There doesn\'t seem to be
-any issues with this setup.
+Hudson 2.2 uses maven 3 but I use maven 3 locally as well even though the
+projects pom files were built for maven 2. There doesn\'t seem to be any issues
+with this setup.
 
-First step is to create a new job from the home page. This asks for
-which type a job you want to create. If you use maven and a standard
-source control, it is as simple as choosing the first option: Build a
-free-style software project.
+First step is to create a new job from the home page. This asks for which type a
+job you want to create. If you use maven and a standard source control, it is as
+simple as choosing the first option: Build a free-style software project.
 
-Give it a name and you are brought to the configuration screen. There
-are a number of options here and I started with the basic set:
+Give it a name and you are brought to the configuration screen. There are a
+number of options here and I started with the basic set:
 
-I chose Subversion for the source control management section and gave it
-the svn path. There is a checkout strategy as well and I chose the one
-to revert and update which I feel to be a bit cleaner.
+I chose Subversion for the source control management section and gave it the svn
+path. There is a checkout strategy as well and I chose the one to revert and
+update which I feel to be a bit cleaner.
 
 I chose to poll the scm every fifteen minutes
 
@@ -78,17 +80,17 @@ I chose to poll the scm every fifteen minutes
 
 and saved.
 
-Running the build pulled the code out of svn and stopped there. This was
-because I didn\'t add a step to build / install it.
+Running the build pulled the code out of svn and stopped there. This was because
+I didn\'t add a step to build / install it.
 
-Go back into configure the job and add a maven 3 build step. This
-automatically selected the clean install goals. Save and build now and
-the project was checked out and built without issues.
+Go back into configure the job and add a maven 3 build step. This automatically
+selected the clean install goals. Save and build now and the project was checked
+out and built without issues.
 
 Success!
 
-There are a number of other options you can play with here but this
-gives you a solid starting point.
+There are a number of other options you can play with here but this gives you a
+solid starting point.
 
-Later on, I will cover the addition of various other plugins for source
-analysis including findbugs and pmd.
+Later on, I will cover the addition of various other plugins for source analysis
+including findbugs and pmd.

@@ -3,32 +3,32 @@ layout: post
 title: How to fix terminal title after disconnecting from ssh
 date: 2020-06-25 08:47:45.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 tags:
-- bash
+  - bash
 meta:
-  _publicize_job_id: '45837663329'
-  timeline_notification: '1593074865'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:55:04'
+  _publicize_job_id: "45837663329"
+  timeline_notification: "1593074865"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:04"
 permalink: "/2020/06/25/how-to-terminal-title-after-disconnecting-from-ssh/"
 ---
 
-For some reason, ssh does not clean up after itself in terms of updating
-the terminal title when you disconnect.
+For some reason, ssh does not clean up after itself in terms of updating the
+terminal title when you disconnect.
 
 Here is a simple solution, a combination of
 <https://unix.stackexchange.com/a/341277/25975> and
 <https://unix.stackexchange.com/a/28520/25975>
 
-Add the following functions into your `~/.bashrc` It will push the
-current title and icon into a stack and pop it afterwards.
+Add the following functions into your `~/.bashrc` It will push the current title
+and icon into a stack and pop it afterwards.
 
-``` wp-block-syntaxhighlighter-code
+```wp-block-syntaxhighlighter-code
 function ssh()
 {
     # push current title and icon to stack
@@ -42,18 +42,17 @@ function ssh()
 
 Restart bash / log out and back in, and it should work.
 
-For security reasons, it is not possible to query the current title of
-the terminal. However, with the following command, you can push the
-current one on to a stack
+For security reasons, it is not possible to query the current title of the
+terminal. However, with the following command, you can push the current one on
+to a stack
 
-``` wp-block-syntaxhighlighter-code
+```wp-block-syntaxhighlighter-code
 echo -ne '\e[22t'
 ```
 
-The title can then be set to anything, by ssh for example. You can then
-pop that back from the stack using
+The title can then be set to anything, by ssh for example. You can then pop that
+back from the stack using
 
-``` wp-block-syntaxhighlighter-code
+```wp-block-syntaxhighlighter-code
 echo -ne '\e[23t'
 ```
-
