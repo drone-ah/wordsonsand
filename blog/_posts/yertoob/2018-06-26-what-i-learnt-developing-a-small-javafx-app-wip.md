@@ -9,7 +9,9 @@ password: ""
 status: publish
 categories:
   - yertoob
-tags: []
+tags:
+  - java
+  - javafx
 meta:
   _rest_api_published: "1"
   _rest_api_client_id: "-1"
