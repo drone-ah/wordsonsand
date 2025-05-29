@@ -13,7 +13,7 @@ tags:
   - "*nix"
   - Brave New World
   - Coding Horror
-  - Collaboration
+  - collaboration
   - COM
   - Contact Management
   - CORBA
