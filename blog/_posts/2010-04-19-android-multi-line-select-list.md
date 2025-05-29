@@ -3,44 +3,52 @@ layout: post
 title: Android - Multi-line Select List
 date: 2010-04-19 23:37:54.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Android Development
+  - Android Development
 tags:
-- Android
-- Google
-- Java
-- Smartphones
-- ViewGroup
-- XML
+  - Android
+  - Google
+  - java
+  - Smartphones
+  - ViewGroup
+  - XML
 meta:
-  _publicize_pending: '1'
-  _edit_last: '48492462'
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'android': {\"text\":\"Android\",\"slug\":\"android\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/2\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Android\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'google': {\"text\":\"Google\",\"slug\":\"google\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Google\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'smartphones': {\"text\":\"Smartphones\",\"slug\":\"smartphones\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Smartphones\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'java': {\"text\":\"Java\",\"slug\":\"java\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Java\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'xml': {\"text\":\"XML\",\"slug\":\"xml\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/8\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"XML\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'viewgroup': {\"text\":\"ViewGroup\",\"slug\":\"viewgroup\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/comphash-1/e355b7a6-3bc5-3c57-af40-6e091c4db8c1\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/Company\",\"name\":\"Company\"},\"name\":\"ViewGroup\",\"rawRelevance\":0.785,\"normalizedRelevance\":0.785},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'twolinetextitem': {\"text\":\"TwoLineTextitem\",\"slug\":\"twolinetextitem\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
+  _publicize_pending: "1"
+  _edit_last: "48492462"
+  oc_metadata:
+    "{\t\tversion:'1.1',\t\ttags: {'android':
+    {\"text\":\"Android\",\"slug\":\"android\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/2\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Android\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'google':
+    {\"text\":\"Google\",\"slug\":\"google\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Google\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'smartphones':
+    {\"text\":\"Smartphones\",\"slug\":\"smartphones\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Smartphones\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'java':
+    {\"text\":\"Java\",\"slug\":\"java\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Java\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'xml':
+    {\"text\":\"XML\",\"slug\":\"xml\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/76e8b3e1-32c4-315d-91c4-aac343a4ded4/SocialTag/8\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"XML\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'viewgroup':
+    {\"text\":\"ViewGroup\",\"slug\":\"viewgroup\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/comphash-1/e355b7a6-3bc5-3c57-af40-6e091c4db8c1\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/Company\",\"name\":\"Company\"},\"name\":\"ViewGroup\",\"rawRelevance\":0.785,\"normalizedRelevance\":0.785},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'twolinetextitem':
+    {\"text\":\"TwoLineTextitem\",\"slug\":\"twolinetextitem\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   oc_commit_id: http://drone-ah.com/2010/04/19/android-multi-line-select-list/1271720282
   restapi_import_id: 591d994f7aad5
-  original_post_id: '319'
-  _wp_old_slug: '319'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:39'
+  original_post_id: "319"
+  _wp_old_slug: "319"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:39"
 permalink: "/2010/04/19/android-multi-line-select-list/"
 ---
 
-It turns out that it is surprisingly easy to add a multi line select
-list to the UI.\
-There are four main parts to it. The layout file, a subclass to the
-adapter, the activity and of course the data itself.
+It turns out that it is surprisingly easy to add a multi line select list to the
+UI.\
+There are four main parts to it. The layout file, a subclass to the adapter, the
+activity and of course the data itself.
 
-Lets start with the data. For the sake of this demo, lets use a simple
-contact list:
+Lets start with the data. For the sake of this demo, lets use a simple contact
+list:
 
     package uk.co.kraya.android.demos.MultiLineList.domain;
 
@@ -82,8 +90,8 @@ Some straightforward fields and getters/setters
 
 Next, we need an Adapter. For this one, we will use
 a [ArrayAdapter](http://developer.android.com/reference/android/widget/ArrayAdapter.html){#aptureLink_Fi189q6cva}.
-We will extend it so that we can override the [getView
-method.](http://developer.android.com/reference/android/widget/Adapter.html#getView(int,%20android.view.View,%20android.view.ViewGroup)){#aptureLink_6vKdUkyf4M}
+We will extend it so that we can override
+the [getView method.](<http://developer.android.com/reference/android/widget/Adapter.html#getView(int,%20android.view.View,%20android.view.ViewGroup)>){#aptureLink_6vKdUkyf4M}
 
     package uk.co.kraya.android.demos.MultiLineList.domain.adapters;
 
@@ -147,14 +155,14 @@ The key bit here is the getView method. We pick up
 the [LayoutInflater](http://developer.android.com/reference/android/view/LayoutInflater.html){#aptureLink_cCqnuLO8cB}
 which we can use to pick up the view that defines
 the [TwoLineListItem](http://developer.android.com/reference/android/widget/TwoLineListItem.html){#aptureLink_PdguO7eWA6}
-view. This allows us to use two different snippets of text as part of
-the list. We then pick up the each of
+view. This allows us to use two different snippets of text as part of the list.
+We then pick up the each of
 the [TextView](http://developer.android.com/reference/android/widget/TextView.html){#aptureLink_giPiTVaEFZ}
-items and set the text against them. The formatting of these item are
-defined in the xml file.
+items and set the text against them. The formatting of these item are defined in
+the xml file.
 
-The TwoLineListItem class also defines a placeholder for the
-selectedIcon. Check the documentation for more info.
+The TwoLineListItem class also defines a placeholder for the selectedIcon. Check
+the documentation for more info.
 
 The xml file for the layout goes as follows:
 
@@ -182,9 +190,9 @@ The xml file for the layout goes as follows:
 
     </TwoLineListItem>
 
-As you can see, we are just defining a TwoLineListItem element with two
-embedded TextItems. Tthe android:id parts are important. It ensures that
-the getText1() and getText2() methods work as expected!
+As you can see, we are just defining a TwoLineListItem element with two embedded
+TextItems. Tthe android:id parts are important. It ensures that the getText1()
+and getText2() methods work as expected!
 
 Finally, we have the activity. In fact, we will be using a
 [ListActivity](http://developer.android.com/reference/android/app/ListActivity.html){#aptureLink_ZT7CrXDQAo}
@@ -234,22 +242,21 @@ as follows:
         }
     }
 
-getContacts clearly just creates a couple of contacts for the sake of
-the demo. its the setListAdapter that is the key here. It creates a new
-ContactArrayAdapter that we have written, passes in the context (which
-is just the current activity), a resource ID and a List of items to
-display.
+getContacts clearly just creates a couple of contacts for the sake of the demo.
+its the setListAdapter that is the key here. It creates a new
+ContactArrayAdapter that we have written, passes in the context (which is just
+the current activity), a resource ID and a List of items to display.
 
 Run it and you should see something like:
 
 \[caption id=\"attachment_359\" align=\"aligncenter\" width=\"542\"
-caption=\"Final Output\"\]![Final
+caption=\"Final
+Output\"\]![Final
 Output](%7B%7Bsite.baseurl%7D%7D/assets/2010/04/multilineselectdemo.png "MultiLineSelectDemo"){.size-full
 .wp-image-359 width="542" height="461"}\[/caption\]
 
-So easy when you know how. I believe could use a View or a ViewGroup as
-needed instead of the TwoLineListItem but I shall leave that to you to
-discover.
+So easy when you know how. I believe could use a View or a ViewGroup as needed
+instead of the TwoLineListItem but I shall leave that to you to discover.
 
-I have included all the files that I created/modified but if you want
-the whole project tarred up, just drop me a note ;-)
+I have included all the files that I created/modified but if you want the whole
+project tarred up, just drop me a note ;-)

@@ -3,49 +3,57 @@ layout: post
 title: JBossWS CXF - POJO vs Stateless [1104]
 date: 2011-11-05 15:32:32.000000000 +00:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Java (EE)
+  - Java (EE)
 tags:
-- Java enterprise platform
-- Load testing
-- Log4j
-- Plain Old Java Object
-- Software components
-- web services
-- web.xml
-- XML
+  - Java (EE)
+  - Load testing
+  - Log4j
+  - Plain Old Java Object
+  - Software components
+  - web services
+  - web.xml
+  - XML
 meta:
-  _publicize_pending: '1'
-  _edit_last: '48492462'
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'java-enterprise-platform': {\"text\":\"Java
-    enterprise platform\",\"slug\":\"java-enterprise-platform\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'load-testing': {\"text\":\"Load testing\",\"slug\":\"load-testing\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'log4j': {\"text\":\"Log4j\",\"slug\":\"log4j\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'plain-old-java-object': {\"text\":\"Plain Old Java Object\",\"slug\":\"plain-old-java-object\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'software-components': {\"text\":\"Software components\",\"slug\":\"software-components\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'web-services': {\"text\":\"web services\",\"slug\":\"web-services\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'webxml': {\"text\":\"web.xml\",\"slug\":\"webxml\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'xml': {\"text\":\"XML\",\"slug\":\"xml\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
+  _publicize_pending: "1"
+  _edit_last: "48492462"
+  oc_metadata:
+    "{\t\tversion:'1.1',\t\ttags: {'java-enterprise-platform': {\"text\":\"Java
+    enterprise
+    platform\",\"slug\":\"java-enterprise-platform\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'load-testing': {\"text\":\"Load
+    testing\",\"slug\":\"load-testing\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'log4j':
+    {\"text\":\"Log4j\",\"slug\":\"log4j\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'plain-old-java-object': {\"text\":\"Plain Old Java
+    Object\",\"slug\":\"plain-old-java-object\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'software-components': {\"text\":\"Software
+    components\",\"slug\":\"software-components\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'web-services': {\"text\":\"web
+    services\",\"slug\":\"web-services\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'webxml':
+    {\"text\":\"web.xml\",\"slug\":\"webxml\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
+    'xml':
+    {\"text\":\"XML\",\"slug\":\"xml\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   oc_commit_id: http://drone-ah.com/2011/11/05/jbossws-cxf-pojo-vs-stateless/1320507155
   restapi_import_id: 591d994f7aad5
-  original_post_id: '702'
-  _wp_old_slug: '702'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:51'
+  original_post_id: "702"
+  _wp_old_slug: "702"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:51"
 permalink: "/2011/11/05/jbossws-cxf-pojo-vs-stateless/"
 ---
 
-Cleaning up a bunch of code to reduce object instantiations got me
-thinking about the webservice layer. We are using POJO based webservices
-but it got to me wondering whether useless Stateless web service beans
-would improve memory usage. More accurately, whether it would improve
-garbage collection performance.
+Cleaning up a bunch of code to reduce object instantiations got me thinking
+about the webservice layer. We are using POJO based webservices but it got to me
+wondering whether useless Stateless web service beans would improve memory
+usage. More accurately, whether it would improve garbage collection performance.
 
-To test this, the plan was to build two versions of the same web service
-and load test it to see the memory and cpu utilisation to compare cost /
+To test this, the plan was to build two versions of the same web service and
+load test it to see the memory and cpu utilisation to compare cost /
 performance.
 
 In the process, I also discovered other differences.
@@ -75,8 +83,7 @@ The EJB version of this is as follows:
 
     }
 
-Simple and straightforward enough and the POJO version is not that
-different
+Simple and straightforward enough and the POJO version is not that different
 
     @WebService
     public class PojoWebTest implements WSTest  {
@@ -88,8 +95,7 @@ different
 
     }
 
-I also used the following web.xml. This may not be a necessary step any
-more.
+I also used the following web.xml. This may not be a necessary step any more.
 
     <?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
     <web-app>
@@ -105,22 +111,21 @@ more.
             </servlet-mapping>
     </web-app>
 
-Now that was complete, there was the deployment to consider. I had
-assumed that I could just do one build, package it as an war and just
-deploy it but as it turns out, that didn\'t work. This only deployed the
-Pojo web service. To deploy the EJB web service, I had to package it as
-an EJB (maven) and deploy a jar file.
+Now that was complete, there was the deployment to consider. I had assumed that
+I could just do one build, package it as an war and just deploy it but as it
+turns out, that didn\'t work. This only deployed the Pojo web service. To deploy
+the EJB web service, I had to package it as an EJB (maven) and deploy a jar
+file.
 
 This meant that I ended up with two deployments, wstestpojo.war and
 wstestejb.jar.
 
-Once deployed, I used SoapUI to load test both the web services and the
-results were interesting.
+Once deployed, I used SoapUI to load test both the web services and the results
+were interesting.
 
-In the grand scheme of things, the difference was pretty minimal between
-the two. However, the Stateless EJB web service used a little extra
-(3% - 5%) CPU presumably from the pooling of the beans and accessing
-them.
+In the grand scheme of things, the difference was pretty minimal between the
+two. However, the Stateless EJB web service used a little extra (3% - 5%) CPU
+presumably from the pooling of the beans and accessing them.
 
 I used JBoss 5.1 and ran into an issue with log pollution
 
@@ -129,15 +134,13 @@ context, it should already have been injected
 
 This was printed every time an EJB based web service was called.
 
-I [found more information about the EJBTHREE-1337 issue and a workaround
-for
-it](http://idevone.wordpress.com/2009/09/14/howto-suppress-ejbthree-1337-warning/ "HOWTO: Suppress EJBTHREE-1337 warning"){target="_blank"}
-The workaround simply involves updating log4j to not log it which is
-good enough for me\... :-)
+I
+[found more information about the EJBTHREE-1337 issue and a workaround for it](http://idevone.wordpress.com/2009/09/14/howto-suppress-ejbthree-1337-warning/ "HOWTO: Suppress EJBTHREE-1337 warning"){target="\_blank"}
+The workaround simply involves updating log4j to not log it which is good enough
+for me\... :-)
 
 As a final note, I am unsure as to how this would scale with complex web
-services that have multiple instantiated objects as part of it.  I have
-a sneaky suspicion that web services with expensive object
-instantiations would perform better if using Stateless EJB Beans as
-would web services that are memory hungry. However, this has not been
-tested.
+services that have multiple instantiated objects as part of it.  I have a sneaky
+suspicion that web services with expensive object instantiations would perform
+better if using Stateless EJB Beans as would web services that are memory
+hungry. However, this has not been tested.

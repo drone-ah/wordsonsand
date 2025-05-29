@@ -3,39 +3,32 @@ layout: post
 title: Android - Parcel data to pass between Activities using Parcelable classes
 date: 2010-04-26 21:46:31.000000000 +01:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- Android Development
+  - Android Development
 tags:
-- Activity
-- Intent
-- Java
-- Parcel
-- Parcelable
+  - Activity
+  - Intent
+  - java
+  - Parcel
+  - Parcelable
 meta:
-  _publicize_pending: '1'
-  _edit_last: '48492462'
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {'java': {\"text\":\"Java\",\"slug\":\"java\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/cb1ea577-60b8-32d3-8ba8-5c20d5f10f95/SocialTag/10\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Java\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'android': {\"text\":\"Android\",\"slug\":\"android\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/genericHasher-1/a3a38f2a-bc87-3ddf-838a-aab8db5be28c\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/OperatingSystem\",\"name\":\"OperatingSystem\"},\"name\":\"Android\",\"rawRelevance\":0.4,\"normalizedRelevance\":0.4},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'parcelable': {\"text\":\"Parcelable\",\"slug\":\"parcelable\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'activity': {\"text\":\"Activity\",\"slug\":\"activity\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'parcel': {\"text\":\"Parcel\",\"slug\":\"parcel\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'intent': {\"text\":\"Intent\",\"slug\":\"intent\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
-  oc_commit_id: http://drone-ah.com/2010/04/26/android-parcel-data-to-pass-between-activities-using-parcelable-classes/1272318485
+  _publicize_pending: "1"
+  _edit_last: "48492462"
   restapi_import_id: 591d994f7aad5
-  original_post_id: '378'
-  _wp_old_slug: '378'
-  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:54:40'
+  original_post_id: "378"
+  _wp_old_slug: "378"
+  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:40"
 permalink: "/2010/04/26/android-parcel-data-to-pass-between-activities-using-parcelable-classes/"
 ---
 
-Passing data between activities on android is unfortunately, not as
-simple as passing in parameters. What we need to to do is tag these onto
-the intent. If the information we need to pass across is a simple object
-like a String or Integer, this is easy enough.
+Passing data between activities on android is unfortunately, not as simple as
+passing in parameters. What we need to to do is tag these onto the intent. If
+the information we need to pass across is a simple object like a String or
+Integer, this is easy enough.
 
     String strinParam = "String Parameter";
     Integer intParam = 5;
@@ -46,12 +39,12 @@ like a String or Integer, this is easy enough.
 
     startActivity(i);
 
-Passing in custom objects is a little more complicated. You could just
-mark the class
+Passing in custom objects is a little more complicated. You could just mark the
+class
 as [Serializable](http://java.sun.com/javase/6/docs/api/java/io/Serializable.html){#aptureLink_sFgcHI42t0}\
-and let Java take care of this. However, on the android, there is a
-serious performance hit that comes with using Serializable. The solution
-is to
+and
+let Java take care of this. However, on the android, there is a serious
+performance hit that comes with using Serializable. The solution is to
 use [Parcelable](http://developer.android.com/reference/android/os/Parcelable.html){#aptureLink_ahKLthf4Lc}.
 
     package uk.co.kraya.android.demos.Parcelable;
@@ -181,11 +174,10 @@ use [Parcelable](http://developer.android.com/reference/android/os/Parcelable.h
 
     }
 
-The intricacies of the class is described in the code above. There is
-now one more special case. What if you have an object that references
-another object. Clearly, they would both need to be Parcelable, but how
-would be integrate them. ObjectB shows a parcelable embedded in another
-parcelable\...
+The intricacies of the class is described in the code above. There is now one
+more special case. What if you have an object that references another object.
+Clearly, they would both need to be Parcelable, but how would be integrate them.
+ObjectB shows a parcelable embedded in another parcelable\...
 
     package uk.co.kraya.android.demos.Parcelable;
 
@@ -286,9 +278,9 @@ parcelable\...
             };
     }
 
-When writing the parcel, we need to pass in the flags - which is easy
-enough. When reading the parcel, we need the classloader, which can be
-picked up from destination class of the parcelable. Again easy!
+When writing the parcel, we need to pass in the flags - which is easy enough.
+When reading the parcel, we need the classloader, which can be picked up from
+destination class of the parcelable. Again easy!
 
 Finally, passing a parcelable object to an intent
 
@@ -320,5 +312,5 @@ and to read the values,
 
 It it was any easier - we\'d all be out of a job ;-)
 
-If you found this helpful, why not post a comment? You might also enjoy
-reading through some of the other posts\... :-D
+If you found this helpful, why not post a comment? You might also enjoy reading
+through some of the other posts\... :-D
