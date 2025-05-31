@@ -194,4 +194,5 @@ If the idea or any of the concepts resonate with you, I’d love to hear from yo
 
 ## Updates
 
+2025-05-31: Added [devlog #0 on youtube](https://youtu.be/8pBPQbJtIJk)\
 2025-05-21: Added an [itch.io page](https://droneah.itch.io/triangle)
