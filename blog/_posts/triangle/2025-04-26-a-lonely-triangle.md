@@ -139,7 +139,7 @@ to build.
 I want the crafting to be as deterministic as possible, but while also keeping
 it interesting.
 
-## Figuring it out
+### Figuring it out
 
 There are no (traditional) tutorials or help sections. This decision will put a
 lot of pressure on getting the UI/UX intuitive and easy to use. However, it will
