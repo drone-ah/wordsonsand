@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A lonely triangle vs the universe
+title: A lone triangle vs the universe
 date: 2025-04-26 10:07:08
 type: post
 published: true
