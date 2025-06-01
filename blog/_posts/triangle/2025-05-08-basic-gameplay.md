@@ -14,6 +14,7 @@ meta:
 ---
 
 The first goal was to get it working as far as the coding challenge itself.
+[There is a companion vlog for this post](https://youtu.be/F2ITT2-uKso)
 
 ## The Ship
 
@@ -172,3 +173,5 @@ was harder to test manually.
 
 triangle already feels fun and light. There are some clunky elements to be
 ironed out, but so far, it feels good :)
+
+You can watch the
