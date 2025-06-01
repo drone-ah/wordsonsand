@@ -11,6 +11,7 @@ tags:
   - zig
   - raylib
 meta:
+redirect_from: /s/tlog1
 ---
 
 The first goal was to get it working as far as the coding challenge itself.

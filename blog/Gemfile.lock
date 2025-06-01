@@ -76,6 +76,8 @@ GEM
     jekyll-archives (2.3.0)
       jekyll (>= 3.6, < 5.0)
     jekyll-paginate (1.1.0)
+    jekyll-redirect-from (0.16.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
     jekyll-sitemap (1.4.0)
@@ -172,6 +174,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.1)
+  jekyll-redirect-from
   jekyll-whiteglass
   tzinfo (~> 1.2)
   tzinfo-data
