@@ -81,7 +81,7 @@ would be an interesting twist - you don't pick up loot - you build it.
 Each item would still have randomised mods, but you could extract them like in
 Last Epoch and use them in other ones - I have a lot of ideas.
 
-## Story
+## Story {#story}
 
 In terms of the story, I've been pondering the destructive nature of capitalism
 a lot lately and that felt like a good metaphor to bring in here - it just
