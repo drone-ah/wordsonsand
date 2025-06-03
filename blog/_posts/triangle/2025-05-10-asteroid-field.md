@@ -158,4 +158,4 @@ I’ll probably tackle that - and maybe finally add a quadtree - soon.
 
 - [Companion vlog for this post](https://youtu.be/RXcBDC8Ki1w)
 - [Basic Gameplay](/2025/05/08/basic-gameplay/)
-- Next: Coming soon
+- [Next: Materials & Pickups]({% post_url triangle/2025-05-13-materials %})
