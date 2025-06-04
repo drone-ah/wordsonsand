@@ -175,4 +175,4 @@ was harder to test manually.
 triangle already feels fun and light. There are some clunky elements to be
 ironed out, but so far, it feels good :)
 
-You can watch the
+You can watch the [video devlog on youtube](https://youtu.be/F2ITT2-uKso)
