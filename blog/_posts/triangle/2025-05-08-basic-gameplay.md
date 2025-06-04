@@ -15,7 +15,6 @@ redirect_from: /s/tlog1
 ---
 
 The first goal was to get it working as far as the coding challenge itself.
-[There is a companion vlog for this post](https://youtu.be/F2ITT2-uKso)
 
 ## The Ship
 
@@ -40,6 +39,8 @@ simplify it later.
 Integrating the physics for linear momentum with the one for rotational momentum
 was also quite nice — it meant that the ship could overshoot the aim when
 rotating and will correct back.
+
+<!-- more -->
 
 ## The Asteroids
 
@@ -175,9 +176,8 @@ was harder to test manually.
 triangle already feels fun and light. There are some clunky elements to be
 ironed out, but so far, it feels good :)
 
-You can watch the [video devlog on youtube](https://youtu.be/F2ITT2-uKso)
-
 ## Other posts
 
+- [Companion vlog for this post](https://youtu.be/F2ITT2-uKso)
 - [Prev: A lone triangle vs the universe](/2025/04/26/a-lonely-triangle/)
 - Next: Coming soon
