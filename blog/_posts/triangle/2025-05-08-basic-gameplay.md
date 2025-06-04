@@ -176,3 +176,8 @@ triangle already feels fun and light. There are some clunky elements to be
 ironed out, but so far, it feels good :)
 
 You can watch the [video devlog on youtube](https://youtu.be/F2ITT2-uKso)
+
+## Other posts
+
+- [Prev: A lone triangle vs the universe](/2025/04/26/a-lonely-triangle/)
+- Next: Coming soon

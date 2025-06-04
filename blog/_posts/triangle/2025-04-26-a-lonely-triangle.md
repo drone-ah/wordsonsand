@@ -192,6 +192,10 @@ ideas and supporters.
 
 If the idea or any of the concepts resonate with you, I’d love to hear from you.
 
+## Other Posts
+
+- [Next: Basic Gameplay](/2025/05/08/basic-gameplay/)
+
 ## Updates
 
 2025-05-31: Added [devlog #0 on youtube](https://youtu.be/8pBPQbJtIJk)\
