@@ -11,8 +11,6 @@ tags:
 meta:
 ---
 
-## The Context
-
 I've been unwell for a few months which has left me with a great deal of fatigue
 and limited ability to be productive.
 
@@ -50,6 +48,8 @@ seems so easy and approachable. I used to be so intimidated by all the math.
 
 There was a slow confidence building in me that maybe - just maybe I could build
 a game.
+
+<!-- more -->
 
 ## Coding Challenge 46
 
