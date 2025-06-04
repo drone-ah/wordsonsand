@@ -21,11 +21,10 @@
 title: drone ah adventures
 author: Shri (aka drone ah)
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  - My name is Shri, and online, I often go by the handle of @drone.ah (or some variant of it).
+  - I am many things and this site captures in words, some of the things that may be capturable in words.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://yous.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://drone-ah.com" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 timezone: UTC
 
