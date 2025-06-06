@@ -11,7 +11,9 @@ tags:
   - quadtree
   - procedural generation
 meta:
-redirect_from: /s/tlog2
+redirect_from:
+  - /s/tlog2
+  - /2025/05/08/asteroid-field/
 ---
 
 In this post, I am going to cover procedural asteroid field generation. At a
