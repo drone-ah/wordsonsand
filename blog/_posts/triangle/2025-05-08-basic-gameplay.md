@@ -52,7 +52,8 @@ wrapped around. I needed to expand this to:
   only checks full circle collision)
 - Figure out how to handle asteroids moving out of the screen
 
-The above will be covered in a bit more depth in the next devlog.
+The above will be covered in a bit more depth in the
+[next devlog](/2025/05/08/asteroid-field/).
 
 ## The Camera
 
@@ -129,7 +130,8 @@ though I didn't have some of the helper functions. I learned some math :)
 
 Initially, the update loop only handled asteroid collisions. I added bullets as
 a separate field in the update loop. It then checks each bullet with every
-asteroid in the active chunks (covered in devlog #2).
+asteroid in the active chunks (covered in
+[devlog #2](/2025/05/08/asteroid-field/)).
 
 If there is collision, the asteroid is split into two, moved apart a bit, and
 given opposite linear momentum. The bullet also takes "damage" at this point,
@@ -180,4 +182,4 @@ ironed out, but so far, it feels good :)
 
 - [Companion vlog for this post](https://youtu.be/F2ITT2-uKso)
 - [Prev: A lone triangle vs the universe](/2025/04/26/a-lonely-triangle/)
-- Next: Coming soon
+- [Next: Procedural Asteroid Field](/2025/05/10/asteroid-field/)
