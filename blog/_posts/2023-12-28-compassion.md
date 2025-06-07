@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Compassion
-date: 2023-12-28 10:35
+date: 2023-12-28 10:35 +00:00
 type: post
 published: true
 status: publish
