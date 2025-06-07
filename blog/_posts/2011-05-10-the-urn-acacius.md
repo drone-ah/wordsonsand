@@ -31,12 +31,12 @@ of the airship as well saddled with parachutes. I relax into the air, and time
 slows down to an absolute crawl. The wind whistles past my ears and I watch as
 they release their parachutes. I take a moment and turn around to face the
 ground for impact. I crash into the ground, and as I open my eyes, I see the
-dust slowly settle around me. I\'m surround by an army.
+dust slowly settle around me. I'm surround by an army.
 
 I briefly look up and spot the two parachutes landing close by. I look around
 and spot my target - he is amidst them all in a chariot, heading towards me. The
 two parachutes land in flanking positions amidst the army. I unsheathe my sword
-and can\'t help but smile.
+and can't help but smile.
 
 The soldiers come at me in swathes and I cut them down. I feel my sword enter
 the heart of one and the lungs of another. As I begin to feel myself get bored
@@ -47,10 +47,12 @@ chariot is but a stones throw away, I leap and land on one side of the chariot.
 My lieutenants are not here yet but I see that they have seen what I did and
 they do the same thing. I turn around and roar.
 
+<!-- more -->
+
 The soldiers around my leap up on to me and drag me to the floor. I use my sword
 to block the attacks and push back hard as I leap to my feet. I fight them off
-and it doesn\'t take long for my lieutenants to get to me. Once they distract
-the soldiers, I use some of the dead soldiers and the shoulders of some who are
+and it doesn't take long for my lieutenants to get to me. Once they distract the
+soldiers, I use some of the dead soldiers and the shoulders of some who are
 alive to help me leap on to the top of the chariot. My sword cuts through the
 top of and I use my hands to rip it apart and drop inside.
 
@@ -63,11 +65,11 @@ hear the screaming and fighting outside. As my fingers grasp the urn, I hear the
 whistling was was faint earlier rapidly get louder and turn into
 a shrieking whine.
 
-The next thing I know I\'m flying through the air riding a shock wave of epic
+The next thing I know I'm flying through the air riding a shock wave of epic
 proportions. I crash into the ground and I look around and see that my
 lieutenants have also landed nearby. Immortality is cool but it can be painful
 at times. I pick myself up and look behind to see that most of the army is
-decimated. In the air however, I spot airships - and they\'re not mine. They
+decimated. In the air however, I spot airships - and they're not mine. They
 glide low and drop soldiers to the ground and they amass like ants and they rush
 towards us.
 
@@ -79,4 +81,4 @@ For an instant, I felt the g-force spike as the air ship made an abrupt stop mid
 air and lifted off directly into the stratosphere.
 
 I pat them both on the shoulders, grab my flash and finish it off as I head to
-the cockpit\...
+the cockpit...

@@ -25,8 +25,10 @@ permalink: "/2011/06/21/register-attach-service-to-jmx/"
 Registering a Bean within JMX (at least in JBoss) is very straightforward. It
 requires an interface with attributes (getters and setters) and operations.
 
-` MBeanServer server = org.jboss.mx.util.MBeanServerLocator.locateJBoss();`\
-`ObjectName objectName = new ObjectName("jboss.cache:service=TcpCacheServer");`\
-`server.registerMBean(objectToAttach, objectName);`
+```java
+MBeanServer server = org.jboss.mx.util.MBeanServerLocator.locateJBoss();
+ObjectName objectName = new ObjectName("jboss.cache:service=TcpCacheServer");
+server.registerMBean(objectToAttach, objectName);
+```
 
 objectToAttach is an object with a JMX\'able interface.

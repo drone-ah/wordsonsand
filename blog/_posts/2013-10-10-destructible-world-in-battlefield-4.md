@@ -17,19 +17,6 @@ tags:
 meta:
   _publicize_pending: "1"
   oc_commit_id: http://drone-ah.com/2013/10/10/destructible-world-in-battlefield-4/1381401389
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'games':
-    {\"text\":\"Games\",\"slug\":\"games\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/7d40931d-c007-3957-9c76-a1eda7852a90/SocialTag/1\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Games\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'windows-games': {\"text\":\"Windows
-    games\",\"slug\":\"windows-games\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/7d40931d-c007-3957-9c76-a1eda7852a90/SocialTag/2\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Windows
-    games\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'the-elder-scrolls-v-skyrim': {\"text\":\"The Elder Scrolls V:
-    Skyrim\",\"slug\":\"the-elder-scrolls-v-skyrim\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/7d40931d-c007-3957-9c76-a1eda7852a90/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"The
-    Elder Scrolls V:
-    Skyrim\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'baldurs-gate': {\"text\":\"Baldur's
-    Gate\",\"slug\":\"baldurs-gate\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/7d40931d-c007-3957-9c76-a1eda7852a90/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Baldur's
-    Gate\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   _edit_last: "48492462"
   restapi_import_id: 591d994f7aad5
   original_post_id: "925"

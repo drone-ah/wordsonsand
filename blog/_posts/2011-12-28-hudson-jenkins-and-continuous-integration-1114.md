@@ -19,21 +19,6 @@ tags:
 meta:
   _publicize_pending: "1"
   _edit_last: "48492462"
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'pmd':
-    {\"text\":\"PMD\",\"slug\":\"pmd\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"PMD\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'continuous-integration': {\"text\":\"Continuous
-    integration\",\"slug\":\"continuous-integration\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Continuous
-    integration\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'subversion':
-    {\"text\":\"Subversion\",\"slug\":\"subversion\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Subversion\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'maven':
-    {\"text\":\"Maven\",\"slug\":\"maven\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/8\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Maven\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'apache-maven': {\"text\":\"Apache
-    Maven\",\"slug\":\"apache-maven\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/59e46864-1486-36bc-b85b-c7b186490dbd/SocialTag/9\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Apache
-    Maven\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'hudson':
-    {\"text\":\"Hudson\",\"slug\":\"hudson\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/pershash-1/07845f25-13cd-3937-8b42-24eea2bd187c\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/Person\",\"name\":\"Person\"},\"name\":\"Hudson\",\"rawRelevance\":0.389,\"normalizedRelevance\":0.389},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   oc_commit_id: http://drone-ah.com/2011/12/28/hudson-jenkins-and-continuous-integration-1114/1325083894
   restapi_import_id: 591d994f7aad5
   original_post_id: "754"
@@ -60,7 +45,7 @@ folder from my home directory to save it from downloading all the various jar
 files and included a settings.xml file with appropriate configurations.
 
 Hudson 2.2 uses maven 3 but I use maven 3 locally as well even though the
-projects pom files were built for maven 2. There doesn\'t seem to be any issues
+projects pom files were built for maven 2. There doesn't seem to be any issues
 with this setup.
 
 First step is to create a new job from the home page. This asks for which type a
@@ -76,12 +61,14 @@ update which I feel to be a bit cleaner.
 
 I chose to poll the scm every fifteen minutes
 
-\*/15 \* \* \* \*
+```cron
+*/15 * * * *
+```
 
 and saved.
 
 Running the build pulled the code out of svn and stopped there. This was because
-I didn\'t add a step to build / install it.
+I didn't add a step to build / install it.
 
 Go back into configure the job and add a maven 3 build step. This automatically
 selected the clean install goals. Save and build now and the project was checked

@@ -27,8 +27,8 @@ meta:
 permalink: "/2008/12/12/evil-linux/"
 ---
 
-::: entry I received an
-[interesting link](http://www.theinquirer.net/inquirer/news/965/1049965/school-teacher-bans-linux "School Teacher Bans Linux"){target="\_blank"}
+I received an
+[interesting link](http://www.theinquirer.net/inquirer/news/965/1049965/school-teacher-bans-linux "School Teacher Bans Linux")
 in my email this morning. The story (which thinks that sauce and source are the
 same thing btw)  covers a school in the United States that has banned the use of
 Linux because "anything that wasn't Windows was illegal and immoral."
@@ -100,4 +100,4 @@ are doing and help them think about what they are trying to do. Don't pretend or
 try to do their thinking for them. Thats their job.
 
 "Give a _man_ a _fish_; you have fed him for today. _Teach a man to fish_ ; and
-you have fed him for a lifetime" :::
+you have fed him for a lifetime"

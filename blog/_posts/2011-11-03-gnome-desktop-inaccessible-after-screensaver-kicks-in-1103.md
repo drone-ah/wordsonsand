@@ -17,17 +17,6 @@ tags:
 meta:
   _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2011/11/03/gnome-desktop-inaccessible-after-screensaver-kicks-in-1103/1320318677
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'gnome':
-    {\"text\":\"GNOME\",\"slug\":\"gnome\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/73728cc7-f8ba-3dc3-8f2e-7b09cc9aa3b9/SocialTag/5\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"GNOME\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'x-window-system': {\"text\":\"X Window
-    System\",\"slug\":\"x-window-system\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/73728cc7-f8ba-3dc3-8f2e-7b09cc9aa3b9/SocialTag/7\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"X
-    Window
-    System\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'workspace':
-    {\"text\":\"Workspace\",\"slug\":\"workspace\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/73728cc7-f8ba-3dc3-8f2e-7b09cc9aa3b9/SocialTag/8\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Workspace\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'ubuntu':
-    {\"text\":\"Ubuntu\",\"slug\":\"ubuntu\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/73728cc7-f8ba-3dc3-8f2e-7b09cc9aa3b9/SocialTag/9\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Ubuntu\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   restapi_import_id: 591d994f7aad5
   original_post_id: "698"
   _wp_old_slug: "698"
@@ -37,7 +26,7 @@ permalink: "/2011/11/03/gnome-desktop-inaccessible-after-screensaver-kicks-in-11
 ---
 
 Yesterday, I
-[mentioned a problem that I\'ve been having](http://drone-ah.com/2011/11/02/saving-your-workspace-window-configuration-in-linux-1102/ "Saving your workspace window configuration in Linux [1102]"){target="\_blank"}
+[mentioned a problem that I\'ve been having](http://drone-ah.com/2011/11/02/saving-your-workspace-window-configuration-in-linux-1102/ "Saving your workspace window configuration in Linux [1102]")
 with GNOME 3 on Ubuntu 11.10.
 
 Essentially what happens is that when I leave my desktop for a while, under
@@ -51,7 +40,11 @@ in.
 In the past, I would log into the terminal (Ctrl-Alt-F1 or any function key
 through to F5 or so) and
 
-    $ kill -9 -1
+```bash
+$ kill -9 -1
+```
+
+<!-- more -->
 
 This would of course kill all processes owned by me and is therefore unpleasant
 at best and have you losing a bunch of work at worst.
@@ -61,7 +54,9 @@ to check the status of the screensaver and killed just those processes. Happily,
 this gives me my desktop back. However, my gnome-shell had given up which I had
 to restart
 
-    $ gnome-shell --replace
+```bash
+$ gnome-shell --replace
+```
 
 Unfortunately, I did not get the windows into the original workspaces since
 everything just got dumped into the one workspace but it is better than having
@@ -70,4 +65,6 @@ to kill everything off.
 EDIT: I just realised that the screen saver of course no longer kicks in and I
 had to restart it
 
-    $ gnome-screensaver --no-daemon
+```bash
+$ gnome-screensaver --no-daemon
+```

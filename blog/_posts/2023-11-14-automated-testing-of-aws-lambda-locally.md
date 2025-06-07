@@ -12,7 +12,7 @@ tags:
   - golang
   - integration testing
   - pulumi
-  - Testing
+  - testing
 meta:
   _last_editor_used_jetpack: block-editor
   _publicize_job_id: "89358302619"
@@ -42,6 +42,8 @@ For the full end to end test, I then have a simple smoke test or two.
 
 The code samples are in golang(only because it happens to be my current language
 of choice), but the idea should be equally applicable in other languages.
+
+<!-- more -->
 
 # Assuming The Role {#assuming-the-role}
 

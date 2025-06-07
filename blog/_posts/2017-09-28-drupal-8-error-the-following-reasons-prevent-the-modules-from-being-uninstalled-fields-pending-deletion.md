@@ -23,10 +23,10 @@ permalink: "/2017/09/28/drupal-8-error-the-following-reasons-prevent-the-modules
 When you try and uninstall a module which has a field that you have used, it can
 throw the following error:
 
-\[code\]\
+```
 The following reasons prevent the modules from being uninstalled: Fields pending
 deletion\
-\[/code\]
+```
 
 This is an issue in both Drupal 7 and Drupal 8. This is due to the fact that
 drupal doesn\'t actually delete the data for the field when you delete the
@@ -35,9 +35,9 @@ times since you deleted the field, drupal won\'t let you uninstall the module.
 
 To force drupal to purge the data, you can run the following command
 
-\[code\]\
+```bash
 drush php-eval \'field_purge_batch(500);\'\
-\[/code\]
+```
 
 Increase 500 to a high enough number to wipe out the data. Afte this has
 completed, you should be able to uninstall the module

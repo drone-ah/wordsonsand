@@ -417,8 +417,8 @@ permalink: "/2018/03/26/wet-feet-lets-play-subnautica/"
 ---
 
 I started watching a
-[Let\'s play series on Subnautica](https://www.youtube.com/playlist?list=PLckQAgHLvx_Hm-Tmml-mR6BiXBNWCLTbz){target="\_blank"
-rel="noopener"} while I was doing
+[Let\'s play series on Subnautica](https://www.youtube.com/playlist?list=PLckQAgHLvx_Hm-Tmml-mR6BiXBNWCLTbz)
+while I was doing
 [my own series on Space Engineers](http://drone-ah.com/2018/03/19/lets-play-space-engineers-pilot-series/).
 I got so immersed in it that I stopped part way through and wanted to play the
 game by myself. It seems to have a gripping story and absolutely gorgeous views.
@@ -577,38 +577,38 @@ We head back to the 500m Degasi habitat, torpedoes armed and full of bravery.
 
 ### #23 - Enforcement Platform
 
- 
+
 
 I try and find the island which shot down the sunbeam again and this time, I
 succeed. Lots of exploration and finding lots of new things.
 
 ### #24 - Enforcement Platform pt 2
 
- 
+
 
 Offload all the loot and go back to the Enforcement Platform for more
 explorin\'. What is that alien device that needed an ion cube?
 
 ### #25 - What\... are\... you?
 
- 
+
 
 This episode is full of surprises.
 
 ### #26 - Knowing Me, Knowing Yu
 
- 
+
 
 We go looking for Yu\'s lifepod and find some treasures.
 
 ### #27 - Scanning Output
 
- 
+
 
 Set up a scanning output to try and find fragments a bit easier
 
 ### #28 - Scanning from Output
 
- 
+
 
 Use the new output to try and find fragments for blueprints

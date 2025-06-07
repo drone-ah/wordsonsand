@@ -18,16 +18,6 @@ meta:
   _publicize_pending: "1"
   _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2013/01/31/warn-missing-artifact-descriptor-for-xxx/1359664732
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'software':
-    {\"text\":\"Software\",\"slug\":\"software\",\"source\":{\"url\":\"http://d.opencalais.com/dochash-1/ebf6d992-f54f-3331-88fb-013e590b3001/SocialTag/1\",\"subjectURL\":null,\"type\":{\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\",\"_className\":\"ArtifactType\"},\"name\":\"Software\",\"makeMeATag\":true,\"importance\":1,\"_className\":\"SocialTag\",\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'apache-maven': {\"text\":\"Apache
-    Maven\",\"slug\":\"apache-maven\",\"source\":{\"url\":\"http://d.opencalais.com/dochash-1/ebf6d992-f54f-3331-88fb-013e590b3001/SocialTag/5\",\"subjectURL\":null,\"type\":{\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\",\"_className\":\"ArtifactType\"},\"name\":\"Apache
-    Maven\",\"makeMeATag\":true,\"importance\":1,\"_className\":\"SocialTag\",\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'maven':
-    {\"text\":\"Maven\",\"slug\":\"maven\",\"source\":{\"url\":\"http://d.opencalais.com/dochash-1/ebf6d992-f54f-3331-88fb-013e590b3001/SocialTag/7\",\"subjectURL\":null,\"type\":{\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\",\"_className\":\"ArtifactType\"},\"name\":\"Maven\",\"makeMeATag\":true,\"importance\":1,\"_className\":\"SocialTag\",\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'arquillian':
-    {\"text\":\"Arquillian\",\"slug\":\"arquillian\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   restapi_import_id: 591d994f7aad5
   original_post_id: "901"
   _wp_old_slug: "901"
@@ -38,7 +28,9 @@ permalink: "/2013/01/31/warn-missing-artifact-descriptor-for-xxx/"
 Working on an Arquillian test deployment which had some library changes
 recently, I ran into the following error.
 
-    WARN - Missing artifact descriptor for org.javassist:javassist:jar:3.16.1-GA
+```
+WARN - Missing artifact descriptor for org.javassist:javassist:jar:3.16.1-GA
+```
 
 The particular library was in the pom.xml dependency hierarchy but it was
 resolving to an earlier  version. Maven was switched to offline mode during the
@@ -62,4 +54,4 @@ However, the dependency resolution within the maven run through Arquillian
 considers a slightly different set of requirements and resolves to a later
 version of the lib which is not available.
 
- 
+

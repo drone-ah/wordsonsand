@@ -22,23 +22,25 @@ meta:
 permalink: "/2018/04/12/zfs-deleting-files-doesnt-free-up-space/"
 ---
 
-So I have a proxmox server on which I run a few VM\'s and the other day it
+So I have a proxmox server on which I run a few VMs and the other day it
 completely ran out of space. This was because of overprovisioning through thin
 volumes.
 
 After much head scratching and metaphorically banging my head against a wall,
 here are the things I learnt.
 
+<!-- more -->
+
 ## Empty Trash
 
 ### Local Trash
 
-Make sure that have emptied the trash on the VM\'s .Ubuntu has this issue and so
+Make sure that have emptied the trash on the VMs .Ubuntu has this issue and so
 might other distributions
 
 ### Network Trash
 
-If you have SAMBA enabled on your VM\'s make sure that the Recycle Bin is not
+If you have SAMBA enabled on your VMs make sure that the Recycle Bin is not
 enabled. I have openmediavault running on a VM and I had to go through and
 disable the Recycling Bin. Make sure that the Recycle bin is emptied. They are
 hidden folders in the root of your shares.
@@ -68,19 +70,19 @@ performance hit.
 
 To do the actual trim, run
 
-\[sourcecode language=\"csharp\"\]\
-\$ fstrim /\
-\[/sourcecode\]
+```bash
+$ fstrim
+```
 
 OR to run fstrim on all supported drives
 
-\[sourcecode language=\"bash\"\]\
-\$ fstrim -a\
-\[/sourcecode\]
+```bash
+$ fstrim -a
+```
 
 [Digital Ocean has a detailed post about setting TRIM and setting up a schedule etc.](https://www.digitalocean.com/community/tutorials/how-to-configure-periodic-trim-for-ssd-storage-on-linux-servers)
 
 ### Windows
 
-My deepest apologies! Also, I don\'t run Windows on any of my VM\'s so I have no
+My condolences! Also, I don't run Windows on any of my VM's so I have no
 experience with it.

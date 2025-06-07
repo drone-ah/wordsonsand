@@ -37,6 +37,8 @@ custom module, developed by one of the community members which did support
 pulumi (You might have to ask in the slack channel if you\'re interested), but
 they stopped maintaining it as they moved to the Pulumi Automation API.
 
+<!-- more -->
+
 I am using Automation API from the start, and configuring a \"deployer\" per
 product/project within the monorepo. The intention is for the deployer to be as
 smart as possible - eventually `up`-ing only the stacks that have changes since

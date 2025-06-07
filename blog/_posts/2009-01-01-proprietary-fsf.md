@@ -23,24 +23,6 @@ tags:
   - Technology
 meta:
   _publicize_pending: "1"
-  oc_metadata:
-    "{\t\tversion:1.0,\t\ttags: {'freedom':
-    {\t\t\ttext:'Freedom',\t\t\tslug:'freedom',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'fsf':
-    {\t\t\ttext:'FSF',\t\t\tslug:'fsf',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'gnu':
-    {\t\t\ttext:'GNU',\t\t\tslug:'gnu',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'gpl':
-    {\t\t\ttext:'GPL',\t\t\tslug:'gpl',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'gplv3':
-    {\t\t\ttext:'GPLv3',\t\t\tslug:'gplv3',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'lgpl':
-    {\t\t\ttext:'LGPL',\t\t\tslug:'lgpl',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'open-source':
-    {\t\t\ttext:'Open
-    Source',\t\t\tslug:'open-source',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'software-developers':
-    {\t\t\ttext:'software
-    developers',\t\t\tslug:'software-developers',\t\t\tsource:{\t\t\turl:'http://d.opencalais.com/genericHasher-1/53915970-e599-3269-9036-dadd14e5d068',\t\t\ttype:{\t\t\turl:'http://s.opencalais.com/1/type/em/e/IndustryTerm',\t\t\ticonURL:'',\t\t\tname:'IndustryTerm'\t\t},\t\t\tname:'software
-    developers',\t\t\tnInstances:1\t\t},\t\t\tbucketName:'current'\t\t},'technology':
-    {\t\t\ttext:'technology',\t\t\tslug:'technology',\t\t\tsource:{\t\t\turl:'http://d.opencalais.com/genericHasher-1/5a253e82-7004-3a68-8797-61b5b7eda895',\t\t\ttype:{\t\t\turl:'http://s.opencalais.com/1/type/em/e/IndustryTerm',\t\t\ticonURL:'',\t\t\tname:'IndustryTerm'\t\t},\t\t\tname:'technology',\t\t\tnInstances:1\t\t},\t\t\tbucketName:'current'\t\t},'software':
-    {\t\t\ttext:'software',\t\t\tslug:'software',\t\t\tsource:{\t\t\turl:'http://d.opencalais.com/genericHasher-1/30c49aa7-f102-3988-8215-2e76315c6ed3',\t\t\ttype:{\t\t\turl:'http://s.opencalais.com/1/type/em/e/IndustryTerm',\t\t\ticonURL:'',\t\t\tname:'IndustryTerm'\t\t},\t\t\tname:'software',\t\t\tnInstances:1\t\t},\t\t\tbucketName:'current'\t\t},'open-source-library':
-    {\t\t\ttext:'Open Source
-    library',\t\t\tslug:'open-source-library',\t\t\tsource:{\t\t\turl:'http://d.opencalais.com/genericHasher-1/08787c79-222c-356b-b892-12e7feb33809',\t\t\ttype:{\t\t\turl:'http://s.opencalais.com/1/type/em/e/Facility',\t\t\ticonURL:'',\t\t\tname:'Facility'\t\t},\t\t\tname:'Open
-    Source library',\t\t\tnInstances:1\t\t},\t\t\tbucketName:'current'\t\t}}\t}"
   oc_commit_id: http://drone-ah.com/2009/01/01/proprietary-fsf/1236796134
   _edit_last: "48492462"
   restapi_import_id: 591d994f7aad5
@@ -52,7 +34,7 @@ permalink: "/2009/01/01/proprietary-fsf/"
 
 I have always a big fan and proponent of the FSF and having recently been
 interested in researching for a project came across a document covering
-[Why you shouldn\'t use the Lesser GPL for your next library](http://www.gnu.org/licenses/why-not-lgpl.html "Why Not LGPL"){target="\_blank"}
+[Why you shouldn\'t use the Lesser GPL for your next library](http://www.gnu.org/licenses/why-not-lgpl.html "Why Not LGPL")
 
 What the document basically suggests is to limit what proprietary software
 developers can do by licensing libraries as GPL instead of LGPL.
@@ -65,6 +47,8 @@ a library in a proprietary product, that is removing an important freedom.
 This attitude is likely to alienate the \"commercial\" or proprietary developers
 further from FSF/GNU.
 
+<!-- more -->
+
 In fact, doing this is just not fair and not in line with how I view is the
 concept behind the FSF. The point is to write software / libraries and share
 that with the world so others may build upon what you have done. Stand on the
@@ -76,15 +60,13 @@ pick up a GPL software, build something on top, and sell it without source.
 However, if libraries are released under the GPL instead of LGPL, it means that
 I can not link against that library to write a non-GPL compatible application.
 
-The
-[GNU Website](http://www.gnu.org/ "The GNU Operating Sytem"){target="\_blank"}
-states
+The [GNU Website](http://www.gnu.org/ "The GNU Operating Sytem") states
 
 > \"Free software is a matter of the users\' freedom to run, copy, distribute,
 > study, change and improve\"
 
 Additionally, the
-[Quick Guide to GPLv3](http://www.gnu.org/licenses/quick-guide-gplv3.html "A Quick Guide To GPLv3"){target="\_blank"}
+[Quick Guide to GPLv3](http://www.gnu.org/licenses/quick-guide-gplv3.html "A Quick Guide To GPLv3")
 states that
 
 > Nobody should be restricted by the software they use. There are four freedoms

@@ -11,17 +11,10 @@ categories:
   - drupal
 tags:
   - drupal-entities
-  - PHP
+  - php
 meta:
   _publicize_pending: "1"
   _edit_last: "48492462"
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'php':
-    {\"text\":\"PHP\",\"slug\":\"php\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/1b06d5f3-b782-3c04-abe4-28797123ccb4/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"PHP\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'drupal':
-    {\"text\":\"drupal\",\"slug\":\"drupal\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'drupal-entities':
-    {\"text\":\"drupal-entities\",\"slug\":\"drupal-entities\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   _wpt_short_url: http://drone-ah.com/2014/04/17/drupal-entities-php-class-per-bundle/
   oc_commit_id: http://drone-ah.com/2014/04/17/drupal-entities-php-class-per-bundle/1397729891
   restapi_import_id: 591d994f7aad5
@@ -34,10 +27,9 @@ permalink: "/2014/04/17/drupal-entities-php-class-per-bundle/"
 If you would like a bit more polymorphism in your drupal entities, this might
 cheer you up :-D
 
-[I was looking for a way to have a class hierarchy that matched the bundle
-\"hierarchy\" of entities in drupal. Yes, they are all \"subclasses\" of ONE
-parent, but it is still useful to be able to have a class per
-bundle.]{style="font-size:13px;"}
+I was looking for a way to have a class hierarchy that matched the bundle
+"hierarchy" of entities in drupal. Yes, they are all "subclasses" of ONE parent,
+but it is still useful to be able to have a class per bundle.
 
 The
 [entity bundle plugin](https://drupal.org/project/entity_bundle_plugin "entity bundle plugin") does
@@ -49,8 +41,7 @@ some code) to implement it in a simpler fashion.
 
 Implement a custom controller and override the create and the query methods
 
- 
-
+```phg
     class MyEntityAPIController extends EntityAPIController {
       /**
        * Overrides EntityAPIController::query().
@@ -94,11 +85,11 @@ Implement a custom controller and override the create and the query methods
       }
 
     }
+```
 
 I can now define a PHP class for each bundle as follows in hook_entity_info
 
- 
-
+```php
       $entity['myentity'] = array(
         'label' => t('myentity'),
         'module' => 'mymodule',
@@ -120,7 +111,8 @@ I can now define a PHP class for each bundle as follows in hook_entity_info
             'entity class' => 'Bundle2Entity',
           ),
         ),
+```
 
-Don\'t forget to clear the cache and you should be able to get bundle specific
-classes instantiated. It will fall back to the \'entity class\' defined for the
-entity if the bundle \'entity class\' is not defined or cannot be found.
+Don't forget to clear the cache and you should be able to get bundle specific
+classes instantiated. It will fall back to the 'entity class' defined for the
+entity if the bundle 'entity class' is not defined or cannot be found.

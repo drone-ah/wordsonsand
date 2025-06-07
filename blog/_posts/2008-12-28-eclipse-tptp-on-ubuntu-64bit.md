@@ -37,12 +37,12 @@ everything just works. Yes, I run into problems with closed source software like
 Flash Player (recently resolved with flash player 10) and the Java Plugin but
 that is another story. I use Eclipse and wanted to do some performance analysis
 and benchmarking to find a bottleneck and installed the TPTP plugin; and ran
-into a problem. It just didn\'t work.
+into a problem. It just didn't work.
 
-To resolve it, I turned to google\... In this instance, it turned out to be a
+To resolve it, I turned to google... In this instance, it turned out to be a
 distraction and a red-herring. It lead me in the direction of installing
 libstdc++2.10-glibc2.2_2.95.4-27_i386.deb which was difficult at best since
-there was only a 32bit version of the package and that wasn\'t even in the
+there was only a 32bit version of the package and that wasn't even in the
 standard repository.
 
 In the end, digging deeper, I found that it simply missed the following shared
@@ -50,9 +50,11 @@ object libstdc++.so.5.
 
 All I had to do was install libstdc++5:
 
-> sudo aptitude install libstdc++5
+```bash
+sudo aptitude install libstdc++5
+```
 
-and it worked\... :-D
+and it worked... :-D
 
 Now, I think that ACServer which Eclipse uses to do TPTP should not link to an
-outdated library but that is another issue\...
+outdated library but that is another issue...

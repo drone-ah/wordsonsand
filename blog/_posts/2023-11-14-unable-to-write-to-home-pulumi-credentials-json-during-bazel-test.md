@@ -10,7 +10,7 @@ status: publish
 categories: []
 tags:
   - bazel
-  - Testing
+  - testing
 meta:
   _last_editor_used_jetpack: block-editor
   _publicize_job_id: "89357332809"
@@ -37,6 +37,8 @@ This restrictions results in this error
 ```
 error: open /home/<username>/.pulumi/credentials.json: read-only file system
 ```
+
+<!-- more -->
 
 # The Solution {#the-solution}
 

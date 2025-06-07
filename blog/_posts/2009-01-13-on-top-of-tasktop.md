@@ -28,11 +28,10 @@ permalink: "/2009/01/13/on-top-of-tasktop/"
 ---
 
 My post about
-[tracking time](http://drone-ah.com/2008/12/13/your-time/ "Your Time [words on sand]"){target="\_blank"}
-attracted the attention of
-[Tasktop](http://tasktop.com/ "Tasktop"){target="\_blank"}. While this had been
-mentioned to me before, I was **mistakenly** under the impression that this was
-a windows only app.
+[tracking time](http://drone-ah.com/2008/12/13/your-time/ "Your Time [words on sand]")
+attracted the attention of [Tasktop](http://tasktop.com/ "Tasktop"). While this
+had been mentioned to me before, I was **mistakenly** under the impression that
+this was a windows only app.
 
 I was pleased to find out that this was also available for linux. Great\... Lets
 try it out.
@@ -44,6 +43,8 @@ to register but it should be entirely my choice.
 I am more comfortable with registering before buying or for the use of a free
 piece of software. However, registering for a trial always irritates me. This
 was also the case when I wanted to trial InDesign / Illustrator the other day.
+
+<!-- more -->
 
 After registering, there was the irritating wait for the email to arrive. Now,
 this is irritating. When I want something, I want it **_NOW_**. I hate waiting.

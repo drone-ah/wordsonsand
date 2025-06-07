@@ -21,7 +21,7 @@ tags:
   - Hibernate
   - java
   - SuperCsv
-  - Testing
+  - testing
   - Testing Framework
   - TestNG
 meta:
@@ -41,38 +41,39 @@ specific funtionality with the domain model.
 Simple? NO! The main problem was the management of the data set. I had set up,
 in the past fairly interesting classes to test the functionality using
 reflection, and injecting the data from the classes themselves through the data
-provider mechanism of [TestNG](http://testng.org/d "TestNG"){target="\_blank"}.
-However, this was error prone and clunky at best. It also made dependency
-management of data quite cumbersome.
+provider mechanism of [TestNG](http://testng.org/d "TestNG"). However, this was
+error prone and clunky at best. It also made dependency management of data quite
+cumbersome.
 
 With a view to resolving this, I also looked at
-[DbUnit](http://dbunit.sourceforge.net/ "DbUnit"){target="\_blank"},
-[unitils](http://unitils.org/ "Unitils"){target="\_blank"} and
-[Ejb3Unit](http://ejb3unit.sourceforge.net/ "Ejb3Unit"){target="\_blank"}. They
-all did some things that I liked but lacked some functionality that was
-important.
+[DbUnit](http://dbunit.sourceforge.net/ "DbUnit"),
+[unitils](http://unitils.org/ "Unitils") and
+[Ejb3Unit](http://ejb3unit.sourceforge.net/ "Ejb3Unit"). They all did some
+things that I liked but lacked some functionality that was important.
+
+<!-- more -->
 
 This led me to write a simple testing infrastructure. The goal was
 straightforward.
 
 - I need to be able to define data in a CSV (actually it was seperated by the
-  pipe character \|, so PSV) based on entities.
+  pipe character |, so PSV) based on entities.
 - The framework should automatically persist the data (and fail on errors)
 - It should test that it can load all that data back
 - It should run as many automated tests on the DOM as possible.
 
 The framework uses the CSV files to read the data for each of the classes (using
 the excellent [SuperCsv](http://supercsv.sourceforge.net/ "SuperCsv") library).
-It needs an Id field for internal reference. As long as the id\'s match within
+It needs an Id field for internal reference. As long as the id's match within
 the CSV files for the relationships, it will be persisted correctly into the
-database even when the persisted id\'s are different.
+database even when the persisted id's are different.
 
 For example, I could have a Contact.csv with 5 records (ids 1 through 5) and a
 Company.csv with 3 records (ids 1 through 3).
 
 The Contact.csv records can map to the id specified in the Company.csv file and
 when the records get persisted, they will be associated correctly, even if the
-id\'s in the database end up being different.
+id's in the database end up being different.
 
 The framework also looks for the CSV file which has the same name as the class
 within the location defined within the configuration file. This means that as
@@ -80,22 +81,19 @@ long as the filename matches the class name, the data loading is automatic.
 
 For simple classes, the Test case is as simple as:
 
-> public class CompanyTest extends DOMTest\<Company\> {
+> public class CompanyTest extends DOMTest<Company> {
 >
-> public CompanyTest() {\
-> super(Company.class);\
-> }\
-> }
+> public CompanyTest() { super(Company.class); } }
 
 The system (with the help of testNG) is also easily flexible to define object
 model dependencies. Just override the persist method (which just calls the
-super.persist) and define the groups to be persist and \<object\>.persist
+super.persist) and define the groups to be persist and <object>.persist
 
 in this particular case, it would be
 
-> \@override
+> @override
 >
-> \@Test(groups={\"persist\", \"Company.persist\"}
+> @Test(groups={"persist", "Company.persist"}
 >
 > public void persist() {
 >
@@ -135,17 +133,17 @@ For the future, there are several additional features this framework needs:
 - Refactor the ManyToMany Relationship code to make it easier and simpler to
   test and pump data
 - See if we can ensure that additional tests which data is done within a
-  transaction and rolled back so that the database is left in the \"CSV
-  Imported\" state on completion of tests
+  transaction and rolled back so that the database is left in the "CSV Imported"
+  state on completion of tests
 - Easier Dependency management if possible
 
 This framework is still inside the walls of Kraya, but once the above issues are
 resolved and it is in a releasable state, it will be published into the open
 source community. If you are interested in getting a hold of it, email me and
-I\'ll provide you with the latest version.
+I'll provide you with the latest version.
 
 The easier and quicker it is to test, the more time we can spend on writing
-code\... :-) The higher the coverage of the tests, the more confident you can be
+code... :-) The higher the coverage of the tests, the more confident you can be
 of your final product.
 
-To more testing\...
+To more testing...

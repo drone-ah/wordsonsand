@@ -41,26 +41,26 @@ prime examples of this.
 
 On the other hands, we have highly functional websites with a wide range of
 features and functionality. The website might even be attractive but fails
-terribly in terms of usability.
-[sourceforge](http://www.sf.net "Sourceforge"){target="\_blank"} is a very good
-example of this. I used to use it a lot a few years ago but its usability has
-gotten worse in the last few years, not to mention the fact that it seems to
-have slowed to a crawl. I still use sourceforge now and again to look up pieces
-of software but I don\'t look forward to it.
+terribly in terms of usability. [sourceforge](http://www.sf.net "Sourceforge")
+is a very good example of this. I used to use it a lot a few years ago but its
+usability has gotten worse in the last few years, not to mention the fact that
+it seems to have slowed to a crawl. I still use sourceforge now and again to
+look up pieces of software but I don\'t look forward to it.
+
+<!-- more -->
 
 Then you have the rare gems, that are exceptionally usable and functional.
-[Google](http://www.google.co.uk "Google"){target="\_blank"} is an excellent
-example of this. Note however, that the design of google in minimal.
+[Google](http://www.google.co.uk "Google") is an excellent example of this. Note
+however, that the design of google in minimal.
 
 Having worked in the web for numerous years and having used more websites than I
 could possibly count, I strongly feel that the medium that is the web is heavily
 under-utilised.
 
-[Facebook](http://www.facebook.com "Facebook"){target="\_blank"} is a good
-example of some of the good things you can do with web. Things just feel a lot
-more natural. If you take the news feed, you can hover over an item to see the
-menu at the top right that lets you set your preferences for that particular
-item.
+[Facebook](http://www.facebook.com "Facebook") is a good example of some of the
+good things you can do with web. Things just feel a lot more natural. If you
+take the news feed, you can hover over an item to see the menu at the top right
+that lets you set your preferences for that particular item.
 
 Same with your wall, hover over an item on your wall, and you see a menu option,
 click on it and you get relevant options.

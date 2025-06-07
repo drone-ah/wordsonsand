@@ -29,17 +29,19 @@ a [BluePrints solution](https://answers.unrealengine.com/questions/34074/does-u
 
 The basic problem stems from the fact that
 
-> \"_SimpleMoveToLocation_ was never intended to be used in a network
-> environment. It\'s simple after all ;) Currently there\'s no dedicated engine
-> way of making player pawn follow a path. \" (from the same page)
+> "_SimpleMoveToLocation_ was never intended to be used in a network
+> environment. It's simple after all ;) Currently there's no dedicated engine
+> way of making player pawn follow a path. " (from the same page)
 
 To be able to get a working version of _SimpleMoveToLocation_, we need to do the
 following:
 
+<!-- more -->
+
 - Create a proxy player class (BP_WarriorProxy is BP solution)
 - Set the proxy class as the default player controller class
 - Move the camera to the proxy (Since the actual player class is on the server,
-  we can\'t put a camera on it to display on the client)
+  we can't put a camera on it to display on the client)
 
 The BP solution talks about four classes - our counterparts are as follows:
 
@@ -52,259 +54,225 @@ The BP solution talks about four classes - our counterparts are as follows:
 So, from a standard c++ top down project, the only class we need to add is the
 ADemoPlayerProxy - so go ahead and do that first.
 
-The first thing we\'ll do is rewire the ADemoGameMode class to initialise the
+The first thing we'll do is rewire the ADemoGameMode class to initialise the
 proxy class instead of the default MyCharacter Blueprint.
 
- 
+```c
+ADemoGameMode::ADemoGameMode(const class FPostConstructInitializeProperties&
+PCIP) : Super(PCIP)
+    {
+    // use our custom PlayerController class
+    PlayerControllerClass = ADemoPlayerController::StaticClass();
 
-\[code language=\"cpp\"\]\
-ADemoGameMode::ADemoGameMode(const class FPostConstructInitializeProperties&amp;
-PCIP) : Super(PCIP)\
-{\
-// use our custom PlayerController class\
-PlayerControllerClass = ADemoPlayerController::StaticClass();
+    // set default pawn class to our Blueprinted character /_ static
+    ConstructorHelpers::FClassFinder<apawn>
+    PlayerPawnBPClass(TEXT("/Game/Blueprints/MyCharacter"));
+    if (PlayerPawnBPClass.Class != NULL)
+    {
+        DefaultPawnClass = PlayerPawnBPClass.Class;
+    }
 
-// set default pawn class to our Blueprinted character\
-/\* static ConstructorHelpers::FClassFinder\<apawn\>
-PlayerPawnBPClass(TEXT(\"/Game/Blueprints/MyCharacter\"));\
-if (PlayerPawnBPClass.Class != NULL)\
-{\
-DefaultPawnClass = PlayerPawnBPClass.Class;\
-}\*/
-
-DefaultPawnClass = ADemoPlayerProxy::StaticClass(); }
-
-\[/code\]
-
- 
+    DefaultPawnClass = ADemoPlayerProxy::StaticClass();
+}
+```
 
 Our Player Proxy class declaration
 
-\[code language=\"cpp\"\]\
-/\* This class will work as a proxy on the client - tracking the movements of
-the\
-\* real Character on the server side and sending back controls. \*/\
-UCLASS() class Demo_API ADemoPlayerProxy : public APawn\
-{\
-GENERATED_UCLASS_BODY()\
-/\*\* Top down camera \*/\
-UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
-TSubobjectPtr\<class ucameracomponent=\"\"\> TopDownCameraComponent;
+```cpp
+/* This class will work as a proxy on the client - tracking
+   the movements of the real Character on the server side
+   and sending back controls. */
+UCLASS() class Demo_API ADemoPlayerProxy : public APawn
+{
+   GENERATED_UCLASS_BODY()
+        /** Top down camera */
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera) TSubobjectPtr<UCameraComponent> TopDownCameraComponent;
 
-/\*\* Camera boom positioning the camera above the character \*/\
-UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
-TSubobjectPtr\<class uspringarmcomponent=\"\"\> CameraBoom;
+        /* Camera boom positioning the camera above the character */
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
+    TSubobjectPtr<USpringArmComponent=""> CameraBoom;
 
-// Needed so we can pick up the class in the constructor and spawn it elsewhere\
-TSubclassOf\<aactor\> CharacterClass;
+    // Needed so we can pick up the class in the constructor and spawn it elsewhere
+    TSubclassOf<AActor> CharacterClass;
 
-// Pointer to the actual character. We replicate it so we know its location for
-the camera on the client\
-UPROPERTY(Replicated) ADemoCharacter\* Character;
+    // Pointer to the actual character. We replicate it so we know its
+    //location for the camera on the client
+    UPROPERTY(Replicated) ADemoCharacter* Character;
 
-// The AI Controller we will use to auto-navigate the player\
-AAIController\* PlayerAI;
+    // The AI Controller we will use to auto-navigate the player AAIController\*
+    PlayerAI;
 
-// We spawn the real player character and other such elements here\
-virtual void BeginPlay() override;
+    // We spawn the real player character and other such elements here virtual void
+    BeginPlay() override;
 
-// Use do keep this actor in sync with the real one\
-void Tick(float DeltaTime);
+    // Use do keep this actor in sync with the real one void Tick(float DeltaTime);
 
-// Used by the controller to get moving to work\
-void MoveToLocation(const ADemoPlayerController\* controller, const FVector&amp;
-vector);\
+    // Used by the controller to get moving to work void MoveToLocation(const
+    ADemoPlayerController* controller, const FVector& vector);
 };
-
-\[/code\]
+```
 
 and the definition:
 
-\[code language=\"cpp\"\]
+```cpp
+#include "Demo.h"
+#include "DemoCharacter.h"
+#include "AIController.h"
+#include "DemoPlayerProxy.h"
+#include "UnrealNetwork.h"
 
-#include \"Demo.h\"\
-#include \"DemoCharacter.h\"\
-#include \"AIController.h\"\
-#include \"DemoPlayerProxy.h\"\
-#include \"UnrealNetwork.h\"
+ADemoPlayerProxy::ADemoPlayerProxy(const class FPostConstructInitializeProperties& PCIP) : Super(PCIP)
+{
+    // Don't rotate character to camera direction
+    bUseControllerRotationPitch = false;
+    bUseControllerRotationYaw = false;
+    bUseControllerRotationRoll = false;
 
-ADemoPlayerProxy::ADemoPlayerProxy(const class
-FPostConstructInitializeProperties&amp; PCIP)\
-: Super(PCIP)\
-{\
-// Don\'t rotate character to camera direction\
-bUseControllerRotationPitch = false;\
-bUseControllerRotationYaw = false;\
-bUseControllerRotationRoll = false;
+    // It seems that without a RootComponent, we can't place the Actual Character easily
+    TSubobjectPtr<UCapsuleComponent> TouchCapsule = PCIP.CreateDefaultSubobject<ucapsulecomponent>(this, TEXT("dummy"));
+    TouchCapsule->InitCapsuleSize(1.0f, 1.0f);
+    TouchCapsule->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    TouchCapsule->SetCollisionResponseToAllChannels(ECR_Ignore);
+    RootComponent = TouchCapsule;
 
-// It seems that without a RootComponent, we can\'t place the Actual Character
-easily\
-TSubobjectPtr&lt;UCapsuleComponent&gt; TouchCapsule =
-PCIP.CreateDefaultSubobject\<ucapsulecomponent\>(this, TEXT(\"dummy\"));\
-TouchCapsule-&gt;InitCapsuleSize(1.0f, 1.0f);\
-TouchCapsule-&gt;SetCollisionEnabled(ECollisionEnabled::NoCollision);\
-TouchCapsule-&gt;SetCollisionResponseToAllChannels(ECR_Ignore);\
-RootComponent = TouchCapsule;
+    // Create a camera boom... CameraBoom =
+    PCIP.CreateDefaultSubobject<USpringArmComponent>(this, TEXT("CameraBoom"));
+    CameraBoom->AttachTo(RootComponent);
+    CameraBoom->bAbsoluteRotation = true; // Don't want arm to rotate when
+    character does CameraBoom->TargetArmLength = 800.f;
+    CameraBoom->RelativeRotation = FRotator(-60.f, 0.f, 0.f);
+    CameraBoom->bDoCollisionTest = false; // Don't want to pull camera in when it collides with level
 
-// Create a camera boom\...\
-CameraBoom = PCIP.CreateDefaultSubobject&lt;USpringArmComponent&gt;(this,
-TEXT(\"CameraBoom\"));\
-CameraBoom-&gt;AttachTo(RootComponent);\
-CameraBoom-&gt;bAbsoluteRotation = true; // Don\'t want arm to rotate when
-character does\
-CameraBoom-&gt;TargetArmLength = 800.f;\
-CameraBoom-&gt;RelativeRotation = FRotator(-60.f, 0.f, 0.f);\
-CameraBoom-&gt;bDoCollisionTest = false; // Don\'t want to pull camera in when
-it collides with level
+    // Create a camera...
+    TopDownCameraComponent = PCIP.CreateDefaultSubobject<UCameraComponent>(this, TEXT("TopDownCamera"));
+    TopDownCameraComponent->AttachTo(CameraBoom, USpringArmComponent::SocketName);
+    TopDownCameraComponent->bUseControllerViewRotation = false; // Camera does not rotate relative to arm
 
-// Create a camera\...\
-TopDownCameraComponent =
-PCIP.CreateDefaultSubobject&lt;UCameraComponent&gt;(this,
-TEXT(\"TopDownCamera\"));\
-TopDownCameraComponent-&gt;AttachTo(CameraBoom, USpringArmComponent::SocketName);\
-TopDownCameraComponent-&gt;bUseControllerViewRotation
-= false; // Camera does not rotate relative to arm
-
-if (Role == ROLE_Authority)\
-{\
-static ConstructorHelpers::FObjectFinder&lt;UClass&gt;
-PlayerPawnBPClass(TEXT(\"/Game/Blueprints/MyCharacter.MyCharacter_C\"));\
-CharacterClass = PlayerPawnBPClass.Object;\
-}
+    if (Role == ROLE_Authority)
+    {
+        static ConstructorHelpers::FObjectFinder<UClass> PlayerPawnBPClass(TEXT("/Game/Blueprints/MyCharacter.MyCharacter_C"));
+        CharacterClass = PlayerPawnBPClass.Object;
+    }
 
 }
 
-void ADemoPlayerProxy::BeginPlay()\
-{\
-Super::BeginPlay();\
-if (Role == ROLE_Authority)\
-{\
-// Get current location of the Player Proxy\
-FVector Location = GetActorLocation();\
-FRotator Rotation = GetActorRotation();
+void ADemoPlayerProxy::BeginPlay()
+{
+    Super::BeginPlay();
+    if (Role == ROLE_Authority)
+    {
+        // Get current location of the Player Proxy
+        FVector Location = GetActorLocation(); FRotator Rotation = GetActorRotation();
 
-FActorSpawnParameters SpawnParams;\
-SpawnParams.Owner = this;\
-SpawnParams.Instigator = Instigator;\
-SpawnParams.bNoCollisionFail = true;
+        FActorSpawnParameters SpawnParams;
+        SpawnParams.Owner = this;
+        SpawnParams.Instigator = Instigator;
+        SpawnParams.bNoCollisionFail = true;
 
-// Spawn the actual player character at the same location as the Proxy\
-Character = Cast&lt;ADemoCharacter&gt;(GetWorld()-&gt;SpawnActor(CharacterClass,
-&amp;Location, &amp;Rotation, SpawnParams));
+        // Spawn the actual player character at the same location as the Proxy
+        Character = Cast<ADemoCharacter>(GetWorld()->SpawnActor(CharacterClass, &Location, &Rotation, SpawnParams));
 
-// We use the PlayerAI to control the Player Character for Navigation\
-PlayerAI = GetWorld()-&gt;SpawnActor&lt;AAIController&gt;(GetActorLocation(),
-GetActorRotation());\
-PlayerAI-&gt;Possess(Character);\
-}
+        // We use the PlayerAI to control the Player Character for Navigation
+        PlayerAI = GetWorld()->SpawnActor<AAIController>(GetActorLocation(), GetActorRotation()); PlayerAI->Possess(Character);
+    }
 
 }
 
-void ADemoPlayerProxy::Tick(float DeltaTime)\
+void ADemoPlayerProxy::Tick(float DeltaTime) {
+
+    Super::Tick(DeltaTime);
+    if (Character)
+    {
+        // Keep the Proxy in sync with the real character
+        FTransform CharTransform = Character->GetTransform();
+        FTransform MyTransform = GetTransform();
+
+        FTransform Transform;
+        Transform.LerpTranslationScale3D(CharTransform, MyTransform, ScalarRegister(0.5f));
+
+        SetActorTransform(Transform);
+
+} }
+
+void ADemoPlayerProxy::MoveToLocation(const ADemoPlayerController* controller, const FVector& DestLocation)
+{
+    /** Looks easy - doesn't it.
+
+    - What this does is to engage the AI to pathfind.
+    - The AI will then "route" the character correctly.
+    - The Proxy (and with it the camera), on each tick, moves to the location of the
+      real character
+    -
+    - And thus, we get the illusion of moving with the Player Character */
+
+      PlayerAI->MoveToLocation(DestLocation);
+}
+
+void ADemoPlayerProxy::GetLifetimeReplicatedProps(TArray< class FLifetimeProperty > & OutLifetimeProps) const
 {
 
-Super::Tick(DeltaTime);\
-if (Character)\
-{\
-// Keep the Proxy in sync with the real character\
-FTransform CharTransform = Character-&gt;GetTransform();\
-FTransform MyTransform = GetTransform();
+    Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-FTransform Transform;\
-Transform.LerpTranslationScale3D(CharTransform, MyTransform,
-ScalarRegister(0.5f));
-
-SetActorTransform(Transform);
-
-}\
+    // Replicate to Everyone
+    DOREPLIFETIME(ADemoPlayerProxy, Character);
 }
+```
 
-void ADemoPlayerProxy::MoveToLocation(const ADemoPlayerController\* controller,
-const FVector&amp; DestLocation)\
-{\
-/\*\* Looks easy - doesn\'t it.\
-\* What this does is to engage the AI to pathfind.\
-\* The AI will then \"route\" the character correctly.\
-\* The Proxy (and with it the camera), on each tick, moves to the location of
-the real character\
-\*\
-\* And thus, we get the illusion of moving with the Player Character\
-\*/\
-PlayerAI-&gt;MoveToLocation(DestLocation);\
-}
-
-void ADemoPlayerProxy::GetLifetimeReplicatedProps(TArray&lt; class
-FLifetimeProperty &gt; &amp; OutLifetimeProps) const\
-{
-
-Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-// Replicate to Everyone\
-DOREPLIFETIME(ADemoPlayerProxy, Character);\
-}\</ucapsulecomponent\>\
-\[/code\]
-
-We\'ll now cover changes to the Player Controller. We\'ll rewire it here to ask
+We'll now cover changes to the Player Controller. We'll rewire it here to ask
 the proxy to move, which will in turn ask the AIController to find a path and
-move the real player character. 
+move the real player character.
 
-This involves changing the *SetMoveDestination* method to call a server side
+This involves changing the `SetMoveDestination` method to call a server side
 method to move the character. When the character moves, the player Proxy will
 automatically mirror the movements.
 
 In the header file, add the following function
 
-\[code language=\"cpp\"\]
+```cpp
+/*_ Navigate player to the given world location (Server Version) */
+UFUNCTION(reliable, server, WithValidation) void
+ServerSetNewMoveDestination(const FVector DestLocation);
+```
 
-/\*\* Navigate player to the given world location (Server Version) \*/\
-UFUNCTION(reliable, server, WithValidation)\
-void ServerSetNewMoveDestination(const FVector DestLocation);
+Now let's implement it (DemoPlayerController.cpp):
 
-\[/code\]
-
-Now let\'s implement it (DemoPlayerController.cpp):
-
-\[code language=\"cpp\"\]
-
+```
 bool ADemoPlayerController::ServerSetNewMoveDestination_Validate(const FVector
-DestLocation)\
-{\
-return true;\
+DestLocation)
+{
+    return true;
 }
 
-/\* Actual implementation of the ServerSetMoveDestination method \*/\
+/* Actual implementation of the ServerSetMoveDestination method */
 void ADemoPlayerController::ServerSetNewMoveDestination_Implementation(const
-FVector DestLocation)\
-{\
-ADemoPlayerProxy\* Pawn = Cast\<ademoplayerproxy\>(GetPawn());\
-if (Pawn)\
-{\
-UNavigationSystem\* const NaDemoys = GetWorld()-&gt;GetNavigationSystem();\
-float const Distance = FVector::Dist(DestLocation, Pawn-&gt;GetActorLocation());
+FVector DestLocation)
+{
+    ADemoPlayerProxy* Pawn = Cast<ademoplayerproxy>(GetPawn());
+    if (Pawn)
+    {
+        UNavigationSystem* const NaDemoys = GetWorld()->GetNavigationSystem();
+        float const Distance = FVector::Dist(DestLocation, Pawn->GetActorLocation());
 
-// We need to issue move command only if far enough in order for walk animation
-to play correctly\
-if (NaDemoys &amp;&amp; (Distance &gt; 120.0f))\
-{\
-//NaDemoys-&gt;SimpleMoveToLocation(this, DestLocation);\
-Pawn-&gt;MoveToLocation(this, DestLocation);\
-}\
+        // We need to issue move command only if far enough in order for walk animation
+        to play correctly
+        if (NaDemoys && (Distance > 120.0f))
+        {
+            //NaDemoys->SimpleMoveToLocation(this, DestLocation);
+            Pawn->MoveToLocation(this, DestLocation);
+        }
+    }
+
 }
-
-}
-
-\[/code\]
+```
 
 And finally, the rewiring of the original method:
 
-\[code language=\"cpp\"\]\
-void ADemoPlayerController::SetNewMoveDestination(const FVector DestLocation)\
-{\
-ServerSetNewMoveDestination(DestLocation);\
-}\
-\[/code\]
-
- 
+```cpp
+void ADemoPlayerController::SetNewMoveDestination(const FVector DestLocation)
+{
+    ServerSetNewMoveDestination(DestLocation);
+}
+```
 
 Finally, in terms of the character class, the only change is really to remove
 the camera components that we moved to the Player Proxy which I shall leave to

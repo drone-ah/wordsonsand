@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Studio, C++ &amp; Google Test
+title: Visual Studio, C++ & Google Test
 date: 2021-08-09 16:22:08.000000000 +01:00
 type: post
 parent_id: "0"
@@ -10,7 +10,7 @@ status: publish
 categories: []
 tags:
   - c++
-  - google-test
+  - google test
   - visual studio
 meta:
   _last_editor_used_jetpack: block-editor
@@ -35,6 +35,8 @@ This, however, is not the only requirement. When testing, since we can have only
 one main function in the final executable, it also makes sense to put all of
 your code, apart from the main function for your application in another project.
 
+<!-- more -->
+
 In summary, you end up with three projects
 
 - Your Solution
@@ -46,19 +48,15 @@ In summary, you end up with three projects
 Once you have this set up, you will want to add a reference to the static
 library from both the executable project and the tests project
 
-<figure class="wp-block-image size-large">
-<a href="https://drone-ah.com/wp-content/uploads/2021/08/image.png"><img
-src="%7B%7Bsite.baseurl%7D%7D/assets/2021/08/image.png?w=622"
-class="wp-image-1255" /></a>
-</figure>
+![Add Reference menu](/assets/2021/08/image.png "Add Reference")
 
 Finally, you will also have to update the linker to link with the library
 project. I am sure there is a better way of doing this, but I did it by right
-clicking the project -\> Properties -\> Linker -\> General:
+clicking the `project -> Properties -> Linker -> General`:
 
-Additional Library Directories -\> and adding in something like
-\"`$(SolutionDir)<lib-folder>\$(IntermediateOutputPath)*.obj`\"
+`Additional Library Directories ->` and adding in something like
+"`$(SolutionDir)<lib-folder>\$(IntermediateOutputPath)*.obj`"
 
-You may have to add the same into Linker -\> Input -\> Additional Dependencies.
+You may have to add the same into `Linker -> Input -> Additional Dependencies`.
 
 Hope that helps

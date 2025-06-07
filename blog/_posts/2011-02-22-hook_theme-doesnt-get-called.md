@@ -10,6 +10,7 @@ status: publish
 categories:
   - drupal
 tags:
+  - php
   - hook_theme
   - theming
   - Web Development
@@ -17,15 +18,6 @@ meta:
   _publicize_pending: "1"
   _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2011/02/22/hook_theme-doesnt-get-called/1298406012
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'theming':
-    {\"text\":\"theming\",\"slug\":\"theming\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'hook_theme':
-    {\"text\":\"hook_theme\",\"slug\":\"hook_theme\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'drupal':
-    {\"text\":\"drupal\",\"slug\":\"drupal\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'web-development': {\"text\":\"Web
-    Development\",\"slug\":\"web-development\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   restapi_import_id: 591d994f7aad5
   original_post_id: "412"
   _wp_old_slug: "412"
@@ -38,27 +30,29 @@ implemented.
 
 As per the instructions, it was implemented as follows (to use a template)
 
-    /**
-     * Implementation of hook_theme().
-     */
-    function my_module_results_theme($existing, $type, $theme, $path) {
+```phg
+/**
+ * Implementation of hook_theme().
+ */
+function my_module_results_theme($existing, $type, $theme, $path) {
 
-        return array(
-            'my_block' => array(
-                'template' => 'my_block',
-                'arguments' => array(
-                    'var1' => NULL
-                )
+    return array(
+        'my_block' => array(
+            'template' => 'my_block',
+            'arguments' => array(
+                'var1' => NULL
             )
-        );
-    }
+        )
+    );
+}
+```
 
-However, when trying to apply the theme, it didn\'t work. I tried various things
+However, when trying to apply the theme, it didn't work. I tried various things
 and identified that the hook above was just not being called. A little bit of
 digging helped me discover that themes are cached. This happens even in the dev
 mode. To resolve this, go to
 
-Administer  -\> Performance -\> Clear Cached Data (right at the bottom of the
+`Administer  -> Performance -> Clear Cached Data` (right at the bottom of the
 page)
 
 and et voila my theme was now being utilised.

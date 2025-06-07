@@ -23,7 +23,7 @@ permalink: "/2015/12/15/ue4-source-control/"
 As with any software project, it is important to use some form of source control
 solution. For most software projects, there are a number of good solutions out
 there. However, in the world of game development, most of these are not viable
-since they won\'t handle binary files very well, and unreal engine (as most
+since they won't handle binary files very well, and unreal engine (as most
 games) will have a large amount of binary resources.
 
 Perforce is a good tool for small teams since it is free for teams with less
@@ -36,11 +36,11 @@ include the following folders into source control
 
 - Config
 - Content
-- Intermediate/ProjectFiles/\<projectname\>.vcxproj\* (the .vcxproj.user file
-  may not be relevant if there are multiple developers)
+- Intermediate/ProjectFiles/<projectname>.vcxproj\* (the .vcxproj.user file may
+  not be relevant if there are multiple developers)
 - Source
-- \<projectname\>.sln
-- \<projectname\>/.uproject
+- <projectname>.sln
+- <projectname>/.uproject
 
 I found it odd that the project file is in the intermediate folder since one
-wouldn\'t intuitively think to include it in source control
+wouldn't intuitively think to include it in source control

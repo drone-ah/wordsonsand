@@ -21,24 +21,6 @@ tags:
 meta:
   _publicize_pending: "1"
   _edit_last: "48492462"
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'java-enterprise-platform': {\"text\":\"Java
-    enterprise
-    platform\",\"slug\":\"java-enterprise-platform\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'load-testing': {\"text\":\"Load
-    testing\",\"slug\":\"load-testing\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'log4j':
-    {\"text\":\"Log4j\",\"slug\":\"log4j\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'plain-old-java-object': {\"text\":\"Plain Old Java
-    Object\",\"slug\":\"plain-old-java-object\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'software-components': {\"text\":\"Software
-    components\",\"slug\":\"software-components\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'web-services': {\"text\":\"web
-    services\",\"slug\":\"web-services\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'webxml':
-    {\"text\":\"web.xml\",\"slug\":\"webxml\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'xml':
-    {\"text\":\"XML\",\"slug\":\"xml\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   oc_commit_id: http://drone-ah.com/2011/11/05/jbossws-cxf-pojo-vs-stateless/1320507155
   restapi_import_id: 591d994f7aad5
   original_post_id: "702"
@@ -58,62 +40,72 @@ performance.
 
 In the process, I also discovered other differences.
 
+<!-- more -->
+
 Both the web services were built against this interface
 
-    @WebService
-    public interface WSTest {
+```java
+@WebService
+public interface WSTest {
 
-        @WebMethod
-        public String greetClient(String name);
+    @WebMethod
+    public String greetClient(String name);
 
-    }
+}
+```
 
 That is of course a simple enough interface.
 
 The EJB version of this is as follows:
 
-    @WebService(endpointInterface = "uk.co.kraya.wstest.WSTest")
-    @Stateless
-    @Remote(WSTest.class)
-    public class EJBWebTest implements WSTest {
+```java
+@WebService(endpointInterface = "uk.co.kraya.wstest.WSTest")
+@Stateless
+@Remote(WSTest.class)
+public class EJBWebTest implements WSTest {
 
-        public String greetClient(String name) {
-            return "EJB Says Hello to " + name;
-        }
-
+    public String greetClient(String name) {
+        return "EJB Says Hello to " + name;
     }
+
+}
+```
 
 Simple and straightforward enough and the POJO version is not that different
 
-    @WebService
-    public class PojoWebTest implements WSTest  {
+```java
+@WebService
+public class PojoWebTest implements WSTest  {
 
-        @WebMethod
-        public String greetClient(String name) {
-            return "Pojo Says Hello to " + name;
-        }
-
+    @WebMethod
+    public String greetClient(String name) {
+        return "Pojo Says Hello to " + name;
     }
+
+}
+```
 
 I also used the following web.xml. This may not be a necessary step any more.
 
-    <?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
-    <web-app>
+```xml
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<web-app>
 
-            <display-name>Archetype Created Web Application</display-name>
-            <servlet>
-                    <servlet-name>GreetingWebService</servlet-name>
-                    <servlet-class>uk.co.kraya.wstest.pojo.PojoWebTest</servlet-class>
-            </servlet>
-           <servlet-mapping>
-                    <servlet-name>GreetingWebService</servlet-name>
-                    <url-pattern>/*</url-pattern>
-            </servlet-mapping>
-    </web-app>
+        <display-name>Archetype Created Web Application</display-name>
+        <servlet>
+                <servlet-name>GreetingWebService</servlet-name>
+                <servlet-class>uk.co.kraya.wstest.pojo.PojoWebTest</servlet-class>
+        </servlet>
+       <servlet-mapping>
+                <servlet-name>GreetingWebService</servlet-name>
+                <url-pattern>/*</url-pattern>
+        </servlet-mapping>
+</web-app>
+```
 
 Now that was complete, there was the deployment to consider. I had assumed that
 I could just do one build, package it as an war and just deploy it but as it
-turns out, that didn\'t work. This only deployed the Pojo web service. To deploy
+turns out, that didn't work. This only deployed the Pojo web service. To deploy
 the EJB web service, I had to package it as an EJB (maven) and deploy a jar
 file.
 
@@ -135,9 +127,9 @@ context, it should already have been injected
 This was printed every time an EJB based web service was called.
 
 I
-[found more information about the EJBTHREE-1337 issue and a workaround for it](http://idevone.wordpress.com/2009/09/14/howto-suppress-ejbthree-1337-warning/ "HOWTO: Suppress EJBTHREE-1337 warning"){target="\_blank"}
+[found more information about the EJBTHREE-1337 issue and a workaround for it](http://idevone.wordpress.com/2009/09/14/howto-suppress-ejbthree-1337-warning/ "HOWTO: Suppress EJBTHREE-1337 warning")
 The workaround simply involves updating log4j to not log it which is good enough
-for me\... :-)
+for me... :-)
 
 As a final note, I am unsure as to how this would scale with complex web
 services that have multiple instantiated objects as part of it.  I have a sneaky

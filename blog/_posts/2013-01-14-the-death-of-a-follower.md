@@ -15,14 +15,6 @@ tags:
   - Skyrim
 meta:
   _edit_last: "48492462"
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'barbas':
-    {\"text\":\"Barbas\",\"slug\":\"barbas\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/c4c30edf-ed09-30d5-9316-e3329a1cdaf6/SocialTag/1\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Barbas\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'skyrim':
-    {\"text\":\"Skyrim\",\"slug\":\"skyrim\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/pershash-1/887cb9a1-cc89-318a-ba1d-cd80e1ee64b1\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/Person\",\"name\":\"Person\"},\"name\":\"Skyrim\",\"rawRelevance\":0.954,\"normalizedRelevance\":0.954},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'fort-snowhawk': {\"text\":\"Fort
-    Snowhawk\",\"slug\":\"fort-snowhawk\",\"source\":{\"_className\":\"Entity\",\"url\":\"http://d.opencalais.com/genericHasher-1/2d32c618-9f19-3c17-b8a7-361048228ade\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/em/e/Facility\",\"name\":\"Facility\"},\"name\":\"Fort
-    Snowhawk\",\"rawRelevance\":0.229,\"normalizedRelevance\":0.229},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   oc_commit_id: http://drone-ah.com/2013/01/14/the-death-of-a-follower/1358172820
   restapi_import_id: 591d994f7aad5
   original_post_id: "896"
@@ -52,6 +44,8 @@ re-acquaint myself with the world again.
 Once I got out of the cave, I re-prioritised. I had enough of traipsing around
 doing whatever I fancied. It was time to put an end to the civil war and of
 course to put a stop to all this dragon malarkey.
+
+<!-- more -->
 
 It was nice to have to followers - and one of them a pet though it did start to
 get very annoying when Barbas would just refuse to stop barking. He\'d bark at

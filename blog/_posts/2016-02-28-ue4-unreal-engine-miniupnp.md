@@ -37,9 +37,10 @@ probably need something like [cygwin](https://www.cygwin.com/) to for this
 script to work as it a [unix shell](https://en.wikipedia.org/wiki/Unix_shell) to
 work
 
-[Once the miniupnpcstrings.h has been generated,
-w]{style="line-height:20.8px;"}e also need to follow some instructions for
-Unreal Engine
+<!-- more -->
+
+Once the miniupnpcstrings.h has been generated, we also need to follow some
+instructions for Unreal Engine
 for [Linking Static Libraries Using The Build System](https://wiki.unrealengine.com/Linking_Static_Libraries_Using_The_Build_System),
 particularly the section on customizations for targeting UE4 modules.
 
@@ -47,10 +48,10 @@ From the project properties page, choose configuration manager. From
 the **Active Solutions Platform**, select new and type in or select x64 and save
 it. You have to do this for only one of the projects.
 
-Building of the static project will fail since it can\'t find the lib which is
-now in x64\\Release as opposed to just Release\\. The exe is not required for
+Building of the static project will fail since it can't find the lib which is
+now in x64Release as opposed to just Release. The exe is not required for
 integrating with Unreal Engine, but if you want to complete the build, just fix
-the path in Project Properties -\> Linker -\> Input.
+the path in Project `Properties -> Linker -> Input`.
 
 You should choose the release build instead of the debug build and you should
 now be able to build the solution from visual studio. It did pop up some

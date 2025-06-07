@@ -29,7 +29,7 @@ permalink: "/2011/04/25/java-object-size-in-memory/"
 
 Anyone who has worked with java in a high end application will be well aware of
 the double edged sword that is java garbage collection. When it works - it is
-awesome but when it doesn\'t - it is an absolute nightmare. We work on a
+awesome but when it doesn't - it is an absolute nightmare. We work on a
 ticketing system where it is imperative that the system is as near real-time as
 possible. The biggest issue that we have found is the running of memory in the
 JVM which causes a stop the world garbage collection. This then results in
@@ -47,6 +47,8 @@ absolutely imperative to a high performance system. It does however, come with a
 price. The cache needs to be managed carefully to ensure that balance between
 performance and memory requirements.
 
+<!-- more -->
+
 To this end, it was important to be able to identify what was taking up all the
 memory in the cache. Each object might only take a couple of hundred bytes, but
 with our second level cache set to store hundreds of thousands of items, this
@@ -55,7 +57,7 @@ could easily hike it up near a gigabyte of memory usage. This gets substantially
 worse with cache evictions and the adding of new items into the cache.
 
 The correct way to resolve this is to identify specific object types that
-\"overload\" the cache. i.e. items that have an large number of instances stored
+"overload" the cache. i.e. items that have an large number of instances stored
 in the cache. Identifying classes that store a large number of items is easy
 enough - we just traverse the cache and count up the number of items. However,
 there might be a class that stores a smaller number of items but take a sizeable

@@ -30,17 +30,19 @@ One of the requirements we have is to build a lambda module and then deploy it.
 The lambda module is a target being built by Bazel (golang, but shouldn\'t
 matter):
 
-```wp-block-code
+```go
 go_binary(
     name = "lambda_module",
     visibility = ["//visibility:public"],
 )
 ```
 
+<!-- more -->
+
 We then have the iac module, which should get the built version of the above
 module, so that it can then upload it into lambda
 
-```wp-block-code
+```go
 go_binary(
     name = "iac",
     args = [
@@ -64,7 +66,7 @@ correct location for the built binary. The reason this part is complex is to be
 able to support multiple operating systems. I should caveat that I have only got
 this working on Linux, but Mac/Win shouldn\'t be too different.
 
-```wp-block-code
+```go
 package main
 
 import (

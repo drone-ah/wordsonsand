@@ -21,30 +21,6 @@ meta:
   _publicize_pending: "1"
   _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2011/11/11/elder-scrolls-v-skyrim-1111/1320978723
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'role-playing-video-games':
-    {\"text\":\"Role-playing video
-    games\",\"slug\":\"role-playing-video-games\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/2bec77a5-3028-3951-b4c4-2fd8fb4feb0e/SocialTag/2\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Role-playing
-    video
-    games\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'games':
-    {\"text\":\"Games\",\"slug\":\"games\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/2bec77a5-3028-3951-b4c4-2fd8fb4feb0e/SocialTag/4\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"Games\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'the-elder-scrolls-iv-oblivion': {\"text\":\"The Elder Scrolls IV:
-    Oblivion\",\"slug\":\"the-elder-scrolls-iv-oblivion\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/2bec77a5-3028-3951-b4c4-2fd8fb4feb0e/SocialTag/6\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"The
-    Elder Scrolls IV:
-    Oblivion\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'the-elder-scrolls-ii-daggerfall': {\"text\":\"The Elder Scrolls II:
-    Daggerfall\",\"slug\":\"the-elder-scrolls-ii-daggerfall\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/2bec77a5-3028-3951-b4c4-2fd8fb4feb0e/SocialTag/7\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"The
-    Elder Scrolls II:
-    Daggerfall\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'the-elder-scrolls': {\"text\":\"The Elder
-    Scrolls\",\"slug\":\"the-elder-scrolls\",\"source\":{\"_className\":\"SocialTag\",\"url\":\"http://d.opencalais.com/dochash-1/2bec77a5-3028-3951-b4c4-2fd8fb4feb0e/SocialTag/8\",\"subjectURL\":null,\"type\":{\"_className\":\"ArtifactType\",\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\"},\"name\":\"The
-    Elder
-    Scrolls\",\"makeMeATag\":true,\"importance\":1,\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'skyrim':
-    {\"text\":\"Skyrim\",\"slug\":\"skyrim\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'fallout-3': {\"text\":\"Fallout
-    3\",\"slug\":\"fallout-3\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   restapi_import_id: 591d994f7aad5
   original_post_id: "727"
   _wp_old_slug: "727"
@@ -53,9 +29,9 @@ permalink: "/2011/11/11/elder-scrolls-v-skyrim-1111/"
 ---
 
 I realise that this stretches the concept of a technical blog post but you know
-what, it doesn\'t matter. There are several technical elements that are relevant
+what, it doesn't matter. There are several technical elements that are relevant
 but I am not necessarily going to focus on. I am going to do what I do best;
-ramble\...
+ramble...
 
 I waited till midnight and on the gong (as it were), I clicked install and
 instead of it saying that the game was not released yet (and I do wonder why
@@ -71,9 +47,11 @@ imagination.
 Elder Scrolls promised to do that and while Daggerfall failed spectacularly to
 deliver this, it set an expectation. I for one am glad that Bethesda continued
 on and eventually brought us Morrowind which I played for a while and loved but
-couldn\'t quite get the hang of.
+couldn't quite get the hang of.
 
-Then there was Oblivion which again, I played for a while but couldn\'t really
+<!-- more -->
+
+Then there was Oblivion which again, I played for a while but couldn't really
 get the hang of. In honesty, it is only in replaying it now over the last few
 weeks that I started to get the hang of it. The secret was to not
 over-specialise which was the mistake that I originally made. The other mistake
@@ -100,8 +78,8 @@ focus on levelling up as well.
 Along the invisibility spell, Oblivion was suddenly much easier to play. I also
 got the hang of regularly swapping between and using the various spells. Major
 Heal wounds instead of health potions became a habit particularly since my
-Magika restoration usually meant that Magika was still going up after I\'d
-killed all the enemies around the extra regen was just going to waste.
+Magika restoration usually meant that Magika was still going up after I'd killed
+all the enemies around the extra regen was just going to waste.
 
 In short, Oblivion is a complex game and you cannot over-specialise if you want
 to be able to succeed. As the prebuild Sorcerer class, I had an unusual
@@ -117,7 +95,7 @@ Fallout 3 based on the same Engine did a great job to kick it up a notch from
 Oblivion and Skyrim feels like it has really kicked it up a few notches.
 
 The graphics are absolutely stunning ( in fairness, I am seeing it with the the
-quality set to ultra high :-\] )and the game just flows so much better. The NPC
+quality set to ultra high :-] )and the game just flows so much better. The NPC
 interactions (in my limited 90 minutes or so gameplay) is practically sublime.
 
 Let me put it this way, stealing from a family made me actually feel guilty. If

@@ -11,7 +11,7 @@ categories: []
 tags:
   - bazel
   - golang
-  - Testing
+  - testing
 meta:
   _last_editor_used_jetpack: block-editor
   wordads_ufa: s:wpcom-ufa-v4:1699886196
@@ -20,8 +20,6 @@ meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:05"
 permalink: "/2023/11/13/separating-out-integration-tests-for-golang-in-bazel/"
 ---
-
-# Why {#why}
 
 There are many kinds of automated tests and two main kinds are integration tests
 and unit tests.
@@ -39,6 +37,8 @@ them in an automated fashion.
 What this does mean though, is that you want to be able to run only the unit
 tests or run the integration tests as well. You might also want to have smoke
 tests, which are run on your live production environment.
+
+<!-- more -->
 
 # How {#how}
 

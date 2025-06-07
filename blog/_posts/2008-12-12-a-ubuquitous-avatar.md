@@ -25,9 +25,9 @@ meta:
 permalink: "/2008/12/12/a-ubuquitous-avatar/"
 ---
 
-::: entry With around 6.5 billion people in the world, there is a good
-likelihood that if you think up something "original", somebody else in the world
-has already thought of it.
+With around 6.5 billion people in the world, there is a good likelihood that if
+you think up something "original", somebody else in the world has already
+thought of it.
 
 Now, take the internet with just under 1.5 billion people linked in. Now, if you
 think up something that would be cool or useful (especially if it pertains to
@@ -36,22 +36,20 @@ about it. And if you, like me just want to use it instead of creating it,
 somebody else has probably gone to the effort of making it work.
 
 For a trivial example, it would be cool if I could have just one bookmarks
-folder for my
-[Firefox](http://www.mozilla.com/firefox/ "Firefox Web Browser"){target="\_blank"}
+folder for my [Firefox](http://www.mozilla.com/firefox/ "Firefox Web Browser")
 and have this synchronised across all my computers (one in the office, the
 laptop, and the one at home). Do a quick google search and Bam - there it is...
-[Foxmarks](http://www.foxmarks.com/ "Foxmarks | Home"){target="\_blank"} and
-guess what - it does even more...
+[Foxmarks](http://www.foxmarks.com/ "Foxmarks | Home") and guess what - it does
+even more...
 
 Now, this has an interesting side effect. What about all cool things we could do
 if only I knew what to search for in the first place... I am subscribed to
 enough newsletters, websites and blogs (of course) to stay apprised of a lot of
 things that are happening, changing and being used in the world but that still
-does not tell you about all the cool things that could be done.\
-So, when I stumbled across this tiny (pun intended) little gem of a service
-called
-[Gravatar](http://www.gravatar.com/ "Gravatar - Globally Recognised Avatars"){target="\_blank"},
-I was intrigued and impressed. It is such a tiny, simple, straightforward little
+does not tell you about all the cool things that could be done. So, when I
+stumbled across this tiny (pun intended) little gem of a service called
+[Gravatar](http://www.gravatar.com/ "Gravatar - Globally Recognised Avatars"), I
+was intrigued and impressed. It is such a tiny, simple, straightforward little
 thing. It also does just one thing, but it does it well. Now what it does it do?
 
 It allows you to set a picture as your avatar against your email address and
@@ -67,4 +65,4 @@ actually how I stumbled across the service) and anyone else who uses the service
 will show up with their pre-defined avatar on my browser.
 
 All that needs to happen now is for Facebook to integrate with Gravatar so that
-when I change my profile picture, it will update my Gravatar... :::
+when I change my profile picture, it will update my Gravatar...

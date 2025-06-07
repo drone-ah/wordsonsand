@@ -33,6 +33,8 @@ Add to this the influence of your parents and family, how much
 [\*They F*\*\* You Up*](https://www.amazon.co.uk/They-You-Up-Survive-Family/dp/0747584788/ref=sr_1_1?crid=2IRWT20P9S4NM&keywords=they+f***+you+up&qid=1702031285&s=books&sprefix=they+f+you+up%2Cstripbooks%2C121&sr=1-1),
 and we are all in a pretty dire state right out of the gate.
 
+<!-- more -->
+
 After an incredibly bad burnout and several years of being unable to work, I
 started my therapeutic journey in mid-2016. It was only through this intense and
 challenging but healing and learning journey over several years that I was

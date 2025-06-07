@@ -456,13 +456,13 @@ Below are the episodes already uploaded to youtube.
 
 ### #01 - Hunting for Uranium
 
- 
 
- 
 
- 
 
- 
+
+
+
+
 
 https://youtu.be/GOqmD4lVTGM
 
@@ -489,15 +489,15 @@ This is also a very noob video, though I think there are fewer boring parts
 
 ### #03 - Furnishing
 
- 
 
- 
 
- 
 
- 
 
- 
+
+
+
+
+
 
 https://youtu.be/m5Enko3Sxxg
 
@@ -509,7 +509,7 @@ This is hopefully starting to get a little better.
 
 ### #04 - More Furnishings
 
- 
+
 
 https://youtu.be/oqEjvVypnlI
 
@@ -542,9 +542,9 @@ anything still surprises me. A lot more work still to do :)
 
 ### #07 - The Digger
 
- 
 
- 
+
+
 
 https://www.youtube.com/watch?v=xcBFEOzxyEQ
 
@@ -553,19 +553,18 @@ container snafu \'bug\' ;) This episode runs a little longer, but we end up with
 a much better version of the miner which I call the digger. This is a callback
 to [a game that was released in 1983](https://www.genomised.com/games/digger)
 which I loved growing up :) You can
-[try it online.](http://www.futrega.org/digger/){target="\_blank"
-rel="noopener"}
+[try it online.](http://www.futrega.org/digger/)
 
 I feel that the videos are definitely improving and look forward to hearing what
 you think :)
 
 ### #08 - Tim is in Charge
 
- 
 
- 
 
- 
+
+
+
 
 https://youtu.be/6NCFKtMxRnQ
 
@@ -582,7 +581,7 @@ Fix a couple of things on the base and start on expanding it.
 
 ### #10 - The Mole
 
- 
+
 
 Build a tiny mining ship using the Vertex Thrust 2 Script. This doesn\'t go
 exactly according to plan.
@@ -670,194 +669,194 @@ Wait, why does the ship try and drill through the asteroid sideways?
 
 ### #24 - Ant Mk II Chassis
 
- 
+
 
 We build the Chassis around most of the Ant, send it off mining and start
 working on airlocks.
 
 ### #25 - Rotary Airlock
 
- 
+
 
 Put in Airlocks and start on getting the base airtight.
 
 ### #26 - Airtight Refinery Room
 
- 
+
 
 We manage to get the refinery room airtight? What was the problem - something I
 had done right at the start of setting the room up.
 
 ### #27 - Fully Pressurised
 
- 
+
 
 Fix the autominers so they work across reloads. Get the base fully pressurised
 and move on to the next project.
 
 ### #28 - Holey Cave
 
- 
+
 
 What I wanted was to have the new section to be mostly just rock, or in this
 case, iron deposits. Do I manage to get it airtight?
 
 ### #29 - Unholey Cave
 
- 
+
 
 Working on making the way to the hanger airtight.
 
 ### #30 - Fixing Sim Speed
 
- 
+
 
 Space Engineers had been dragging for a few episodes. Fix that.
 
 ### #31 - Way to the Hangar
 
- 
+
 
 We make progress building our way towards the hangar.
 
 ### #32 - Building a Tunnel
 
- 
+
 
 Building the tunnel that\'ll take us to the Hangar.
 
 ### #33 - Finishing the Tunnels
 
- 
+
 
 We finish off the tunnel to the Hangar
 
 ### #34 - Under the Stairs
 
- 
+
 
 We start furnishing under the stairs ;)
 
 ### #35 - Starting the Hangar
 
- 
+
 
 We make our way to the hangar and start on it in earnest.
 
 ### #36 - Hangar Foundations pt 1
 
- 
+
 
 We start putting in the struts that will hold the hangar together
 
 ### #37 - Hangar Foundations pt 2
 
- 
+
 
 We continue our work in putting in the struts around the hangar
 
 ### #38 - Small Steel Tubes
 
- 
+
 
 While putting in the tubing around the hangar, we run out of small steel tubes.
 
 ### #39 - Automining Without Lag
 
- 
+
 
 Try and get the autominers working without lag.
 
 ### #40 - Faster Mining
 
- 
+
 
 Try and speed up automatic mining by attaching several more drills.
 
 ### #41 - Hangar Foundations pt 3
 
- 
+
 
 Putting down another set of foundations for the hangar
 
 ### #42 - Hangar Foundations pt 4
 
- 
+
 
 Piping up the hangar
 
 ### #43 - The Printer
 
- 
+
 
 Build a welding ship and get started on the capital ship.
 
 ### #44 - Everything is Broken :(
 
- 
+
 
 One by one fail by fail. At least, that\'s how it felt.
 
 ### #45 - Fixing Things
 
- 
+
 
 Try and fix everything that broke in the last episode.
 
 ### #46 - Making Space
 
- 
+
 
 Making more space inside the large grid ship to put things.
 
 ### #47 - Interior Design
 
- 
+
 
 So\... What should go inside this brand spanking new ship?
 
 ### #48 - No More Gold!
 
- 
+
 
 We run out of gold while building the jump drive.
 
 ### #49 - Detaching the Ship
 
- 
+
 
 We grind off the supporting beams. Will the ship crash and burn?
 
 ### #50 - The Big Five O
 
- 
+
 
 The fiftieth episode of this series. My first ever YouTube series and it has got
 to 50 episodes. Hurrah!
 
 ### #51 - Interior Redesign
 
- 
+
 
 I start off with the intention of finishing off the hanger, but end up grinding
 the whole hangar down.
 
 ### #52 - Rebuilding the Hangar
 
- 
+
 
 We get back on to the hangar and get most of it down
 
 ### #53 - The Right Wing
 
- 
+
 
 No, it\'s not a political episode, it\'s about building the wing on the right
 hand side of the ship.
 
 ### #54 - Out of Cobalt
 
- 
+
 
 Working on the right wing and I run out of metal grids, which as it turned out
 was because we were out of Cobalt.

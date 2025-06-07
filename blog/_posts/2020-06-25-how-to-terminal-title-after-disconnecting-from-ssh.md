@@ -28,7 +28,7 @@ Here is a simple solution, a combination of
 Add the following functions into your `~/.bashrc` It will push the current title
 and icon into a stack and pop it afterwards.
 
-```wp-block-syntaxhighlighter-code
+```bash
 function ssh()
 {
     # push current title and icon to stack
@@ -46,13 +46,13 @@ For security reasons, it is not possible to query the current title of the
 terminal. However, with the following command, you can push the current one on
 to a stack
 
-```wp-block-syntaxhighlighter-code
+```bash
 echo -ne '\e[22t'
 ```
 
 The title can then be set to anything, by ssh for example. You can then pop that
 back from the stack using
 
-```wp-block-syntaxhighlighter-code
+```bash
 echo -ne '\e[23t'
 ```

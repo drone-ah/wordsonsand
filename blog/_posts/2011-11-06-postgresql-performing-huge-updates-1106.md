@@ -21,23 +21,6 @@ meta:
   _publicize_pending: "1"
   _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2011/11/06/postgresql-performing-huge-updates-1106/1320583543
-  oc_metadata:
-    "{\t\tversion:'1.1',\t\ttags: {'data-management': {\"text\":\"Data
-    management\",\"slug\":\"data-management\",\"source\":{\"url\":\"http://d.opencalais.com/dochash-1/77707d4b-348f-361a-9036-ccb1474f3613/SocialTag/5\",\"subjectURL\":null,\"type\":{\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\",\"_className\":\"ArtifactType\"},\"name\":\"Data
-    management\",\"makeMeATag\":true,\"importance\":1,\"_className\":\"SocialTag\",\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'databases':
-    {\"text\":\"Databases\",\"slug\":\"databases\",\"source\":{\"url\":\"http://d.opencalais.com/dochash-1/77707d4b-348f-361a-9036-ccb1474f3613/SocialTag/7\",\"subjectURL\":null,\"type\":{\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\",\"_className\":\"ArtifactType\"},\"name\":\"Databases\",\"makeMeATag\":true,\"importance\":1,\"_className\":\"SocialTag\",\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'postgresql':
-    {\"text\":\"PostgreSQL\",\"slug\":\"postgresql\",\"source\":{\"url\":\"http://d.opencalais.com/dochash-1/77707d4b-348f-361a-9036-ccb1474f3613/SocialTag/8\",\"subjectURL\":null,\"type\":{\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\",\"_className\":\"ArtifactType\"},\"name\":\"PostgreSQL\",\"makeMeATag\":true,\"importance\":1,\"_className\":\"SocialTag\",\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'temporary-file': {\"text\":\"Temporary
-    file\",\"slug\":\"temporary-file\",\"source\":{\"url\":\"http://d.opencalais.com/dochash-1/77707d4b-348f-361a-9036-ccb1474f3613/SocialTag/9\",\"subjectURL\":null,\"type\":{\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\",\"_className\":\"ArtifactType\"},\"name\":\"Temporary
-    file\",\"makeMeATag\":true,\"importance\":1,\"_className\":\"SocialTag\",\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'sql':
-    {\"text\":\"SQL\",\"slug\":\"sql\",\"source\":{\"url\":\"http://d.opencalais.com/dochash-1/77707d4b-348f-361a-9036-ccb1474f3613/SocialTag/12\",\"subjectURL\":null,\"type\":{\"url\":\"http://s.opencalais.com/1/type/tag/SocialTag\",\"name\":\"SocialTag\",\"_className\":\"ArtifactType\"},\"name\":\"SQL\",\"makeMeATag\":true,\"importance\":1,\"_className\":\"SocialTag\",\"normalizedRelevance\":1},\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'memory-configuration': {\"text\":\"memory
-    configuration\",\"slug\":\"memory-configuration\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"},
-    'performance':
-    {\"text\":\"performance\",\"slug\":\"performance\",\"source\":null,\"bucketName\":\"current\",\"bucketPlacement\":\"auto\",\"_className\":\"Tag\"}}\t}"
   restapi_import_id: 591d994f7aad5
   original_post_id: "718"
   _wp_old_slug: "718"
@@ -62,6 +45,8 @@ past experience. We had a server running out of disk space and rapidly. We had
 narrowed it down into this folder. In cancelling the query referenced by the tmp
 files in here, we were able to free up literally gigabytes of disk space\...
 
+<!-- more -->
+
 We had found roughly half a gig of temporary files in here. This led us to
 investigate the configuration file.
 
@@ -83,7 +68,7 @@ According to the postgresql documentation
 > Hash tables are used in hash joins, hash-based aggregation, and hash-based
 > processing of `IN` subqueries.
 >
->  
+>
 
 This would tell us that the total memory usage with work_mem could be several
 times the value set here and setting it to half a gig would probably be a
@@ -100,17 +85,21 @@ Firstly, autovacuum will likely kick in several times to vacuum the table.
 You\'ll probably want to disable this for the duration of the update statement
 and run a vacuum afterwards.
 
+```sql
     --disable auto vacuum
     ALTER TABLE sometable SET (
       autovacuum_enabled = false, toast.autovacuum_enabled = false
     );
+```
 
 You can switch autovacuum back on after the update statement has completed
 
+```sql
     --enable auto vacuum
     ALTER TABLE sometable SET (
       autovacuum_enabled = true, toast.autovacuum_enabled = true
     );
+```
 
 A few other things you want to take a look at are the
 

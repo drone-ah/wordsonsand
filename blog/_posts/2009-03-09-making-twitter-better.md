@@ -19,17 +19,6 @@ tags:
 meta:
   _edit_last: "48492462"
   oc_commit_id: http://drone-ah.com/2009/03/09/making-twitter-better/1236791943
-  oc_metadata:
-    "{\t\tversion:1.0,\t\ttags: {'ideas':
-    {\t\t\ttext:'Ideas',\t\t\tslug:'ideas',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'performance':
-    {\t\t\ttext:'Performance',\t\t\tslug:'performance',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'reliability':
-    {\t\t\ttext:'Reliability',\t\t\tslug:'reliability',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'social-networking':
-    {\t\t\ttext:'Social
-    Networking',\t\t\tslug:'social-networking',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'twitter':
-    {\t\t\ttext:'Twitter',\t\t\tslug:'twitter',\t\t\tsource:null,\t\t\tbucketName:'current'\t\t},'facebook-applications':
-    {\t\t\ttext:'facebook
-    applications',\t\t\tslug:'facebook-applications',\t\t\tsource:{\t\t\turl:'http://d.opencalais.com/genericHasher-1/fa6801cc-fb10-3ce2-83d9-7407e9819ca7',\t\t\ttype:{\t\t\turl:'http://s.opencalais.com/1/type/em/e/IndustryTerm',\t\t\ticonURL:'',\t\t\tname:'IndustryTerm'\t\t},\t\t\tname:'facebook
-    applications',\t\t\tnInstances:1\t\t},\t\t\tbucketName:'current'\t\t}}\t}"
   restapi_import_id: 591d994f7aad5
   original_post_id: "189"
   _wp_old_slug: "189"
@@ -42,9 +31,9 @@ I think that twitter is a fantastic service and has a bright future. However,
 like a lot of new things, the question of whether it will flourish or perish is
 really all down how the growth is managed, planned and executed.
 
-I should point out that I don\'t know the people at twitter at all and is very
+I should point out that I don't know the people at twitter at all and is very
 much an outsiders opinion. I have been running a business for about nine years,
-and while it is of nowhere near the success of twitter, I\'ve definitely learned
+and while it is of nowhere near the success of twitter, I've definitely learned
 some hard lessons. I am not complaining - I am however, voicing some ideas on
 how things could be made better.
 
@@ -56,6 +45,8 @@ My gut instinct about Twitter is that the guys and gals are working hard to
 delivery one really good service really well. However, it is of a size now where
 service delivery should be happening in the background with little or no effort.
 
+<!-- more -->
+
 When megabus.com first launched and over the first couple of years, we spent a
 lot of time managing the hardware, software and processes till we got it right.
 It went through a dramatic re-architecture in 2005 and since then, the
@@ -66,7 +57,7 @@ opinion, requires twitter to a lot of things:
 
 **Reliability & Performance**
 
-I don\'t know the architecture / infrastructure of twitter but having used it
+I don't know the architecture / infrastructure of twitter but having used it
 fairly heavily over the last few days, have noticed intermittent outages. This
 has to be solved. Not just in the short term, but in the medium and long term.
 Twitter has to be a service that just works. All websites suffer glitches and
@@ -114,7 +105,7 @@ There are numerous blogs, articles and websites that cover this information but
 that means that someone has to spend enough effort getting out there and finding
 out.
 
-This can be difficult when you don\'t know what you are searching for as well.
+This can be difficult when you don't know what you are searching for as well.
 
 **Functional Integrations**
 

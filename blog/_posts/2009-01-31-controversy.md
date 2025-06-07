@@ -39,7 +39,7 @@ But then, so did some world governments, bringing open source software into
 their work places, successfully or unsuccessfully in the last few years instead
 of Microsoft.
 
-Someone recently suggested that we were anti-microsoft. I don\'t think that is
+Someone recently suggested that we were anti-microsoft. I don't think that is
 case. Microsoft has its place in a technology infrastructure. It is simply that
 its position is usually overrated or misplaced. As far as desktops for
 technically shy users are concerned, there is really no alternative but
@@ -51,6 +51,8 @@ dominates the desktop market.
 We support and use Linux. In fact, the majority of the desktops in the office
 run Linux (Ubuntu as it happens) but people who have a non-technical role use
 Windows. They could use Linux but Windows is better suited to their role.
+
+<!-- more -->
 
 This is not necessarily a cost-saving decision. Sure, we have saved thousands of
 pounds by sticking to Linux instead of using Windows but that is a co-incidence
@@ -105,4 +107,4 @@ different strengths and weaknesses. They have spent a lot of effort to converge
 and strengthen their weaknesses but not matter the amount of convergence, their
 core goals are still different that they will never truly be able to remove
 their weaknesses without giving up some of their strengths as well. One tool
-cannot be both a hammer and a sledgehammer\...
+cannot be both a hammer and a sledgehammer...

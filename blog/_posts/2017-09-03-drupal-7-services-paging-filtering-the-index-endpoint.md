@@ -27,78 +27,62 @@ items per page.
 
 You access the node index endpoint by going to
 
-\[code\]http://\<domain\>/\<endpoint-path/node.json (or the alias given to node
-in the resources section)\[/code\]
+`http://<domain>/<endpoint-pathnode.json` (or the alias given to node in the
+resources section)
 
 You can replace .json with with other extensions to get the same data in
 different formats
 
 To access the second page, you can use the page parameter
 
-\[code\]
-
+```
 node.json?page=2
-
 node.json?page=5
+```
 
-\[/code\]
+To change the number of items on each page, you need the "perform unlimited
+index" queries permission. You use the `pagesize` parameter to change it
 
-    To change the number of items on each page, you need the "perform unlimited index" queries permission. You use the pagesize parameter to change it
+```
+node.json?pagesize=100
+node.json?pagesize=50
+```
 
-\[code\]\
-node.json?pagesize=100\
-node.json?pagesize=50\
-\[/code\]
+To filter a field, you can use the parameters[property] where 'property' is the
+field on which you want to filter. It needs to be a field on the node table, and
+not a drupal field as it does not do the joins to pull in field data.
 
-To filter a field, you can use the parameters\[property\] where \'property\' is
-the field on which you want to filter. It needs to be a field on the node table,
-and not a drupal field as it does not do the joins to pull in field data.
-
-\[code\]
-
-node.json?parameters\[type\]=blog_post
-
-node.json?parameters\[type\]=article
-
-\[/code\]
+```
+node.json?parameters[type]=blog_post
+node.json?parameters[type]=article
+```
 
 To apply a different filter than of equality, you can use
-options\[parameters_op\]\[property\] where property is the same as above.
+options[parameters_op][property] where property is the same as above.
 
-\[code\]
-
-node.json?parameters\[created\]=1431065220&options\[parameters_op\]\[created\]=\<
-
-node.json?parameters\[changed\]=1431065220&options\[parameters_op\]\[changed\]=\>
-
-\[/code\]
+```
+node.json?parameters[created]=1431065220&options[parameters_op][created]=<
+node.json?parameters[changed]=1431065220&options[parameters_op][changed]=>
+```
 
 To return fewer fields, you can use fields and comma separate the properties.
 Once again, you can only specify properties on the entity (i.e fields on the
 base table)
 
-\[code\]
-
+```
 node.json?fields=nid,changed
-
 node.json?fields=nid,created,title
+```
 
-\[/code\]
+you can sort the results by using options`[property]=<asc|desc>`
 
-you can sort the results by using options\[orderby\]\[property\]=\<asc\|desc\>
-
-\[code\]
-
-node.json?options\[orderby\]\[nid\]=asc
-
-node.json?options\[orderby\]\[created\]=desc
-
-\[/code\]
+```
+node.json?options[orderby][nid]=asc
+node.json?options[orderby][created]=desc
+```
 
 You can also mix and match these separate options
 
-\[code\]
-
-node.json?page=10&pagesize=100&parameters\[type\]=blog_post&options\[parameters_op\]\[type\]=!=&fields=nid,changed
-
-\[/code\]\
+```
+node.json?page=10&pagesize=100&parameters[type]=blog_post&options[parameters_op][type]=!=&fields=nid,changed
+```

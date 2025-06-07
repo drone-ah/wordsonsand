@@ -12,7 +12,7 @@ categories:
 tags: []
 meta:
   _edit_last: "48492462"
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {}\t}"
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   oc_commit_id: http://drone-ah.com/2011/04/27/%e2%80%9clove%e2%80%9d-ta%e2%80%99oma/1303897083
   restapi_import_id: 591d994f7aad5
   original_post_id: "490"
@@ -22,8 +22,6 @@ meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:43"
 permalink: "/2011/04/27/love-taoma/"
 ---
-
-<div>
 
 The say tis better to have loved and lost than never to have loved at all. Those
 who say this clearly never lost, were clearly never betrayed but then, I have to
@@ -43,6 +41,8 @@ I lie back and look up at the all too familiar ceiling and I have stared at each
 of those specks of dirt, those marks for so many hours, trying to figure out
 what the hell happened. How did I miss it? How can she have betrayed me so?
 
+<!-- more -->
+
 I turn over and reach across to the pack of cigarettes lying about - its easy to
 spot it cos its bright red.
 
@@ -57,9 +57,9 @@ much in just the last couple of days. Fuck, this is an empty pack, oh it's ok,
 there's another pack, also empty. I crumple them up and throw them into the
 corner of the room, atop the pile of crumpled up empty cigarette packets.
 
-Ah, here's a pack - it only has a few left, but I only need one\...
+Ah, here's a pack - it only has a few left, but I only need one...
 
-I take one out, and barely drape it over my lips\... The lighter, where the hell
+I take one out, and barely drape it over my lips... The lighter, where the hell
 did I put the lighter - I pat myself down and notice I had left one in my
 trouser pocket. There benefits to having a number of lighters scattered all over
 the place, I think to myself.
@@ -84,8 +84,8 @@ should sit here for a few minutes and test them - will they keep beeping? will
 they just come in? or will they give up and go away?
 
 "Sir!", I hear through the door, the voice trembling ever so slightly.. Poor
-lad - he's trying atleast\... I realise there is another way to make this fun,
-so I stand myself up, walk across to the door and just before he is about to put
+lad - he's trying atleast... I realise there is another way to make this fun, so
+I stand myself up, walk across to the door and just before he is about to put
 the button again, I open the door and scream "What?"
 
 The boy nearly jumped out of his skin. I giggled in my head. The look of fear on
@@ -105,17 +105,15 @@ an envelope.
 As I open the envelope, the tracks softly notes:
 
 "Oh her eyes, her eyes\
-Make the stars look like they\'re not shining"
+Make the stars look like they're not shining"\
 
 In the envelope, there is a small folded piece of paper. I unfold it and it
 simply says.
 
-"We found it!"
+"We found it!"\
 
 The next thing I notice is the track screaming:\
 "When I see your face\
-There\'s not a thing that I would change\
-Cause you\'re amazing\
-Just the way you are"
-
-</div>
+There's not a thing that I would change\
+Cause you're amazing\
+Just the way you are"\

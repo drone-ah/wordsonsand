@@ -22,18 +22,20 @@ permalink: "/2016/07/26/setting-up-mahout-in-linux/"
 A few simple steps to get Mahout running in Linux. This is mostly about the bash
 script to get it to run easily
 
-You\'ll need to install Java first, then download and unpack the mahout
+You'll need to install Java first, then download and unpack the mahout
 distribution.
 
-I then placed it in /usr/local/mahout
+I then placed it in `/usr/local/mahout`
 
 To be able to run Mahout from the path, the following bash script was placed in
-/usr/local/bin
+`/usr/local/bin`
 
 Update the paths as relevant
 
-> #!/bin/bash\
-> export MAHOUT_JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/\
-> export MAHOUT_HOME=/usr/local/mahout\
-> export MAHOUT_HEAPSIZE=4000\
-> export MAHOUT_LOCAL=y
+```bash
+ #!/bin/bash
+ export MAHOUT_JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/
+export MAHOUT_HOME=/usr/local/mahout
+export MAHOUT_HEAPSIZE=4000
+export MAHOUT_LOCAL=y
+```

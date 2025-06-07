@@ -33,6 +33,8 @@ traditional leadership, what the rest of the group wants is importance mainly in
 the context of understanding how their wants and needs align with those of the
 ones in leadership.
 
+<!-- more -->
+
 Within this context, collaboration is often seen as something the team does for
 the purpose of achieving the goals or the vision set forth by leadership.
 

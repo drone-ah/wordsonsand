@@ -12,7 +12,7 @@ categories:
 tags: []
 meta:
   _edit_last: "48492462"
-  oc_metadata: "{\t\tversion:'1.1',\t\ttags: {}\t}"
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   oc_commit_id: http://drone-ah.com/2011/04/27/%e2%80%9clife%e2%80%9d-valentin/1303891264
   restapi_import_id: 591d994f7aad5
   original_post_id: "488"
@@ -22,12 +22,10 @@ meta:
 permalink: "/2011/04/27/life-valentin/"
 ---
 
-<div>
-
 We're only a few minutes away from our destination. What they expect us to find
 in the middle of the ocean is beyond me but that is not for me to worry about.
 I'm just doing as told. No more than a boat for hire - the money is good and it
-seems like a simple enough retrieval job. 
+seems like a simple enough retrieval job.
 
 I giggled to myself at their people stumbling about, trying to keep their
 stomach. They seem to have calmed down a bit over the last hour..
@@ -40,6 +38,8 @@ and confirming assumptions. This meant that there was probably only another 10 -
 The idea of diving to the bottom of one of the deepest surveyed points in the
 oceans filled me with excitement and anxiety. It would take me a two to three
 hours to get down there and it should be an uneventful descent.
+
+<!-- more -->
 
 I finish the rest of the sandwich and head over to the bathyscape. The crew, nod
 and wish me luck as they walk past carrying out their duties and I nod and
@@ -161,5 +161,3 @@ co-ordinated fashion towards the glass and hit it on all sides at the same time.
 The see the cracks on each side, and they slowly creep and start to join
 together. I am surrounded entirely by cracks. Then the first one, the one that I
 first saw, takes another, one final stab and I close my eyes.
-
-</div>
