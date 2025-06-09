@@ -38,3 +38,8 @@ I also set up notifications for items being added to the inventory.
 I wanted a better icon for the inventory button and found a reasonable one that
 was in SVG format, but [I had to convert it to TinyVG]({% post_url
 2025-06-07-svg-to-tvg %})
+
+Finally, I also added in a rudimentary tooltip for items - all function and
+barely form:
+
+![item popup showing its attributes, mainly construction rate](/assets/triangle/inventory/item-popup.png "construction rate of constructor")
