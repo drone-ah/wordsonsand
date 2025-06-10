@@ -1,0 +1,14 @@
+package(default_visibility = ["//visibility:public"])
+
+sh_binary(
+    name = "protoc",
+    srcs = ["protoc.sh"],
+)
+
+# https://github.com/protocolbuffers/protobuf/blob/b4b0e304be5a68de3d0ee1af9b286f958750f5e4/BUILD#L773
+proto_lang_toolchain(
+    name = "cc_toolchain",
+    command_line = "--cpp_out=$(OUT)",
+    runtime = ":protoc",
+    visibility = ["//visibility:public"],
+)

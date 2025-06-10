@@ -11,7 +11,7 @@ categories: []
 tags:
   - golang
   - pulumi
-  - pulumi-automation-api
+  - pulumi automation api
 meta:
   _last_editor_used_jetpack: block-editor
   wordads_ufa: s:wpcom-ufa-v4:1699447355
