@@ -152,3 +152,6 @@ build --proto_compiler=//third_party/tools:protoc
 You can find the sample code in
 [the wordsonsand repo](https://github.com/drone-ah/wordsonsand) which uses this
 exact solution to override `protoc` and get the `pulumi` sample code to work ;)
+
+PS: It also includes a fully migrated `MODULES.bazel` with support for `golang`.
+You will also want to check out `BUILD` in the root.
