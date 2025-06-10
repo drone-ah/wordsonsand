@@ -1,0 +1,1 @@
+build --proto_compiler=//third_party/tools:protoc
