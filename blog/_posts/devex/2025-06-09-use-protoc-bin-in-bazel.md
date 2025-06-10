@@ -146,3 +146,9 @@ your `.bazelrc`
 ```
 build --proto_compiler=//third_party/tools:protoc
 ```
+
+### Sample code
+
+You can find the sample code in
+[the wordsonsand repo](https://github.com/drone-ah/wordsonsand) which uses this
+exact solution to override `protoc` and get the `pulumi` sample code to work ;)
