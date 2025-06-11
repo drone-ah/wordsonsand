@@ -18,8 +18,8 @@
     "https://bcr.bazel.build/modules/aspect_bazel_lib/1.31.2/MODULE.bazel": "7bee702b4862612f29333590f4b658a5832d433d6f8e4395f090e8f4e85d442f",
     "https://bcr.bazel.build/modules/aspect_bazel_lib/1.38.0/MODULE.bazel": "6307fec451ba9962c1c969eb516ebfe1e46528f7fa92e1c9ac8646bef4cdaa3f",
     "https://bcr.bazel.build/modules/aspect_bazel_lib/1.42.2/MODULE.bazel": "2e0d8ab25c57a14f56ace1c8e881b69050417ff91b2fb7718dc00d201f3c3478",
-    "https://bcr.bazel.build/modules/aspect_bazel_lib/2.10.0/MODULE.bazel": "ae12288421b12faeb09bc4cfb3c05945ce66df5c55fca8a2f2f66ae9f21c7acb",
-    "https://bcr.bazel.build/modules/aspect_bazel_lib/2.10.0/source.json": "979ab73af044e9a107a598fe1492da0f3b9f885e953bd9d8bfd82c8da71879d5",
+    "https://bcr.bazel.build/modules/aspect_bazel_lib/2.14.0/MODULE.bazel": "2b31ffcc9bdc8295b2167e07a757dbbc9ac8906e7028e5170a3708cecaac119f",
+    "https://bcr.bazel.build/modules/aspect_bazel_lib/2.14.0/source.json": "0cf1826853b0bef8b5cd19c0610d717500f5521aa2b38b72b2ec302ac5e7526c",
     "https://bcr.bazel.build/modules/aspect_bazel_lib/2.7.7/MODULE.bazel": "491f8681205e31bb57892d67442ce448cda4f472a8e6b3dc062865e29a64f89c",
     "https://bcr.bazel.build/modules/aspect_rules_js/1.33.1/MODULE.bazel": "db3e7f16e471cf6827059d03af7c21859e7a0d2bc65429a3a11f005d46fc501b",
     "https://bcr.bazel.build/modules/aspect_rules_js/1.40.0/MODULE.bazel": "01a1014e95e6816b68ecee2584ae929c7d6a1b72e4333ab1ff2d2c6c30babdf1",
@@ -211,8 +211,8 @@
     "https://bcr.bazel.build/modules/rules_swift/1.16.0/MODULE.bazel": "4a09f199545a60d09895e8281362b1ff3bb08bbde69c6fc87aff5b92fcc916ca",
     "https://bcr.bazel.build/modules/rules_swift/2.1.1/MODULE.bazel": "494900a80f944fc7aa61500c2073d9729dff0b764f0e89b824eb746959bc1046",
     "https://bcr.bazel.build/modules/rules_swift/2.1.1/source.json": "40fc69dfaac64deddbb75bd99cdac55f4427d9ca0afbe408576a65428427a186",
-    "https://bcr.bazel.build/modules/rules_zig/0.7.0/MODULE.bazel": "9c9c60bc2a8377f9cf1719e1f998018fefa52fd73d016ff25792ea9578e83d2c",
-    "https://bcr.bazel.build/modules/rules_zig/0.7.0/source.json": "5ef9c14991cfa392ffad6bf42e2db3e57e8cb7966893fe4b8b5703269dbdc2c4",
+    "https://bcr.bazel.build/modules/rules_zig/0.8.0/MODULE.bazel": "c528b0621f6a525c22475ad4d7086c274ec2a80fa7456890ce2915733438763f",
+    "https://bcr.bazel.build/modules/rules_zig/0.8.0/source.json": "19423fe34661f359953436993b43e1d4b1ccaeb399cae27bfd7abc13e310d09a",
     "https://bcr.bazel.build/modules/stardoc/0.5.0/MODULE.bazel": "f9f1f46ba8d9c3362648eea571c6f9100680efc44913618811b58cc9c02cd678",
     "https://bcr.bazel.build/modules/stardoc/0.5.1/MODULE.bazel": "1a05d92974d0c122f5ccf09291442580317cdd859f07a8655f1db9a60374f9f8",
     "https://bcr.bazel.build/modules/stardoc/0.5.3/MODULE.bazel": "c7f6948dae6999bf0db32c1858ae345f112cacf98f174c7a8bb707e41b974f1c",
@@ -3173,65 +3173,65 @@
     },
     "@@rules_zig+//zig:extensions.bzl%zig": {
       "general": {
-        "bzlTransitiveDigest": "YGSQ4/DqWHwI6H3DNqFThTQnUE1oy4wdziu0zeJdwoU=",
-        "usagesDigest": "GjXLYXk1GHKtbo0lSeRMNSSm+BesOlZeblMoZWmWae4=",
+        "bzlTransitiveDigest": "+TxL0GJmH3xv5ANufCUE6u3BXUYYidffzENJcxF1UtE=",
+        "usagesDigest": "Y0zyWTMNyCsicYbVuGsunq7Hz82CBHhBnBdp1uBDCl4=",
         "recordedFileInputs": {
-          "@@rules_zig+//zig/private/versions.json": "53774a948085f6845598b9af18a5e1ebee1cce6aea9dd24ab7b900cbe1a48056"
+          "@@rules_zig+//zig/private/versions.json": "e2a52b2ab7ccf80495b59391b14c99eccd7d646d37a1f788f834179b236a3493"
         },
         "recordedDirentsInputs": {},
         "envVariables": {},
         "generatedRepoSpecs": {
-          "zig_0.13.0_aarch64-linux": {
+          "zig_0.14.0_aarch64-linux": {
             "repoRuleId": "@@rules_zig+//zig/private/repo:zig_repository.bzl%zig_repository",
             "attributes": {
-              "url": "https://ziglang.org/download/0.13.0/zig-linux-aarch64-0.13.0.tar.xz",
-              "sha256": "041ac42323837eb5624068acd8b00cd5777dac4cf91179e8dad7a7e90dd0c556",
-              "zig_version": "0.13.0",
+              "url": "https://ziglang.org/download/0.14.0/zig-linux-aarch64-0.14.0.tar.xz",
+              "sha256": "ab64e3ea277f6fc5f3d723dcd95d9ce1ab282c8ed0f431b4de880d30df891e4f",
+              "zig_version": "0.14.0",
               "platform": "aarch64-linux"
             }
           },
-          "zig_0.13.0_aarch64-macos": {
+          "zig_0.14.0_aarch64-macos": {
             "repoRuleId": "@@rules_zig+//zig/private/repo:zig_repository.bzl%zig_repository",
             "attributes": {
-              "url": "https://ziglang.org/download/0.13.0/zig-macos-aarch64-0.13.0.tar.xz",
-              "sha256": "46fae219656545dfaf4dce12fb4e8685cec5b51d721beee9389ab4194d43394c",
-              "zig_version": "0.13.0",
+              "url": "https://ziglang.org/download/0.14.0/zig-macos-aarch64-0.14.0.tar.xz",
+              "sha256": "b71e4b7c4b4be9953657877f7f9e6f7ee89114c716da7c070f4a238220e95d7e",
+              "zig_version": "0.14.0",
               "platform": "aarch64-macos"
             }
           },
-          "zig_0.13.0_aarch64-windows": {
+          "zig_0.14.0_aarch64-windows": {
             "repoRuleId": "@@rules_zig+//zig/private/repo:zig_repository.bzl%zig_repository",
             "attributes": {
-              "url": "https://ziglang.org/download/0.13.0/zig-windows-aarch64-0.13.0.zip",
-              "sha256": "95ff88427af7ba2b4f312f45d2377ce7a033e5e3c620c8caaa396a9aba20efda",
-              "zig_version": "0.13.0",
+              "url": "https://ziglang.org/download/0.14.0/zig-windows-aarch64-0.14.0.zip",
+              "sha256": "03e984383ebb8f85293557cfa9f48ee8698e7c400239570c9ff1aef3bffaf046",
+              "zig_version": "0.14.0",
               "platform": "aarch64-windows"
             }
           },
-          "zig_0.13.0_x86_64-linux": {
+          "zig_0.14.0_x86_64-linux": {
             "repoRuleId": "@@rules_zig+//zig/private/repo:zig_repository.bzl%zig_repository",
             "attributes": {
-              "url": "https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz",
-              "sha256": "d45312e61ebcc48032b77bc4cf7fd6915c11fa16e4aad116b66c9468211230ea",
-              "zig_version": "0.13.0",
+              "url": "https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz",
+              "sha256": "473ec26806133cf4d1918caf1a410f8403a13d979726a9045b421b685031a982",
+              "zig_version": "0.14.0",
               "platform": "x86_64-linux"
             }
           },
-          "zig_0.13.0_x86_64-macos": {
+          "zig_0.14.0_x86_64-macos": {
             "repoRuleId": "@@rules_zig+//zig/private/repo:zig_repository.bzl%zig_repository",
             "attributes": {
-              "url": "https://ziglang.org/download/0.13.0/zig-macos-x86_64-0.13.0.tar.xz",
-              "sha256": "8b06ed1091b2269b700b3b07f8e3be3b833000841bae5aa6a09b1a8b4773effd",
-              "zig_version": "0.13.0",
+              "url": "https://ziglang.org/download/0.14.0/zig-macos-x86_64-0.14.0.tar.xz",
+              "sha256": "685816166f21f0b8d6fc7aa6a36e91396dcd82ca6556dfbe3e329deffc01fec3",
+              "zig_version": "0.14.0",
               "platform": "x86_64-macos"
             }
           },
-          "zig_0.13.0_x86_64-windows": {
+          "zig_0.14.0_x86_64-windows": {
             "repoRuleId": "@@rules_zig+//zig/private/repo:zig_repository.bzl%zig_repository",
             "attributes": {
-              "url": "https://ziglang.org/download/0.13.0/zig-windows-x86_64-0.13.0.zip",
-              "sha256": "d859994725ef9402381e557c60bb57497215682e355204d754ee3df75ee3c158",
-              "zig_version": "0.13.0",
+              "url": "https://ziglang.org/download/0.14.0/zig-windows-x86_64-0.14.0.zip",
+              "sha256": "f53e5f9011ba20bbc3e0e6d0a9441b31eb227a97bac0e7d24172f1b8b27b4371",
+              "zig_version": "0.14.0",
               "platform": "x86_64-windows"
             }
           },
@@ -3239,28 +3239,28 @@
             "repoRuleId": "@@rules_zig+//zig/private/repo:toolchains_repo.bzl%toolchains_repo",
             "attributes": {
               "names": [
-                "zig_0.13.0_aarch64-linux",
-                "zig_0.13.0_aarch64-macos",
-                "zig_0.13.0_aarch64-windows",
-                "zig_0.13.0_x86_64-linux",
-                "zig_0.13.0_x86_64-macos",
-                "zig_0.13.0_x86_64-windows"
+                "zig_0.14.0_aarch64-linux",
+                "zig_0.14.0_aarch64-macos",
+                "zig_0.14.0_aarch64-windows",
+                "zig_0.14.0_x86_64-linux",
+                "zig_0.14.0_x86_64-macos",
+                "zig_0.14.0_x86_64-windows"
               ],
               "labels": [
-                "@zig_0.13.0_aarch64-linux//:zig_toolchain",
-                "@zig_0.13.0_aarch64-macos//:zig_toolchain",
-                "@zig_0.13.0_aarch64-windows//:zig_toolchain",
-                "@zig_0.13.0_x86_64-linux//:zig_toolchain",
-                "@zig_0.13.0_x86_64-macos//:zig_toolchain",
-                "@zig_0.13.0_x86_64-windows//:zig_toolchain"
+                "@zig_0.14.0_aarch64-linux//:zig_toolchain",
+                "@zig_0.14.0_aarch64-macos//:zig_toolchain",
+                "@zig_0.14.0_aarch64-windows//:zig_toolchain",
+                "@zig_0.14.0_x86_64-linux//:zig_toolchain",
+                "@zig_0.14.0_x86_64-macos//:zig_toolchain",
+                "@zig_0.14.0_x86_64-windows//:zig_toolchain"
               ],
               "zig_versions": [
-                "0.13.0",
-                "0.13.0",
-                "0.13.0",
-                "0.13.0",
-                "0.13.0",
-                "0.13.0"
+                "0.14.0",
+                "0.14.0",
+                "0.14.0",
+                "0.14.0",
+                "0.14.0",
+                "0.14.0"
               ],
               "exec_lengths": [
                 2,

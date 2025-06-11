@@ -2,45 +2,37 @@
 //! you are building an executable. If you are making a library, the convention
 //! is to delete this file and start with root.zig instead.
 
-pub fn main() !void {
-    // Prints to stderr (it's a shortcut based on `std.io.getStdErr()`)
-    std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
-
-    // stdout is for the actual output of your application, for example if you
-    // are implementing gzip, then only the compressed bytes should be sent to
-    // stdout, not any debugging messages.
-    const stdout_file = std.io.getStdOut().writer();
-    var bw = std.io.bufferedWriter(stdout_file);
-    const stdout = bw.writer();
-
-    try stdout.print("Run `zig build test` to run the tests.\n", .{});
-
-    try bw.flush(); // Don't forget to flush!
-}
-
-test "simple test" {
-    var list = std.ArrayList(i32).init(std.testing.allocator);
-    defer list.deinit(); // Try commenting this out and see if zig detects the memory leak!
-    try list.append(42);
-    try std.testing.expectEqual(@as(i32, 42), list.pop());
-}
-
-test "use other module" {
-    try std.testing.expectEqual(@as(i32, 150), lib.add(100, 50));
-}
-
-test "fuzz example" {
-    const Context = struct {
-        fn testOne(context: @This(), input: []const u8) anyerror!void {
-            _ = context;
-            // Try passing `--fuzz` to `zig build test` and see if it manages to fail this test case!
-            try std.testing.expect(!std.mem.eql(u8, "canyoufindme", input));
-        }
-    };
-    try std.testing.fuzz(Context{}, Context.testOne, .{});
-}
-
 const std = @import("std");
 
-/// This imports the separate module containing `root.zig`. Take a look in `build.zig` for details.
-const lib = @import("toml_with_defaults_lib");
+pub fn main() !void {
+    std.debug.print("all in the tests", .{});
+}
+
+const Controls = struct {
+    forward: []const u8 = "w",
+    craft: []const u8 = "q",
+    inventory: []const u8 = "e",
+};
+
+const User = struct {
+    controls: Controls = .{},
+};
+
+test "load partial toml config" {
+    const toml = @import("toml");
+    const allocator = std.testing.allocator;
+    var parser = toml.Parser(User).init(allocator);
+    defer parser.deinit();
+
+    const source =
+        \\[controls]
+        \\craft = "s"
+    ;
+    var result = try parser.parseString(source);
+    defer result.deinit();
+
+    const config = result.value;
+    const default = User{};
+    try std.testing.expectEqualStrings(default.controls.forward, config.controls.forward);
+    try std.testing.expectEqualStrings("s", config.controls.craft);
+}
