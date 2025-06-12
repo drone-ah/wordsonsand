@@ -15,8 +15,6 @@ tags:
   - bazel
   - golang
   - pulumi
-  - ci / cd
-  - github actions
   - oci
   - docker
   - iac
@@ -27,7 +25,13 @@ I am building a small [golang](/tags/golang) [webapp](/tags/webapp), and I want
 to push a [container](/tags/oci) up for it, which can eventually be used in
 Google Cloud Run, or elsewhere.
 
+In this post, I want to describe how I got it to push images build locally up to
+googles artifact repository. It will include creating the artifac repository
+using infrastructure as code
+
 The project is in a [monorepo](/tags/monorepo) that uses [bazel](/tags/bazel).
+
+## The executable to be packaged
 
 ```starlark
 # //products/example/cmd/server/BUILD.bazel
@@ -188,6 +192,73 @@ it together.
 With this, we can build a runnable unit, and then run it too. I've experimented
 with tagging specific runnables and then running them through the CI. I won't
 get that far in this post. My focus here is to get it working locally.
+
+### Enable Artifact Repository
+
+In pulumi, you can enable the artifact repository with:
+
+```go
+
+func enableArtifactRepository(ctx *pulumi.Context) error {
+	// Set your GCP project and region
+	projectID := "<projectId>"
+	region := "europe-west1"
+	repoName := "<repo-name>"
+
+	// Create Artifact Registry repository
+	repo, err := artifactregistry.NewRepository(ctx, repoName, &artifactregistry.RepositoryArgs{
+		Format:       pulumi.String("DOCKER"),
+		Location:     pulumi.String(region),
+		RepositoryId: pulumi.String(repoName),
+		Description:  pulumi.String("Repository for OCI container images"),
+		Project:      pulumi.String(projectID),
+	})
+	if err != nil {
+		return err
+	}
+
+	// Export the repository URL (used for pushes)
+	ctx.Export("repositoryURL", pulumi.Sprintf("%s-docker.pkg.dev/%s/%s", region, projectID, repo.Name))
+
+	return nil
+
+}
+
+```
+
+### Authenticating against the repo
+
+You need to authenticate against the repository so that the `oci_rule` can pick
+it up
+
+```bash
+gcloud auth configure-docker europe-west1-docker.pkg.dev
+```
+
+### Define the push target
+
+```starlark
+oci_push(
+    name = "push",
+    image = ":image",
+    remote_tags = [
+        "latest",
+        "1h",
+    ],
+    repository = "europe-west1-docker.pkg.dev/<projectId>/<repo-name>/<image-name>",
+)
+
+```
+
+## Pushing
+
+Once all the above is set up, you can then push the image with one of the
+following:
+
+```bash
+bazel run :push # if you in the directory
+bazel run //<target/path>:push # fron anywhere in the repo
+```
 
 ## Side note
 
