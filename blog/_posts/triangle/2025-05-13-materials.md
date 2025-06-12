@@ -131,7 +131,7 @@ enough and it works, for now.
 ## Other posts
 
 - [Companion vlog for this post](https://youtu.be/8ct9aWNj3Zk)
-- [Procedural
-  Asteroid Fields]({% post_url triangle/2025-05-10-asteroid-field %})
-- Next: Refineries, Constructors and other other factory types in a world
-  without conveyor belts.
+- [Prev: Procedural Asteroid Fields]({% post_url triangle/2025-05-10-asteroid-field %})
+- Next: [Refineries, Constructors and other other factory types in a
+  world without
+  conveyor belts.]({% post_url triangle/2025-05-20-crafting-machines %})
