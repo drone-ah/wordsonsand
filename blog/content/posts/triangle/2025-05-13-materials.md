@@ -49,6 +49,8 @@ At some point, they could also be optimised to only update if they are on
 screen. Assuming the player will pick up most of them, this may not be
 necessary.
 
+<!-- more -->
+
 ## Pickup
 
 I also "installed an attractor" on the ship such that if it gets close enough to
@@ -106,7 +108,7 @@ they have a large amount of higher tier items in the inventory. I figure let's
 wait until we have some playtesting before we worry about it. The system
 currently only drops one material and it can be refined automatically.
 
-### Refining
+### Refining {#refining}
 
 All materials and items will have a tier, starting with iron at 1. To be able to
 smelt a material, you'll need a smelter at a minimum of that tier. For example
