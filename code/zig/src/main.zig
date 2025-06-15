@@ -5,4 +5,7 @@
 test "all" {
     const toml_with_defaults = @import("toml_with_defaults.zig");
     _ = toml_with_defaults;
+
+    const load_save_config = @import("load_save_config.zig");
+    _ = load_save_config;
 }
