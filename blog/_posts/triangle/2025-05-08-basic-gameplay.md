@@ -10,6 +10,7 @@ categories:
 tags:
   - zig
   - raylib
+  - devlog
 meta:
 redirect_from: /s/tlog1
 ---

@@ -9,6 +9,7 @@ categories:
   - triangle
 tags:
   - crafting
+  - devlog
 meta:
 redirect_from: /s/tcrafting
 ---

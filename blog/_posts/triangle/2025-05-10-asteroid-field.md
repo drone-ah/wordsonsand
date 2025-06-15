@@ -10,6 +10,7 @@ categories:
 tags:
   - quadtree
   - procedural generation
+  - devlog
 meta:
 redirect_from:
   - /s/tlog2

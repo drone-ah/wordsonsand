@@ -8,6 +8,7 @@ status: publish
 categories:
   - triangle
 tags:
+  - devlog
 meta:
 ---
 
