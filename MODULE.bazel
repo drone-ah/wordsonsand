@@ -40,11 +40,13 @@ use_repo(zig, "zig_toolchains")
 
 zig_toml_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
+# Using my fork while waiting for serialization fix to be applied
+# https://github.com/sam701/zig-toml/pull/33 
 zig_toml_archive(
     name = "zig_toml",
-    urls = ["https://github.com/sam701/zig-toml/archive/451fc7fb5ad302d3d83aeda234a8d15e792ca585.tar.gz"],
-    strip_prefix = "zig-toml-451fc7fb5ad302d3d83aeda234a8d15e792ca585",
-	  sha256 = "e1f1db15fb700c5fe49d46aa05c30fe41f744b1283452f6f107a8bada34346fc",
+    urls = ["https://github.com/drone-ah/zig-toml/archive/refs/heads/main.zip"],
+    strip_prefix = "zig-toml-main",
+		sha256 = "1c8d41a1f3485b092856ccf313f4b93c80a91395d16ba5eea5c98e64ef58d6e8",
     build_file_content = """
 load("@rules_zig//zig:defs.bzl", "zig_module")
 zig_module(
