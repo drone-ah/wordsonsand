@@ -107,16 +107,15 @@ properties.
 
 - **1 cup unsweetened almond milk** (30 kcal)
 - **1 small avocado** (approx. 150g) (240 kcal)
-- **1/2 cup frozen blueberries** (42 kcal)
-- **100g frozen baby carrots** (35 kcal)
+- **1 cup frozen blueberries** (84 kcal)
 - **1 tbsp chia seeds** (60 kcal)
 - **1 tbsp ground flaxseed** (55 kcal)
-- **2 tbsp hulled hemp seeds** (approx. 110 kcal)
+- **1 tbsp hulled hemp seeds** (approx. 55 kcal)
 - **1 tsp spirulina powder** (20 kcal)
 - **1/2 tsp turmeric powder + pinch of black pepper** (5 kcal)
 - **1 tbsp extra virgin olive oil** (120 kcal)
 - **1 tbsp raw apple cider vinegar** (3 kcal)
-- **Handful of spinach** (7 kcal)
+- **1 cup spinach (approx. 80g)** (18 kcal)
 - **Optional: 1 date or 1 tsp honey (for sweetness)** (20 kcal)
 
 #### Instructions
