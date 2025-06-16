@@ -8,6 +8,7 @@ tags:
 - burnout
 - startup
 title: Starting Again
+slug: starting-again
 type: post
 ---
 

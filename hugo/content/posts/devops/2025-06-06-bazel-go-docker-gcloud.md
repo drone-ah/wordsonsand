@@ -16,6 +16,7 @@ tags:
 - docker
 - iac
 title: Build and push container image using bazel
+slug: bazel-go-docker-gcloud
 type: post
 ---
 

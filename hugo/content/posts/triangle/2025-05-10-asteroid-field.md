@@ -12,6 +12,7 @@ tags:
 - procedural generation
 - devlog
 title: Procedural Asteroid Field Generation
+slug: asteroid-field
 type: post
 ---
 

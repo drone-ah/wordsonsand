@@ -9,6 +9,7 @@ tags:
 - crafting
 - devlog
 title: Materials
+slug: materials
 type: post
 ---
 

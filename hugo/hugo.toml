@@ -74,7 +74,7 @@ expiryDate = ["expiryDate"]
 #          inline = [['\(', '\)']]
 
 [permalinks]
-posts = "/:year/:month/:day/:title/"
+posts = "/:year/:month/:day/:slug/"
 
 [params]
   dateform        = "Jan 2, 2006"

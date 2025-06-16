@@ -7,6 +7,7 @@ status: publish
 tags:
 - way-of-the-tortoise
 title: Journey or Destination
+slug: journey-or-destination
 type: post
 ---
 

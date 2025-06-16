@@ -9,6 +9,7 @@ tags:
 - collaboration
 - people-first
 title: Compassion
+slug: compassion
 type: post
 ---
 

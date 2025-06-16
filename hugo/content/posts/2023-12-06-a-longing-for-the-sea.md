@@ -9,6 +9,7 @@ tags:
 - collaboration
 - people-first
 title: A Longing for the Sea
+slug: a-longing-for-the-sea
 type: post
 ---
 

@@ -7,6 +7,7 @@ status: publish
 tags:
 - devlog
 title: A lone triangle vs the universe
+slug: a-lonely-triangle
 type: post
 ---
 

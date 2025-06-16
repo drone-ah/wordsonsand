@@ -12,6 +12,7 @@ tags:
 - pulumi automation api
 - protoc
 title: Use `protoc` bin instead of building from source in `bazel`
+slug: use-protoc-bin-in-bazel
 type: post
 ---
 

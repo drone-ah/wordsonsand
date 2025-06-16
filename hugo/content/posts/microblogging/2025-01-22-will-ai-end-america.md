@@ -7,6 +7,7 @@ status: publish
 tags:
 - ai
 title: Will A.I kill America?
+slug: will-ai-end-america
 type: post
 ---
 

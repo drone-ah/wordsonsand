@@ -9,6 +9,7 @@ tags:
 - crafting
 - devlog
 title: Crafting, Mods, and Machines
+slug: crafting-machines
 type: post
 ---
 

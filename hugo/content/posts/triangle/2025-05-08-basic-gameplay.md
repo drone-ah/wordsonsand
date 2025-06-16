@@ -10,6 +10,7 @@ tags:
 - raylib
 - devlog
 title: Basic Gameplay
+slug: basic-gameplay
 type: post
 ---
 

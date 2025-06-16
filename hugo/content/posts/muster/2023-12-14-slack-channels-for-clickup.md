@@ -6,6 +6,7 @@ meta: null
 status: publish
 tags: null
 title: Slack Channels for ClickUp Tickets
+slug: slack-channels-for-clickup
 type: post
 ---
 

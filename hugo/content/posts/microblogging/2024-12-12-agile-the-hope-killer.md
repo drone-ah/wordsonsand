@@ -9,6 +9,7 @@ tags:
 - way-of-the-tortoise
 - agile
 title: Agile, the hope killer!
+slug: agile-the-hope-killer
 type: post
 ---
 

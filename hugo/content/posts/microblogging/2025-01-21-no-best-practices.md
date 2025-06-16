@@ -8,6 +8,7 @@ tags:
 - good-practices
 - ways-of-working
 title: There are no best practices
+slug: no-best-practices
 type: post
 ---
 
