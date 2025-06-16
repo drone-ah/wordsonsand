@@ -1,7 +1,7 @@
 baseURL = "https://drone-ah.com"
-disablePathToLower = true
+disablePathToLower = false
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 theme = "hermit-v2"
 enableRobotsTXT = true ## set to true to enable inbuilt robots.txt
 
@@ -73,6 +73,8 @@ expiryDate = ["expiryDate"]
 #          block = [['\[', '\]'], ['$$', '$$']]
 #          inline = [['\(', '\)']]
 
+[permalinks]
+posts = "/:year/:month/:day/:title/"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -136,7 +138,6 @@ expiryDate = ["expiryDate"]
     url = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
 
 [menu]
-
   [[menu.main]]
     name = "Posts"
     url = "posts/"
