@@ -10,7 +10,6 @@ tags:
 - people-first
 title: A Longing for the Sea
 slug: a-longing-for-the-sea
-type: post
 ---
 
 One of my recently favourite quotes is:

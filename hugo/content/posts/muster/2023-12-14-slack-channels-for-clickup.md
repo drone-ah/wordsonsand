@@ -7,7 +7,6 @@ status: publish
 tags: null
 title: Slack Channels for ClickUp Tickets
 slug: slack-channels-for-clickup
-type: post
 ---
 
 I mentioned GiToLink in the [post about collaboration](2023/11/21/muster/) as

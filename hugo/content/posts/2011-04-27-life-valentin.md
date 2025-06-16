@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: “Life” - Valentin.
-type: post
 url: /2011/04/27/life-valentin/
 ---
 

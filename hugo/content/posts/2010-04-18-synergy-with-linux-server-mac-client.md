@@ -23,7 +23,6 @@ tags:
 - synergykm
 - Ubuntu
 title: Synergy with Linux Server &amp; Mac Client
-type: post
 url: /2010/04/18/synergy-with-linux-server-mac-client/
 ---
 

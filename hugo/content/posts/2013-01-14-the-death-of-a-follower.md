@@ -18,7 +18,6 @@ tags:
 - Fort Snowhawk
 - Skyrim
 title: The Death Of a Follower
-type: post
 url: /2013/01/14/the-death-of-a-follower/
 ---
 

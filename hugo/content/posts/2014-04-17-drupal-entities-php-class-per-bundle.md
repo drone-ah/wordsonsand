@@ -18,7 +18,6 @@ tags:
 - drupal-entities
 - php
 title: Drupal Entities - PHP Class per bundle
-type: post
 url: /2014/04/17/drupal-entities-php-class-per-bundle/
 ---
 

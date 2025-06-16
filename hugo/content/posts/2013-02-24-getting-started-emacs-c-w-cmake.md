@@ -22,7 +22,6 @@ tags:
 - GNU build system
 - Make
 title: 'Getting Started: Emacs &amp; C++ (w/ cmake) (On the fly syntax highlighting)'
-type: post
 url: /2013/02/24/getting-started-emacs-c-w-cmake/
 ---
 

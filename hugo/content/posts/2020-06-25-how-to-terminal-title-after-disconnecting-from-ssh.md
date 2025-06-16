@@ -12,7 +12,6 @@ status: publish
 tags:
 - bash
 title: How to fix terminal title after disconnecting from ssh
-type: post
 url: /2020/06/25/how-to-terminal-title-after-disconnecting-from-ssh/
 ---
 

@@ -22,7 +22,6 @@ tags:
 - 'The Elder Scrolls II: Daggerfall'
 - 'The Elder Scrolls IV: Oblivion'
 title: 'Elder Scrolls V: Skyrim [1111]'
-type: post
 url: /2011/11/11/elder-scrolls-v-skyrim-1111/
 ---
 

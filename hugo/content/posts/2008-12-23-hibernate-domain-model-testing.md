@@ -28,7 +28,6 @@ tags:
 - Testing Framework
 - TestNG
 title: Hibernate Domain Model Testing
-type: post
 url: /2008/12/23/hibernate-domain-model-testing/
 ---
 

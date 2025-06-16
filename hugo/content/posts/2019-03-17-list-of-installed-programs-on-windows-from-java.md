@@ -11,7 +11,6 @@ status: publish
 tags:
 - java
 title: List of Installed Programs on Windows from java
-type: post
 url: /2019/03/17/list-of-installed-programs-on-windows-from-java/
 ---
 

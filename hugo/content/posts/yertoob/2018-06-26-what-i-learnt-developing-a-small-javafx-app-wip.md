@@ -16,7 +16,6 @@ tags:
 - java
 - javafx
 title: What I learnt developing a small JavaFX App
-type: post
 url: /2018/06/26/what-i-learnt-developing-a-small-javafx-app-wip/
 ---
 

@@ -19,7 +19,6 @@ tags:
 - fantasy
 - short story
 title: The Urn - Acacius
-type: post
 url: /2011/05/10/the-urn-acacius/
 ---
 

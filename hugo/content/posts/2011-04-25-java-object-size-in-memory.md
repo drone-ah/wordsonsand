@@ -21,7 +21,6 @@ tags:
 - Java Object Size
 - JBoss application server
 title: Java Object Size In Memory
-type: post
 url: /2011/04/25/java-object-size-in-memory/
 ---
 

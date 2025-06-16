@@ -19,7 +19,6 @@ tags:
 - 'The Elder Scrolls V: Skyrim'
 - Windows games
 title: Destructible World in Battlefield 4
-type: post
 url: /2013/10/10/destructible-world-in-battlefield-4/
 ---
 

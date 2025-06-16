@@ -13,7 +13,6 @@ status: publish
 tags:
 - UE4
 title: '[UE4] Intellisense Errors and USTRUCT'
-type: post
 url: /2015/02/16/ue4-intellisense-errors-and-ustruct/
 ---
 

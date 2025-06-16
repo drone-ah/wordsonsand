@@ -17,7 +17,6 @@ tags:
 - pulumi
 - pulumi automation api
 title: Bazel + Pulumi Automation API. Deploying an inline stack along with Pulumi.[stack].yaml
-type: post
 url: /2023/11/07/bazel-pulumi-automation-api-deploying-an-inline-stack-along-with-pulumi-yaml/
 ---
 

@@ -278,7 +278,6 @@ tags:
 - Let's Play
 - subnautica
 title: Wet Feet | Let's Play Subnautica
-type: post
 url: /2018/03/26/wet-feet-lets-play-subnautica/
 ---
 

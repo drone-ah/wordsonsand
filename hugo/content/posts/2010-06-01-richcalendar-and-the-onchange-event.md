@@ -18,7 +18,6 @@ tags:
 - richfaces
 - seam
 title: rich:calendar and the onchange event
-type: post
 url: /2010/06/01/richcalendar-and-the-onchange-event/
 ---
 

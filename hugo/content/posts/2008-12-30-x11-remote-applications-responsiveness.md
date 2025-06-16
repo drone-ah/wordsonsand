@@ -18,7 +18,6 @@ tags:
 - ssh
 - X11
 title: X11 Remote Applications Responsiveness
-type: post
 url: /2008/12/30/x11-remote-applications-responsiveness/
 ---
 

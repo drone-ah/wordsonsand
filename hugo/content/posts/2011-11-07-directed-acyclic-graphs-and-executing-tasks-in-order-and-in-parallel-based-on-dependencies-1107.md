@@ -23,7 +23,6 @@ tags:
 - Task
 title: Directed Acyclic Graphs and Executing Tasks in Order (and in Parallel) Based
   on Dependencies [1107]
-type: post
 url: /2011/11/07/directed-acyclic-graphs-and-executing-tasks-in-order-and-in-parallel-based-on-dependencies-1107/
 ---
 

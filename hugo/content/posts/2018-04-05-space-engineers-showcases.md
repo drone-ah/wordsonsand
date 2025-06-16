@@ -15,7 +15,6 @@ tags:
 - showcases
 - Space Engineers
 title: Space Engineers Showcases
-type: post
 url: /2018/04/05/space-engineers-showcases/
 ---
 

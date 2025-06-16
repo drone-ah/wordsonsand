@@ -18,7 +18,6 @@ tags:
 - golang
 - pulumi
 title: Including a built artifact in another target (Bazel, golang)
-type: post
 url: /2023/11/01/including-a-built-artifact-in-another-target-bazel-golang/
 ---
 

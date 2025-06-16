@@ -17,7 +17,6 @@ tags:
 - Entertainment
 - 'The Elder Scrolls V: Skyrim'
 title: A Renegade in Skyrim (Part 1)
-type: post
 url: /2014/06/02/a-renegade-in-skyrim-part-1/
 ---
 

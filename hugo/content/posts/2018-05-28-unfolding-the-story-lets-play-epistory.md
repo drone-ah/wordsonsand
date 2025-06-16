@@ -12,7 +12,6 @@ password: ""
 status: publish
 tags: []
 title: Unfolding the Story | Let's Play Epistory
-type: post
 url: /2018/05/28/unfolding-the-story-lets-play-epistory/
 ---
 

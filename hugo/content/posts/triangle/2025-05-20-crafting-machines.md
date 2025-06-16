@@ -10,7 +10,6 @@ tags:
 - devlog
 title: Crafting, Mods, and Machines
 slug: crafting-machines
-type: post
 ---
 
 In this post, I want to explore the crafting system in triangle, especially how

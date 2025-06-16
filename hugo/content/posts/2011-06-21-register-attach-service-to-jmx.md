@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: Register / Attach Service to JMX
-type: post
 url: /2011/06/21/register-attach-service-to-jmx/
 ---
 

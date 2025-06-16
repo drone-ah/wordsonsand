@@ -21,7 +21,6 @@ tags:
 - PMD
 - Subversion
 title: Hudson / Jenkins and Continuous Integration [1114]
-type: post
 url: /2011/12/28/hudson-jenkins-and-continuous-integration-1114/
 ---
 

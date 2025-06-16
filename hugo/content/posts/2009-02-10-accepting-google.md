@@ -18,7 +18,6 @@ tags:
 - Google
 - Microsoft
 title: Accepting Google
-type: post
 url: /2009/02/10/accepting-google/
 ---
 

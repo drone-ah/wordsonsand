@@ -16,7 +16,6 @@ tags:
 - Technology
 - zfs
 title: ZFS Deleting files doesn't free up space
-type: post
 url: /2018/04/12/zfs-deleting-files-doesnt-free-up-space/
 ---
 

@@ -10,7 +10,6 @@ tags:
 - devlog
 title: Materials
 slug: materials
-type: post
 ---
 
 In triangle, everything should feel earned - so all items are crafted, not

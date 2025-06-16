@@ -20,7 +20,6 @@ tags:
 - Spring Framework
 - web services
 title: Using CXF Interceptors to do some magic around your web service calls [1105]
-type: post
 url: /2011/11/06/using-cxf-interceptors-to-do-some-magic-around-your-web-service-calls-1105/
 ---
 

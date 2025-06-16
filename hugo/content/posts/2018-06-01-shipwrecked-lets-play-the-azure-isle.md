@@ -12,7 +12,6 @@ password: ""
 status: publish
 tags: []
 title: Shipwrecked | Let's Play The Azure Isle
-type: post
 url: /2018/06/01/shipwrecked-lets-play-the-azure-isle/
 ---
 

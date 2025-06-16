@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: “Sleep” - Acacius
-type: post
 url: /2011/04/27/sleep-acacius/
 ---
 

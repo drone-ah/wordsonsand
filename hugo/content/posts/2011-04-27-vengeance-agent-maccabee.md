@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: '"Vengeance" - Agent Maccabee'
-type: post
 url: /2011/04/27/vengeance-agent-maccabee/
 ---
 

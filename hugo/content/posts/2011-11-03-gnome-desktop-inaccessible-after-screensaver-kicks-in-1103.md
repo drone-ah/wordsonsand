@@ -19,7 +19,6 @@ tags:
 - Workspace
 - X Window System
 title: Gnome Desktop Inaccessible After Screensaver Kicks in [1103]
-type: post
 url: /2011/11/03/gnome-desktop-inaccessible-after-screensaver-kicks-in-1103/
 ---
 

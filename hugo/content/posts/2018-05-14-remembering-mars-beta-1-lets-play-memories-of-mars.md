@@ -12,7 +12,6 @@ password: ""
 status: publish
 tags: []
 title: Remembering Mars Beta 1 | Let's Play Memories of Mars
-type: post
 url: /2018/05/14/remembering-mars-beta-1-lets-play-memories-of-mars/
 ---
 

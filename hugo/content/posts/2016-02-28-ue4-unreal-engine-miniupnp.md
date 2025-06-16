@@ -13,7 +13,6 @@ status: publish
 tags:
 - UE4
 title: '[UE4] Unreal Engine &amp; miniupnp'
-type: post
 url: /2016/02/28/ue4-unreal-engine-miniupnp/
 ---
 

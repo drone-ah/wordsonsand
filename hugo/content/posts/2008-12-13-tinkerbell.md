@@ -17,7 +17,6 @@ tags:
 - Kraya Mascot
 - Rehan Yousuf
 title: Tinkerbell
-type: post
 url: /2008/12/13/tinkerbell/
 ---
 

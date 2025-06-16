@@ -28,7 +28,6 @@ tags:
 - mining
 - Space Engineers
 title: Space Engineers Guides
-type: post
 url: /2018/04/13/space-engineers-guides/
 ---
 

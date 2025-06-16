@@ -13,7 +13,6 @@ status: publish
 tags:
 - mahout
 title: Setting up Mahout in Linux
-type: post
 url: /2016/07/26/setting-up-mahout-in-linux/
 ---
 

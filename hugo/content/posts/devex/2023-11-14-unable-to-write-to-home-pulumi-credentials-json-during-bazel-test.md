@@ -15,7 +15,6 @@ tags:
 - bazel
 - testing
 title: Unable to write to $HOME/.pulumi/credentials.json during bazel test
-type: post
 url: /2023/11/14/unable-to-write-to-home-pulumi-credentials-json-during-bazel-test/
 ---
 

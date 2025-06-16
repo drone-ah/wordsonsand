@@ -26,7 +26,6 @@ tags:
 - Robin Williams
 - The Big Lebowski
 title: mmmmmmm hhhhhh ddddd
-type: post
 url: /2009/03/17/mmmmmmm-hhhhhh-ddddd/
 ---
 

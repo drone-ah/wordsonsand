@@ -18,7 +18,6 @@ password: ""
 status: publish
 tags: []
 title: Hold on tight
-type: post
 url: /2012/04/20/hold-on-tight/
 ---
 

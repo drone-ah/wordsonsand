@@ -10,7 +10,6 @@ tags:
 - people-first
 title: Compassion
 slug: compassion
-type: post
 ---
 
 When you think about corporations and their culture, it's unlikely that

@@ -22,7 +22,6 @@ tags:
 - seam-security
 - seam3
 title: Getting started on seam-security, picketlink IDM and JPAIdentityStore
-type: post
 url: /2012/10/17/getting-started-on-seam-security-picketlink-idm-and-jpaidentitystore/
 ---
 

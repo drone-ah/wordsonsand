@@ -11,7 +11,6 @@ tags:
 - devlog
 title: Basic Gameplay
 slug: basic-gameplay
-type: post
 ---
 
 The first goal was to get it working as far as the coding challenge itself.

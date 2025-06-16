@@ -21,7 +21,6 @@ tags:
 - Social Media
 - Twitter
 title: Making Twitter Better
-type: post
 url: /2009/03/09/making-twitter-better/
 ---
 

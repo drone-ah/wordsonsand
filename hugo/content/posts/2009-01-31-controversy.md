@@ -21,7 +21,6 @@ tags:
 - PostgreSQL
 - Ubuntu
 title: Controversy
-type: post
 url: /2009/01/31/controversy/
 ---
 

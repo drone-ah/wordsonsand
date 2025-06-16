@@ -21,7 +21,6 @@ tags:
 - grep
 - search and replace
 title: Linux bulk search and replace
-type: post
 url: /2010/04/21/linux-bulk-search-and-replace/
 ---
 

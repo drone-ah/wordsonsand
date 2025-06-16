@@ -23,7 +23,6 @@ tags:
 - Microsoft Windows
 - Ubuntu
 title: Perfect Linux
-type: post
 url: /2009/12/15/perfect-linux/
 ---
 

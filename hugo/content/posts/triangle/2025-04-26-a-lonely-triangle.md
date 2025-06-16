@@ -8,7 +8,6 @@ tags:
 - devlog
 title: A lone triangle vs the universe
 slug: a-lonely-triangle
-type: post
 ---
 
 I've been unwell for a few months which has left me with a great deal of fatigue

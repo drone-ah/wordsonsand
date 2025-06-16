@@ -23,7 +23,6 @@ tags:
 - web.xml
 - XML
 title: JBossWS CXF - POJO vs Stateless [1104]
-type: post
 url: /2011/11/05/jbossws-cxf-pojo-vs-stateless/
 ---
 

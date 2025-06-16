@@ -26,7 +26,6 @@ tags:
 - Samsung Galaxy S2
 - Smartphones
 title: First Love
-type: post
 url: /2011/06/08/first-love/
 ---
 

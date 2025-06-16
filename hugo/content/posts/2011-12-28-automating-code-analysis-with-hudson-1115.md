@@ -20,7 +20,6 @@ tags:
 - PMD
 - Static code analysis
 title: Automating Code Analysis with Hudson [1115]
-type: post
 url: /2011/12/28/automating-code-analysis-with-hudson-1115/
 ---
 

@@ -12,7 +12,6 @@ password: ""
 status: publish
 tags: []
 title: Understanding ZFS Disk Utilisation and available space
-type: post
 url: /2017/08/16/understanding-zfs-disk-utilisation-and-available-space/
 ---
 

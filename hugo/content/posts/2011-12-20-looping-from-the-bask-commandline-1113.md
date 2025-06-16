@@ -18,7 +18,6 @@ tags:
 - Infinite loop
 - Scripting languages
 title: Looping from the bash commandline [1113]
-type: post
 url: /2011/12/20/looping-from-the-bask-commandline-1113/
 ---
 

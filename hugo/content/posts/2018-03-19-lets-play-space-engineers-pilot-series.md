@@ -284,7 +284,6 @@ tags:
 - Space Engineers
 - YouTube
 title: Let's Play Space Engineers | Pilot Series
-type: post
 url: /2018/03/19/lets-play-space-engineers-pilot-series/
 ---
 

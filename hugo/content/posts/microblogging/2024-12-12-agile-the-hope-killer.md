@@ -10,7 +10,6 @@ tags:
 - agile
 title: Agile, the hope killer!
 slug: agile-the-hope-killer
-type: post
 ---
 
 Two weeks into mapping out a project, I realised that we'd underestimated the

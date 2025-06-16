@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: While i was sleeping
-type: post
 url: /2011/04/11/while-i-was-sleeping/
 ---
 

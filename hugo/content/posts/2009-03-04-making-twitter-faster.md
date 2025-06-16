@@ -29,7 +29,6 @@ tags:
 - search time
 - Twitter
 title: Making Twitter Faster
-type: post
 url: /2009/03/04/making-twitter-faster/
 ---
 

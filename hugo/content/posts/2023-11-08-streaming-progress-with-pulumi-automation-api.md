@@ -15,7 +15,6 @@ tags:
 - pulumi
 - pulumi automation api
 title: Streaming Progress With Pulumi Automation API
-type: post
 url: /2023/11/08/streaming-progress-with-pulumi-automation-api/
 ---
 

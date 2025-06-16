@@ -19,7 +19,6 @@ tags:
 - theming
 - Web Development
 title: hook_theme doesn't get called
-type: post
 url: /2011/02/22/hook_theme-doesnt-get-called/
 ---
 

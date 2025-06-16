@@ -19,7 +19,6 @@ tags:
 - Logical volume management
 - Storage
 title: Expanding glusterfs volumes [1112]
-type: post
 url: /2011/12/20/expanding-glusterfs-volumes-1112/
 ---
 

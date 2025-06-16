@@ -17,7 +17,6 @@ password: ""
 status: publish
 tags: []
 title: Lana - Acacius
-type: post
 url: /2011/05/11/lana-acacius/
 ---
 

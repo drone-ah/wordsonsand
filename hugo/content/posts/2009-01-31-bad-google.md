@@ -17,7 +17,6 @@ tags:
 - Orkut
 - Security
 title: Bad Google
-type: post
 url: /2009/01/31/bad-google/
 ---
 

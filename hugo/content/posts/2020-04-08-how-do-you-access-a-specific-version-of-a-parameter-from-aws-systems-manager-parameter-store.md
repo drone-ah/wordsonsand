@@ -15,7 +15,6 @@ tags:
 - ssm
 title: How do you access a specific version of a parameter from AWS Systems Manager
   Parameter Store
-type: post
 url: /2020/04/08/how-do-you-access-a-specific-version-of-a-parameter-from-aws-systems-manager-parameter-store/
 ---
 

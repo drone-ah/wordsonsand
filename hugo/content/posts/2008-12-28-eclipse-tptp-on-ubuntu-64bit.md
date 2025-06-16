@@ -22,7 +22,6 @@ tags:
 - Ubuntu
 - VServer
 title: Eclipse TPTP on Ubuntu (64bit)
-type: post
 url: /2008/12/28/eclipse-tptp-on-ubuntu-64bit/
 ---
 

@@ -21,7 +21,6 @@ tags:
 - ViewGroup
 - XML
 title: Android - Multi-line Select List
-type: post
 url: /2010/04/19/android-multi-line-select-list/
 ---
 

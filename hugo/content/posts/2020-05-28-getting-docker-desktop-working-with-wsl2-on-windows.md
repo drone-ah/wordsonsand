@@ -14,7 +14,6 @@ tags:
 - docker desktop
 - wsl2
 title: Getting Docker Desktop Working with WSL2 on Windows
-type: post
 url: /2020/05/28/getting-docker-desktop-working-with-wsl2-on-windows/
 ---
 

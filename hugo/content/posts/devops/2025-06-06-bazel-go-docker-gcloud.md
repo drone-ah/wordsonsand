@@ -17,7 +17,6 @@ tags:
 - iac
 title: Build and push container image using bazel
 slug: bazel-go-docker-gcloud
-type: post
 ---
 
 I am building a small [golang](/tags/golang) [webapp](/tags/webapp), and I want

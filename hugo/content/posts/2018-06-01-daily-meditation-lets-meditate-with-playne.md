@@ -12,7 +12,6 @@ password: ""
 status: publish
 tags: []
 title: Daily Meditation | Let's Meditate with Playne
-type: post
 url: /2018/06/01/daily-meditation-lets-meditate-with-playne/
 ---
 

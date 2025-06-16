@@ -16,7 +16,6 @@ tags:
 - pulumi
 - testing
 title: How to run your lambda code locally as its role (for testing)
-type: post
 url: /2023/11/14/automated-testing-of-aws-lambda-locally/
 ---
 

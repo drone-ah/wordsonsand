@@ -13,7 +13,6 @@ status: publish
 tags:
 - mahout
 title: '[Mahout] Deploying custom drivers to mahout'
-type: post
 url: /2016/08/09/mahout-deploying-custom-drivers-to-mahout/
 ---
 

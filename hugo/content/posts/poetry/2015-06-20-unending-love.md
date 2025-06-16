@@ -13,7 +13,6 @@ password: ""
 status: publish
 tags: []
 title: Unending Love
-type: post
 url: /2015/06/20/unending-love/
 ---
 

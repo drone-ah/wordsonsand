@@ -22,7 +22,6 @@ tags:
 - SQL
 - Temporary file
 title: PostgreSQL performing huge updates [1106]
-type: post
 url: /2011/11/06/postgresql-performing-huge-updates-1106/
 ---
 

@@ -8,7 +8,6 @@ tags:
 - way-of-the-tortoise
 title: Going fast vs Going far
 slug: going-fast-or-far
-type: post
 ---
 
 Aesop wrote us wonderful and valuable fables. Almost all of us know the one

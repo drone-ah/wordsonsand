@@ -13,7 +13,6 @@ status: publish
 tags:
 - UE4
 title: '[UE4] Getting Multiplayer Player Pawn AI Navigation to work (C++)'
-type: post
 url: /2014/08/25/ue4-getting-multiplayer-player-pawn-ai-navigation-to-work-c/
 ---
 

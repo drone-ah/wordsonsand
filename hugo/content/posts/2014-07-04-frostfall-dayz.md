@@ -18,7 +18,6 @@ password: ""
 status: publish
 tags: []
 title: Frostfall &amp; DayZ
-type: post
 url: /2014/07/04/frostfall-dayz/
 ---
 

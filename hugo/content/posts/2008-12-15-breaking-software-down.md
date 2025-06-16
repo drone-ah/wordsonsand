@@ -41,7 +41,6 @@ tags:
 - Subversive
 - Thunderbird
 title: Breaking Software Down
-type: post
 url: /2008/12/15/breaking-software-down/
 ---
 

@@ -13,7 +13,6 @@ password: ""
 status: publish
 tags: []
 title: Not Afraid
-type: post
 url: /2024/08/02/not-afraid/
 ---
 

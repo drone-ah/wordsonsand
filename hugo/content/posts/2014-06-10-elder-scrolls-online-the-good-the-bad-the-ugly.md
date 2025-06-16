@@ -18,7 +18,6 @@ password: ""
 status: publish
 tags: []
 title: Elder Scrolls Online - The good, the bad, the ugly
-type: post
 url: /2014/06/10/elder-scrolls-online-the-good-the-bad-the-ugly/
 ---
 

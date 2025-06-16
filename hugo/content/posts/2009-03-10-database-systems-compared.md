@@ -50,7 +50,6 @@ tags:
 - web frontend
 - Windows
 title: Database Systems Compared
-type: post
 url: /2009/03/10/database-systems-compared/
 ---
 

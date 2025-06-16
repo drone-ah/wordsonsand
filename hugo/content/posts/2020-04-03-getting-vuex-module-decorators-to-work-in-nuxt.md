@@ -10,7 +10,6 @@ password: ""
 status: publish
 tags: []
 title: Getting vuex-module-decorators to work in nuxt
-type: post
 url: /2020/04/03/getting-vuex-module-decorators-to-work-in-nuxt/
 ---
 

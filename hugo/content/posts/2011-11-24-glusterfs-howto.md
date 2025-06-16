@@ -18,7 +18,6 @@ tags:
 - GlusterFS
 - Ubuntu
 title: GlusterFS HOWTO [1108]
-type: post
 url: /2011/11/24/glusterfs-howto/
 ---
 

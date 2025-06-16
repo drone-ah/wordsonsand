@@ -13,7 +13,6 @@ tags:
 - protoc
 title: Use `protoc` bin instead of building from source in `bazel`
 slug: use-protoc-bin-in-bazel
-type: post
 ---
 
 I work on a project that uses `pulumi` automation api, which in turn uses

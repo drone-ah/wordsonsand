@@ -19,7 +19,6 @@ tags:
 - Parcel
 - Parcelable
 title: Android - Parcel data to pass between Activities using Parcelable classes
-type: post
 url: /2010/04/26/android-parcel-data-to-pass-between-activities-using-parcelable-classes/
 ---
 

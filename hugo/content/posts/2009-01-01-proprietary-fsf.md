@@ -26,7 +26,6 @@ tags:
 - software developers
 - Technology
 title: Proprietary FSF
-type: post
 url: /2009/01/01/proprietary-fsf/
 ---
 

@@ -14,7 +14,6 @@ tags:
   - google test
   - visual studio
 title: Visual Studio, C++ & Google Test
-type: post
 url: /2021/08/09/visual-studio-c-google-test/
 ---
 

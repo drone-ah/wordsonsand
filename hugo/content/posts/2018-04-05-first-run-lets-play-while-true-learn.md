@@ -48,7 +48,6 @@ password: ""
 status: publish
 tags: []
 title: First Run | Let's Play while True; learn() [DONE]
-type: post
 url: /2018/04/05/first-run-lets-play-while-true-learn/
 ---
 

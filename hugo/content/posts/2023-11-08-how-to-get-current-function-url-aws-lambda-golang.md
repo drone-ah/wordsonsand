@@ -15,7 +15,6 @@ tags:
 - aws-lambda
 - golang
 title: How to get current Function URL (aws-lambda + golang)
-type: post
 url: /2023/11/08/how-to-get-current-function-url-aws-lambda-golang/
 ---
 

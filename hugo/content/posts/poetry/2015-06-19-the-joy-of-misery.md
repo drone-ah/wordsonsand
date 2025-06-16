@@ -12,7 +12,6 @@ password: ""
 status: publish
 tags: []
 title: The Joy of Misery
-type: post
 url: /2015/06/19/the-joy-of-misery/
 ---
 

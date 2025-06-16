@@ -19,7 +19,6 @@ tags:
 - Thieves Guild
 - short story
 title: Pulling At My Heart Strings
-type: post
 url: /2013/03/25/pulling-at-my-heart-strings/
 ---
 

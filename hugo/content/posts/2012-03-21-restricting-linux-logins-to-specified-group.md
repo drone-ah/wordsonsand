@@ -19,7 +19,6 @@ tags:
 - Linux
 - Ubuntu
 title: Restricting Linux Logins to Specified Group
-type: post
 url: /2012/03/21/restricting-linux-logins-to-specified-group/
 ---
 

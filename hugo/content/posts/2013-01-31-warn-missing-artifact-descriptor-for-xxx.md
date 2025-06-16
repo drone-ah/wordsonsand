@@ -19,7 +19,6 @@ tags:
 - Maven
 - Software
 title: WARN - Missing artifact descriptor for XXX
-type: post
 url: /2013/01/31/warn-missing-artifact-descriptor-for-xxx/
 ---
 

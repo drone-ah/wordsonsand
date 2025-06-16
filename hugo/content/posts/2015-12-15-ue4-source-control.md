@@ -14,7 +14,6 @@ status: publish
 tags:
 - UE4
 title: '[UE4] Source Control'
-type: post
 url: /2015/12/15/ue4-source-control/
 ---
 

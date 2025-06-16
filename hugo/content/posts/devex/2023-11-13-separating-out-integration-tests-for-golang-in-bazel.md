@@ -16,7 +16,6 @@ tags:
 - golang
 - testing
 title: Separating out integration tests for golang in Bazel
-type: post
 url: /2023/11/13/separating-out-integration-tests-for-golang-in-bazel/
 ---
 

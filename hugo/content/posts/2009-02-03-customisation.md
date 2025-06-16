@@ -18,7 +18,6 @@ tags:
 - Return On Investment
 - ROI
 title: Customisation
-type: post
 url: /2009/02/03/customisation/
 ---
 

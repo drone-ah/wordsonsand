@@ -21,7 +21,6 @@ tags:
 - Ubuntu
 - VirtualBox
 title: Vista Guest, Linux Host, VirtualBox, Host Networking - Bridge
-type: post
 url: /2009/03/23/vista-guest-linux-host-virtualbox-host-networking-bridge/
 ---
 

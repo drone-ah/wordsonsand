@@ -21,7 +21,6 @@ tags:
 - Tasktop
 - Time Tracking
 title: On top of Tasktop
-type: post
 url: /2009/01/13/on-top-of-tasktop/
 ---
 

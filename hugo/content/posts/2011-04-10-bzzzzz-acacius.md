@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: '"Bzzzzz" - Acacius'
-type: post
 url: /2011/04/10/bzzzzz-acacius/
 ---
 

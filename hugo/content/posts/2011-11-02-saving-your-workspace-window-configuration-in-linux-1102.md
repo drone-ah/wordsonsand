@@ -23,7 +23,6 @@ tags:
 - Workspace
 - X11
 title: Saving your workspace window configuration in Linux [1102]
-type: post
 url: /2011/11/02/saving-your-workspace-window-configuration-in-linux-1102/
 ---
 

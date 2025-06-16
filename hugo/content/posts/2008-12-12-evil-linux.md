@@ -21,7 +21,6 @@ tags:
 - United States of America
 - USA
 title: Evil Linux
-type: post
 url: /2008/12/12/evil-linux/
 ---
 

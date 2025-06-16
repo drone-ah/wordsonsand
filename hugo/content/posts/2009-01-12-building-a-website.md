@@ -20,7 +20,6 @@ tags:
 - Sourceforge
 - Usability
 title: Building A Website
-type: post
 url: /2009/01/12/building-a-website/
 ---
 

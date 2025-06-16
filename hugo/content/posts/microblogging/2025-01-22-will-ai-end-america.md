@@ -8,7 +8,6 @@ tags:
 - ai
 title: Will A.I kill America?
 slug: will-ai-end-america
-type: post
 ---
 
 Will $500,000,000,000 in AI investment kill America?

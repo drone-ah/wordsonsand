@@ -22,7 +22,6 @@ tags:
 - Process Dashboard
 - Request Tracker
 title: Maven2, EJB3 and JBoss
-type: post
 url: /2008/12/28/maven2-ejb3-and-jboss/
 ---
 

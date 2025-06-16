@@ -14,7 +14,6 @@ tags:
 - drupal-7
 - drupal-services
 title: 'Drupal 7 + Services: Paging &amp; Filtering the index endpoint'
-type: post
 url: /2017/09/03/drupal-7-services-paging-filtering-the-index-endpoint/
 ---
 

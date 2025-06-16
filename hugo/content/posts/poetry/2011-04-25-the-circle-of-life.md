@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: The Circle Of Life
-type: post
 url: /2011/04/25/the-circle-of-life/
 ---
 

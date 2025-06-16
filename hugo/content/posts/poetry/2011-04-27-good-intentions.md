@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: Good Intentions
-type: post
 url: /2011/04/27/good-intentions/
 ---
 

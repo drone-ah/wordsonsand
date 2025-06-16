@@ -23,7 +23,6 @@ tags:
 - Smartphones
 - XML
 title: Android - Managing Global Configuration
-type: post
 url: /2010/04/25/android-managing-global-configuratio/
 ---
 

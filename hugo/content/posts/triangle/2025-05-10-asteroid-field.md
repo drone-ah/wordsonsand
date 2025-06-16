@@ -13,7 +13,6 @@ tags:
 - devlog
 title: Procedural Asteroid Field Generation
 slug: asteroid-field
-type: post
 ---
 
 In this post, I am going to cover procedural asteroid field generation. At a

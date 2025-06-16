@@ -21,7 +21,6 @@ tags:
 - Twitter
 - Web 2.0
 title: Twitter is better
-type: post
 url: /2009/12/15/twitter-is-better/
 ---
 

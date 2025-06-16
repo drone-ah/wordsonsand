@@ -9,7 +9,6 @@ tags:
 - startup
 title: Starting Again
 slug: starting-again
-type: post
 ---
 
 Most of you know that I ran my own company for fifteen years, and at one point

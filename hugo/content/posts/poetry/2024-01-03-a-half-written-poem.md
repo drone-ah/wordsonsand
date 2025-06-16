@@ -14,7 +14,6 @@ password: ""
 status: publish
 tags: []
 title: A Half Written Poem
-type: post
 url: /2024/01/03/a-half-written-poem/
 ---
 

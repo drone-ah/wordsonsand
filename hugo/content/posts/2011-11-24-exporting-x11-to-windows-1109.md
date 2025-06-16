@@ -25,7 +25,6 @@ tags:
 - X Windows
 - Xming
 title: Exporting X11 to Windows [1109]
-type: post
 url: /2011/11/24/exporting-x11-to-windows-1109/
 ---
 

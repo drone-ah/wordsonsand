@@ -25,7 +25,6 @@ tags:
 - Shared disk file system
 - Ubuntu
 title: My Thoughts on OCFS2 / Understanding OCFS2 [1110]
-type: post
 url: /2011/11/24/my-thoughts-on-ocfs2-understanding-ocfs2-1110/
 ---
 

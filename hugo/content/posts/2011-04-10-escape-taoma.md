@@ -16,7 +16,6 @@ password: ""
 status: publish
 tags: []
 title: '"Escape" - Ta''oma'''
-type: post
 url: /2011/04/10/escape-taoma/
 ---
 

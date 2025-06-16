@@ -1,6 +1,6 @@
 ---
 categories:
-- Internet
+  - Internet
 date: "2008-12-12T14:31:09Z"
 meta:
   _edit_last: "48492462"
@@ -13,13 +13,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Avatar
-- Cool
-- Facebook
-- Gravatar
-- Social Media
+  - Avatar
+  - Cool
+  - Facebook
+  - Gravatar
+  - Social Media
 title: A Ubuquitous Avatar
-type: post
 url: /2008/12/12/a-ubuquitous-avatar/
 ---
 
