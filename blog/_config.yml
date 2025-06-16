@@ -43,6 +43,11 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

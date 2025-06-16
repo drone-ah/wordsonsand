@@ -158,5 +158,5 @@ I’ll probably tackle that - and maybe finally add a quadtree - soon.
 ## Other posts
 
 - [Companion vlog for this post](https://youtu.be/RXcBDC8Ki1w)
-- [Basic Gameplay](/2025/05/08/basic-gameplay/)
-- [Next: Materials & Pickups]({% post_url triangle/2025-05-13-materials %})
+- [Basic Gameplay](./2025-05-08-basic-gameplay.md)
+- [Next: Materials & Pickups](./2025-05-13-materials.md)

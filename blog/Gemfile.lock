@@ -78,6 +78,8 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
+    jekyll-relative-links (0.7.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
     jekyll-sitemap (1.4.0)
@@ -164,7 +166,6 @@ PLATFORMS
   riscv64-linux-android
   riscv64-linux-gnu
   riscv64-linux-musl
-  ruby
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
@@ -173,8 +174,9 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  jekyll (~> 4.1)
+  jekyll (~> 4.4.1)
   jekyll-redirect-from
+  jekyll-relative-links
   jekyll-whiteglass
   tzinfo (~> 1.2)
   tzinfo-data
