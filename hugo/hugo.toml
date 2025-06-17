@@ -38,8 +38,7 @@ languageCode = "en"
 	wpm = 250
 
 	# Stupid footers :)
-	footers = [
-	]
+	#footers = []
 
 	# Github base url
 	github = "https://github.com/drone-ah/wordsonsand/tree/main/blog"
