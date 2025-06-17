@@ -15,7 +15,7 @@
 
 {{ if isset .Site.Params "github" }}
 <div class="back">
-    <a href="{{ .Site.Params.github }}/blob/master/content/{{ .File.Path }}" title="github"><i
+    <a href="{{ .Site.Params.github }}/{{ .File.Path }}" title="github"><i
             data-feather="github"></i> Edit this on GitHub</a>
 </div>
 {{ end }}
