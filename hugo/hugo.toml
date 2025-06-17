@@ -2,148 +2,89 @@ baseURL = "https://drone-ah.com"
 disablePathToLower = false
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
-theme = "hermit-v2"
+theme = "ink-free"
 enableRobotsTXT = true ## set to true to enable inbuilt robots.txt
 
-#[languages]
-#  [languages.en]
-#    title = 'CHANGE ME'
-#    [languages.en.params]
-#      homeSubtitle = "CHANGE ME"
-#    weight = 1
-#  [languages.fr]
-#    title = 'CHANGE ME(FR)'
-#    [languages.fr.params]
-#      homeSubtitle = "CHANGE ME"
-#    weight = 2
-#  [languages.it]
-#    title = 'CHANGE ME(IT)'
-#    [languages.it.params]
-#      homeSubtitle = "CHANGE ME"
-#    weight = 3
- 
 languageCode = "en"
 
-# title = "CHANGE ME"
-# enableGitInfo = true
-
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-#hasCJKLanguage = true
-
-rssLimit = 10
-
-copyright = "drone ah"
-enableEmoji = true
-
-#[services]
-#  [services.disqus]
-#    shortname = ''
-#  [services.googleAnalytics]
-#    id = ''
-
-[frontmatter]
-date = ["date", "publishDate", "lastmod"]
-lastmod = ["lastmod", ":git", "date", "publishDate"]
-publishDate = ["publishDate", "date"]
-expiryDate = ["expiryDate"]
-
-
-[params.author]
-  name = "Shri"
-  about = ""
-
-[blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
-
-[taxonomies]
-  tag = "tags"
-  # Categories are disabled by default.
-  category = "categories"
-
-# Enable to get proper Mathjax support
-#[markup]
-#  [markup.goldmark]
-#    [markup.goldmark.extensions]
-#      [markup.goldmark.extensions.passthrough]
-#        enable = true
-#        [markup.goldmark.extensions.passthrough.delimiters]
-#          block = [['\[', '\]'], ['$$', '$$']]
-#          inline = [['\(', '\)']]
-
-[permalinks]
-posts = "/:year/:month/:day/:slug/"
-
 [params]
+	subtitle = "words on sand"
+
+	# Optional 64x64 avatar image.
+	#avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+
+	featherIconsCDN = false
+	mermaidCDN = "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs"
+
+	# Google Analytics alternative
+	enableUmami = false
+	umamiURL = "https://umami.yourdomain/script.js"
+	umamiWebsiteId = "123-456-789"
+
+	# Site color - dark/light/auto
+	mode = "auto"
+
+	# Enable a table of contents:
+	# Either "static"/true, "floating", "both", or "none" (default: static)
+	# The floating TOC dissapears on mobile and adds 200px vertical space
+	toc = "floating"
+	# Whether to truncate everything but H1/H2 headings if the last element in a TOC isn't visible. Enabled by default
+	enableTocTrunate = true
+
+	# Max tags
+	maxTags = 7
+
+	# Define words per minute to approximate reading time
+	wpm = 250
+
+	# Stupid footers :)
+	footers = [
+	]
+
+	# Github base url
+	github = "https://github.com/drone-ah/wordsonsand"
+
+	# For statistics, we can compare the total word count against a book of your choice
+	statisticsEnabled = true
+	referenceBookWords = 11500.0
+	referenceBook = "The Metamorphosis"
+	referenceAuthor = "Franz Kafka"
+
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  # description = "CHANGE ME SITE DESCRIPTION"
-  # images = [""]
-  themeColor = "#494f5c"
-  accentColor = "#018472"
 
-  #homeSubtitle = "CHANGE ME HOME SUBTITLE"
-  footerCopyright = "CHANGE ME FOOTER COPYRIGHT"
-  # footerHideThemeName = false
-  # bgImg = ""
-  # gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+# Nav.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 
-  justifyContent = false
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
 
-  relatedPosts = true
-  code_copy_button = true
+[[menu.main]]
+name = "Tags & Stats"
+url = "/tags"
+weight = 4
 
-  homeSubtitlePrinter = true
-  scrollToTop = true 
-  global_mathjax = false
-  readTime = true
-  readTimeSeparator = "read"
-  # legacyLayout = false
-  shareSocial = true
-  # googleTagManager = "GTM-XXXXXXXX"
-  # tagSymbol = "#"
-  # categorySymbol = "⊲"
-  # pinned = "Pinned Posts"
-  # pinnedSVGname = "pin"
-  listLayout = ["description","tags","categories","legacy"]
-  initialPublish = "Initally Posted on: "
-  # human = ["single","posts"]
-  # noIndex = false
-  # denyRobots = "noindex, nofollow, noarchive"
-  # allowRobots = "index, follow"
-  # siteNoIndex = false
-  # noIndexPages = ["404 Page not found"]
-  # usesAnimation = true
-  # mathjaxLib = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
-  # mermaidLib = "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs"
-  [params.gallery]
-    enable = true
-    thumbnail = '300'
-  
-  [[params.socialLinks]]
-    name = "mastodon"
-    url = "https://joinmastodon.org/"
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/drone-ah/"
 
-  [[params.socialLinks]]
-    name = "x"
-    url = "https://twitter.com/"
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
 
-  [[params.socialLinks]]
-    name = "github"
-    url = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+[taxonomies]
+   tag = "tags"
+	 categories = "categories"
 
-[menu]
-  [[menu.main]]
-    name = "Posts"
-    url = "posts/"
-    weight = 10
-
-  [[menu.main]]
-    name = "About"
-    url = "about-hugo/"
-    weight = 20
+[permalinks]
+posts = "/:year/:month/:day/:slug/"
