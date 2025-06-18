@@ -1,6 +1,6 @@
 ---
 categories:
-- Software Development
+  - Software Development
 date: "2020-04-08T15:53:50Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:04"
@@ -10,10 +10,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- aws
-- node
-- ssm
-title: How do you access a specific version of a parameter from AWS Systems Manager
+  - aws
+  - node
+  - ssm
+title:
+  How do you access a specific version of a parameter from AWS Systems Manager
   Parameter Store
 url: /2020/04/08/how-do-you-access-a-specific-version-of-a-parameter-from-aws-systems-manager-parameter-store/
 ---

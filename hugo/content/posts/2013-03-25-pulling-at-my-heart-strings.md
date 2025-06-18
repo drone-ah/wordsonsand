@@ -1,6 +1,6 @@
 ---
 categories:
-- Gaming
+  - Gaming
 date: "2013-03-25T16:31:01Z"
 meta:
   _edit_last: "48492462"
@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Lemkil
-- Skyrim
-- Thieves Guild
-- short story
+  - Lemkil
+  - Skyrim
+  - Thieves Guild
+  - short story
 title: Pulling At My Heart Strings
 url: /2013/03/25/pulling-at-my-heart-strings/
 ---

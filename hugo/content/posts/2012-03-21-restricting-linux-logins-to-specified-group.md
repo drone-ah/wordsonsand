@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2012-03-21T11:36:45Z"
 meta:
   _edit_last: "48492462"
@@ -13,11 +13,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- CentOS
-- Identity management
-- Lightweight Directory Access Protocol
-- Linux
-- Ubuntu
+  - CentOS
+  - Identity management
+  - Lightweight Directory Access Protocol
+  - Linux
+  - Ubuntu
 title: Restricting Linux Logins to Specified Group
 url: /2012/03/21/restricting-linux-logins-to-specified-group/
 ---

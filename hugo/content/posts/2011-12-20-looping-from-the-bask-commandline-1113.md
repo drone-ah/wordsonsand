@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2011-12-20T13:32:08Z"
 meta:
   _edit_last: "48492462"
@@ -14,9 +14,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- bash
-- Infinite loop
-- Scripting languages
+  - bash
+  - Infinite loop
+  - Scripting languages
 title: Looping from the bash commandline [1113]
 url: /2011/12/20/looping-from-the-bask-commandline-1113/
 ---

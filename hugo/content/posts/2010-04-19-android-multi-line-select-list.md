@@ -1,6 +1,6 @@
 ---
 categories:
-- Android Development
+  - Android Development
 date: "2010-04-19T23:37:54Z"
 meta:
   _edit_last: "48492462"
@@ -14,12 +14,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Android
-- Google
-- java
-- Smartphones
-- ViewGroup
-- XML
+  - Android
+  - Google
+  - java
+  - Smartphones
+  - ViewGroup
+  - XML
 title: Android - Multi-line Select List
 url: /2010/04/19/android-multi-line-select-list/
 ---

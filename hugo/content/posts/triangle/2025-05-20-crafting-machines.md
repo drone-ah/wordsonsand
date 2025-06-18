@@ -1,13 +1,13 @@
 ---
 categories:
-- triangle
+  - triangle
 date: "2025-05-20T14:27:00Z"
 meta: null
 redirect_from: /s/tcrafting
 status: publish
 tags:
-- crafting
-- devlog
+  - crafting
+  - devlog
 title: Crafting, Mods, and Machines
 slug: crafting-machines
 ---

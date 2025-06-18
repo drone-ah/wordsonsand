@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2011-11-03T11:11:14Z"
 meta:
   _edit_last: "48492462"
@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- GNOME
-- Ubuntu
-- Workspace
-- X Window System
+  - GNOME
+  - Ubuntu
+  - Workspace
+  - X Window System
 title: Gnome Desktop Inaccessible After Screensaver Kicks in [1103]
 url: /2011/11/03/gnome-desktop-inaccessible-after-screensaver-kicks-in-1103/
 ---

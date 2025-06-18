@@ -1,6 +1,6 @@
 ---
 categories:
-- Gaming
+  - Gaming
 date: "2014-06-10T05:13:13Z"
 meta:
   _edit_last: "48492462"
@@ -9,7 +9,7 @@ meta:
   _wp_old_slug: "961"
   _wpt_short_url: http://bit.ly/1mA6zl4
   oc_commit_id: http://drone-ah.com/2014/06/10/elder-scrolls-online-the-good-the-bad-the-ugly/1402373596
-  oc_metadata: '{ttversion:''1.1'',tttags: {}t}'
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   oc_tag_data: ""
   original_post_id: "961"
   restapi_import_id: 591d994f7aad5

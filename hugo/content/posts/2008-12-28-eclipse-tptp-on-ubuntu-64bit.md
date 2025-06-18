@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2008-12-28T18:15:45Z"
 meta:
   _edit_last: "48492462"
@@ -13,14 +13,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- 64bit
-- Dev Env
-- Eclipse
-- Eclipse TPTP
-- java
-- libstdc++.so.5
-- Ubuntu
-- VServer
+  - 64bit
+  - Dev Env
+  - Eclipse
+  - Eclipse TPTP
+  - java
+  - libstdc++.so.5
+  - Ubuntu
+  - VServer
 title: Eclipse TPTP on Ubuntu (64bit)
 url: /2008/12/28/eclipse-tptp-on-ubuntu-64bit/
 ---

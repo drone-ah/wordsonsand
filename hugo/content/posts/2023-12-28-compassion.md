@@ -4,10 +4,10 @@ date: "2023-12-28T00:00:00Z"
 meta: null
 status: publish
 tags:
-- ways-of-working
-- quotes
-- collaboration
-- people-first
+  - ways-of-working
+  - quotes
+  - collaboration
+  - people-first
 title: Compassion
 slug: compassion
 ---

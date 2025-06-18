@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2009-03-23T15:39:41Z"
 meta:
   _edit_last: "48492462"
@@ -14,12 +14,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Guest OS
-- host networking
-- Linux
-- Microsoft Vista
-- Ubuntu
-- VirtualBox
+  - Guest OS
+  - host networking
+  - Linux
+  - Microsoft Vista
+  - Ubuntu
+  - VirtualBox
 title: Vista Guest, Linux Host, VirtualBox, Host Networking - Bridge
 url: /2009/03/23/vista-guest-linux-host-virtualbox-host-networking-bridge/
 ---

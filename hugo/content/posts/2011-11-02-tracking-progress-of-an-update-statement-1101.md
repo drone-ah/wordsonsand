@@ -1,6 +1,6 @@
 ---
 categories:
-- Database Systems
+  - Database Systems
 date: "2011-11-02T19:59:02Z"
 meta:
   _edit_last: "48492462"
@@ -13,13 +13,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- computing
-- Database
-- Databases
-- PostgreSQL
-- SQL
-- SQL keywords
-- Update
+  - computing
+  - Database
+  - Databases
+  - PostgreSQL
+  - SQL
+  - SQL keywords
+  - Update
 title: Tracking progress of an update statement [1101]
 url: /2011/11/02/tracking-progress-of-an-update-statement-1101/
 ---

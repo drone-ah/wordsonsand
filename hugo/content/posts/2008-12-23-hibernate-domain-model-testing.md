@@ -1,6 +1,6 @@
 ---
 categories:
-- Java (EE)
+  - Java (EE)
 date: "2008-12-23T22:14:42Z"
 meta:
   _edit_last: "48492462"
@@ -13,20 +13,20 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Code Coverage
-- Data Testing
-- DbUnit
-- DOM
-- Domain Model
-- Domain Object Model
-- Ejb3Unit
-- Entity Testing
-- Hibernate
-- java
-- SuperCsv
-- testing
-- Testing Framework
-- TestNG
+  - Code Coverage
+  - Data Testing
+  - DbUnit
+  - DOM
+  - Domain Model
+  - Domain Object Model
+  - Ejb3Unit
+  - Entity Testing
+  - Hibernate
+  - java
+  - SuperCsv
+  - testing
+  - Testing Framework
+  - TestNG
 title: Hibernate Domain Model Testing
 url: /2008/12/23/hibernate-domain-model-testing/
 ---

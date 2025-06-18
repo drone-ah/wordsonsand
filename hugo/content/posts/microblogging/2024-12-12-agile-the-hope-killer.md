@@ -1,13 +1,13 @@
 ---
 categories:
-- microblogging
+  - microblogging
 date: "2024-12-12T11:22:12Z"
 meta: null
 status: publish
 tags:
-- ways-of-working
-- way-of-the-tortoise
-- agile
+  - ways-of-working
+  - way-of-the-tortoise
+  - agile
 title: Agile, the hope killer!
 slug: agile-the-hope-killer
 ---

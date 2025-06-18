@@ -1,6 +1,6 @@
 ---
 categories:
-- Artificial Intelligence
+  - Artificial Intelligence
 date: "2016-07-26T10:06:41Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:00"
@@ -11,7 +11,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- mahout
+  - mahout
 title: Setting up Mahout in Linux
 url: /2016/07/26/setting-up-mahout-in-linux/
 ---

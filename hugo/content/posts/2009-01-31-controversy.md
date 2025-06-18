@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2009-01-31T18:53:02Z"
 meta:
   _edit_last: "48492462"
@@ -13,13 +13,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Linux
-- Microsoft
-- Microsoft SQL Server
-- MySQL
-- Oracle
-- PostgreSQL
-- Ubuntu
+  - Linux
+  - Microsoft
+  - Microsoft SQL Server
+  - MySQL
+  - Oracle
+  - PostgreSQL
+  - Ubuntu
 title: Controversy
 url: /2009/01/31/controversy/
 ---

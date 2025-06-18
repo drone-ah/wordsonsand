@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2017-08-16T12:02:07Z"
 meta:
   _edit_last: "48492462"

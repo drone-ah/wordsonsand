@@ -1,6 +1,6 @@
 ---
 categories:
-- Internet
+  - Internet
 date: "2009-12-15T13:13:47Z"
 excerpt: How some of my pet peeves about twitter has recently be resolved. Yay!
 meta:
@@ -15,11 +15,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Online social networking
-- Real-time web
-- Social Media
-- Twitter
-- Web 2.0
+  - Online social networking
+  - Real-time web
+  - Social Media
+  - Twitter
+  - Web 2.0
 title: Twitter is better
 url: /2009/12/15/twitter-is-better/
 ---

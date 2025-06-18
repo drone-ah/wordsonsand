@@ -1,6 +1,6 @@
 ---
 categories:
-- Internet
+  - Internet
 date: "2009-01-12T00:39:12Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:36"
@@ -12,13 +12,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Design
-- Facebook
-- Functionality
-- Google
-- Social Interaction
-- Sourceforge
-- Usability
+  - Design
+  - Facebook
+  - Functionality
+  - Google
+  - Social Interaction
+  - Sourceforge
+  - Usability
 title: Building A Website
 url: /2009/01/12/building-a-website/
 ---

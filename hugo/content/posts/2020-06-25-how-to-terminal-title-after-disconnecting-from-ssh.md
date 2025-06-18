@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2020-06-25T08:47:45Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:04"
@@ -10,7 +10,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- bash
+  - bash
 title: How to fix terminal title after disconnecting from ssh
 url: /2020/06/25/how-to-terminal-title-after-disconnecting-from-ssh/
 ---

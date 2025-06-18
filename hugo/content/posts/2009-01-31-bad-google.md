@@ -1,6 +1,6 @@
 ---
 categories:
-- Internet
+  - Internet
 date: "2009-01-31T19:09:31Z"
 meta:
   _edit_last: "48492462"
@@ -13,17 +13,17 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Google
-- Orkut
-- Security
+  - Google
+  - Orkut
+  - Security
 title: Bad Google
 url: /2009/01/31/bad-google/
 ---
 
 I stumbled across [a post by a Mark Ghosh, an unhappy orkut
 user](http://weblogtoolscollection.com/archives/2009/01/31/et-tu-google-then-fail-net-safety/{
-which covers a very basic and age old security flaw within Orkut, a social networking
-site similar to Facebook / MySpace which is now owned by Google.
+which covers a very basic and age old security flaw within Orkut, a social
+networking site similar to Facebook / MySpace which is now owned by Google.
 
 Google, one of the largest corporations in the world went through and acquired a
 whole bunch of online communities and this is all fine. However, should a

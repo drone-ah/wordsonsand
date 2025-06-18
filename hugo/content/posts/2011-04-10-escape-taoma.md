@@ -1,6 +1,6 @@
 ---
 categories:
-- Short Stories
+  - Short Stories
 date: "2011-04-10T12:38:11Z"
 meta:
   _edit_last: "48492462"
@@ -8,7 +8,7 @@ meta:
   _publicize_job_id: "5187226937"
   _wp_old_slug: "428"
   oc_commit_id: http://drone-ah.com/2011/04/10/escape-taoma/1302439092
-  oc_metadata: '{ttversion:''1.1'',tttags: {}t}'
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   original_post_id: "428"
   restapi_import_id: 591d994f7aad5
 parent_id: "0"

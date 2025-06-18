@@ -1,12 +1,12 @@
 ---
 categories:
-- microblogging
+  - microblogging
 date: "2025-01-21T11:12:57Z"
 meta: null
 status: publish
 tags:
-- good-practices
-- ways-of-working
+  - good-practices
+  - ways-of-working
 title: There are no best practices
 slug: no-best-practices
 ---

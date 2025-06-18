@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2013-02-24T11:54:03Z"
 meta:
   _edit_last: "48492462"
@@ -15,13 +15,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- CMake
-- Compiling tools
-- Emacs
-- Flymake
-- GNU build system
-- Make
-title: 'Getting Started: Emacs &amp; C++ (w/ cmake) (On the fly syntax highlighting)'
+  - CMake
+  - Compiling tools
+  - Emacs
+  - Flymake
+  - GNU build system
+  - Make
+title:
+  "Getting Started: Emacs &amp; C++ (w/ cmake) (On the fly syntax highlighting)"
 url: /2013/02/24/getting-started-emacs-c-w-cmake/
 ---
 
@@ -94,7 +95,8 @@ add the following to your .emacs file for cmake project. Instructions for
 cpputils-make can be found on
 [their github page](https://github.com/redguardtoo/cpputils-cmake)
 
-[(require 'cmake-project)]{style="font-family:Consolas, Monaco, monospace;font-size:12px;line-height:18px;"}
+[(require 'cmake-project)]{style="font-family:Consolas, Monaco,
+monospace;font-size:12px;line-height:18px;"}
 
 Do a full build on your sources first by going to the bin or build directory and
 generating the makefiles by using cmake (cmake .. or cmake ../src depending on

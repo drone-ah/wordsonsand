@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2011-06-08T00:13:25Z"
 meta:
   _edit_last: "48492462"
@@ -14,17 +14,17 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Android Development
-- HTC Desire Smartphone
-- HTC Hero
-- iPhone
-- Linux devices
-- Motorola Atrix
-- Motorola MicroTAC
-- Motorola Mobile Devices
-- Samsung
-- Samsung Galaxy S2
-- Smartphones
+  - Android Development
+  - HTC Desire Smartphone
+  - HTC Hero
+  - iPhone
+  - Linux devices
+  - Motorola Atrix
+  - Motorola MicroTAC
+  - Motorola Mobile Devices
+  - Samsung
+  - Samsung Galaxy S2
+  - Smartphones
 title: First Love
 url: /2011/06/08/first-love/
 ---

@@ -1,6 +1,6 @@
 ---
 categories:
-- drupal
+  - drupal
 date: "2014-04-17T11:18:08Z"
 meta:
   _edit_last: "48492462"
@@ -15,8 +15,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- drupal-entities
-- php
+  - drupal-entities
+  - php
 title: Drupal Entities - PHP Class per bundle
 url: /2014/04/17/drupal-entities-php-class-per-bundle/
 ---

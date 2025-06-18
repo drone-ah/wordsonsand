@@ -11,9 +11,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- aws
-- aws-lambda
-- golang
+  - aws
+  - aws-lambda
+  - golang
 title: How to get current Function URL (aws-lambda + golang)
 url: /2023/11/08/how-to-get-current-function-url-aws-lambda-golang/
 ---

@@ -1,6 +1,6 @@
 ---
 categories:
-- Android Development
+  - Android Development
 date: "2010-04-26T21:46:31Z"
 meta:
   _edit_last: "48492462"
@@ -13,11 +13,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Activity
-- Intent
-- java
-- Parcel
-- Parcelable
+  - Activity
+  - Intent
+  - java
+  - Parcel
+  - Parcelable
 title: Android - Parcel data to pass between Activities using Parcelable classes
 url: /2010/04/26/android-parcel-data-to-pass-between-activities-using-parcelable-classes/
 ---

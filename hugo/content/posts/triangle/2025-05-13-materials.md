@@ -1,13 +1,13 @@
 ---
 categories:
-- triangle
+  - triangle
 date: "2025-05-13T12:07:00Z"
 meta: null
 redirect_from: /s/tlog3
 status: publish
 tags:
-- crafting
-- devlog
+  - crafting
+  - devlog
 title: Materials
 slug: materials
 ---
@@ -130,7 +130,7 @@ enough and it works, for now.
 ## Other posts
 
 - [Companion vlog for this post](https://youtu.be/8ct9aWNj3Zk)
-- [Prev: Procedural Asteroid Fields]({% post_url triangle/2025-05-10-asteroid-field %})
-- Next: [Refineries, Constructors and other other factory types in a
-  world without
-  conveyor belts.]({% post_url triangle/2025-05-20-crafting-machines %})
+- [Prev: Procedural Asteroid
+  Fields]({% post_url triangle/2025-05-10-asteroid-field %})
+- Next: [Refineries, Constructors and other other factory types in a world
+  without conveyor belts.]({% post_url triangle/2025-05-20-crafting-machines %})

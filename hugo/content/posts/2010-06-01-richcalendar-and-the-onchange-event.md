@@ -1,6 +1,6 @@
 ---
 categories:
-- Java (EE)
+  - Java (EE)
 date: "2010-06-01T20:20:20Z"
 meta:
   _edit_last: "48492462"
@@ -14,9 +14,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- calendar
-- richfaces
-- seam
+  - calendar
+  - richfaces
+  - seam
 title: rich:calendar and the onchange event
 url: /2010/06/01/richcalendar-and-the-onchange-event/
 ---

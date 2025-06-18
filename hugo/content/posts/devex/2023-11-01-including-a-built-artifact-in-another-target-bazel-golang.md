@@ -1,6 +1,6 @@
 ---
 categories:
-- devex
+  - devex
 date: "2023-11-01T19:42:30Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:04"
@@ -13,10 +13,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- aws-lambda
-- bazel
-- golang
-- pulumi
+  - aws-lambda
+  - bazel
+  - golang
+  - pulumi
 title: Including a built artifact in another target (Bazel, golang)
 url: /2023/11/01/including-a-built-artifact-in-another-target-bazel-golang/
 ---

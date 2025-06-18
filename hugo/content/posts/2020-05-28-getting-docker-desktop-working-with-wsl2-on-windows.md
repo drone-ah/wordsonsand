@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2020-05-28T17:29:52Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:04"
@@ -10,9 +10,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- docker
-- docker desktop
-- wsl2
+  - docker
+  - docker desktop
+  - wsl2
 title: Getting Docker Desktop Working with WSL2 on Windows
 url: /2020/05/28/getting-docker-desktop-working-with-wsl2-on-windows/
 ---

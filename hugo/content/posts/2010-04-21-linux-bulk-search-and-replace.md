@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2010-04-21T13:47:26Z"
 meta:
   _edit_last: "48492462"
@@ -14,12 +14,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- bash
-- bulk search
-- computing
-- find
-- grep
-- search and replace
+  - bash
+  - bulk search
+  - computing
+  - find
+  - grep
+  - search and replace
 title: Linux bulk search and replace
 url: /2010/04/21/linux-bulk-search-and-replace/
 ---

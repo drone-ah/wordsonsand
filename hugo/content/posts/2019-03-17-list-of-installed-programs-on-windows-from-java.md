@@ -9,7 +9,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- java
+  - java
 title: List of Installed Programs on Windows from java
 url: /2019/03/17/list-of-installed-programs-on-windows-from-java/
 ---

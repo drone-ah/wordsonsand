@@ -1,6 +1,6 @@
 ---
 categories:
-- Showcase
+  - Showcase
 date: "2018-04-05T11:12:17Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:02"
@@ -12,8 +12,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- showcases
-- Space Engineers
+  - showcases
+  - Space Engineers
 title: Space Engineers Showcases
 url: /2018/04/05/space-engineers-showcases/
 ---

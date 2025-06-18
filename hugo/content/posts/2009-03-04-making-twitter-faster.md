@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2009-03-04T17:36:35Z"
 excerpt: An idea for making twitter perform better, be more stable and scalable.
 meta:
@@ -16,18 +16,18 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- API
-- caching
-- Challenge
-- Hadoop
-- HBase
-- Ideas
-- Linux
-- megabus
-- relational database
-- search mechanism
-- search time
-- Twitter
+  - API
+  - caching
+  - Challenge
+  - Hadoop
+  - HBase
+  - Ideas
+  - Linux
+  - megabus
+  - relational database
+  - search mechanism
+  - search time
+  - Twitter
 title: Making Twitter Faster
 url: /2009/03/04/making-twitter-faster/
 ---

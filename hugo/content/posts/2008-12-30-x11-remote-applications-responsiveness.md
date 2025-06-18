@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2008-12-30T15:01:43Z"
 meta:
   _edit_last: "48492462"
@@ -13,10 +13,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Linux
-- Remote X11
-- ssh
-- X11
+  - Linux
+  - Remote X11
+  - ssh
+  - X11
 title: X11 Remote Applications Responsiveness
 url: /2008/12/30/x11-remote-applications-responsiveness/
 ---

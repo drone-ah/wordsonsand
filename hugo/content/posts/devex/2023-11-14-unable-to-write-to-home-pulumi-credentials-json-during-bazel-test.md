@@ -1,6 +1,6 @@
 ---
 categories:
-- devex
+  - devex
 date: "2023-11-14T13:46:46Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:05"
@@ -12,8 +12,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- bazel
-- testing
+  - bazel
+  - testing
 title: Unable to write to $HOME/.pulumi/credentials.json during bazel test
 url: /2023/11/14/unable-to-write-to-home-pulumi-credentials-json-during-bazel-test/
 ---

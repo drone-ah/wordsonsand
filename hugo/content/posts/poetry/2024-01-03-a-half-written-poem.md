@@ -1,6 +1,6 @@
 ---
 categories:
-- poetry
+  - poetry
 date: "2024-01-03T13:26:07Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:06"

@@ -1,6 +1,6 @@
 ---
 categories:
-- Gaming
+  - Gaming
 date: "2011-11-11T02:32:00Z"
 meta:
   _edit_last: "48492462"
@@ -14,14 +14,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Fallout 3
-- Games
-- Role-playing video games
-- Skyrim
-- The Elder Scrolls
-- 'The Elder Scrolls II: Daggerfall'
-- 'The Elder Scrolls IV: Oblivion'
-title: 'Elder Scrolls V: Skyrim [1111]'
+  - Fallout 3
+  - Games
+  - Role-playing video games
+  - Skyrim
+  - The Elder Scrolls
+  - "The Elder Scrolls II: Daggerfall"
+  - "The Elder Scrolls IV: Oblivion"
+title: "Elder Scrolls V: Skyrim [1111]"
 url: /2011/11/11/elder-scrolls-v-skyrim-1111/
 ---
 

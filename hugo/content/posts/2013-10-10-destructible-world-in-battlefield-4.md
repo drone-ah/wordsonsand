@@ -1,6 +1,6 @@
 ---
 categories:
-- Gaming
+  - Gaming
 date: "2013-10-10T11:36:26Z"
 meta:
   _edit_last: "48492462"
@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Baldur's Gate
-- Games
-- 'The Elder Scrolls V: Skyrim'
-- Windows games
+  - Baldur's Gate
+  - Games
+  - "The Elder Scrolls V: Skyrim"
+  - Windows games
 title: Destructible World in Battlefield 4
 url: /2013/10/10/destructible-world-in-battlefield-4/
 ---

@@ -1,11 +1,11 @@
 ---
 categories:
-- microblogging
+  - microblogging
 date: "2025-01-22T13:54:30Z"
 meta: null
 status: publish
 tags:
-- ai
+  - ai
 title: Will A.I kill America?
 slug: will-ai-end-america
 ---

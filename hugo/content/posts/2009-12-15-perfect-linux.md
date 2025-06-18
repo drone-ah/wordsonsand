@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2009-12-15T16:03:03Z"
 meta:
   _edit_last: "48492462"
@@ -14,14 +14,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Brian Lunduke
-- Cross-platform software
-- Debian
-- Linux
-- Linux distributions
-- Live CD
-- Microsoft Windows
-- Ubuntu
+  - Brian Lunduke
+  - Cross-platform software
+  - Debian
+  - Linux
+  - Linux distributions
+  - Live CD
+  - Microsoft Windows
+  - Ubuntu
 title: Perfect Linux
 url: /2009/12/15/perfect-linux/
 ---

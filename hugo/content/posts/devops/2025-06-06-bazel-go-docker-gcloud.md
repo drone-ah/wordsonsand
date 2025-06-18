@@ -1,20 +1,20 @@
 ---
 categories:
-- devops
+  - devops
 date: "2025-06-06T13:06:14Z"
 meta: null
 parent_id: "0"
 password: ""
 status: publish
 tags:
-- google cloud
-- webapp
-- bazel
-- golang
-- pulumi
-- oci
-- docker
-- iac
+  - google cloud
+  - webapp
+  - bazel
+  - golang
+  - pulumi
+  - oci
+  - docker
+  - iac
 title: Build and push container image using bazel
 slug: bazel-go-docker-gcloud
 ---

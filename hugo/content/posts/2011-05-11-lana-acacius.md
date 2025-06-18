@@ -1,6 +1,6 @@
 ---
 categories:
-- Short Stories
+  - Short Stories
 date: "2011-05-11T01:47:59Z"
 meta:
   _edit_last: "48492462"
@@ -9,7 +9,7 @@ meta:
   _wp_old_slug: "534"
   geo_public: "0"
   oc_commit_id: http://drone-ah.com/2011/05/11/lana-acacius/1305074884
-  oc_metadata: '{ttversion:''1.1'',tttags: {}t}'
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   original_post_id: "534"
   restapi_import_id: 591d994f7aad5
 parent_id: "0"

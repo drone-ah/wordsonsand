@@ -1,6 +1,6 @@
 ---
 categories:
-- Short Stories
+  - Short Stories
 date: "2011-04-27T00:32:06Z"
 meta:
   _edit_last: "48492462"
@@ -8,7 +8,7 @@ meta:
   _publicize_job_id: "5187138127"
   _wp_old_slug: "484"
   oc_commit_id: http://drone-ah.com/2011/04/27/vengeance-agent-maccabee/1303860729
-  oc_metadata: '{ttversion:''1.1'',tttags: {}t}'
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   original_post_id: "484"
   restapi_import_id: 591d994f7aad5
 parent_id: "0"

@@ -1,6 +1,6 @@
 ---
 categories:
-- poetry
+  - poetry
 date: "2012-04-20T12:51:30Z"
 meta:
   _edit_last: "48492462"

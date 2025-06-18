@@ -1,11 +1,11 @@
 ---
 categories:
-- microblogging
+  - microblogging
 date: "2025-05-01T13:17:57Z"
 meta: null
 status: publish
 tags:
-- way-of-the-tortoise
+  - way-of-the-tortoise
 title: Going fast vs Going far
 slug: going-fast-or-far
 ---

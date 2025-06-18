@@ -1,6 +1,6 @@
 ---
 categories:
-- Java (EE)
+  - Java (EE)
 date: "2011-11-05T15:32:32Z"
 meta:
   _edit_last: "48492462"
@@ -14,14 +14,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Java (EE)
-- Load testing
-- Log4j
-- Plain Old Java Object
-- Software components
-- web services
-- web.xml
-- XML
+  - Java (EE)
+  - Load testing
+  - Log4j
+  - Plain Old Java Object
+  - Software components
+  - web services
+  - web.xml
+  - XML
 title: JBossWS CXF - POJO vs Stateless [1104]
 url: /2011/11/05/jbossws-cxf-pojo-vs-stateless/
 ---

@@ -1,6 +1,6 @@
 ---
 categories:
-- Java (EE)
+  - Java (EE)
 date: "2011-04-25T15:58:00Z"
 meta:
   _edit_last: "48492462"
@@ -13,13 +13,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Cache
-- Garbage collection
-- Hibernate
-- java
-- Java Memory Allocation
-- Java Object Size
-- JBoss application server
+  - Cache
+  - Garbage collection
+  - Hibernate
+  - java
+  - Java Memory Allocation
+  - Java Object Size
+  - JBoss application server
 title: Java Object Size In Memory
 url: /2011/04/25/java-object-size-in-memory/
 ---

@@ -1,6 +1,6 @@
 ---
 categories:
-- Short Stories
+  - Short Stories
 date: "2011-04-27T10:37:41Z"
 meta:
   _edit_last: "48492462"
@@ -9,7 +9,7 @@ meta:
   _wp_old_slug: "490"
   geo_public: "0"
   oc_commit_id: http://drone-ah.com/2011/04/27/%e2%80%9clove%e2%80%9d-ta%e2%80%99oma/1303897083
-  oc_metadata: '{ttversion:''1.1'',tttags: {}t}'
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   original_post_id: "490"
   restapi_import_id: 591d994f7aad5
 parent_id: "0"

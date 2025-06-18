@@ -11,10 +11,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- golang
-- integration testing
-- pulumi
-- testing
+  - golang
+  - integration testing
+  - pulumi
+  - testing
 title: How to run your lambda code locally as its role (for testing)
 url: /2023/11/14/automated-testing-of-aws-lambda-locally/
 ---

@@ -1,6 +1,6 @@
 ---
 categories:
-- Short Stories
+  - Short Stories
 date: "2011-05-10T16:25:14Z"
 meta:
   _edit_last: "48492462"
@@ -15,9 +15,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- army
-- fantasy
-- short story
+  - army
+  - fantasy
+  - short story
 title: The Urn - Acacius
 url: /2011/05/10/the-urn-acacius/
 ---

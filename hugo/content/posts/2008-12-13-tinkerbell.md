@@ -1,6 +1,6 @@
 ---
 categories:
-- Humour
+  - Humour
 date: "2008-12-13T15:30:06Z"
 meta:
   _edit_last: "48492462"
@@ -14,8 +14,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Kraya Mascot
-- Rehan Yousuf
+  - Kraya Mascot
+  - Rehan Yousuf
 title: Tinkerbell
 url: /2008/12/13/tinkerbell/
 ---

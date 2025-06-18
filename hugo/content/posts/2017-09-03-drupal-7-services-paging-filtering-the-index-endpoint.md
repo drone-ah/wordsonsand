@@ -1,6 +1,6 @@
 ---
 categories:
-- drupal
+  - drupal
 date: "2017-09-03T12:20:54Z"
 meta:
   _edit_last: "48492462"
@@ -11,9 +11,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- drupal-7
-- drupal-services
-title: 'Drupal 7 + Services: Paging &amp; Filtering the index endpoint'
+  - drupal-7
+  - drupal-services
+title: "Drupal 7 + Services: Paging &amp; Filtering the index endpoint"
 url: /2017/09/03/drupal-7-services-paging-filtering-the-index-endpoint/
 ---
 

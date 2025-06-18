@@ -1,6 +1,6 @@
 ---
 categories:
-- devex
+  - devex
 date: "2023-11-13T13:47:53Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:05"
@@ -12,9 +12,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- bazel
-- golang
-- testing
+  - bazel
+  - golang
+  - testing
 title: Separating out integration tests for golang in Bazel
 url: /2023/11/13/separating-out-integration-tests-for-golang-in-bazel/
 ---

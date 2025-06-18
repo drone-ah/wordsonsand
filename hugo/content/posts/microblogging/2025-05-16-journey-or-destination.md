@@ -1,11 +1,11 @@
 ---
 categories:
-- microblogging
+  - microblogging
 date: "2025-05-16T09:31:08Z"
 meta: null
 status: publish
 tags:
-- way-of-the-tortoise
+  - way-of-the-tortoise
 title: Journey or Destination
 slug: journey-or-destination
 ---

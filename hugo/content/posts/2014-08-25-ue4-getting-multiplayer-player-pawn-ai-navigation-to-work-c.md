@@ -1,6 +1,6 @@
 ---
 categories:
-- Game Development
+  - Game Development
 date: "2014-08-25T15:52:34Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:00"
@@ -11,8 +11,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- UE4
-title: '[UE4] Getting Multiplayer Player Pawn AI Navigation to work (C++)'
+  - UE4
+title: "[UE4] Getting Multiplayer Player Pawn AI Navigation to work (C++)"
 url: /2014/08/25/ue4-getting-multiplayer-player-pawn-ai-navigation-to-work-c/
 ---
 

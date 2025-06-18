@@ -1,10 +1,12 @@
 ---
 categories:
-- Android Development
+  - Android Development
 date: "2010-04-25T00:39:13Z"
-excerpt: Accessing configuration / preferences / setttings globally within an application
-  is key. The Android API provides an easy way to manage configuration but making
-  it globally accessible has a few options. One of these options is covered here
+excerpt:
+  Accessing configuration / preferences / setttings globally within an
+  application is key. The Android API provides an easy way to manage
+  configuration but making it globally accessible has a few options. One of
+  these options is covered here
 meta:
   _edit_last: "48492462"
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:40"
@@ -16,12 +18,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Configuration Management
-- Mobile software
-- Preferences
-- Settings
-- Smartphones
-- XML
+  - Configuration Management
+  - Mobile software
+  - Preferences
+  - Settings
+  - Smartphones
+  - XML
 title: Android - Managing Global Configuration
 url: /2010/04/25/android-managing-global-configuratio/
 ---

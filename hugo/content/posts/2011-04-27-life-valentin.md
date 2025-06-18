@@ -1,6 +1,6 @@
 ---
 categories:
-- Short Stories
+  - Short Stories
 date: "2011-04-27T09:00:47Z"
 meta:
   _edit_last: "48492462"
@@ -8,7 +8,7 @@ meta:
   _publicize_job_id: "5187137918"
   _wp_old_slug: "488"
   oc_commit_id: http://drone-ah.com/2011/04/27/%e2%80%9clife%e2%80%9d-valentin/1303891264
-  oc_metadata: '{ttversion:''1.1'',tttags: {}t}'
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   original_post_id: "488"
   restapi_import_id: 591d994f7aad5
 parent_id: "0"

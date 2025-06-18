@@ -1,6 +1,6 @@
 ---
 categories:
-- Philosophy
+  - Philosophy
 date: "2009-01-01T20:24:16Z"
 meta:
   _edit_last: "48492462"
@@ -14,17 +14,17 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Freedom
-- FSF
-- GNU
-- GPL
-- GPLv3
-- LGPL
-- Open Source
-- Open Source library
-- Software
-- software developers
-- Technology
+  - Freedom
+  - FSF
+  - GNU
+  - GPL
+  - GPLv3
+  - LGPL
+  - Open Source
+  - Open Source library
+  - Software
+  - software developers
+  - Technology
 title: Proprietary FSF
 url: /2009/01/01/proprietary-fsf/
 ---

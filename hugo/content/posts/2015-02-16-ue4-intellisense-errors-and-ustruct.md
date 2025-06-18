@@ -1,6 +1,6 @@
 ---
 categories:
-- Game Development
+  - Game Development
 date: "2015-02-16T16:55:32Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:00"
@@ -11,8 +11,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- UE4
-title: '[UE4] Intellisense Errors and USTRUCT'
+  - UE4
+title: "[UE4] Intellisense Errors and USTRUCT"
 url: /2015/02/16/ue4-intellisense-errors-and-ustruct/
 ---
 

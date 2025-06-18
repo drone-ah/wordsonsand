@@ -1,6 +1,6 @@
 ---
 categories:
-- Java (EE)
+  - Java (EE)
 date: "2008-12-28T18:53:50Z"
 meta:
   _edit_last: "48492462"
@@ -13,14 +13,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Eclipse
-- EJB3
-- ERP
-- InVision
-- Maven 2
-- Out of Container Testing
-- Process Dashboard
-- Request Tracker
+  - Eclipse
+  - EJB3
+  - ERP
+  - InVision
+  - Maven 2
+  - Out of Container Testing
+  - Process Dashboard
+  - Request Tracker
 title: Maven2, EJB3 and JBoss
 url: /2008/12/28/maven2-ejb3-and-jboss/
 ---

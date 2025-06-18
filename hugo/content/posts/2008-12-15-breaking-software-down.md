@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2008-12-15T15:53:43Z"
 meta:
   _edit_last: "48492462"
@@ -14,32 +14,32 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- '*nix'
-- Brave New World
-- Coding Horror
-- collaboration
-- COM
-- Contact Management
-- CORBA
-- find
-- Firefox
-- GNOME Evolution
-- grep
-- Integration
-- Interoperability
-- Jeff Atwood
-- Mylyn
-- OLE
-- REST
-- RPC
-- Safari
-- sed
-- SOAP
-- Software Component
-- Software Garden
-- Subclipse
-- Subversive
-- Thunderbird
+  - "*nix"
+  - Brave New World
+  - Coding Horror
+  - collaboration
+  - COM
+  - Contact Management
+  - CORBA
+  - find
+  - Firefox
+  - GNOME Evolution
+  - grep
+  - Integration
+  - Interoperability
+  - Jeff Atwood
+  - Mylyn
+  - OLE
+  - REST
+  - RPC
+  - Safari
+  - sed
+  - SOAP
+  - Software Component
+  - Software Garden
+  - Subclipse
+  - Subversive
+  - Thunderbird
 title: Breaking Software Down
 url: /2008/12/15/breaking-software-down/
 ---

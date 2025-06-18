@@ -1,6 +1,6 @@
 ---
 categories:
-- Software Development
+  - Software Development
 date: "2011-12-28T15:34:52Z"
 meta:
   _edit_last: "48492462"
@@ -14,11 +14,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Continuous integration
-- FindBugs
-- Hudson
-- PMD
-- Static code analysis
+  - Continuous integration
+  - FindBugs
+  - Hudson
+  - PMD
+  - Static code analysis
 title: Automating Code Analysis with Hudson [1115]
 url: /2011/12/28/automating-code-analysis-with-hudson-1115/
 ---
@@ -45,5 +45,3 @@ checkstyle:checkstyle findbugs:findbugs pmd:pmd
 
 I then enabled the four plugins, saved, ran a build and et voila\... Just like
 magic
-
-

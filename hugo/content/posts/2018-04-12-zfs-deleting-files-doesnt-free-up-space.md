@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2018-04-12T10:15:02Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:02"
@@ -12,9 +12,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- SysAdmin
-- Technology
-- zfs
+  - SysAdmin
+  - Technology
+  - zfs
 title: ZFS Deleting files doesn't free up space
 url: /2018/04/12/zfs-deleting-files-doesnt-free-up-space/
 ---

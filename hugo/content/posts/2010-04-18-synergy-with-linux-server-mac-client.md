@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2010-04-18T15:41:03Z"
 meta:
   _edit_last: "48492462"
@@ -14,14 +14,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- computing
-- Control key
-- kvm
-- Linux
-- Macintosh
-- synergy
-- synergykm
-- Ubuntu
+  - computing
+  - Control key
+  - kvm
+  - Linux
+  - Macintosh
+  - synergy
+  - synergykm
+  - Ubuntu
 title: Synergy with Linux Server &amp; Mac Client
 url: /2010/04/18/synergy-with-linux-server-mac-client/
 ---

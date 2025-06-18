@@ -1,8 +1,8 @@
 ---
 categories:
-- Database Systems
-- Kraya
-- Software
+  - Database Systems
+  - Kraya
+  - Software
 date: "2009-03-10T16:00:21Z"
 meta:
   _edit_last: "48492462"
@@ -18,37 +18,37 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- DBase
-- edFringe
-- Filemaker Pro
-- Foxpro
-- GUI
-- HSQLDB
-- IBM
-- IBM DB2
-- insurance
-- International Business Machines Corporation
-- java
-- lightweight applications
-- megabus
-- Microsoft
-- Microsoft Access
-- Microsoft Corporation
-- Microsoft SQL Server
-- MP3
-- MP3 library
-- MusicBrainz
-- MySQL
-- online course
-- open source products
-- Oracle
-- Oracle Corporation
-- PostgreSQL
-- SQLite
-- technology sector
-- Visual Foxpro
-- web frontend
-- Windows
+  - DBase
+  - edFringe
+  - Filemaker Pro
+  - Foxpro
+  - GUI
+  - HSQLDB
+  - IBM
+  - IBM DB2
+  - insurance
+  - International Business Machines Corporation
+  - java
+  - lightweight applications
+  - megabus
+  - Microsoft
+  - Microsoft Access
+  - Microsoft Corporation
+  - Microsoft SQL Server
+  - MP3
+  - MP3 library
+  - MusicBrainz
+  - MySQL
+  - online course
+  - open source products
+  - Oracle
+  - Oracle Corporation
+  - PostgreSQL
+  - SQLite
+  - technology sector
+  - Visual Foxpro
+  - web frontend
+  - Windows
 title: Database Systems Compared
 url: /2009/03/10/database-systems-compared/
 ---

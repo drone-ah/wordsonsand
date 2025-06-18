@@ -1,6 +1,6 @@
 ---
 categories:
-- drupal
+  - drupal
 date: "2017-09-28T15:53:15Z"
 meta:
   _edit_last: "48492462"
@@ -11,8 +11,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags: []
-title: 'Drupal 8 error: "The following reasons prevent the modules from being uninstalled:
-  Fields pending deletion"'
+title:
+  'Drupal 8 error: "The following reasons prevent the modules from being
+  uninstalled: Fields pending deletion"'
 url: /2017/09/28/drupal-8-error-the-following-reasons-prevent-the-modules-from-being-uninstalled-fields-pending-deletion/
 ---
 

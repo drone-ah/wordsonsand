@@ -11,9 +11,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- golang
-- pulumi
-- pulumi automation api
+  - golang
+  - pulumi
+  - pulumi automation api
 title: Streaming Progress With Pulumi Automation API
 url: /2023/11/08/streaming-progress-with-pulumi-automation-api/
 ---

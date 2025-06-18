@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2008-12-12T14:33:21Z"
 meta:
   _edit_last: "48492462"
@@ -13,13 +13,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- DOS
-- Ignorance
-- Linux
-- Microsoft Windows
-- Open Source
-- United States of America
-- USA
+  - DOS
+  - Ignorance
+  - Linux
+  - Microsoft Windows
+  - Open Source
+  - United States of America
+  - USA
 title: Evil Linux
 url: /2008/12/12/evil-linux/
 ---

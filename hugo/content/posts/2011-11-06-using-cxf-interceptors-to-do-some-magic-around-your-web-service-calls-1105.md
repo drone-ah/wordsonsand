@@ -1,6 +1,6 @@
 ---
 categories:
-- Java (EE)
+  - Java (EE)
 date: "2011-11-06T12:24:28Z"
 meta:
   _edit_last: "48492462"
@@ -14,12 +14,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Apache CXF
-- Exception handling
-- software engineering
-- Spring Framework
-- web services
-title: Using CXF Interceptors to do some magic around your web service calls [1105]
+  - Apache CXF
+  - Exception handling
+  - software engineering
+  - Spring Framework
+  - web services
+title:
+  Using CXF Interceptors to do some magic around your web service calls [1105]
 url: /2011/11/06/using-cxf-interceptors-to-do-some-magic-around-your-web-service-calls-1105/
 ---
 

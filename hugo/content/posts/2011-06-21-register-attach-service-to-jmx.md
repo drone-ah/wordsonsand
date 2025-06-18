@@ -1,6 +1,6 @@
 ---
 categories:
-- Java (EE)
+  - Java (EE)
 date: "2011-06-21T14:40:45Z"
 meta:
   _edit_last: "48492462"

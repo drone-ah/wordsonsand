@@ -1,6 +1,6 @@
 ---
 categories:
-- Artificial Intelligence
+  - Artificial Intelligence
 date: "2016-08-09T13:16:11Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:01"
@@ -11,8 +11,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- mahout
-title: '[Mahout] Deploying custom drivers to mahout'
+  - mahout
+title: "[Mahout] Deploying custom drivers to mahout"
 url: /2016/08/09/mahout-deploying-custom-drivers-to-mahout/
 ---
 
@@ -25,8 +25,9 @@ to implement it
 > [General-purpose driver class for Mahout programs. Utilizes > >
 > org.apache.hadoop.util.ProgramDriver to run main methods of other > classes, >
 > but first loads up default properties from a properties >
+>
 > > file.]{style="color:#353833;font-family:Arial, Helvetica,
-> sans-serif;font-size:12.16px;line-height:normal;"}
+> > sans-serif;font-size:12.16px;line-height:normal;"}
 >
 > To run locally:
 >
@@ -57,8 +58,9 @@ to implement it
 >
 > [The next argument to the Driver is supposed to be the short name of > the >
 > class to be run (as defined in the driver.classes.props >
+>
 > > file).]{style="color:#353833;font-family:Arial, Helvetica,
-> sans-serif;font-size:12.16px;line-height:normal;"}
+> > sans-serif;font-size:12.16px;line-height:normal;"}
 >
 > Then the class which will be run will have it's main called with
 >
@@ -67,9 +69,10 @@ to implement it
 > ```
 >
 > [After all the "default" properties are loaded from the file, any > further
+>
 > > command-line arguments are taken in, and over-ride the >
 > > defaults.]{style="color:#353833;font-family:Arial, Helvetica,
-> sans-serif;font-size:12.16px;line-height:normal;"}
+> > sans-serif;font-size:12.16px;line-height:normal;"}
 >
 > So if your driver.classes.props looks like so:
 >
@@ -78,16 +81,17 @@ to implement it
 > ```
 >
 > [and you have a file core/src/main/resources/vecDump.props which looks >
+>
 > > like]{style="color:#353833;font-family:Arial, Helvetica,
-> sans-serif;font-size:12.16px;line-height:normal;"}
+> > sans-serif;font-size:12.16px;line-height:normal;"}
 >
 > ```{style="font-size:1.3em;margin-top:0;color:#353833;line-height:normal;"}
 >   o|output = /tmp/vectorOut
 >   s|seqFile = /my/vector/sequenceFile
 > ```
 >
-> [And you execute the > command-line:]{style="color:#353833;font-family:Arial, Helvetica,
-> sans-serif;font-size:12.16px;line-height:normal;"}
+> [And you execute the > command-line:]{style="color:#353833;font-family:Arial,
+> Helvetica, sans-serif;font-size:12.16px;line-height:normal;"}
 >
 > ```{style="font-size:1.3em;margin-top:0;color:#353833;line-height:normal;"}
 > $MAHOUT_HOME/bin/mahout run vecDump -s /my/otherVector/sequenceFile

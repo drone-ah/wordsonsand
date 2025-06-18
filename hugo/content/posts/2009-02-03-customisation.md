@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2009-02-03T11:14:08Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:36"
@@ -12,11 +12,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Customisation
-- Linux
-- Open Source
-- Return On Investment
-- ROI
+  - Customisation
+  - Linux
+  - Open Source
+  - Return On Investment
+  - ROI
 title: Customisation
 url: /2009/02/03/customisation/
 ---

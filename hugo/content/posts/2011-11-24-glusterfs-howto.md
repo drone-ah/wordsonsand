@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2011-11-24T20:53:33Z"
 meta:
   _edit_last: "48492462"
@@ -14,9 +14,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- disk cloud
-- GlusterFS
-- Ubuntu
+  - disk cloud
+  - GlusterFS
+  - Ubuntu
 title: GlusterFS HOWTO [1108]
 url: /2011/11/24/glusterfs-howto/
 ---

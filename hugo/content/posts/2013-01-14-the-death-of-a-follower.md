@@ -1,6 +1,6 @@
 ---
 categories:
-- Gaming
+  - Gaming
 date: "2013-01-14T14:13:34Z"
 meta:
   _edit_last: "48492462"
@@ -14,9 +14,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Barbas
-- Fort Snowhawk
-- Skyrim
+  - Barbas
+  - Fort Snowhawk
+  - Skyrim
 title: The Death Of a Follower
 url: /2013/01/14/the-death-of-a-follower/
 ---

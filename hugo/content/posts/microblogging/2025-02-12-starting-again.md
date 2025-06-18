@@ -1,12 +1,12 @@
 ---
 categories:
-- microblogging
+  - microblogging
 date: "2025-02-12T13:17:57Z"
 meta: null
 status: publish
 tags:
-- burnout
-- startup
+  - burnout
+  - startup
 title: Starting Again
 slug: starting-again
 ---

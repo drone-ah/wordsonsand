@@ -1,6 +1,6 @@
 ---
 categories:
-- devex
+  - devex
 date: "2023-11-07T15:57:52Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:05"
@@ -12,11 +12,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- bazel
-- golang
-- pulumi
-- pulumi automation api
-title: Bazel + Pulumi Automation API. Deploying an inline stack along with Pulumi.[stack].yaml
+  - bazel
+  - golang
+  - pulumi
+  - pulumi automation api
+title:
+  Bazel + Pulumi Automation API. Deploying an inline stack along with
+  Pulumi.[stack].yaml
 url: /2023/11/07/bazel-pulumi-automation-api-deploying-an-inline-stack-along-with-pulumi-yaml/
 ---
 

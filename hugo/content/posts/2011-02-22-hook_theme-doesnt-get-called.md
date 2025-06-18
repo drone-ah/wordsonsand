@@ -1,6 +1,6 @@
 ---
 categories:
-- drupal
+  - drupal
 date: "2011-02-22T20:20:11Z"
 meta:
   _edit_last: "48492462"
@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- php
-- hook_theme
-- theming
-- Web Development
+  - php
+  - hook_theme
+  - theming
+  - Web Development
 title: hook_theme doesn't get called
 url: /2011/02/22/hook_theme-doesnt-get-called/
 ---

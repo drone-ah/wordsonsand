@@ -1,6 +1,6 @@
 ---
 categories:
-- Gaming
+  - Gaming
 date: "2014-06-02T05:01:43Z"
 meta:
   _edit_last: "48492462"
@@ -14,8 +14,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Entertainment
-- 'The Elder Scrolls V: Skyrim'
+  - Entertainment
+  - "The Elder Scrolls V: Skyrim"
 title: A Renegade in Skyrim (Part 1)
 url: /2014/06/02/a-renegade-in-skyrim-part-1/
 ---

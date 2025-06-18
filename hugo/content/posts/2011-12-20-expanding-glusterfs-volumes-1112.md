@@ -1,6 +1,6 @@
 ---
 categories:
-- Systems (Administration)
+  - Systems (Administration)
 date: "2011-12-20T13:26:55Z"
 meta:
   _edit_last: "48492462"
@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- computing
-- GlusterFS
-- Logical volume management
-- Storage
+  - computing
+  - GlusterFS
+  - Logical volume management
+  - Storage
 title: Expanding glusterfs volumes [1112]
 url: /2011/12/20/expanding-glusterfs-volumes-1112/
 ---

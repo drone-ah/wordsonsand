@@ -1,6 +1,6 @@
 ---
 categories:
-- Java (EE)
+  - Java (EE)
 date: "2012-10-17T10:40:28Z"
 meta:
   _edit_last: "48492462"
@@ -15,12 +15,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Identity management
-- idm
-- picketlink
-- seam
-- seam-security
-- seam3
+  - Identity management
+  - idm
+  - picketlink
+  - seam
+  - seam-security
+  - seam3
 title: Getting started on seam-security, picketlink IDM and JPAIdentityStore
 url: /2012/10/17/getting-started-on-seam-security-picketlink-idm-and-jpaidentitystore/
 ---

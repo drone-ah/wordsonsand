@@ -1,6 +1,6 @@
 ---
 categories:
-- Database Systems
+  - Database Systems
 date: "2011-11-06T12:45:41Z"
 meta:
   _edit_last: "48492462"
@@ -14,13 +14,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Data management
-- Databases
-- memory configuration
-- Performance
-- PostgreSQL
-- SQL
-- Temporary file
+  - Data management
+  - Databases
+  - memory configuration
+  - Performance
+  - PostgreSQL
+  - SQL
+  - Temporary file
 title: PostgreSQL performing huge updates [1106]
 url: /2011/11/06/postgresql-performing-huge-updates-1106/
 ---
@@ -64,8 +64,6 @@ According to the postgresql documentation
 > value. Sort operations are used for `ORDER BY`, `DISTINCT`, and merge joins.
 > Hash tables are used in hash joins, hash-based aggregation, and hash-based
 > processing of `IN` subqueries.
->
->
 
 This would tell us that the total memory usage with work_mem could be several
 times the value set here and setting it to half a gig would probably be a

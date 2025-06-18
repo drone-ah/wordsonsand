@@ -1,6 +1,6 @@
 ---
 categories:
-- yertoob
+  - yertoob
 date: "2018-06-26T11:18:38Z"
 meta:
   _edit_last: "48492462"
@@ -13,8 +13,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- java
-- javafx
+  - java
+  - javafx
 title: What I learnt developing a small JavaFX App
 url: /2018/06/26/what-i-learnt-developing-a-small-javafx-app-wip/
 ---

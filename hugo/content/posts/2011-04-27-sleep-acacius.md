@@ -1,6 +1,6 @@
 ---
 categories:
-- Short Stories
+  - Short Stories
 date: "2011-04-27T00:35:20Z"
 meta:
   _edit_last: "48492462"
@@ -8,7 +8,7 @@ meta:
   _publicize_job_id: "5187138003"
   _wp_old_slug: "486"
   oc_commit_id: http://drone-ah.com/2011/04/27/%e2%80%9csleep%e2%80%9d-acacius/1303860922
-  oc_metadata: '{ttversion:''1.1'',tttags: {}t}'
+  oc_metadata: "{ttversion:'1.1',tttags: {}t}"
   original_post_id: "486"
   restapi_import_id: 591d994f7aad5
 parent_id: "0"

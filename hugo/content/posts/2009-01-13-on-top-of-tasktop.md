@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+  - Software
 date: "2009-01-13T13:43:56Z"
 meta:
   _edit_last: "48492462"
@@ -13,13 +13,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Context Management
-- Eclipse
-- Firefox
-- Linux
-- Mylyn
-- Tasktop
-- Time Tracking
+  - Context Management
+  - Eclipse
+  - Firefox
+  - Linux
+  - Mylyn
+  - Tasktop
+  - Time Tracking
 title: On top of Tasktop
 url: /2009/01/13/on-top-of-tasktop/
 ---

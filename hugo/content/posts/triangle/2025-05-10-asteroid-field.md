@@ -1,16 +1,16 @@
 ---
 categories:
-- triangle
+  - triangle
 date: "2025-05-10T10:07:08Z"
 meta: null
 redirect_from:
-- /s/tlog2
-- /2025/05/08/asteroid-field/
+  - /s/tlog2
+  - /2025/05/08/asteroid-field/
 status: publish
 tags:
-- quadtree
-- procedural generation
-- devlog
+  - quadtree
+  - procedural generation
+  - devlog
 title: Procedural Asteroid Field Generation
 slug: asteroid-field
 ---

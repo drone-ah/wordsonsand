@@ -1,6 +1,6 @@
 ---
 categories:
-- Internet
+  - Internet
 date: "2009-03-09T15:01:40Z"
 meta:
   _edit_last: "48492462"
@@ -14,12 +14,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- facebook applications
-- Ideas
-- Performance
-- Reliability
-- Social Media
-- Twitter
+  - facebook applications
+  - Ideas
+  - Performance
+  - Reliability
+  - Social Media
+  - Twitter
 title: Making Twitter Better
 url: /2009/03/09/making-twitter-better/
 ---

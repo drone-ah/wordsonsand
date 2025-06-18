@@ -1,6 +1,6 @@
 ---
 categories:
-- Game Development
+  - Game Development
 date: "2015-12-15T10:35:17Z"
 meta:
   _edit_last: "48492462"
@@ -12,8 +12,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- UE4
-title: '[UE4] Source Control'
+  - UE4
+title: "[UE4] Source Control"
 url: /2015/12/15/ue4-source-control/
 ---
 

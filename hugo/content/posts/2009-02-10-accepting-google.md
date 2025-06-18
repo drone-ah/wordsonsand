@@ -1,6 +1,6 @@
 ---
 categories:
-- Philosophy
+  - Philosophy
 date: "2009-02-10T11:41:44Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:37"
@@ -12,11 +12,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Al Capone
-- Bugs
-- Coding Horror
-- Google
-- Microsoft
+  - Al Capone
+  - Bugs
+  - Coding Horror
+  - Google
+  - Microsoft
 title: Accepting Google
 url: /2009/02/10/accepting-google/
 ---

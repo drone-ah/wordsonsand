@@ -1,6 +1,6 @@
 ---
 categories:
-- Software Development
+  - Software Development
 date: "2013-01-31T20:38:48Z"
 meta:
   _edit_last: "48492462"
@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-- Apache Maven
-- Arquillian
-- Maven
-- Software
+  - Apache Maven
+  - Arquillian
+  - Maven
+  - Software
 title: WARN - Missing artifact descriptor for XXX
 url: /2013/01/31/warn-missing-artifact-descriptor-for-xxx/
 ---
@@ -50,5 +50,3 @@ when building.
 However, the dependency resolution within the maven run through Arquillian
 considers a slightly different set of requirements and resolves to a later
 version of the lib which is not available.
-
-

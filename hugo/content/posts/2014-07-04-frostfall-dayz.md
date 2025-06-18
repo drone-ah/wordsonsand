@@ -1,6 +1,6 @@
 ---
 categories:
-- Gaming
+  - Gaming
 date: "2014-07-04T03:24:55Z"
 meta:
   _edit_last: "48492462"

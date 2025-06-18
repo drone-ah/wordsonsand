@@ -1,16 +1,16 @@
 ---
 categories:
-- devex
+  - devex
 date: "2025-06-09T20:57:53Z"
 meta: null
 parent_id: "0"
 password: ""
 status: publish
 tags:
-- bazel
-- pulumi
-- pulumi automation api
-- protoc
+  - bazel
+  - pulumi
+  - pulumi automation api
+  - protoc
 title: Use `protoc` bin instead of building from source in `bazel`
 slug: use-protoc-bin-in-bazel
 ---

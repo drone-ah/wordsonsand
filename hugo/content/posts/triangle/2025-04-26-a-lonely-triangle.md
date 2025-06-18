@@ -1,11 +1,11 @@
 ---
 categories:
-- triangle
+  - triangle
 date: "2025-04-26T10:07:08Z"
 meta: null
 status: publish
 tags:
-- devlog
+  - devlog
 title: A lone triangle vs the universe
 slug: a-lonely-triangle
 ---

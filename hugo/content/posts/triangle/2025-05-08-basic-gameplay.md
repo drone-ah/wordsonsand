@@ -1,14 +1,14 @@
 ---
 categories:
-- triangle
+  - triangle
 date: "2025-05-08T10:07:08Z"
 meta: null
 redirect_from: /s/tlog1
 status: publish
 tags:
-- zig
-- raylib
-- devlog
+  - zig
+  - raylib
+  - devlog
 title: Basic Gameplay
 slug: basic-gameplay
 ---
