@@ -157,5 +157,5 @@ surviving!
 ## Other posts
 
 - [Companion vlog for this post](https://youtu.be/livphL9lOxo)
-- [Prev: Materials & Pickups ]({% post_url triangle/2025-05-13-materials %})
+- [Prev: Materials & Pickups ](2025-05-13-materials.md)
 - Next: Coming Soon
