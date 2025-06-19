@@ -1,0 +1,40 @@
+<hr class="footer-separator" />
+<div class="tags">
+    {{ if ne .Type "page" }}
+    {{ if gt .Params.tags 0 }}
+    <ul class="flat">
+        {{ range .Params.tags }}
+        {{ $tagUrl := "tags/"}}
+        <li class="tag-li"><a href="{{ $tagUrl | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+</div>
+
+{{ if isset .Site.Params "github" }}
+<div class="back">
+    <a href="{{ .Site.Params.github }}/{{ .File.Path }}" title="github"><i
+            data-feather="github"></i> Edit this on GitHub</a>
+</div>
+{{ end }}
+
+<div class="back">
+    <a href="{{ $.Site.BaseURL }}"><span aria-hidden="true">← Back</span></a>
+</div>
+
+
+<div class="back">
+    {{ if isset .Site.Params "footers" }}
+    {{ if ne .Type "page" }}
+    Next time, we'll talk about <i>"{{ range .Site.Params.footers | shuffle | first 1 }}{{ .
+        }}"</i>{{ end
+    }}
+    {{ end }}
+    {{ end }}
+</div>
+<div style="background: #111111; padding: 20px">
+                <iframe data-tally-src="https://tally.so/embed/w2g299?alignLeft=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Feedback"></iframe>
+                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        </div>
