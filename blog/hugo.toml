@@ -41,7 +41,7 @@ languageCode = "en"
 	#footers = []
 
 	# Github base url
-	github = "https://github.com/drone-ah/wordsonsand/tree/main/blog"
+	github = "https://github.com/drone-ah/wordsonsand/tree/main/blog/content"
 
 	# For statistics, we can compare the total word count against a book of your choice
 	statisticsEnabled = true
