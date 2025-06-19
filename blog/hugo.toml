@@ -83,7 +83,6 @@ url = "/index.xml"
 
 [taxonomies]
    tag = "tags"
-	 categories = "categories"
 
 [permalinks]
 posts = "/:year/:month/:day/:slug/"
@@ -104,3 +103,7 @@ posts = "/:year/:month/:day/:slug/"
     endLevel = 3
     ordered = true
     startLevel = 2
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
