@@ -1,10 +1,5 @@
----
-layout: null
----
 User-agent: *
 Disallow:
-
-Sitemap: {{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}
 
 User-agent: GPTBot
 Disallow: /

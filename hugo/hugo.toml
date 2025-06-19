@@ -3,7 +3,7 @@ disablePathToLower = false
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 theme = "ink-free"
-enableRobotsTXT = true ## set to true to enable inbuilt robots.txt
+enableRobotsTXT = false ## set to true to enable inbuilt robots.txt
 
 languageCode = "en"
 
