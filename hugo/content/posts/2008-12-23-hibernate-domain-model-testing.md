@@ -78,25 +78,25 @@ long as the filename matches the class name, the data loading is automatic.
 
 For simple classes, the Test case is as simple as:
 
-> public class CompanyTest extends DOMTest<Company> {
->
-> public CompanyTest() { super(Company.class); } }
+```java
+public class CompanyTest extends DOMTest<Company> {
+
+public CompanyTest() { super(Company.class); } }
+```
 
 The system (with the help of testNG) is also easily flexible to define object
 model dependencies. Just override the persist method (which just calls the
-super.persist) and define the groups to be persist and <object>.persist
+super.persist) and define the groups to be persist and `<object>.persist`
 
 in this particular case, it would be
 
-> @override
->
-> @Test(groups={"persist", "Company.persist"}
->
-> public void persist() {
->
-> super.persist();
->
-> }
+```java
+@override
+@Test(groups={"persist", "Company.persist"}
+public void persist() {
+    super.persist();
+}
+```
 
 For all dependent classes, I then depend on the Company.persist group (For the
 ContactTest class for example, since it needs to link to the Company object)

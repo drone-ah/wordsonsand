@@ -33,11 +33,11 @@ include the following folders into source control
 
 - Config
 - Content
-- Intermediate/ProjectFiles/<projectname>.vcxproj\* (the .vcxproj.user file may
+- `Intermediate/ProjectFiles/<projectname>.vcxproj\*` (the .vcxproj.user file may
   not be relevant if there are multiple developers)
 - Source
-- <projectname>.sln
-- <projectname>/.uproject
+- `<projectname>.sln`
+- `<projectname>/.uproject`
 
 I found it odd that the project file is in the intermediate folder since one
 wouldn't intuitively think to include it in source control

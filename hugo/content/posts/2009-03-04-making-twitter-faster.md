@@ -70,22 +70,22 @@ functionality, the timelines and search.
 The timelines can be solved by storing each tweet as a file within a directory
 structure. My tweets would go into
 
-/w/o/r/d/s/o/n/s/a/n/d/<tweet-filename>
+`/w/o/r/d/s/o/n/s/a/n/d/<tweet-filename>`
 
-The filename would be <username>-<timestamp>
+The filename would be `<username>-<timestamp>`
 
 For the public timeline, you just have a similar folder structure, but with the
 timestamp, for example, the timestamp 1236158897 would go into the following
 structure as a symlink
 
-/1/2/3/6/1/5/8/8/9/7/<username>
+`/1/2/3/6/1/5/8/8/9/7/<username>`
 
 For search, pick up each word in the tweet and pop the tweet as a symlink into
 that folder. You could have a folder per word or follow the structure above.
 
-/t/w/i/t/t/e/r/<username>-<timestamp> OR
+`/t/w/i/t/t/e/r/<username>-<timestamp>` OR
 
-twitter/<username>-<timestamp>
+`twitter/<username>-<timestamp>`
 
 You would then have an application running on top with a distributed cache with
 an API to ease access into the data easier than direct file access. Running on
