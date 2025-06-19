@@ -2,6 +2,7 @@
 categories: null
 date: "2023-12-28T00:00:00Z"
 meta: null
+slug: compassion
 status: publish
 tags:
   - ways-of-working
@@ -9,7 +10,6 @@ tags:
   - collaboration
   - people-first
 title: Compassion
-slug: compassion
 ---
 
 When you think about corporations and their culture, it's unlikely that

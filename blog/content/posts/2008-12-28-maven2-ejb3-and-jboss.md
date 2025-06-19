@@ -13,6 +13,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Java (EE)
   - Eclipse
   - EJB3
   - ERP

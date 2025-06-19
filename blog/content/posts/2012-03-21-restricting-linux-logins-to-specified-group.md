@@ -13,6 +13,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Systems (Administration)
   - CentOS
   - Identity management
   - Lightweight Directory Access Protocol

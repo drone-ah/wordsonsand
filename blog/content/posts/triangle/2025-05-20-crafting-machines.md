@@ -4,12 +4,13 @@ categories:
 date: "2025-05-20T14:27:00Z"
 meta: null
 redirect_from: /s/tcrafting
+slug: crafting-machines
 status: publish
 tags:
+  - triangle
   - crafting
   - devlog
 title: Crafting, Mods, and Machines
-slug: crafting-machines
 ---
 
 In this post, I want to explore the crafting system in triangle, especially how

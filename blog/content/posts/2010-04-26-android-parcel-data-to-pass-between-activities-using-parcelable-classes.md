@@ -13,6 +13,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Android Development
   - Activity
   - Intent
   - java

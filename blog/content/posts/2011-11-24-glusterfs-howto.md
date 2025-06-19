@@ -14,6 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Systems (Administration)
   - disk cloud
   - GlusterFS
   - Ubuntu

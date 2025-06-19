@@ -11,6 +11,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Artificial Intelligence
   - mahout
 title: "[Mahout] Deploying custom drivers to mahout"
 url: /2016/08/09/mahout-deploying-custom-drivers-to-mahout/

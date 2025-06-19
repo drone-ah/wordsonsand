@@ -12,6 +12,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Software
   - Customisation
   - Linux
   - Open Source

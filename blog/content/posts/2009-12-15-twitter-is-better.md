@@ -15,6 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Internet
   - Online social networking
   - Real-time web
   - Social Media

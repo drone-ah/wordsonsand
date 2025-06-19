@@ -3,10 +3,11 @@ categories:
   - muster
 date: "2023-12-14T00:00:00Z"
 meta: null
-status: publish
-tags: null
-title: Slack Channels for ClickUp Tickets
 slug: slack-channels-for-clickup
+status: publish
+tags:
+  - muster
+title: Slack Channels for ClickUp Tickets
 ---
 
 I mentioned GiToLink in the [post about collaboration](2023/11/21/muster/) as

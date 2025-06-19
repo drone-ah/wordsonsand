@@ -11,6 +11,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - drupal
   - drupal-7
   - drupal-services
 title: "Drupal 7 + Services: Paging &amp; Filtering the index endpoint"

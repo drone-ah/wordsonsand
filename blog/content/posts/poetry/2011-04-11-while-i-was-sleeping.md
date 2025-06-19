@@ -14,7 +14,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - poetry
 title: While i was sleeping
 url: /2011/04/11/while-i-was-sleeping/
 ---

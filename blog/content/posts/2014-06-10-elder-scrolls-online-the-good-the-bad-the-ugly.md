@@ -16,7 +16,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - Gaming
 title: Elder Scrolls Online - The good, the bad, the ugly
 url: /2014/06/10/elder-scrolls-online-the-good-the-bad-the-ugly/
 ---

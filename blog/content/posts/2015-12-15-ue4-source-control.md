@@ -12,6 +12,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Game Development
   - UE4
 title: "[UE4] Source Control"
 url: /2015/12/15/ue4-source-control/
@@ -33,8 +34,8 @@ include the following folders into source control
 
 - Config
 - Content
-- `Intermediate/ProjectFiles/<projectname>.vcxproj\*` (the .vcxproj.user file may
-  not be relevant if there are multiple developers)
+- `Intermediate/ProjectFiles/<projectname>.vcxproj\*` (the .vcxproj.user file
+  may not be relevant if there are multiple developers)
 - Source
 - `<projectname>.sln`
 - `<projectname>/.uproject`

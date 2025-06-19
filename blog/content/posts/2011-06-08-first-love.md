@@ -14,6 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Software
   - Android Development
   - HTC Desire Smartphone
   - HTC Hero

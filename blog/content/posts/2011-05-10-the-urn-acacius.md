@@ -15,6 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Short Stories
   - army
   - fantasy
   - short story

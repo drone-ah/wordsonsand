@@ -10,7 +10,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - drupal
 title:
   'Drupal 8 error: "The following reasons prevent the modules from being
   uninstalled: Fields pending deletion"'

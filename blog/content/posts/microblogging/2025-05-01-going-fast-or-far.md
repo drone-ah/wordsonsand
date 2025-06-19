@@ -3,11 +3,12 @@ categories:
   - microblogging
 date: "2025-05-01T13:17:57Z"
 meta: null
+slug: going-fast-or-far
 status: publish
 tags:
+  - microblogging
   - way-of-the-tortoise
 title: Going fast vs Going far
-slug: going-fast-or-far
 ---
 
 Aesop wrote us wonderful and valuable fables. Almost all of us know the one

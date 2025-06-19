@@ -13,6 +13,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - yertoob
   - java
   - javafx
 title: What I learnt developing a small JavaFX App

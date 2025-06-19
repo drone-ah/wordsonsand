@@ -18,6 +18,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Android Development
   - Configuration Management
   - Mobile software
   - Preferences

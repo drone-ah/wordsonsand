@@ -5,8 +5,10 @@ date: "2025-06-06T13:06:14Z"
 meta: null
 parent_id: "0"
 password: ""
+slug: bazel-go-docker-gcloud
 status: publish
 tags:
+  - devops
   - google cloud
   - webapp
   - bazel
@@ -16,7 +18,6 @@ tags:
   - docker
   - iac
 title: Build and push container image using bazel
-slug: bazel-go-docker-gcloud
 ---
 
 I am building a small [golang](/tags/golang) [webapp](/tags/webapp), and I want

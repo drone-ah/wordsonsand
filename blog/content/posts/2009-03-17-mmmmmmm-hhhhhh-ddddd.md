@@ -15,6 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Opinion
   - Christopher Walken
   - HD
   - I Married An Axe Murderer

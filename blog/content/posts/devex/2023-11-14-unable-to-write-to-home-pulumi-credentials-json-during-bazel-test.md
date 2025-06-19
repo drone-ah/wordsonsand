@@ -12,6 +12,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - devex
   - bazel
   - testing
 title: Unable to write to $HOME/.pulumi/credentials.json during bazel test

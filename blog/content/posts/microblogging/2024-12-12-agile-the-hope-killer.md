@@ -3,13 +3,14 @@ categories:
   - microblogging
 date: "2024-12-12T11:22:12Z"
 meta: null
+slug: agile-the-hope-killer
 status: publish
 tags:
+  - microblogging
   - ways-of-working
   - way-of-the-tortoise
   - agile
 title: Agile, the hope killer!
-slug: agile-the-hope-killer
 ---
 
 Two weeks into mapping out a project, I realised that we'd underestimated the

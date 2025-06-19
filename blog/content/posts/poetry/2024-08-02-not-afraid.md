@@ -11,7 +11,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - poetry
 title: Not Afraid
 url: /2024/08/02/not-afraid/
 ---

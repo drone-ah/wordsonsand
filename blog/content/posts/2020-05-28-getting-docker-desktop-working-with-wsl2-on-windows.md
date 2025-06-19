@@ -10,6 +10,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Systems (Administration)
   - docker
   - docker desktop
   - wsl2

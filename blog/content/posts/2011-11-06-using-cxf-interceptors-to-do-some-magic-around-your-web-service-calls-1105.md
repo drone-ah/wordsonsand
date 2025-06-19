@@ -14,6 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Java (EE)
   - Apache CXF
   - Exception handling
   - software engineering

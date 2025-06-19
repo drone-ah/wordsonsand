@@ -5,14 +5,15 @@ date: "2025-06-09T20:57:53Z"
 meta: null
 parent_id: "0"
 password: ""
+slug: use-protoc-bin-in-bazel
 status: publish
 tags:
+  - devex
   - bazel
   - pulumi
   - pulumi automation api
   - protoc
 title: Use `protoc` bin instead of building from source in `bazel`
-slug: use-protoc-bin-in-bazel
 ---
 
 I work on a project that uses `pulumi` automation api, which in turn uses

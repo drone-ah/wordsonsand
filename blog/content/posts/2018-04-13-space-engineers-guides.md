@@ -30,6 +30,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Guides
   - automated mining
   - mining
   - Space Engineers

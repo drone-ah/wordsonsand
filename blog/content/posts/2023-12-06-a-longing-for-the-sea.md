@@ -2,6 +2,7 @@
 categories: null
 date: "2023-12-06T00:00:00Z"
 meta: null
+slug: a-longing-for-the-sea
 status: publish
 tags:
   - ways-of-working
@@ -9,7 +10,6 @@ tags:
   - collaboration
   - people-first
 title: A Longing for the Sea
-slug: a-longing-for-the-sea
 ---
 
 One of my recently favourite quotes is:

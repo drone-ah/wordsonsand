@@ -14,6 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Gaming
   - Fallout 3
   - Games
   - Role-playing video games

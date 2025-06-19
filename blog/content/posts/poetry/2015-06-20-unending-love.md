@@ -11,7 +11,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - poetry
 title: Unending Love
 url: /2015/06/20/unending-love/
 ---

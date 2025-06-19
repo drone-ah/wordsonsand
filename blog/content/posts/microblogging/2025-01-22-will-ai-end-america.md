@@ -3,11 +3,12 @@ categories:
   - microblogging
 date: "2025-01-22T13:54:30Z"
 meta: null
+slug: will-ai-end-america
 status: publish
 tags:
+  - microblogging
   - ai
 title: Will A.I kill America?
-slug: will-ai-end-america
 ---
 
 Will $500,000,000,000 in AI investment kill America?

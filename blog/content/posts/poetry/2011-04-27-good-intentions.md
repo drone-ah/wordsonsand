@@ -14,7 +14,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - poetry
 title: Good Intentions
 url: /2011/04/27/good-intentions/
 ---

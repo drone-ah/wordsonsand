@@ -3,10 +3,34 @@ categories: []
 date: "2018-03-19T15:00:07Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:02"
+  _oembed_0363a3891051d9ecb5e95848b9c72f44:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep09 - Base Expansion" width="750" height="422"
+    src="https://www.youtube.com/embed/3PmEuCeQu8U?list=PLQb-fOWHIdUzyM-bJllq3QpWdVGDBhC98"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_0891fccf3b21bfab100785a7508509de:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep17 - Base with a View" width="750" height="422"
+    src="https://www.youtube.com/embed/9i2N8o9c1KQ?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
   _oembed_0fed2b681c326887079bce9c5b879ba4:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
     The Pilot Season | Ep1 - Hunting Uranium" width="800" height="450"
     src="https://www.youtube.com/embed/GOqmD4lVTGM?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_12412c89d36196187a0a9bbf8814e46c:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep17 - Base with a View" width="800" height="450"
+    src="https://www.youtube.com/embed/9i2N8o9c1KQ?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -19,18 +43,18 @@ meta:
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
-  _oembed_8fde3656588232d511dd7bc8195103a3:
+  _oembed_282c0623602447040936b207fec73836:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep5 - The Bug ;)" width="800" height="450"
-    src="https://www.youtube.com/embed/QXClJZm9Hb0?feature=oembed"
+    The Pilot Season | Ep09 - Base Expansion" width="800" height="450"
+    src="https://www.youtube.com/embed/3PmEuCeQu8U?list=PLQb-fOWHIdUzyM-bJllq3QpWdVGDBhC98"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
-  _oembed_9b0d1815ab7fa982206488242be1a339:
+  _oembed_2892ccd34730472fb796f86b58c54fd1:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep19 - Storage Room Complete" width="750" height="422"
-    src="https://www.youtube.com/embed/BrTGpPYQi0c?feature=oembed"
+    The Pilot Season | Ep20 - Control Room" width="750" height="422"
+    src="https://www.youtube.com/embed/TaAL_MOdghY?start=2&feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -39,6 +63,14 @@ meta:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
     The Pilot Season | Ep20 - Control Room" width="800" height="450"
     src="https://www.youtube.com/embed/TaAL_MOdghY?start=2&feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_332cbe64fb0c84261da106f9c04193aa:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep11 - The Refinery Room" width="800" height="450"
+    src="https://www.youtube.com/embed/tiqFMIspVHU?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -59,6 +91,22 @@ meta:
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
+  _oembed_3820673f6baf669a1211b5fc2bd9fea8:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep1 - Hunting Uranium" width="750" height="422"
+    src="https://www.youtube.com/embed/GOqmD4lVTGM?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_457299296cd99dd88dbde4bc604bdb43:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep7 - The Digger" width="750" height="422"
+    src="https://www.youtube.com/embed/xcBFEOzxyEQ?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
   _oembed_5471ca2f1e0af6246351f5d83d64871a:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
     The Pilot Season | Ep14 - Misbehavin&#039; Tim" width="750" height="422"
@@ -71,6 +119,38 @@ meta:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
     The Pilot Season | Ep12 - The Beaver" width="800" height="450"
     src="https://www.youtube.com/embed/L7-unJTywWo?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_559460f14496b2d8b4adc130838a778a:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep22 - Ant Mk II - Better Automated Miner" width="800"
+    height="450" src="https://www.youtube.com/embed/uvLNVdIRlkg?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_594593ec0b6f26be1835ac6efa6adb0a:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep16 - Assembler Room" width="800" height="450"
+    src="https://www.youtube.com/embed/vORayj8-f-0?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_622ee94680386586ee2ea9efbdc9ce40:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep15 - Assembler Jigsaw" width="750" height="422"
+    src="https://www.youtube.com/embed/Nq0E45KqhhM?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_66189379520103feeb6f5b3ef2d247c9:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep5 - The Bug ;)" width="750" height="422"
+    src="https://www.youtube.com/embed/QXClJZm9Hb0?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -99,6 +179,22 @@ meta:
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
+  _oembed_817895d7a319936c7b435f6bb0721048:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep8 - Tim is in Charge" width="750" height="422"
+    src="https://www.youtube.com/embed/6NCFKtMxRnQ?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_8fde3656588232d511dd7bc8195103a3:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep5 - The Bug ;)" width="800" height="450"
+    src="https://www.youtube.com/embed/QXClJZm9Hb0?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
   _oembed_92d465b04192fde47978579df52671e0:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
     The Pilot Season | Ep18 - The Storage Room" width="800" height="450"
@@ -115,106 +211,10 @@ meta:
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
-  _oembed_282c0623602447040936b207fec73836:
+  _oembed_9b0d1815ab7fa982206488242be1a339:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep09 - Base Expansion" width="800" height="450"
-    src="https://www.youtube.com/embed/3PmEuCeQu8U?list=PLQb-fOWHIdUzyM-bJllq3QpWdVGDBhC98"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_332cbe64fb0c84261da106f9c04193aa:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep11 - The Refinery Room" width="800" height="450"
-    src="https://www.youtube.com/embed/tiqFMIspVHU?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_0363a3891051d9ecb5e95848b9c72f44:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep09 - Base Expansion" width="750" height="422"
-    src="https://www.youtube.com/embed/3PmEuCeQu8U?list=PLQb-fOWHIdUzyM-bJllq3QpWdVGDBhC98"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_622ee94680386586ee2ea9efbdc9ce40:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep15 - Assembler Jigsaw" width="750" height="422"
-    src="https://www.youtube.com/embed/Nq0E45KqhhM?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_0891fccf3b21bfab100785a7508509de:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep17 - Base with a View" width="750" height="422"
-    src="https://www.youtube.com/embed/9i2N8o9c1KQ?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_2892ccd34730472fb796f86b58c54fd1:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep20 - Control Room" width="750" height="422"
-    src="https://www.youtube.com/embed/TaAL_MOdghY?start=2&feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_12412c89d36196187a0a9bbf8814e46c:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep17 - Base with a View" width="800" height="450"
-    src="https://www.youtube.com/embed/9i2N8o9c1KQ?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_559460f14496b2d8b4adc130838a778a:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep22 - Ant Mk II - Better Automated Miner" width="800"
-    height="450" src="https://www.youtube.com/embed/uvLNVdIRlkg?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_594593ec0b6f26be1835ac6efa6adb0a:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep16 - Assembler Room" width="800" height="450"
-    src="https://www.youtube.com/embed/vORayj8-f-0?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_817895d7a319936c7b435f6bb0721048:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep8 - Tim is in Charge" width="750" height="422"
-    src="https://www.youtube.com/embed/6NCFKtMxRnQ?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_3820673f6baf669a1211b5fc2bd9fea8:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep1 - Hunting Uranium" width="750" height="422"
-    src="https://www.youtube.com/embed/GOqmD4lVTGM?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_457299296cd99dd88dbde4bc604bdb43:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep7 - The Digger" width="750" height="422"
-    src="https://www.youtube.com/embed/xcBFEOzxyEQ?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_66189379520103feeb6f5b3ef2d247c9:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep5 - The Bug ;)" width="750" height="422"
-    src="https://www.youtube.com/embed/QXClJZm9Hb0?feature=oembed"
+    The Pilot Season | Ep19 - Storage Room Complete" width="750" height="422"
+    src="https://www.youtube.com/embed/BrTGpPYQi0c?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -223,14 +223,6 @@ meta:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
     The Pilot Season | Ep6 - The Shredder" width="800" height="450"
     src="https://www.youtube.com/embed/3w1T7pClos0?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_a7affee4e9aec55b9f312add28e4cd2b:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep23 - Testing the Ant Mk II" width="800" height="450"
-    src="https://www.youtube.com/embed/WhtVJZxtj3E?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -251,18 +243,18 @@ meta:
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
-  _oembed_aa1981edb0ccd6dbd3995dd752c34b6d:
+  _oembed_a7affee4e9aec55b9f312add28e4cd2b:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep2 - Build a Base" width="750" height="422"
-    src="https://www.youtube.com/embed/7qVowX5whJ4?feature=oembed"
+    The Pilot Season | Ep23 - Testing the Ant Mk II" width="800" height="450"
+    src="https://www.youtube.com/embed/WhtVJZxtj3E?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
-  _oembed_b96fcf5eb09636fb677e0b6bca4b2c34:
+  _oembed_aa1981edb0ccd6dbd3995dd752c34b6d:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep3 - Furnishings ;)" width="800" height="450"
-    src="https://www.youtube.com/embed/m5Enko3Sxxg?feature=oembed"
+    The Pilot Season | Ep2 - Build a Base" width="750" height="422"
+    src="https://www.youtube.com/embed/7qVowX5whJ4?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -279,6 +271,14 @@ meta:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
     The Pilot Season | Ep11 - The Refinery Room" width="750" height="422"
     src="https://www.youtube.com/embed/tiqFMIspVHU?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_b96fcf5eb09636fb677e0b6bca4b2c34:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep3 - Furnishings ;)" width="800" height="450"
+    src="https://www.youtube.com/embed/m5Enko3Sxxg?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -339,14 +339,6 @@ meta:
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
-  _oembed_f394e4f939732b6acf1ed3b721d1b7e7:
-    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
-    The Pilot Season | Ep23 - Testing the Ant Mk II" width="750" height="422"
-    src="https://www.youtube.com/embed/WhtVJZxtj3E?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
   _oembed_f07236d8799891f7f0eca6b619fd5ef1:
     <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
     The Pilot Season | Ep16 - Assembler Room" width="750" height="422"
@@ -355,41 +347,49 @@ meta:
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
+  _oembed_f394e4f939732b6acf1ed3b721d1b7e7:
+    <div class="embed-youtube"><iframe title="Let&#039;s Play Space Engineers |
+    The Pilot Season | Ep23 - Testing the Ant Mk II" width="750" height="422"
+    src="https://www.youtube.com/embed/WhtVJZxtj3E?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
+  _oembed_time_0363a3891051d9ecb5e95848b9c72f44: "1727615950"
+  _oembed_time_0891fccf3b21bfab100785a7508509de: "1727615952"
   _oembed_time_0fed2b681c326887079bce9c5b879ba4: "1724992649"
+  _oembed_time_12412c89d36196187a0a9bbf8814e46c: "1724992650"
   _oembed_time_1fe9093a88322d33d37000630a235432: "1724992649"
-  _oembed_time_8fde3656588232d511dd7bc8195103a3: "1724992649"
-  _oembed_time_9b0d1815ab7fa982206488242be1a339: "1727615952"
+  _oembed_time_282c0623602447040936b207fec73836: "1724992649"
+  _oembed_time_2892ccd34730472fb796f86b58c54fd1: "1727615953"
   _oembed_time_30b7c5f5a021358759ecd383b5490437: "1724992650"
+  _oembed_time_332cbe64fb0c84261da106f9c04193aa: "1724992649"
   _oembed_time_35ad5094ebfb1a97938b5dbbcdb395e9: "1724992650"
   _oembed_time_35f1b8e6fb947ac00bcb893b649dd83b: "1724992650"
+  _oembed_time_3820673f6baf669a1211b5fc2bd9fea8: "1727615947"
+  _oembed_time_457299296cd99dd88dbde4bc604bdb43: "1727615949"
+  _oembed_time_5471ca2f1e0af6246351f5d83d64871a: "1727615951"
   _oembed_time_54edbf7f6ac1449d66403d09e712607c: "1724992649"
+  _oembed_time_559460f14496b2d8b4adc130838a778a: "1724992650"
+  _oembed_time_594593ec0b6f26be1835ac6efa6adb0a: "1724992650"
+  _oembed_time_622ee94680386586ee2ea9efbdc9ce40: "1727615951"
+  _oembed_time_66189379520103feeb6f5b3ef2d247c9: "1727615949"
   _oembed_time_67c32875365d3b23daa1da317d8abb11: "1727615950"
   _oembed_time_69ee0c185f92c33e7d5c4161869fafa4: "1727615952"
   _oembed_time_70bb5c75ae9274535efa8e6fd9ccfd8a: "1724992649"
+  _oembed_time_817895d7a319936c7b435f6bb0721048: "1727615950"
+  _oembed_time_8fde3656588232d511dd7bc8195103a3: "1724992649"
   _oembed_time_92d465b04192fde47978579df52671e0: "1724992650"
   _oembed_time_97b9b440d10bc13a4a2d5d4b8e968b10: "1727615948"
-  _oembed_time_282c0623602447040936b207fec73836: "1724992649"
-  _oembed_time_332cbe64fb0c84261da106f9c04193aa: "1724992649"
-  _oembed_time_0363a3891051d9ecb5e95848b9c72f44: "1727615950"
-  _oembed_time_622ee94680386586ee2ea9efbdc9ce40: "1727615951"
-  _oembed_time_0891fccf3b21bfab100785a7508509de: "1727615952"
-  _oembed_time_2892ccd34730472fb796f86b58c54fd1: "1727615953"
-  _oembed_time_5471ca2f1e0af6246351f5d83d64871a: "1727615951"
-  _oembed_time_12412c89d36196187a0a9bbf8814e46c: "1724992650"
-  _oembed_time_559460f14496b2d8b4adc130838a778a: "1724992650"
-  _oembed_time_594593ec0b6f26be1835ac6efa6adb0a: "1724992650"
-  _oembed_time_817895d7a319936c7b435f6bb0721048: "1727615950"
-  _oembed_time_3820673f6baf669a1211b5fc2bd9fea8: "1727615947"
-  _oembed_time_457299296cd99dd88dbde4bc604bdb43: "1727615949"
-  _oembed_time_66189379520103feeb6f5b3ef2d247c9: "1727615949"
+  _oembed_time_9b0d1815ab7fa982206488242be1a339: "1727615952"
   _oembed_time_a02f5c0b81c390150e3c7cb2476aa111: "1724992649"
   _oembed_time_a37555a5b8f50151b191ba3cea5d9063: "1727615953"
   _oembed_time_a3c82c59314e22a8070f3a624058befa: "1727615951"
   _oembed_time_a7affee4e9aec55b9f312add28e4cd2b: "1724992650"
   _oembed_time_aa1981edb0ccd6dbd3995dd752c34b6d: "1727615948"
-  _oembed_time_b96fcf5eb09636fb677e0b6bca4b2c34: "1724992649"
   _oembed_time_b657a3b6e9f1228926fff1ac520ad590: "1727615949"
   _oembed_time_b9532a508e7f3996abbe72a9280a09b5: "1727615950"
+  _oembed_time_b96fcf5eb09636fb677e0b6bca4b2c34: "1724992649"
   _oembed_time_b991446dc89343e7261471cb6c169e9c: "1724992649"
   _oembed_time_c3e10e3d39e545c752928869766173ee: "1727615948"
   _oembed_time_c8d91e6ab9b251df037cb8e1373406d1: "1724992649"
@@ -397,8 +397,8 @@ meta:
   _oembed_time_de61f0495dee69c71715e521e2fe5ab8: "1724992650"
   _oembed_time_e68ad96c284197b6593604585974a659: "1724992650"
   _oembed_time_e770fa40e5299b6e655e9c094b5338e0: "1727615953"
-  _oembed_time_f394e4f939732b6acf1ed3b721d1b7e7: "1727615954"
   _oembed_time_f07236d8799891f7f0eca6b619fd5ef1: "1727615952"
+  _oembed_time_f394e4f939732b6acf1ed3b721d1b7e7: "1727615954"
   _publicize_job_id: "15886000664"
   _rest_api_client_id: "-1"
   _rest_api_published: "1"

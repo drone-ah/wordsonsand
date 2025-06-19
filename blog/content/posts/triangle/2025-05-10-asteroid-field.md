@@ -6,13 +6,14 @@ meta: null
 redirect_from:
   - /s/tlog2
   - /2025/05/08/asteroid-field/
+slug: asteroid-field
 status: publish
 tags:
+  - triangle
   - quadtree
   - procedural generation
   - devlog
 title: Procedural Asteroid Field Generation
-slug: asteroid-field
 ---
 
 In this post, I am going to cover procedural asteroid field generation. At a

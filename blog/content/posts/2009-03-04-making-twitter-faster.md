@@ -16,6 +16,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Systems (Administration)
   - API
   - caching
   - Challenge

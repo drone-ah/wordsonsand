@@ -10,7 +10,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - poetry
 title: The Joy of Misery
 url: /2015/06/19/the-joy-of-misery/
 ---

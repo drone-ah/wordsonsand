@@ -3,6 +3,14 @@ categories: []
 date: "2018-04-05T12:01:06Z"
 meta:
   _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:02"
+  _oembed_09397cb11ad342bdb9aca491fe64eb46:
+    <div class="embed-youtube"><iframe title="Ep03 Optimisin&#039; | First Run |
+    Let&#039;s Play while true; learn();" width="750" height="422"
+    src="https://www.youtube.com/embed/e9Hd2cV-7GE?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe></div>
   _oembed_73aea04f43ab55a5ed44fbf61a97b4eb:
     <div class="embed-youtube"><iframe title="Ep01 Getting Started | First Run |
     Let&#039;s Play while true; learn();" width="800" height="450"
@@ -15,14 +23,6 @@ meta:
     <div class="embed-youtube"><iframe title="Ep02 Self Driving Cars | First Run
     | Let&#039;s Play while true; learn();" width="750" height="422"
     src="https://www.youtube.com/embed/owx83tHERio?feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe></div>
-  _oembed_09397cb11ad342bdb9aca491fe64eb46:
-    <div class="embed-youtube"><iframe title="Ep03 Optimisin&#039; | First Run |
-    Let&#039;s Play while true; learn();" width="750" height="422"
-    src="https://www.youtube.com/embed/e9Hd2cV-7GE?feature=oembed"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -51,9 +51,9 @@ meta:
     encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen></iframe></div>
+  _oembed_time_09397cb11ad342bdb9aca491fe64eb46: "1727615961"
   _oembed_time_73aea04f43ab55a5ed44fbf61a97b4eb: "1724993581"
   _oembed_time_97a3a02ef688024a6710e6409c70b054: "1727615961"
-  _oembed_time_09397cb11ad342bdb9aca491fe64eb46: "1727615961"
   _oembed_time_c699983ba79c4407ecc4b9694e5e4ccc: "1724993581"
   _oembed_time_e31d2d26632593983f70d663390f9709: "1724993581"
   _oembed_time_f734aaab5e0e3000f341dfa870069eb1: "1727615961"

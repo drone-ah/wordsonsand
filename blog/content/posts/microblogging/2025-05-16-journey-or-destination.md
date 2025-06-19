@@ -3,11 +3,12 @@ categories:
   - microblogging
 date: "2025-05-16T09:31:08Z"
 meta: null
+slug: journey-or-destination
 status: publish
 tags:
+  - microblogging
   - way-of-the-tortoise
 title: Journey or Destination
-slug: journey-or-destination
 ---
 
 Everybody in India was seemingly learning to be a software engineer in the

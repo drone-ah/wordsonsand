@@ -16,7 +16,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - poetry
 title: Hold on tight
 url: /2012/04/20/hold-on-tight/
 ---

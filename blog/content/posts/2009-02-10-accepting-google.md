@@ -12,6 +12,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Philosophy
   - Al Capone
   - Bugs
   - Coding Horror

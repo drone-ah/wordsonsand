@@ -12,7 +12,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - poetry
 title: A Half Written Poem
 url: /2024/01/03/a-half-written-poem/
 ---

@@ -13,6 +13,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - devex
   - aws-lambda
   - bazel
   - golang

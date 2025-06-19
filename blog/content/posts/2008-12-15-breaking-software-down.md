@@ -14,6 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - Software
   - "*nix"
   - Brave New World
   - Coding Horror

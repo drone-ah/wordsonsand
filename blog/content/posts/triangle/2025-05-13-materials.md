@@ -4,12 +4,13 @@ categories:
 date: "2025-05-13T12:07:00Z"
 meta: null
 redirect_from: /s/tlog3
+slug: materials
 status: publish
 tags:
+  - triangle
   - crafting
   - devlog
 title: Materials
-slug: materials
 ---
 
 In triangle, everything should feel earned - so all items are crafted, not

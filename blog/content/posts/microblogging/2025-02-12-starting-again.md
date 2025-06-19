@@ -3,12 +3,13 @@ categories:
   - microblogging
 date: "2025-02-12T13:17:57Z"
 meta: null
+slug: starting-again
 status: publish
 tags:
+  - microblogging
   - burnout
   - startup
 title: Starting Again
-slug: starting-again
 ---
 
 Most of you know that I ran my own company for fifteen years, and at one point

@@ -15,6 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - drupal
   - drupal-entities
   - php
 title: Drupal Entities - PHP Class per bundle

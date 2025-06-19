@@ -15,7 +15,8 @@ meta:
 parent_id: "0"
 password: ""
 status: publish
-tags: []
+tags:
+  - Short Stories
 title: “Love” - Ta’oma
 url: /2011/04/27/love-taoma/
 ---
