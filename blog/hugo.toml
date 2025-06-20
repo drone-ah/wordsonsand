@@ -5,10 +5,12 @@ defaultContentLanguageInSubdir = false
 theme = "ink-free"
 enableRobotsTXT = false ## set to true to enable inbuilt robots.txt
 
+title = "words on sand"
+
 languageCode = "en"
 
 [params]
-	subtitle = "words on sand"
+	subtitle = "from shri at drone-ah.com"
 
 	# Optional 64x64 avatar image.
 	#avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
