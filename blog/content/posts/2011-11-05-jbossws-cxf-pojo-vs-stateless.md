@@ -17,8 +17,7 @@ tags:
   - java-ee
   - load-testing
   - log4j
-  - plain-old-java-object
-  - software-components
+  - pojo
   - web-services
   - webxml
   - xml

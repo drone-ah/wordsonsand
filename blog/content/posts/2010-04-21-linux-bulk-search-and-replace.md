@@ -14,10 +14,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - systems-administration
+  - sysadmin
   - bash
   - bulk-search
-  - computing
   - find
   - grep
   - search-and-replace

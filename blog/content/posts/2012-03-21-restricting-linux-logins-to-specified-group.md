@@ -13,7 +13,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - systems-administration
+  - sysadmin
   - centos
   - identity-management
   - lightweight-directory-access-protocol

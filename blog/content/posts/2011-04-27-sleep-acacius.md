@@ -15,7 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - short-stories
+  - short-story
 title: “Sleep” - Acacius
 url: /2011/04/27/sleep-acacius/
 ---

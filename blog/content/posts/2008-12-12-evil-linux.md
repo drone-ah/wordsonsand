@@ -19,7 +19,6 @@ tags:
   - linux
   - microsoft-windows
   - open-source
-  - united-states-of-america
   - usa
 title: Evil Linux
 url: /2008/12/12/evil-linux/

@@ -17,7 +17,7 @@ tags:
   - gaming
   - baldurs-gate
   - games
-  - the-elder-scrolls-v-skyrim
+  - skyrim
   - windows-games
 title: Destructible World in Battlefield 4
 url: /2013/10/10/destructible-world-in-battlefield-4/

@@ -17,7 +17,7 @@ status: publish
 tags:
   - software
   - cmake
-  - compiling-tools
+  - compilers
   - emacs
   - flymake
   - gnu-build-system

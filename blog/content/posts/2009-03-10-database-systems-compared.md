@@ -28,7 +28,6 @@ tags:
   - ibm
   - ibm-db2
   - insurance
-  - international-business-machines-corporation
   - java
   - lightweight-applications
   - megabus
@@ -49,7 +48,7 @@ tags:
   - technology-sector
   - visual-foxpro
   - web-frontend
-  - windows
+  - microsoft-windows
 title: Database Systems Compared
 url: /2009/03/10/database-systems-compared/
 ---

@@ -20,8 +20,8 @@ tags:
   - role-playing-video-games
   - skyrim
   - the-elder-scrolls
-  - the-elder-scrolls-ii-daggerfall
-  - the-elder-scrolls-iv-oblivion
+  - daggerfall
+  - oblivion
 title: "Elder Scrolls V: Skyrim [1111]"
 url: /2011/11/11/elder-scrolls-v-skyrim-1111/
 ---

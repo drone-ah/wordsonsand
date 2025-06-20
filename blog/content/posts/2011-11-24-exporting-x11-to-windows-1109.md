@@ -14,7 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - systems-administration
+  - sysadmin
   - cross-platform-software
   - cygwin
   - linux

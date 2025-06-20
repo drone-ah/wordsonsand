@@ -14,12 +14,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - systems-administration
+  - sysadmin
   - devils-pie
   - gnome
   - linux
   - nifty-tool
-  - system-software
   - technologyinternet
   - workspace
   - x11

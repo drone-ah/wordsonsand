@@ -17,9 +17,7 @@ tags:
   - code-coverage
   - data-testing
   - dbunit
-  - dom
   - domain-model
-  - domain-object-model
   - ejb3unit
   - entity-testing
   - hibernate

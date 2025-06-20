@@ -15,7 +15,7 @@ status: publish
 tags:
   - software
   - 64bit
-  - dev-env
+  - devex
   - eclipse
   - eclipse-tptp
   - java

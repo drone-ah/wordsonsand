@@ -36,7 +36,6 @@ tags:
   - safari
   - sed
   - soap
-  - software-component
   - software-garden
   - subclipse
   - subversive

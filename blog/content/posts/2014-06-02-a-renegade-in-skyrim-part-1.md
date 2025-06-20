@@ -16,7 +16,7 @@ status: publish
 tags:
   - gaming
   - entertainment
-  - the-elder-scrolls-v-skyrim
+  - skyrim
 title: A Renegade in Skyrim (Part 1)
 url: /2014/06/02/a-renegade-in-skyrim-part-1/
 ---

@@ -13,9 +13,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - android-development
+  - android-dev
   - activity
-  - intent
   - java
   - parcel
   - parcelable

@@ -16,11 +16,10 @@ password: ""
 status: publish
 tags:
   - internet
-  - online-social-networking
   - real-time-web
   - social-media
   - twitter
-  - web-20
+  - web-2-0
 title: Twitter is better
 url: /2009/12/15/twitter-is-better/
 ---

@@ -13,7 +13,6 @@ password: ""
 status: publish
 tags:
   - showcase
-  - showcases
   - space-engineers
 title: Space Engineers Showcases
 url: /2018/04/05/space-engineers-showcases/

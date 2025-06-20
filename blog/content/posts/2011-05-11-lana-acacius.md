@@ -16,7 +16,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - short-stories
+  - short-story
 title: Lana - Acacius
 url: /2011/05/11/lana-acacius/
 ---

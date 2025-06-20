@@ -11,7 +11,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - systems-administration
+  - sysadmin
 title: Understanding ZFS Disk Utilisation and available space
 url: /2017/08/16/understanding-zfs-disk-utilisation-and-available-space/
 ---

@@ -14,7 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - android-development
+  - android-dev
   - android
   - google
   - java

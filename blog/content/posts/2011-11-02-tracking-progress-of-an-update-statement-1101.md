@@ -14,7 +14,6 @@ password: ""
 status: publish
 tags:
   - database-systems
-  - computing
   - database
   - databases
   - postgresql

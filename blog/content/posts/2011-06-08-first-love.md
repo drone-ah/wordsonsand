@@ -15,7 +15,7 @@ password: ""
 status: publish
 tags:
   - software
-  - android-development
+  - android-dev
   - htc-desire-smartphone
   - htc-hero
   - iphone

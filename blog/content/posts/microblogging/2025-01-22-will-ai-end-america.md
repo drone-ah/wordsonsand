@@ -8,6 +8,7 @@ status: publish
 tags:
   - microblogging
   - ai
+  - usa
 title: Will A.I kill America?
 ---
 

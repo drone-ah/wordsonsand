@@ -10,7 +10,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - systems-administration
+  - sysadmin
   - bash
 title: How to fix terminal title after disconnecting from ssh
 url: /2020/06/25/how-to-terminal-title-after-disconnecting-from-ssh/

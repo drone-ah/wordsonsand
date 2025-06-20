@@ -17,7 +17,6 @@ status: publish
 tags:
   - opinion
   - christopher-walken
-  - hd
   - i-married-an-axe-murderer
   - krish
   - kung-fu-hustle

@@ -14,10 +14,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - software-development
-  - dag
-  - dependency
+  - sfeng
   - directed-acyclic-graph
+  - dependency
   - graphs
   - java
   - pointer

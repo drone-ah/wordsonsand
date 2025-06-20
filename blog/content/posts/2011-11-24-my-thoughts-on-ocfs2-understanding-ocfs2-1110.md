@@ -13,12 +13,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - systems-administration
+  - sysadmin
   - computer-storage
   - drbd
   - file-system
   - gfs2
-  - global-file-system
   - ocfs
   - ocfs2
   - ocfs2-tools

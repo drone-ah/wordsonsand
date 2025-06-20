@@ -11,7 +11,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - game-development
+  - gamedev
   - ue4
 title: "[UE4] Intellisense Errors and USTRUCT"
 url: /2015/02/16/ue4-intellisense-errors-and-ustruct/

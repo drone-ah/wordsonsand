@@ -14,8 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - systems-administration
-  - guest-os
+  - sysadmin
   - host-networking
   - linux
   - microsoft-vista
