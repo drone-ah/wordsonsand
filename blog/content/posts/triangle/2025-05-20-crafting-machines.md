@@ -1,9 +1,10 @@
 ---
+aliases:
+  - /s/tcrafting
 categories:
   - triangle
 date: "2025-05-20T14:27:00Z"
 meta: null
-redirect_from: /s/tcrafting
 slug: crafting-machines
 status: publish
 tags:

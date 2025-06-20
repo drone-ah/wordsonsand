@@ -1,11 +1,11 @@
 ---
+aliases:
+  - /s/tlog2
+  - /2025/05/08/asteroid-field/
 categories:
   - triangle
 date: "2025-05-10T10:07:08Z"
 meta: null
-redirect_from:
-  - /s/tlog2
-  - /2025/05/08/asteroid-field/
 slug: asteroid-field
 status: publish
 tags:

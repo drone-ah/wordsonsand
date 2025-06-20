@@ -1,9 +1,10 @@
 ---
+aliases:
+  - /s/tlog3
 categories:
   - triangle
 date: "2025-05-13T12:07:00Z"
 meta: null
-redirect_from: /s/tlog3
 slug: materials
 status: publish
 tags:
