@@ -13,11 +13,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
-  - Linux
-  - Remote X11
+  - systems-administration
+  - linux
+  - remote-x11
   - ssh
-  - X11
+  - x11
 title: X11 Remote Applications Responsiveness
 url: /2008/12/30/x11-remote-applications-responsiveness/
 ---

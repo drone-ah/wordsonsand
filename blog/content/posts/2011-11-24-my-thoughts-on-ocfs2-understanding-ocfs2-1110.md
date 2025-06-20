@@ -13,18 +13,18 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
-  - Computer storage
-  - DRBD
-  - File system
-  - GFS2
-  - Global File System
-  - OCFS
-  - OCFS2
+  - systems-administration
+  - computer-storage
+  - drbd
+  - file-system
+  - gfs2
+  - global-file-system
+  - ocfs
+  - ocfs2
   - ocfs2-tools
-  - SAN
-  - Shared disk file system
-  - Ubuntu
+  - san
+  - shared-disk-file-system
+  - ubuntu
 title: My Thoughts on OCFS2 / Understanding OCFS2 [1110]
 url: /2011/11/24/my-thoughts-on-ocfs2-understanding-ocfs2-1110/
 ---

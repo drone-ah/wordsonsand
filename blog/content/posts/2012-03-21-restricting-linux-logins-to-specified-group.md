@@ -13,12 +13,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
-  - CentOS
-  - Identity management
-  - Lightweight Directory Access Protocol
-  - Linux
-  - Ubuntu
+  - systems-administration
+  - centos
+  - identity-management
+  - lightweight-directory-access-protocol
+  - linux
+  - ubuntu
 title: Restricting Linux Logins to Specified Group
 url: /2012/03/21/restricting-linux-logins-to-specified-group/
 ---

@@ -18,38 +18,38 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Database Systems
-  - DBase
-  - edFringe
-  - Filemaker Pro
-  - Foxpro
-  - GUI
-  - HSQLDB
-  - IBM
-  - IBM DB2
+  - database-systems
+  - dbase
+  - edfringe
+  - filemaker-pro
+  - foxpro
+  - gui
+  - hsqldb
+  - ibm
+  - ibm-db2
   - insurance
-  - International Business Machines Corporation
+  - international-business-machines-corporation
   - java
-  - lightweight applications
+  - lightweight-applications
   - megabus
-  - Microsoft
-  - Microsoft Access
-  - Microsoft Corporation
-  - Microsoft SQL Server
-  - MP3
-  - MP3 library
-  - MusicBrainz
-  - MySQL
-  - online course
-  - open source products
-  - Oracle
-  - Oracle Corporation
-  - PostgreSQL
-  - SQLite
-  - technology sector
-  - Visual Foxpro
-  - web frontend
-  - Windows
+  - microsoft
+  - microsoft-access
+  - microsoft-corporation
+  - microsoft-sql-server
+  - mp3
+  - mp3-library
+  - musicbrainz
+  - mysql
+  - online-course
+  - open-source-products
+  - oracle
+  - oracle-corporation
+  - postgresql
+  - sqlite
+  - technology-sector
+  - visual-foxpro
+  - web-frontend
+  - windows
 title: Database Systems Compared
 url: /2009/03/10/database-systems-compared/
 ---

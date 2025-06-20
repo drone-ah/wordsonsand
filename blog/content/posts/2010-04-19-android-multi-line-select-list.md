@@ -14,13 +14,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Android Development
-  - Android
-  - Google
+  - android-development
+  - android
+  - google
   - java
-  - Smartphones
-  - ViewGroup
-  - XML
+  - smartphones
+  - viewgroup
+  - xml
 title: Android - Multi-line Select List
 url: /2010/04/19/android-multi-line-select-list/
 ---

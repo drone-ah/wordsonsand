@@ -12,9 +12,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Showcase
+  - showcase
   - showcases
-  - Space Engineers
+  - space-engineers
 title: Space Engineers Showcases
 url: /2018/04/05/space-engineers-showcases/
 ---

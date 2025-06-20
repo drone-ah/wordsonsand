@@ -14,7 +14,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Java (EE)
+  - java-ee
   - calendar
   - richfaces
   - seam

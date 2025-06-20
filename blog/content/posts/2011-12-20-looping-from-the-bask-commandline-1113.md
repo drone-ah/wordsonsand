@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
+  - systems-administration
   - bash
-  - Infinite loop
-  - Scripting languages
+  - infinite-loop
+  - scripting-languages
 title: Looping from the bash commandline [1113]
 url: /2011/12/20/looping-from-the-bask-commandline-1113/
 ---

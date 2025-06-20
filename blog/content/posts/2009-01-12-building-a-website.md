@@ -12,14 +12,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Internet
-  - Design
-  - Facebook
-  - Functionality
-  - Google
-  - Social Interaction
-  - Sourceforge
-  - Usability
+  - internet
+  - design
+  - facebook
+  - functionality
+  - google
+  - social-interaction
+  - sourceforge
+  - usability
 title: Building A Website
 url: /2009/01/12/building-a-website/
 ---

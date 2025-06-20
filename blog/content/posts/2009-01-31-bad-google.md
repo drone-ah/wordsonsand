@@ -13,10 +13,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Internet
-  - Google
-  - Orkut
-  - Security
+  - internet
+  - google
+  - orkut
+  - security
 title: Bad Google
 url: /2009/01/31/bad-google/
 ---

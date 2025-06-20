@@ -10,7 +10,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software Development
+  - software-development
   - aws
   - node
   - ssm

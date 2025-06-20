@@ -14,15 +14,15 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
+  - systems-administration
   - computing
-  - Control key
+  - control-key
   - kvm
-  - Linux
-  - Macintosh
+  - linux
+  - macintosh
   - synergy
   - synergykm
-  - Ubuntu
+  - ubuntu
 title: Synergy with Linux Server &amp; Mac Client
 url: /2010/04/18/synergy-with-linux-server-mac-client/
 ---

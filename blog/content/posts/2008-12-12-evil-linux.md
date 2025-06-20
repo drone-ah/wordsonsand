@@ -13,14 +13,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software
-  - DOS
-  - Ignorance
-  - Linux
-  - Microsoft Windows
-  - Open Source
-  - United States of America
-  - USA
+  - software
+  - dos
+  - ignorance
+  - linux
+  - microsoft-windows
+  - open-source
+  - united-states-of-america
+  - usa
 title: Evil Linux
 url: /2008/12/12/evil-linux/
 ---

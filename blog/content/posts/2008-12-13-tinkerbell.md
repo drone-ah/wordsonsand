@@ -14,9 +14,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Humour
-  - Kraya Mascot
-  - Rehan Yousuf
+  - humour
+  - kraya-mascot
+  - rehan-yousuf
 title: Tinkerbell
 url: /2008/12/13/tinkerbell/
 ---

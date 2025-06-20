@@ -14,11 +14,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
+  - systems-administration
   - computing
-  - GlusterFS
-  - Logical volume management
-  - Storage
+  - glusterfs
+  - logical-volume-management
+  - storage
 title: Expanding glusterfs volumes [1112]
 url: /2011/12/20/expanding-glusterfs-volumes-1112/
 ---

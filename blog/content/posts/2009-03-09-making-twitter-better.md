@@ -14,13 +14,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Internet
-  - facebook applications
-  - Ideas
-  - Performance
-  - Reliability
-  - Social Media
-  - Twitter
+  - internet
+  - facebook-applications
+  - ideas
+  - performance
+  - reliability
+  - social-media
+  - twitter
 title: Making Twitter Better
 url: /2009/03/09/making-twitter-better/
 ---

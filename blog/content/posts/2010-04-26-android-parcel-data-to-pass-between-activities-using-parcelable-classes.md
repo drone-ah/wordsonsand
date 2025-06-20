@@ -13,12 +13,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Android Development
-  - Activity
-  - Intent
+  - android-development
+  - activity
+  - intent
   - java
-  - Parcel
-  - Parcelable
+  - parcel
+  - parcelable
 title: Android - Parcel data to pass between Activities using Parcelable classes
 url: /2010/04/26/android-parcel-data-to-pass-between-activities-using-parcelable-classes/
 ---

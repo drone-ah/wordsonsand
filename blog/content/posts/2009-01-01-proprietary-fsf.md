@@ -14,18 +14,18 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Philosophy
-  - Freedom
-  - FSF
-  - GNU
-  - GPL
-  - GPLv3
-  - LGPL
-  - Open Source
-  - Open Source library
-  - Software
-  - software developers
-  - Technology
+  - philosophy
+  - freedom
+  - fsf
+  - gnu
+  - gpl
+  - gplv3
+  - lgpl
+  - open-source
+  - open-source-library
+  - software
+  - software-developers
+  - technology
 title: Proprietary FSF
 url: /2009/01/01/proprietary-fsf/
 ---

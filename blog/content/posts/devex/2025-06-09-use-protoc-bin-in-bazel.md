@@ -11,7 +11,7 @@ tags:
   - devex
   - bazel
   - pulumi
-  - pulumi automation api
+  - pulumi-automation-api
   - protoc
 title: Use `protoc` bin instead of building from source in `bazel`
 ---

@@ -17,7 +17,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Gaming
+  - gaming
 title: Frostfall &amp; DayZ
 url: /2014/07/04/frostfall-dayz/
 ---

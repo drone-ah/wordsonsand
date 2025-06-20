@@ -12,12 +12,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software
-  - Customisation
-  - Linux
-  - Open Source
-  - Return On Investment
-  - ROI
+  - software
+  - customisation
+  - linux
+  - open-source
+  - return-on-investment
+  - roi
 title: Customisation
 url: /2009/02/03/customisation/
 ---

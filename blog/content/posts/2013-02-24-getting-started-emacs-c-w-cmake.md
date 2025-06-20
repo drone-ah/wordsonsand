@@ -15,13 +15,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software
-  - CMake
-  - Compiling tools
-  - Emacs
-  - Flymake
-  - GNU build system
-  - Make
+  - software
+  - cmake
+  - compiling-tools
+  - emacs
+  - flymake
+  - gnu-build-system
+  - make
 title:
   "Getting Started: Emacs &amp; C++ (w/ cmake) (On the fly syntax highlighting)"
 url: /2013/02/24/getting-started-emacs-c-w-cmake/

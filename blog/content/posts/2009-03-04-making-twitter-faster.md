@@ -16,19 +16,19 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
-  - API
+  - systems-administration
+  - api
   - caching
-  - Challenge
-  - Hadoop
-  - HBase
-  - Ideas
-  - Linux
+  - challenge
+  - hadoop
+  - hbase
+  - ideas
+  - linux
   - megabus
-  - relational database
-  - search mechanism
-  - search time
-  - Twitter
+  - relational-database
+  - search-mechanism
+  - search-time
+  - twitter
 title: Making Twitter Faster
 url: /2009/03/04/making-twitter-faster/
 ---

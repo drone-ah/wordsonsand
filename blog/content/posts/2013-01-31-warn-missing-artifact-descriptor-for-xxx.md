@@ -14,11 +14,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software Development
-  - Apache Maven
-  - Arquillian
-  - Maven
-  - Software
+  - software-development
+  - apache-maven
+  - arquillian
+  - maven
+  - software
 title: WARN - Missing artifact descriptor for XXX
 url: /2013/01/31/warn-missing-artifact-descriptor-for-xxx/
 ---

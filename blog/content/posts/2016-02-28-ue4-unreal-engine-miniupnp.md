@@ -11,8 +11,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Game Development
-  - UE4
+  - game-development
+  - ue4
 title: "[UE4] Unreal Engine &amp; miniupnp"
 url: /2016/02/28/ue4-unreal-engine-miniupnp/
 ---

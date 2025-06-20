@@ -14,17 +14,17 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
-  - Cross-platform software
-  - Cygwin
-  - Linux
-  - Linux kernel
-  - PuTTY
-  - Windows 7
-  - X servers
-  - X Window System
-  - X Windows
-  - Xming
+  - systems-administration
+  - cross-platform-software
+  - cygwin
+  - linux
+  - linux-kernel
+  - putty
+  - windows-7
+  - x-servers
+  - x-window-system
+  - x-windows
+  - xming
 title: Exporting X11 to Windows [1109]
 url: /2011/11/24/exporting-x11-to-windows-1109/
 ---

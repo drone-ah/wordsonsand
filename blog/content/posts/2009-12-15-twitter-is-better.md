@@ -15,12 +15,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Internet
-  - Online social networking
-  - Real-time web
-  - Social Media
-  - Twitter
-  - Web 2.0
+  - internet
+  - online-social-networking
+  - real-time-web
+  - social-media
+  - twitter
+  - web-20
 title: Twitter is better
 url: /2009/12/15/twitter-is-better/
 ---

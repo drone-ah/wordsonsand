@@ -11,7 +11,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Artificial Intelligence
+  - artificial-intelligence
   - mahout
 title: Setting up Mahout in Linux
 url: /2016/07/26/setting-up-mahout-in-linux/

@@ -16,9 +16,9 @@ status: publish
 tags:
   - drupal
   - php
-  - hook_theme
+  - hook-theme
   - theming
-  - Web Development
+  - web-development
 title: hook_theme doesn't get called
 url: /2011/02/22/hook_theme-doesnt-get-called/
 ---

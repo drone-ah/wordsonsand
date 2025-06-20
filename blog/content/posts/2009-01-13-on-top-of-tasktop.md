@@ -13,14 +13,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software
-  - Context Management
-  - Eclipse
-  - Firefox
-  - Linux
-  - Mylyn
-  - Tasktop
-  - Time Tracking
+  - software
+  - context-management
+  - eclipse
+  - firefox
+  - linux
+  - mylyn
+  - tasktop
+  - time-tracking
 title: On top of Tasktop
 url: /2009/01/13/on-top-of-tasktop/
 ---

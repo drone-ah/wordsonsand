@@ -14,18 +14,18 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software
-  - Android Development
-  - HTC Desire Smartphone
-  - HTC Hero
-  - iPhone
-  - Linux devices
-  - Motorola Atrix
-  - Motorola MicroTAC
-  - Motorola Mobile Devices
-  - Samsung
-  - Samsung Galaxy S2
-  - Smartphones
+  - software
+  - android-development
+  - htc-desire-smartphone
+  - htc-hero
+  - iphone
+  - linux-devices
+  - motorola-atrix
+  - motorola-microtac
+  - motorola-mobile-devices
+  - samsung
+  - samsung-galaxy-s2
+  - smartphones
 title: First Love
 url: /2011/06/08/first-love/
 ---

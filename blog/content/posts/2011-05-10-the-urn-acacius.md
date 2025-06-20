@@ -15,10 +15,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Short Stories
+  - short-stories
   - army
   - fantasy
-  - short story
+  - short-story
 title: The Urn - Acacius
 url: /2011/05/10/the-urn-acacius/
 ---

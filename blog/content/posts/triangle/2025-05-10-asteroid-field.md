@@ -11,7 +11,7 @@ status: publish
 tags:
   - triangle
   - quadtree
-  - procedural generation
+  - procedural-generation
   - devlog
 title: Procedural Asteroid Field Generation
 ---

@@ -13,14 +13,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software
-  - Linux
-  - Microsoft
-  - Microsoft SQL Server
-  - MySQL
-  - Oracle
-  - PostgreSQL
-  - Ubuntu
+  - software
+  - linux
+  - microsoft
+  - microsoft-sql-server
+  - mysql
+  - oracle
+  - postgresql
+  - ubuntu
 title: Controversy
 url: /2009/01/31/controversy/
 ---

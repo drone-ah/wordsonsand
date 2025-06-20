@@ -14,15 +14,15 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software
-  - Brian Lunduke
-  - Cross-platform software
-  - Debian
-  - Linux
-  - Linux distributions
-  - Live CD
-  - Microsoft Windows
-  - Ubuntu
+  - software
+  - brian-lunduke
+  - cross-platform-software
+  - debian
+  - linux
+  - linux-distributions
+  - live-cd
+  - microsoft-windows
+  - ubuntu
 title: Perfect Linux
 url: /2009/12/15/perfect-linux/
 ---

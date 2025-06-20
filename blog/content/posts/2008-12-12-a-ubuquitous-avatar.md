@@ -13,12 +13,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Internet
-  - Avatar
-  - Cool
-  - Facebook
-  - Gravatar
-  - Social Media
+  - internet
+  - avatar
+  - cool
+  - facebook
+  - gravatar
+  - social-media
 title: A Ubuquitous Avatar
 url: /2008/12/12/a-ubuquitous-avatar/
 ---

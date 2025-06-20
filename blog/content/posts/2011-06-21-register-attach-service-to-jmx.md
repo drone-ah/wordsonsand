@@ -15,7 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Java (EE)
+  - java-ee
 title: Register / Attach Service to JMX
 url: /2011/06/21/register-attach-service-to-jmx/
 ---

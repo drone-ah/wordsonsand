@@ -14,14 +14,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software Development
-  - DAG
-  - Dependency
-  - Directed Acyclic Graph
-  - Graphs
+  - software-development
+  - dag
+  - dependency
+  - directed-acyclic-graph
+  - graphs
   - java
-  - Pointer
-  - Task
+  - pointer
+  - task
 title:
   Directed Acyclic Graphs and Executing Tasks in Order (and in Parallel) Based
   on Dependencies [1107]

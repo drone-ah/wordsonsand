@@ -30,10 +30,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Guides
-  - automated mining
+  - guides
+  - automated-mining
   - mining
-  - Space Engineers
+  - space-engineers
 title: Space Engineers Guides
 url: /2018/04/13/space-engineers-guides/
 ---

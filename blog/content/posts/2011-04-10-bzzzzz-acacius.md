@@ -15,7 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Short Stories
+  - short-stories
 title: '"Bzzzzz" - Acacius'
 url: /2011/04/10/bzzzzz-acacius/
 ---

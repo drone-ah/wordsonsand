@@ -12,8 +12,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Game Development
-  - UE4
+  - game-development
+  - ue4
 title: "[UE4] Source Control"
 url: /2015/12/15/ue4-source-control/
 ---

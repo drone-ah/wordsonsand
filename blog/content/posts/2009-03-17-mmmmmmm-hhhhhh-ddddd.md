@@ -15,17 +15,17 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Opinion
-  - Christopher Walken
-  - HD
-  - I Married An Axe Murderer
-  - Krish
-  - Kung Fu Hustle
-  - Mike Myers
-  - MTV
-  - Prophecy
-  - Robin Williams
-  - The Big Lebowski
+  - opinion
+  - christopher-walken
+  - hd
+  - i-married-an-axe-murderer
+  - krish
+  - kung-fu-hustle
+  - mike-myers
+  - mtv
+  - prophecy
+  - robin-williams
+  - the-big-lebowski
 title: mmmmmmm hhhhhh ddddd
 url: /2009/03/17/mmmmmmm-hhhhhh-ddddd/
 ---

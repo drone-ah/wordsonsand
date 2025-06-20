@@ -15,7 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Short Stories
+  - short-stories
 title: '"Escape" - Ta''oma'''
 url: /2011/04/10/escape-taoma/
 ---

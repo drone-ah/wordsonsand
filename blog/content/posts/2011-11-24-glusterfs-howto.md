@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
-  - disk cloud
-  - GlusterFS
-  - Ubuntu
+  - systems-administration
+  - disk-cloud
+  - glusterfs
+  - ubuntu
 title: GlusterFS HOWTO [1108]
 url: /2011/11/24/glusterfs-howto/
 ---

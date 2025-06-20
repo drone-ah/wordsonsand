@@ -15,8 +15,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Java (EE)
-  - Identity management
+  - java-ee
+  - identity-management
   - idm
   - picketlink
   - seam

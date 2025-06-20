@@ -13,15 +13,15 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Java (EE)
-  - Eclipse
-  - EJB3
-  - ERP
-  - InVision
-  - Maven 2
-  - Out of Container Testing
-  - Process Dashboard
-  - Request Tracker
+  - java-ee
+  - eclipse
+  - ejb3
+  - erp
+  - invision
+  - maven-2
+  - out-of-container-testing
+  - process-dashboard
+  - request-tracker
 title: Maven2, EJB3 and JBoss
 url: /2008/12/28/maven2-ejb3-and-jboss/
 ---

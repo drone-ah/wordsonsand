@@ -12,7 +12,7 @@ password: ""
 status: publish
 tags:
   - golang
-  - integration testing
+  - integration-testing
   - pulumi
   - testing
 title: How to run your lambda code locally as its role (for testing)

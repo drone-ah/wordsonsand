@@ -13,15 +13,15 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software
+  - software
   - 64bit
-  - Dev Env
-  - Eclipse
-  - Eclipse TPTP
+  - dev-env
+  - eclipse
+  - eclipse-tptp
   - java
-  - libstdc++.so.5
-  - Ubuntu
-  - VServer
+  - libstdcso5
+  - ubuntu
+  - vserver
 title: Eclipse TPTP on Ubuntu (64bit)
 url: /2008/12/28/eclipse-tptp-on-ubuntu-64bit/
 ---

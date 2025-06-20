@@ -15,7 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Short Stories
+  - short-stories
 title: '"Vengeance" - Agent Maccabee'
 url: /2011/04/27/vengeance-agent-maccabee/
 ---

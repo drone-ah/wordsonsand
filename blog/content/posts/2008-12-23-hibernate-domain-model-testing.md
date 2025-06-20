@@ -13,21 +13,21 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Java (EE)
-  - Code Coverage
-  - Data Testing
-  - DbUnit
-  - DOM
-  - Domain Model
-  - Domain Object Model
-  - Ejb3Unit
-  - Entity Testing
-  - Hibernate
+  - java-ee
+  - code-coverage
+  - data-testing
+  - dbunit
+  - dom
+  - domain-model
+  - domain-object-model
+  - ejb3unit
+  - entity-testing
+  - hibernate
   - java
-  - SuperCsv
+  - supercsv
   - testing
-  - Testing Framework
-  - TestNG
+  - testing-framework
+  - testng
 title: Hibernate Domain Model Testing
 url: /2008/12/23/hibernate-domain-model-testing/
 ---

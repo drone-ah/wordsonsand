@@ -9,7 +9,7 @@ slug: bazel-go-docker-gcloud
 status: publish
 tags:
   - devops
-  - google cloud
+  - google-cloud
   - webapp
   - bazel
   - golang

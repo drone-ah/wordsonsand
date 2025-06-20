@@ -14,13 +14,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
-  - Guest OS
-  - host networking
-  - Linux
-  - Microsoft Vista
-  - Ubuntu
-  - VirtualBox
+  - systems-administration
+  - guest-os
+  - host-networking
+  - linux
+  - microsoft-vista
+  - ubuntu
+  - virtualbox
 title: Vista Guest, Linux Host, VirtualBox, Host Networking - Bridge
 url: /2009/03/23/vista-guest-linux-host-virtualbox-host-networking-bridge/
 ---

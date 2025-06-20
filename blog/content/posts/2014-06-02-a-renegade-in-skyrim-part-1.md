@@ -14,9 +14,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Gaming
-  - Entertainment
-  - "The Elder Scrolls V: Skyrim"
+  - gaming
+  - entertainment
+  - the-elder-scrolls-v-skyrim
 title: A Renegade in Skyrim (Part 1)
 url: /2014/06/02/a-renegade-in-skyrim-part-1/
 ---

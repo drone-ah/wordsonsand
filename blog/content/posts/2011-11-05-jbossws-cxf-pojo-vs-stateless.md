@@ -14,14 +14,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Java (EE)
-  - Load testing
-  - Log4j
-  - Plain Old Java Object
-  - Software components
-  - web services
-  - web.xml
-  - XML
+  - java-ee
+  - load-testing
+  - log4j
+  - plain-old-java-object
+  - software-components
+  - web-services
+  - webxml
+  - xml
 title: JBossWS CXF - POJO vs Stateless [1104]
 url: /2011/11/05/jbossws-cxf-pojo-vs-stateless/
 ---

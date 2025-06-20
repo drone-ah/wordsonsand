@@ -14,11 +14,11 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Gaming
-  - Baldur's Gate
-  - Games
-  - "The Elder Scrolls V: Skyrim"
-  - Windows games
+  - gaming
+  - baldurs-gate
+  - games
+  - the-elder-scrolls-v-skyrim
+  - windows-games
 title: Destructible World in Battlefield 4
 url: /2013/10/10/destructible-world-in-battlefield-4/
 ---

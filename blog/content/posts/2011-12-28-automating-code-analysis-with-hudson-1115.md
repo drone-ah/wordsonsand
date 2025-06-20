@@ -14,12 +14,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software Development
-  - Continuous integration
-  - FindBugs
-  - Hudson
-  - PMD
-  - Static code analysis
+  - software-development
+  - continuous-integration
+  - findbugs
+  - hudson
+  - pmd
+  - static-code-analysis
 title: Automating Code Analysis with Hudson [1115]
 url: /2011/12/28/automating-code-analysis-with-hudson-1115/
 ---

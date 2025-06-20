@@ -10,9 +10,9 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
+  - systems-administration
   - docker
-  - docker desktop
+  - docker-desktop
   - wsl2
 title: Getting Docker Desktop Working with WSL2 on Windows
 url: /2020/05/28/getting-docker-desktop-working-with-wsl2-on-windows/

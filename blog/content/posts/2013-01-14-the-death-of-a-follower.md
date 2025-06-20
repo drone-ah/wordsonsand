@@ -14,10 +14,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Gaming
-  - Barbas
-  - Fort Snowhawk
-  - Skyrim
+  - gaming
+  - barbas
+  - fort-snowhawk
+  - skyrim
 title: The Death Of a Follower
 url: /2013/01/14/the-death-of-a-follower/
 ---

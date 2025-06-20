@@ -12,12 +12,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Philosophy
-  - Al Capone
-  - Bugs
-  - Coding Horror
-  - Google
-  - Microsoft
+  - philosophy
+  - al-capone
+  - bugs
+  - coding-horror
+  - google
+  - microsoft
 title: Accepting Google
 url: /2009/02/10/accepting-google/
 ---

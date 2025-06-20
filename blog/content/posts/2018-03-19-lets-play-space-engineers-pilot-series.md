@@ -407,10 +407,10 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Gaming
-  - Let's Play
-  - Space Engineers
-  - YouTube
+  - gaming
+  - lets-play
+  - space-engineers
+  - youtube
 title: Let's Play Space Engineers | Pilot Series
 url: /2018/03/19/lets-play-space-engineers-pilot-series/
 ---

@@ -15,7 +15,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Short Stories
+  - short-stories
 title: “Life” - Valentin.
 url: /2011/04/27/life-valentin/
 ---

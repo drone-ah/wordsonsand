@@ -14,15 +14,15 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
-  - Devil's Pie
-  - GNOME
-  - Linux
-  - nifty tool
-  - System software
-  - Technology/Internet
-  - Workspace
-  - X11
+  - systems-administration
+  - devils-pie
+  - gnome
+  - linux
+  - nifty-tool
+  - system-software
+  - technologyinternet
+  - workspace
+  - x11
 title: Saving your workspace window configuration in Linux [1102]
 url: /2011/11/02/saving-your-workspace-window-configuration-in-linux-1102/
 ---

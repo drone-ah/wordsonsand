@@ -14,14 +14,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Database Systems
-  - Data management
-  - Databases
-  - memory configuration
-  - Performance
-  - PostgreSQL
-  - SQL
-  - Temporary file
+  - database-systems
+  - data-management
+  - databases
+  - memory-configuration
+  - performance
+  - postgresql
+  - sql
+  - temporary-file
 title: PostgreSQL performing huge updates [1106]
 url: /2011/11/06/postgresql-performing-huge-updates-1106/
 ---

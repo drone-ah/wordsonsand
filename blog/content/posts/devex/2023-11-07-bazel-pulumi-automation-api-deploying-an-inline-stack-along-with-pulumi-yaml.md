@@ -16,7 +16,7 @@ tags:
   - bazel
   - golang
   - pulumi
-  - pulumi automation api
+  - pulumi-automation-api
 title:
   Bazel + Pulumi Automation API. Deploying an inline stack along with
   Pulumi.[stack].yaml

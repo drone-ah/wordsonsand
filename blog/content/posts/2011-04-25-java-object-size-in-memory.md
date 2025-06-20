@@ -13,14 +13,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Java (EE)
-  - Cache
-  - Garbage collection
-  - Hibernate
+  - java-ee
+  - cache
+  - garbage-collection
+  - hibernate
   - java
-  - Java Memory Allocation
-  - Java Object Size
-  - JBoss application server
+  - java-memory-allocation
+  - java-object-size
+  - jboss-application-server
 title: Java Object Size In Memory
 url: /2011/04/25/java-object-size-in-memory/
 ---

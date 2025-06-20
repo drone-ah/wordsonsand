@@ -407,7 +407,7 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Let's Play
+  - lets-play
   - subnautica
 title: Wet Feet | Let's Play Subnautica
 url: /2018/03/26/wet-feet-lets-play-subnautica/

@@ -13,7 +13,7 @@ status: publish
 tags:
   - golang
   - pulumi
-  - pulumi automation api
+  - pulumi-automation-api
 title: Streaming Progress With Pulumi Automation API
 url: /2023/11/08/streaming-progress-with-pulumi-automation-api/
 ---

@@ -13,14 +13,14 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Database Systems
+  - database-systems
   - computing
-  - Database
-  - Databases
-  - PostgreSQL
-  - SQL
-  - SQL keywords
-  - Update
+  - database
+  - databases
+  - postgresql
+  - sql
+  - sql-keywords
+  - update
 title: Tracking progress of an update statement [1101]
 url: /2011/11/02/tracking-progress-of-an-update-statement-1101/
 ---

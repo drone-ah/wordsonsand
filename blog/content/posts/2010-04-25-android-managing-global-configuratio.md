@@ -18,13 +18,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Android Development
-  - Configuration Management
-  - Mobile software
-  - Preferences
-  - Settings
-  - Smartphones
-  - XML
+  - android-development
+  - configuration-management
+  - mobile-software
+  - preferences
+  - settings
+  - smartphones
+  - xml
 title: Android - Managing Global Configuration
 url: /2010/04/25/android-managing-global-configuratio/
 ---

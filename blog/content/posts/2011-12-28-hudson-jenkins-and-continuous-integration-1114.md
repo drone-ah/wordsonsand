@@ -14,13 +14,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Software Development
-  - Apache Maven
-  - Continuous integration
-  - Hudson
-  - Maven
-  - PMD
-  - Subversion
+  - software-development
+  - apache-maven
+  - continuous-integration
+  - hudson
+  - maven
+  - pmd
+  - subversion
 title: Hudson / Jenkins and Continuous Integration [1114]
 url: /2011/12/28/hudson-jenkins-and-continuous-integration-1114/
 ---

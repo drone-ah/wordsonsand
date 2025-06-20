@@ -14,13 +14,13 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
-  - Systems (Administration)
+  - systems-administration
   - bash
-  - bulk search
+  - bulk-search
   - computing
   - find
   - grep
-  - search and replace
+  - search-and-replace
 title: Linux bulk search and replace
 url: /2010/04/21/linux-bulk-search-and-replace/
 ---
