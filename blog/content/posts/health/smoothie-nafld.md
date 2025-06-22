@@ -1,17 +1,11 @@
 ---
-layout: post
-title: Feeding the Liver
-date: 2025-06-14 10:51:14 +1:00
-type: post
-parent_id: "0"
-published: true
-password: ""
-status: publish
 categories:
   - health
+date: "2025-06-14T11:51:14Z"
+status: publish
 tags:
   - cooking
-meta:
+title: Feeding the Liver
 ---
 
 # Notes
@@ -136,3 +130,144 @@ properties.
   and digestion.
 - **Apple cider vinegar:** Supports bile production, digestion, and may improve
   insulin sensitivity.
+
+## 🥘 **Liver-Friendly Chicken & Lentil Stew** (4 servings)
+
+### 🥩 Ingredients
+
+- **400–500g skinless chicken thighs** (or **chicken livers** if you’re
+  comfortable with organ meats)
+- **1/2 cup dried red or brown lentils**, rinsed
+- **1 large onion**, chopped
+- **2 cloves garlic**, minced
+- **1-inch piece fresh ginger**, minced
+- **2 carrots**, sliced
+- **2 celery stalks**, chopped
+- **1 tsp turmeric powder**
+- **1 tsp cumin**
+- **1/2 tsp cinnamon** (optional)
+- **1/2 tsp smoked paprika** (optional)
+- **1 tbsp olive oil**
+- **6 cups low-sodium chicken or vegetable broth**
+- **Juice of 1/2 lemon** or **1 tbsp apple cider vinegar**
+- **Salt & black pepper**, to taste
+- **Optional**: 2 handfuls of chopped spinach or kale added in last 30 minutes
+- **Fresh parsley or coriander**, for garnish
+
+### 🍲 Instructions
+
+1.  Optional: Brown the chicken thighs or livers in a pan with a little oil for
+    2–3 mins per side for flavor.
+2.  Add all ingredients **except lemon juice and greens** to the slow cooker.
+3.  Cook on **low for 6–8 hours** or **high for 4–5 hours**, until the lentils
+    are soft and chicken is tender.
+4.  In final 30 minutes, stir in chopped greens if using.
+5.  Just before serving, stir in the lemon juice or ACV.
+6.  Garnish with herbs.
+
+### 🩺 Benefits
+
+- **Chicken thighs**: Lean protein, rich in B-vitamins and zinc for liver
+  metabolism
+- **Chicken liver** _(optional)_: Extremely nutrient-dense — rich in vitamin A,
+  iron, choline, and folate
+- **Lentils**: Fiber and slow-burning carbs for satiety
+- **Ginger, garlic, turmeric**: Reduce liver inflammation
+- **Greens & citrus**: Detox support and bile flow
+
+## 🥘 Moroccan Chicken, Chickpea & Carrot Stew
+
+_(Slow cooker, liver-supportive, no mid-cook steps)_  
+**Serves 4–5**
+
+### ✅ Ingredients
+
+- **400–500g boneless skinless chicken thighs**, chopped
+- **1 tin chickpeas**, drained & rinsed
+- **2 medium carrots**, diced (~200g) _(replaces sweet potato)_
+- **1 courgette**, diced
+- **1 red pepper**, chopped
+- **1 large onion**, chopped
+- **2 garlic cloves**, minced
+- **1-inch ginger**, minced
+- **1 tin chopped tomatoes** (400g)
+- **2 tbsp tomato purée**
+- **1 tsp cumin**
+- **1 tsp ground coriander**
+- **1/2 tsp cinnamon**
+- **1/2 tsp turmeric**
+- **Pinch cayenne or chilli flakes** (optional)
+- **1 tbsp olive oil**
+- **500ml water** or low-sodium stock
+- **1 tbsp apple cider vinegar** or juice of 1/2 lemon
+- **Salt & pepper**
+- **Chopped parsley or coriander** to finish
+
+### 🍲 Instructions
+
+1.  _(Optional)_ Brown the meat briefly in a pan for extra flavour.
+2.  Add all ingredients (except garnish) to the slow cooker.
+3.  Cook on **low for 6–8 hours**, or **high for 4–5 hours**, until meat and veg
+    are tender.
+4.  Stir in lemon juice or vinegar before serving.
+5.  Garnish with herbs.
+
+### Benefits
+
+- **Lean protein (chicken thighs)** – provides B vitamins, iron, and zinc
+  essential for liver repair and energy production.
+- **Carrots & red pepper** – rich in antioxidants like beta-carotene and vitamin
+  C that protect liver cells and reduce oxidative stress.
+- **Chickpeas** – high in fiber, supporting digestion and helping the liver
+  eliminate toxins via bile.
+- **Garlic, onion & ginger** – boost detox enzymes and bile flow, supporting
+  both phases of liver detoxification.
+- **Turmeric & cumin** – anti-inflammatory spices known to protect against liver
+  fat accumulation.
+- **Olive oil & lemon/apple cider vinegar** – promote bile production and help
+  reduce liver inflammation.
+
+## 🍗 **One-Pan Roasted Chicken with Vegetables & Lemon-Tahini Drizzle**
+
+**(Hands-off, balanced, supportive of liver health)**  
+**Serves 2–3**
+
+### 🧺 Ingredients
+
+#### For the tray bake:
+
+- **4 bone-in or boneless skinless chicken thighs**
+- 1 heaped cup of frozen cauliflower
+- 2 cups of frozen broccoli
+- **1 courgette**, thickly sliced
+- **1 red onion**, cut into wedges
+- **1 red or yellow pepper**, sliced
+- **2 tbsp olive oil**
+- **1/2 tsp turmeric**
+- **1/2 tsp cumin**
+- **Salt & black pepper** to taste
+- Optional: **chilli flakes**, **fresh thyme or rosemary**
+
+#### For the drizzle:
+
+- **1 heaped tbsp tahini**
+- **Juice of 1/2 lemon or 1 tbsp apple cider vinegar**
+- **1–2 tbsp water** (to loosen)
+- **Pinch salt + garlic powder (optional)**
+
+### 🔥 Instructions
+
+1.  **Preheat oven to 200°C (fan 180°C).**
+2.  In a bowl, toss chopped veg with olive oil, turmeric, cumin, salt, and
+    pepper.
+3.  Spread veg on a lined baking tray. Nestle in the chicken thighs.
+4.  Bake for **35–40 mins**, until chicken is golden and veg is tender.
+5.  While it cooks, whisk the **tahini drizzle** ingredients in a small bowl.
+6.  Serve hot, drizzled with sauce and a squeeze of lemon if desired.
+
+### ✅ Liver-Supportive Highlights
+
+- **Cruciferous veg (broccoli)** – detox support
+- Courgette\*\* – fibre and antioxidants
+- **Turmeric + tahini + lemon** – liver, digestion & gallbladder friendly
+- **Chicken thigh** – rich in B vitamins and iron, easy on digestion
