@@ -14,11 +14,12 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - short-story
+  - creative-writing
   - gaming
   - lemkil
   - skyrim
   - thieves-guild
-  - short-story
 title: Pulling At My Heart Strings
 url: /2013/03/25/pulling-at-my-heart-strings/
 ---

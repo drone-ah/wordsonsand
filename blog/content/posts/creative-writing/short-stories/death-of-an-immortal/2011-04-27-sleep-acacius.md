@@ -16,6 +16,8 @@ password: ""
 status: publish
 tags:
   - short-story
+  - creative-writing
+  - death-of-an-immortal
 title: “Sleep” - Acacius
 url: /2011/04/27/sleep-acacius/
 ---

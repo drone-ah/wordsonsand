@@ -17,6 +17,8 @@ password: ""
 status: publish
 tags:
   - short-story
+  - creative-writing
+  - death-of-an-immortal
 title: Lana - Acacius
 url: /2011/05/11/lana-acacius/
 ---

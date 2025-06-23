@@ -16,6 +16,8 @@ password: ""
 status: publish
 tags:
   - short-story
+  - creative-writing
+  - death-of-an-immortal
 title: '"Vengeance" - Agent Maccabee'
 url: /2011/04/27/vengeance-agent-maccabee/
 ---

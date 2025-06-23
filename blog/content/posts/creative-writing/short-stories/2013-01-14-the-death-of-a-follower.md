@@ -14,6 +14,8 @@ parent_id: "0"
 password: ""
 status: publish
 tags:
+  - short-story
+  - creative-writing
   - gaming
   - barbas
   - fort-snowhawk

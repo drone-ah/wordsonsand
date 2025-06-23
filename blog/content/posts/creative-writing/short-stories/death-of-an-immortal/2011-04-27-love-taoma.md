@@ -17,6 +17,8 @@ password: ""
 status: publish
 tags:
   - short-story
+  - creative-writing
+  - death-of-an-immortal
 title: “Love” - Ta’oma
 url: /2011/04/27/love-taoma/
 ---

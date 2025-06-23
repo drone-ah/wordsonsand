@@ -16,6 +16,8 @@ password: ""
 status: publish
 tags:
   - short-story
+  - creative-writing
+  - death-of-an-immortal
 title: '"Bzzzzz" - Acacius'
 url: /2011/04/10/bzzzzz-acacius/
 ---

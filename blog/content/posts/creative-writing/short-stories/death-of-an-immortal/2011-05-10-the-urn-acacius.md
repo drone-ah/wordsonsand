@@ -16,6 +16,8 @@ password: ""
 status: publish
 tags:
   - short-story
+  - creative-writing
+  - death-of-an-immortal
   - army
   - fantasy
 title: The Urn - Acacius
