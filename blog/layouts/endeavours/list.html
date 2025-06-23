@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+{{ partial "header.html" . }}
+
+<body>
+	<div class="container wrapper list">
+		{{ partial "head.html" . }}
+
+		<h2 class="page-title">{{ .Name }}</h2>
+		<div class="description content" style="margin-bottom: 2.5rem;">{{ .Content }}</div>
+
+
+		<ul class="posts flat">
+			{{- range .Data.Pages -}}
+			{{- if (in (.Site.Params.excludedTypes | default (slice "page")) .Type) -}}
+			{{- else -}}
+			<li class="post">
+				<div class="post-header">
+					<div class="meta">
+						<div class="date">
+							<span class="day" style="font-size:30px;">{{ dateFormat "2006" .Date }}</span>
+							<span class="rest" style="font-size:20px;">{{ dateFormat "Jan" .Date }}</span>
+						</div>
+					</div>
+					<div class="matter">
+						<h4 class="title small">
+							<a href="{{ .RelPermalink }}">{{.Title}}{{ if .Draft }}<sup class="draft-label">DRAFT</sup>{{ end }}</a>
+						</h4>
+						<span class="description">
+							{{ if isset .Params "description" }}
+								{{ .Description }}
+							{{ else if gt (len .RawContent) 120 }}
+								{{ slicestr .RawContent 0 120 }}...
+							{{ else }}
+								{{ .RawContent }}
+							{{ end }}
+						</span>
+					</div>
+				</div>
+			</li>
+			{{- end -}}
+			{{- end -}}
+		</ul>
+	</div>
+
+	{{ partial "footer.html" . }}
+</body>
+
+</html>
