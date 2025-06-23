@@ -18,6 +18,7 @@ password: ""
 status: publish
 tags:
   - poetry
+  - creative-writing
 title: Hold on tight
 url: /2012/04/20/hold-on-tight/
 ---

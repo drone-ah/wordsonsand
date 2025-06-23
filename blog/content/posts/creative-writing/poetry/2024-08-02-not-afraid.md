@@ -13,6 +13,7 @@ password: ""
 status: publish
 tags:
   - poetry
+  - creative-writing
 title: Not Afraid
 url: /2024/08/02/not-afraid/
 ---

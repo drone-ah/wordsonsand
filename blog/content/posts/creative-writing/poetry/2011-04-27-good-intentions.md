@@ -16,6 +16,7 @@ password: ""
 status: publish
 tags:
   - poetry
+  - creative-writing
 title: Good Intentions
 url: /2011/04/27/good-intentions/
 ---

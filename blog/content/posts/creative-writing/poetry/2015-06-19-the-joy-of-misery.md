@@ -12,6 +12,7 @@ password: ""
 status: publish
 tags:
   - poetry
+  - creative-writing
 title: The Joy of Misery
 url: /2015/06/19/the-joy-of-misery/
 ---

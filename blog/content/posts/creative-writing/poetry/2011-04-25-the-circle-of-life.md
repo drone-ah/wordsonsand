@@ -16,6 +16,7 @@ password: ""
 status: publish
 tags:
   - poetry
+  - creative-writing
 title: The Circle Of Life
 url: /2011/04/25/the-circle-of-life/
 ---

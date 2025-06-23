@@ -14,6 +14,7 @@ password: ""
 status: publish
 tags:
   - poetry
+  - creative-writing
 title: A Half Written Poem
 url: /2024/01/03/a-half-written-poem/
 ---

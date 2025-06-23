@@ -16,6 +16,7 @@ password: ""
 status: publish
 tags:
   - poetry
+  - creative-writing
 title: While i was sleeping
 url: /2011/04/11/while-i-was-sleeping/
 ---
