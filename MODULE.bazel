@@ -26,7 +26,7 @@ use_repo(
 )
 
 bazel_dep(name = "bazel-diff", version = "9.0.3")
-bazel_dep(name = "rules_zig", version = "0.7.0")
+bazel_dep(name = "rules_zig", version = "0.8.0")
 bazel_dep(name = "protobuf", version = "31.1")
 
 zig = use_extension(
@@ -34,8 +34,29 @@ zig = use_extension(
     "zig",
     dev_dependency = True,
 )
-zig.toolchain(zig_version = "0.13.0")
+zig.toolchain(zig_version = "0.14.0")
 use_repo(zig, "zig_toolchains")
+
+
+zig_toml_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+# Using my fork while waiting for serialization fix to be applied
+# https://github.com/sam701/zig-toml/pull/33 
+zig_toml_archive(
+    name = "zig_toml",
+    urls = ["https://github.com/sam701/zig-toml/archive/refs/heads/main.zip"],
+    strip_prefix = "zig-toml-main",
+    build_file_content = """
+load("@rules_zig//zig:defs.bzl", "zig_module")
+zig_module(
+    name = "toml",
+    main = "src/root.zig",
+    srcs = glob(["src/**/*.zig"]),
+    visibility = ["//visibility:public"],
+)
+""",
+)
+
 
 bazel_dep(name = "rules_python", version = "1.2.0")
 
