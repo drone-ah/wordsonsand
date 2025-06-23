@@ -92,7 +92,7 @@ fn saveConfig(allocator: std.mem.Allocator, Config: anytype, full_path: []const 
     defer file.close();
 
     var writer = file.writer().any();
-    toml.Serializer.serialize(allocator, Config, &writer) catch |err| {
+    toml.serialize(allocator, Config, &writer) catch |err| {
         log.warn("unable to write to config file: {any}", .{err});
     };
 }

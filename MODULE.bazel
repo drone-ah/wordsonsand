@@ -44,14 +44,13 @@ zig_toml_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl",
 # https://github.com/sam701/zig-toml/pull/33 
 zig_toml_archive(
     name = "zig_toml",
-    urls = ["https://github.com/drone-ah/zig-toml/archive/refs/heads/main.zip"],
+    urls = ["https://github.com/sam701/zig-toml/archive/refs/heads/main.zip"],
     strip_prefix = "zig-toml-main",
-		sha256 = "1c8d41a1f3485b092856ccf313f4b93c80a91395d16ba5eea5c98e64ef58d6e8",
     build_file_content = """
 load("@rules_zig//zig:defs.bzl", "zig_module")
 zig_module(
     name = "toml",
-    main = "src/main.zig",
+    main = "src/root.zig",
     srcs = glob(["src/**/*.zig"]),
     visibility = ["//visibility:public"],
 )
