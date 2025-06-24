@@ -59,19 +59,24 @@ languageCode = "en"
 
 # Nav.
 [[menu.main]]
-name = "Home"
+name = "posts"
 url = "/"
+weight = 2
+
+[[menu.main]]
+name = "about"
+url = "/about"
 weight = 1
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
-[[menu.main]]
-name = "Tags & Stats"
+name = "tags & stats"
 url = "/tags"
 weight = 4
+
+[[menu.main]]
+name = "endeavours"
+url = "/endeavours"
+weight = 5
 
 [[params.social]]
 name = "Github"
