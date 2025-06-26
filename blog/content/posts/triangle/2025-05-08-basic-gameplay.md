@@ -9,6 +9,7 @@ slug: basic-gameplay
 status: publish
 tags:
   - triangle
+  - endeavour
   - zig
   - raylib
   - devlog

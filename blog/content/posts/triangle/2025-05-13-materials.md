@@ -9,6 +9,7 @@ slug: materials
 status: publish
 tags:
   - triangle
+  - endeavour
   - crafting
   - devlog
 title: Materials

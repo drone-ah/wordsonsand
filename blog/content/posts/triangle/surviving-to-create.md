@@ -1,6 +1,11 @@
 ---
 title: "Surviving to Create"
 date: 2025-06-26T11:06:47+01:00
+tags:
+  - triangle
+  - endeavour
+  - community
+  - funding
 ---
 
 I’ve been working on a small indie game called

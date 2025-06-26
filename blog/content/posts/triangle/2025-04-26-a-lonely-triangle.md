@@ -7,6 +7,7 @@ slug: a-lonely-triangle
 status: publish
 tags:
   - triangle
+  - endeavour
   - devlog
 title: A lone triangle vs the universe
 ---

@@ -9,6 +9,7 @@ slug: crafting-machines
 status: publish
 tags:
   - triangle
+  - endeavour
   - crafting
   - devlog
 title: Crafting, Mods, and Machines
