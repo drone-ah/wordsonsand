@@ -21,8 +21,10 @@
         {{ end }}
 
 				{{ partial "tagpanels.html" . }}
+
         {{ .Content }}
 
+				{{ partial "related.html" . }}
     </div>
     <nav class="hide-on-mobile section-nav">
         {{ .TableOfContents }}
