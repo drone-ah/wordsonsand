@@ -111,6 +111,24 @@ posts = "/:year/:month/:day/:slug/"
     ordered = true
     startLevel = 2
 
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = false
+
+[[related.indices]]
+  name = "tags"
+  weight = 100
+
+[[related.indices]]
+  name = "categories"
+  weight = 80
+
+[[related.indices]]
+  name = "title"
+  weight = 20
+
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

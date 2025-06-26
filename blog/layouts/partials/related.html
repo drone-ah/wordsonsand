@@ -1,0 +1,11 @@
+{{ with .Site.RegularPages.Related . | first 3 }}
+  <aside class="related-content">
+    <h3>Loose Connections</h3>
+    <ul>
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </aside>
+{{ end }}
+
