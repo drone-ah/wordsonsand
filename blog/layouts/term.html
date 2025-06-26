@@ -6,8 +6,10 @@
 	<div class="container wrapper tags">
 		{{ partial "head.html" . }}
 
-		<h1 class="page-title">Tag: {{ .Title }}</h1>
-
+		<h1 class="page-title mb-6">Tag: {{ .Title }}</h1>
+			<div class="description post" style="margin-bottom: 2rem;">
+				{{ .Description | .Page.RenderString }}
+			</div>
 		{{ with (.Site.GetPage (printf "%s/%s" .Section .Title | urlize)) }}
 		<ul class="posts flat">
 			{{ range .Pages }}
