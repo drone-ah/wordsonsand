@@ -10,7 +10,7 @@ tags:
 
 [_triangle_](https://drone-ah.com/2025/04/26/a-lonely-triangle/) is about
 depression, recovery, and resilience - things I’ve lived through and am still
-figuring out.
+figuring out. It's in the early stages, and far from making any money.
 
 ## The Real Stuff Behind Making a Game
 
