@@ -1,0 +1,5 @@
+triangle:
+  title: "Endeavour: triangle"
+  body: "This post relates to [triangle](/endeavours/triangle/), an arcade, ARPG, factory game I'm working on."
+  tagLink: "/tags/triangle/"
+  showTagLink: true

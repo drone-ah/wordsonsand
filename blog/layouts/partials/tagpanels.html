@@ -1,0 +1,9 @@
+{{ $panels := site.Data.tagpanels }}
+{{ range $tag := .Params.tags }}
+  {{ with index $panels $tag }}
+    <blockquote>
+      <p><strong>{{ .title }}</strong></p>
+      <p>{{ .body | markdownify }}</p>
+    </blockquote>
+  {{ end }}
+{{ end }}
