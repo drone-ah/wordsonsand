@@ -1,6 +1,7 @@
 // raylib-zig (c) Nikolas Wipper 2023
 
 const rl = @import("raylib");
+const Paddle = @import("paddle.zig");
 
 pub fn main() anyerror!void {
     // Initialization
@@ -26,7 +27,13 @@ pub fn main() anyerror!void {
         rl.beginDrawing();
         defer rl.endDrawing();
 
-        rl.clearBackground(.white);
+        rl.clearBackground(.black);
+
+        const left_paddle = Paddle.init(Paddle.size.x * 0.5);
+        const right_paddle = Paddle.init(screenWidth - Paddle.size.x * 1.5);
+
+        left_paddle.render();
+        right_paddle.render();
 
         rl.drawText("Congrats! You created your first window!", 190, 200, 20, .light_gray);
         //----------------------------------------------------------------------------------
