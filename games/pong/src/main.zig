@@ -2,6 +2,7 @@
 
 const rl = @import("raylib");
 const Paddle = @import("paddle.zig");
+const Ball = @import("ball.zig");
 
 pub fn main() anyerror!void {
     // Initialization
@@ -31,11 +32,12 @@ pub fn main() anyerror!void {
 
         const left_paddle = Paddle.init(Paddle.size.x * 0.5);
         const right_paddle = Paddle.init(screenWidth - Paddle.size.x * 1.5);
+        const ball = Ball{ .pos = .{ .x = screenWidth * 0.5, .y = screenHeight * 0.5 } };
 
         left_paddle.render();
         right_paddle.render();
+        ball.render();
 
-        rl.drawText("Congrats! You created your first window!", 190, 200, 20, .light_gray);
         //----------------------------------------------------------------------------------
     }
 }
