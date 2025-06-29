@@ -33,8 +33,8 @@ pub fn render(self: Paddle) void {
 pub fn isColliding(self: *Paddle, ball: *const Ball) bool {
     // which edge do we need to check
     const crossing_x: bool = switch (self.which) {
-        .right => ball.pos.x >= self.pos.x,
-        .left => ball.pos.x <= self.pos.x + size.x,
+        .right => ball.pos.x + ball.r >= self.pos.x,
+        .left => ball.pos.x - ball.r <= self.pos.x + size.x,
     };
 
     if (!crossing_x) {
