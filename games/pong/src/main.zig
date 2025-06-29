@@ -37,8 +37,8 @@ pub fn main() anyerror!void {
         rl.clearBackground(.black);
 
         ball.update(dt);
-        _ = left_paddle.isColliding(ball);
-        _ = right_paddle.isColliding(ball);
+        ball.checkPaddleCollision(&left_paddle);
+        ball.checkPaddleCollision(&right_paddle);
 
         left_paddle.render();
         right_paddle.render();
