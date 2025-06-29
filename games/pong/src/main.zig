@@ -61,6 +61,14 @@ pub fn main() anyerror!void {
             left_paddle.move(100, dt);
         }
 
+        if (rl.isKeyDown(.e)) {
+            right_paddle.move(-100, dt);
+        }
+
+        if (rl.isKeyDown(.d)) {
+            right_paddle.move(100, dt);
+        }
+
         left_paddle.render();
         right_paddle.render();
         ball.render();
