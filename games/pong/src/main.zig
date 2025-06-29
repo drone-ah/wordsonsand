@@ -36,6 +36,7 @@ pub fn main() anyerror!void {
 
         rl.clearBackground(.black);
 
+        ball.checkEdgeCollisions(@floatFromInt(rl.getScreenHeight()));
         ball.update(dt);
         ball.checkPaddleCollision(&left_paddle);
         ball.checkPaddleCollision(&right_paddle);
