@@ -15,8 +15,8 @@ pub fn main() anyerror!void {
 
     rl.setTargetFPS(60); // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
-    const left_paddle = Paddle.init(Paddle.size.x * 0.5);
-    const right_paddle = Paddle.init(screenWidth - Paddle.size.x * 1.5);
+    var left_paddle = Paddle.init(Paddle.size.x * 0.5, .left);
+    var right_paddle = Paddle.init(screenWidth - Paddle.size.x * 1.5, .right);
     var ball = Ball{ .pos = .{ .x = screenWidth * 0.5, .y = screenHeight * 0.5 } };
 
     // Main game loop
@@ -37,6 +37,8 @@ pub fn main() anyerror!void {
         rl.clearBackground(.black);
 
         ball.update(dt);
+        _ = left_paddle.isColliding(ball);
+        _ = right_paddle.isColliding(ball);
 
         left_paddle.render();
         right_paddle.render();
