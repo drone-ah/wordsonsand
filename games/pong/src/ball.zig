@@ -7,7 +7,7 @@ const Ball = @This();
 
 pos: rl.Vector2,
 r: f32 = 16,
-vel: rl.Vector2 = .{ .x = 10, .y = 0 },
+vel: rl.Vector2 = .{ .x = 250, .y = 0 },
 
 pub fn render(self: Ball) void {
     rl.drawCircleV(self.pos, self.r, .white);

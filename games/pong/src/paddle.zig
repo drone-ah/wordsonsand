@@ -38,6 +38,7 @@ pub fn isColliding(self: *Paddle, ball: *const Ball) bool {
     };
 
     if (!crossing_x) {
+        self.colour = .white;
         return false;
     }
 
