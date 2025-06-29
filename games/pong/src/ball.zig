@@ -5,12 +5,13 @@ const Ball = @This();
 
 pos: rl.Vector2,
 r: f32 = 16,
-vel: rl.Vector2 = .{ .x = 1, .y = 0 },
+vel: rl.Vector2 = .{ .x = 10, .y = 0 },
 
 pub fn render(self: Ball) void {
     rl.drawCircleV(self.pos, self.r, .white);
 }
 
-pub fn update(self: *Ball) void {
-    self.pos = rl.math.vector2Add(self.pos, self.vel);
+pub fn update(self: *Ball, dt: f32) void {
+    const vel_this_frame = rl.math.vector2Scale(self.vel, dt);
+    self.pos = rl.math.vector2Add(self.pos, vel_this_frame);
 }

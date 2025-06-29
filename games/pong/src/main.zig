@@ -28,12 +28,15 @@ pub fn main() anyerror!void {
 
         // Draw
         //----------------------------------------------------------------------------------
+
+        const dt = rl.getFrameTime();
+
         rl.beginDrawing();
         defer rl.endDrawing();
 
         rl.clearBackground(.black);
 
-        ball.update();
+        ball.update(dt);
 
         left_paddle.render();
         right_paddle.render();
