@@ -53,6 +53,14 @@ pub fn main() anyerror!void {
             ball.reset();
         }
 
+        if (rl.isKeyDown(.w)) {
+            left_paddle.move(-100, dt);
+        }
+
+        if (rl.isKeyDown(.s)) {
+            left_paddle.move(100, dt);
+        }
+
         left_paddle.render();
         right_paddle.render();
         ball.render();
