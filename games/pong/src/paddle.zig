@@ -13,6 +13,7 @@ pub const Which = enum {
 pos: rl.Vector2,
 which: Which,
 colour: rl.Color = .white,
+score: u8 = 0,
 
 pub fn init(x: f32, which: Which) Paddle {
     return .{

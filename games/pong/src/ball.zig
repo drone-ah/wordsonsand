@@ -5,9 +5,22 @@ const Paddle = @import("paddle.zig");
 
 const Ball = @This();
 
+home: rl.Vector2,
 pos: rl.Vector2,
 r: f32 = 16,
-vel: rl.Vector2 = .{ .x = 250, .y = 300 },
+vel: rl.Vector2 = .{ .x = 250, .y = 50 },
+
+pub fn init(home: rl.Vector2) Ball {
+    return .{
+        .home = home,
+        .pos = home,
+    };
+}
+
+pub fn reset(self: *Ball) void {
+    self.pos = self.home;
+    self.vel = .{ .x = 250, .y = -50 };
+}
 
 pub fn render(self: Ball) void {
     rl.drawCircleV(self.pos, self.r, .white);
