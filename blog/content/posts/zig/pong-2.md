@@ -117,6 +117,6 @@ Thanks for following along!
 ## Links
 
 - [Watch Video](https://youtu.be/IoOLH1O_a7M)
-- [Check out the code]()
+- [Source Code (at this point)](https://github.com/drone-ah/wordsonsand/tree/de1c67e77812cb200e46ab9003d5ac3f2e2bf6ea/games/pong)
 - Prev: [Place Paddles & Ball](./pong-1.md)
 - Next: Edge Collisions, Scoring & Inputs

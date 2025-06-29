@@ -123,3 +123,9 @@ You can find the full source code
 [on GitHub](https://github.com/drone-ah/wordsonsand/tree/main/games/pong).
 
 See you in part 2!
+
+## Links
+
+- [YouTube Video](https://youtu.be/ICq2D_na6zc)
+- [Full Source Code (at this point)](https://github.com/drone-ah/wordsonsand/tree/f4a9c2775cc941f60a1250886c27936c35b9d0f9/games/pong)
+- Next: [Ball Movement & Paddle Collisions](./pong-2.md)
