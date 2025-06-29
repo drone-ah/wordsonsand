@@ -37,6 +37,12 @@ pub fn isColliding(self: *Paddle, ball: Ball) bool {
         .left => ball.pos.x <= self.pos.x + size.x,
     };
 
-    self.colour = if (crossing_x) .red else .white;
-    return crossing_x;
+    if (!crossing_x) {
+        return false;
+    }
+
+    const colliding = ball.pos.y >= self.pos.y and ball.pos.y <= self.pos.y + size.y;
+
+    self.colour = if (colliding) .red else .white;
+    return colliding;
 }
