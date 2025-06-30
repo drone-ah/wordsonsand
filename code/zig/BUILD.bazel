@@ -4,7 +4,7 @@ load("@rules_zig//zig:defs.bzl", "zig_test")
 zig_test(
     name = "test",
     size = "small",
+    srcs = glob(["src/*.zig"]),
     main = "src/main.zig",
-	  srcs = glob(["src/*.zig"]),
-		deps = ["@zig_toml//:toml"]
+    deps = ["@zig_toml//:toml"],
 )
