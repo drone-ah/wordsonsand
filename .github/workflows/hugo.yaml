@@ -2,11 +2,12 @@
 name: Deploy Hugo site to Pages
 
 on:
+  schedule:
+    - cron: "*/5 12-15 * * 1-5" # Every 5 mins from 13:00–16:00 UK time (Mon–Fri)
   # Runs on pushes targeting the default branch
   push:
     branches:
       - main
-      - blog/hugo
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -61,8 +62,7 @@ jobs:
           path: |
             ${{ runner.temp }}/hugo_cache
           key: hugo-${{ github.run_id }}
-          restore-keys:
-            hugo-
+          restore-keys: hugo-
       - name: Configure Git
         run: git config core.quotepath false
       - name: Build with Hugo
