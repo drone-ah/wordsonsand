@@ -1,5 +1,7 @@
 load("@gazelle//:def.bzl", "gazelle")
 load("@pypi//:requirements.bzl", "all_whl_requirements")
+load("@rules_python//python:defs.bzl", "py_binary", "py_library")
+load("@rules_python//python:pip.bzl", "compile_pip_requirements")
 load("@rules_python_gazelle_plugin//manifest:defs.bzl", "gazelle_python_manifest")
 load("@rules_python_gazelle_plugin//modules_mapping:def.bzl", "modules_mapping")
 
@@ -35,4 +37,26 @@ gazelle_python_manifest(
     # the integrity field is not added to the manifest which can help avoid
     # merge conflicts in large repos.
     requirements = "//:requirements_lock.txt",
+)
+
+compile_pip_requirements(
+    name = "requirements",
+    src = "requirements.in",
+    requirements_txt = "requirements_lock.txt",
+)
+
+# gazelle:resolve py frontmatter python-frontmatter
+
+py_binary(
+    name = "cat2tag",
+    srcs = ["blog/cat2tag.py"],
+    visibility = ["//:__subpackages__"],
+    deps = ["//:python-frontmatter"],
+)
+
+py_library(
+    name = "wordsonsand",
+    srcs = ["blog/cat2tag.py"],
+    visibility = ["//:__subpackages__"],
+    deps = ["//:python-frontmatter"],
 )
