@@ -1,10 +1,13 @@
 #!/bin/env python3
 
+import re
 import os
 import sys
 import datetime
 import frontmatter
 from pathlib import Path
+
+from atproto import Client, client_utils
 
 def find_publishable_files(base_path: Path):
     now = datetime.datetime.now(datetime.timezone.utc)
@@ -15,7 +18,7 @@ def find_publishable_files(base_path: Path):
         print(f"No content in {target_dir}")
         return []
 
-    matched = []
+    matched = dict()
     for path in target_dir.rglob("*.md"):
         try:
             post = frontmatter.load(path)
@@ -26,23 +29,21 @@ def find_publishable_files(base_path: Path):
                 print("isodate:", publish_date)
                 pd = publish_date
                 if pd < now and not published_at:
-                    matched.append(post)
+                    matched[path] = post
         except Exception as e:
             print(f"Error reading {path}: {e}")
 
     return matched
 
 def post_bluesky(post):
-    from atproto import Client, client_utils
     client = Client()
     username = os.environ.get("APP_BLUESKY_USERNAME")
     password = os.environ.get("APP_BLUESKY_PASSWORD")
     profile = client.login(username, password)
     text = build_text_with_facets(post.content)
-    client.send_post(text)
+    res = client.send_post(text)
+    return res.uri
 
-import re
-from atproto import client_utils, Client
 
 def build_text_with_facets(text: str) -> client_utils.TextBuilder:
     text_builder = client_utils.TextBuilder()
@@ -86,7 +87,13 @@ if __name__ == "__main__":
     base_path = Path(sys.argv[1])
     posts = find_publishable_files(base_path)
 
-    for p in posts:
+    for path, p in posts.items():
         if p.get("type") == "bluesky":
-            post_bluesky(p)
+            url = post_bluesky(p)
+
+            if url != '':
+                now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+                p["publishedAt"] = now
+                p["publishedTo"] = url
+                frontmatter.dump(p, path)
 
