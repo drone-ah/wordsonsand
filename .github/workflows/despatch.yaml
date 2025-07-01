@@ -43,6 +43,12 @@ jobs:
 
       - name: Run despatcher script
         working-directory: tools/despatcher
+        env:
+          APP_BLUESKY_USERNAME: ${{ secrets.DESPATCHES_BLUESKY_USERNAME }}
+          APP_BLUESKY_PASSWORD: ${{ secrets.DESPATCHES_BLUESKY_PASSWORD }}
+          APP_REDDIT_CLIENT_ID: ${{ secrets.DESPATCHES_REDDIT_CLIENT_ID }}
+          APP_REDDIT_CLIENT_SECRET: ${{ secrets.DESPATCHES_REDDIT_CLIENT_SECRET }}
+          APP_REDDIT_REFRESH_TOKEN: ${{ secrets.DESPATCHES_REDDIT_REFRESH_TOKEN }}
         run: poetry run ./despatch.py ../../despatches/
 
       - name: Commit and push if changed
