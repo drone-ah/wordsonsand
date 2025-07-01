@@ -1,0 +1,62 @@
+name: Despatch
+
+on:
+  schedule:
+    - cron: "13/30 10-15 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  despatch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12.3
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.3"
+
+      - name: Install Poetry 2.x
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Cache Poetry virtualenv
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pypoetry
+          key: poetry-${{ runner.os }}-${{ hashFiles('tools/despatcher/poetry.lock') }}
+          restore-keys: |
+            poetry-${{ runner.os }}-
+
+      - name: Install dependencies
+        working-directory: tools/despatcher
+        run: poetry install --no-root
+
+      - name: Run despatcher script
+        working-directory: tools/despatcher
+        env:
+          APP_BLUESKY_USERNAME: ${{ secrets.DESPATCHES_BLUESKY_USERNAME }}
+          APP_BLUESKY_PASSWORD: ${{ secrets.DESPATCHES_BLUESKY_PASSWORD }}
+          APP_REDDIT_CLIENT_ID: ${{ secrets.DESPATCHES_REDDIT_CLIENT_ID }}
+          APP_REDDIT_CLIENT_SECRET: ${{ secrets.DESPATCHES_REDDIT_CLIENT_SECRET }}
+          APP_REDDIT_REFRESH_TOKEN: ${{ secrets.DESPATCHES_REDDIT_REFRESH_TOKEN }}
+        run: poetry run ./despatch.py ../../despatches/
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "drone-ah bot"
+          git config user.email "github.actions@drone-ah.com"
+
+          if ! git diff --quiet; then
+            git add -u
+            git commit -m "auto: log post submissions"
+            git push
+          else
+            echo "No changes to commit"
+          fi

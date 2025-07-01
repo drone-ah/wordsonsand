@@ -1,11 +1,15 @@
 {{- $href := "" -}}
+{{- $text := .Text | safeHTML -}}
+
 {{- if strings.HasPrefix .Destination "http" -}}
   {{- $href = .Destination -}}
+  <a href="{{ $href | safeURL }}">{{ $text }}</a>
 {{- else -}}
   {{- $page := .Page.GetPage .Destination -}}
-  {{- if $page -}}
+	{{- if and $page (not ($page.PublishDate.After now)) -}}
     {{- $href = $page.RelPermalink -}}
+    <a href="{{ $href | safeURL }}">{{ $text }}</a>
+  {{- else -}}
+    <span class="unpublished">{{ $text }}</span>
   {{- end -}}
 {{- end -}}
-<a href="{{ $href | safeURL }}">{{ .Text | safeHTML }}</a>
-

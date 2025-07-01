@@ -37,14 +37,10 @@ zig = use_extension(
 zig.toolchain(zig_version = "0.14.0")
 use_repo(zig, "zig_toolchains")
 
-
 zig_toml_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 zig_toml_archive(
     name = "zig_toml",
-    urls = ["https://github.com/sam701/zig-toml/archive/refs/heads/main.zip"],
-	  sha256 = "b1f0846c3b5e9696892b0d96f8add4878c057c728623b03d6bfbd508e4af48d5",
-    strip_prefix = "zig-toml-main",
     build_file_content = """
 load("@rules_zig//zig:defs.bzl", "zig_module")
 zig_module(
@@ -54,15 +50,27 @@ zig_module(
     visibility = ["//visibility:public"],
 )
 """,
+    sha256 = "b1f0846c3b5e9696892b0d96f8add4878c057c728623b03d6bfbd508e4af48d5",
+    strip_prefix = "zig-toml-main",
+    urls = ["https://github.com/sam701/zig-toml/archive/refs/heads/main.zip"],
 )
 
+bazel_dep(name = "rules_python", version = "1.4.1")
 
-bazel_dep(name = "rules_python", version = "1.2.0")
+python = use_extension("@rules_python//python/extensions:python.bzl", "python")
+python.toolchain(
+    python_version = "3.13",
+)
 
 pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
 pip.parse(
     hub_name = "pypi",
-    python_version = "3.11",
-    requirements_lock = "//:requirements.txt",
+    python_version = "3.13",
+    requirements_lock = "//:requirements_lock.txt",
 )
+
 use_repo(pip, "pypi")
+
+# The following stanza defines the dependency rules_python_gazelle_plugin.
+# For typical setups you set the version.
+bazel_dep(name = "rules_python_gazelle_plugin", version = "1.4.1")
