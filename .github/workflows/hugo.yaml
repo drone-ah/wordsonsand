@@ -3,7 +3,7 @@ name: Deploy Hugo site to Pages
 
 on:
   schedule:
-    - cron: "*/10 12-15 * * 1-5" # Every 5 mins from 13:00–16:00 UK time (Mon–Fri)
+    - cron: "*/30 10-15 * * 1-5"
   # Runs on pushes targeting the default branch
   push:
     branches:
