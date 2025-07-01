@@ -22,7 +22,7 @@ and Reddit). However, this is usually the worst time to share these if I want to
 get some decent traffic and raise awareness.
 
 I've been remembering to post on the relevant days at reasonable times, but this
-process is annoying at best, interrupts flow and is takes up cognitive load.
+process is annoying at best, interrupts flow and takes up cognitive load.
 
 I wanted to automate it. I've got to say that automating these two seemingly
 simple tasks were rife with unexpected complexity.
@@ -59,7 +59,7 @@ Actions to regenerate the site when relevant. In the end, I identified the
 window during the week when I want to be publishing.
 
 10am - 4pm Mon - Fri seemed like a decent slot. GitHub Actions though does not
-support summer time. I opted or 10am - 3pm, which seemed the better option.
+support summer time. I opted for 10am - 3pm, which seemed the better option.
 
 My GitHub action for publishing takes one minute to execute. If I run the action
 every 30 minutes, for three hours five days a week:
@@ -250,3 +250,11 @@ commit and push the change. This will also help to keep a log of it.
       echo "No changes to commit"
     fi
 ```
+
+## Wrap Up
+
+In the end, what I thought was a two hour job took me two days, but such is the
+life of a software engineer (probably everyone).
+
+I am looking forward to see how it works, and a little scared if it'll go off
+and do random things in my name - but we'll see
