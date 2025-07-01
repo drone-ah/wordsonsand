@@ -7,6 +7,7 @@ import datetime
 import frontmatter
 from pathlib import Path
 
+import praw
 from atproto import Client, client_utils
 
 def find_publishable_files(base_path: Path):
@@ -79,6 +80,20 @@ def build_text_with_facets(text: str) -> client_utils.TextBuilder:
 
     return text_builder
 
+def post_reddit(post):
+    client_id = os.environ.get("APP_REDDIT_CLIENT_ID")
+    client_secret = os.environ.get("APP_REDDIT_CLIENT_SECRET")
+    refresh_token = os.environ.get("APP_REDDIT_REFRESH_TOKEN")
+
+    reddit = praw.Reddit(
+        client_id=client_id,
+        client_secret=client_secret,
+        refresh_token=refresh_token,
+        user_agent="despatcher",
+    )
+
+    print(reddit.user.me())
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python despatch.py <base_path>")
@@ -87,11 +102,20 @@ if __name__ == "__main__":
     base_path = Path(sys.argv[1])
     posts = find_publishable_files(base_path)
 
+    if len(posts) == 0:
+       sys.exit(0)
+
     for path, p in posts.items():
-        if p.get("type") == "bluesky":
+        url = ""
+
+        ptype = p.get("type")
+        if ptype == "bluesky":
             url = post_bluesky(p)
 
-            if url != '':
+        if ptype == "reddit":
+            url = post_reddit(p)
+
+            if url != '' and url is not None:
                 now = datetime.datetime.now(datetime.timezone.utc).isoformat()
                 p["publishedAt"] = now
                 p["publishedTo"] = url

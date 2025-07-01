@@ -9,7 +9,8 @@ readme = "README.md"
 requires-python = "<3.14,>=3.8"
 dependencies = [
     "python-frontmatter (>=1.1.0,<2.0.0)",
-    "atproto (>=0.0.61,<0.0.62)"
+    "atproto (>=0.0.61,<0.0.62)",
+    "praw (>=7.8.1,<8.0.0)"
 ]
 
 
