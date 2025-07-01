@@ -94,6 +94,16 @@ def post_reddit(post):
 
     print(reddit.user.me())
 
+    sub_name = post.get("subreddit")
+    title = post.get("title")
+    if sub_name == "" or sub_name is None or title == "" or title is None:
+        return
+
+    sub = reddit.subreddit(sub_name)
+
+    posted = sub.submit(title=title, url=post.get("url"), selftext=post.content)
+    return posted.url
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python despatch.py <base_path>")
