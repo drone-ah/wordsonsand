@@ -1,9 +1,6 @@
 name: Despatch
 
 on:
-  push:
-    branches:
-      - blog/scheduled-posts-py
   schedule:
     - cron: "13/30 10-15 * * 1-5"
   workflow_dispatch:
