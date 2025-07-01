@@ -43,44 +43,62 @@ realised that there was no real library for reddit integration either.
 
 Back to python, and trusty `poetry` to see me through.
 
+## Scheduled Elements
+
 There are four elements to getting scheduling to work
 
-## YouTube Scheduling
+### YouTube Scheduling
 
 This part was the easiest. The platform is kind enough to provide an option to
 schedule release of videos, and we'll use that!
 
-## Scheduled Publish for Blog
+### Scheduled Publish for Blog
 
 `hugo` supports this out of the box. The bigger challenge was how to get GitHub
 Actions to regenerate the site when relevant. In the end, I identified the
 window during the week when I want to be publishing.
 
-1pm - 4pm Mon - Fri seemed like a decent slot. GitHub Actions though does not
-support summer time. I opted or 12pm - 3pm, which seemed the better option.
+10am - 4pm Mon - Fri seemed like a decent slot. GitHub Actions though does not
+support summer time. I opted or 10am - 3pm, which seemed the better option.
 
 My GitHub action for publishing takes one minute to execute. If I run the action
-every 10 minutes, for three hours five days a week:
+every 30 minutes, for three hours five days a week:
 
-`6 * 3 * 5 * 4 = 360`
-
-360 minutes each month isn't too bad. If I want to run more often, I could also
-switch to [ubicloud](https://www.ubicloud.com/) who do a reasonable priced
-GitHub runner.
+`2 * 5 * 5 * 4 = 200`
 
 [.github/workflows/hugo.yaml](https://github.com/drone-ah/wordsonsand/blob/main/.github/workflows/hugo.yaml)
 
 ```yaml
 on:
   schedule:
-    - cron: "*/10 12-15 * * 1-5" # Every 5 mins from 13:00–16:00 UK time (Mon–Fri)
+    - cron: "*/30 12-15 * * 1-5"
   # Runs on pushes targeting the default branch
   push:
     branches:
       - main
 ```
 
-## Reddit
+I will need to run a second one for the despatches (below) as well, which would
+mean around 400 minutes each month - while there are no limits for public
+repos - it felt a little abusive to run it every minute.
+
+Once this has been running safely for a while, I'll consider bumping the
+cadence.
+
+### BlueSky
+
+This one - posting to BlueSky was far more complicated than I anticipated. All
+the complexity was around its requirement to separate the post out into facets.
+I recognise and value the semantic content such a process would output. However,
+I could not find an algorithm or any details on how to extract the facets from
+some text - e.g. markdown.
+
+I referenced some code from a couple of sources for a stopgap solution to
+address urls and hashtags.
+
+And then, I found [blueskysocial](https://github.com/dmoggles/blueskysocial)
+
+### Reddit
 
 You first need to [register an app](https://www.reddit.com/prefs/apps/) on
 reddit, from a page I don't seem to be able to get from anywhere except a direct
@@ -91,7 +109,7 @@ registered on that client to post, I got to try and login and was faced with:
 
 `prawcore.exceptions.OAuthException: invalid_grant error processing request`
 
-### Red Herrings
+#### Red Herrings
 
 I tried directly with curl:
 
@@ -130,7 +148,7 @@ easy enough for an app that is only intended to post on a schedule.
 
 Alas, this too did not help!
 
-### Final Solution
+#### Final Solution
 
 Perhaps not surprisingly, the final solution was to not use the password, but
 get a refresh token instead.
@@ -206,4 +224,29 @@ reddit = praw.Reddit(
 
 print(reddit.user.me())
 
+```
+
+## Posting & Tracking
+
+Once a post has been submitted, it is important that we log it somehow.
+Otherwise, we'll end up posting it again (and again (and again)).
+
+The cleanest solution I could think of was to update the markdown file, then
+commit and push the change. This will also help to keep a log of it.
+
+[.github/workflows/despatcher.yaml](https://github.com/drone-ah/wordsonsand/blob/main/.github/workflows/despatcher.yaml)
+
+```yaml
+- name: Commit and push if changed
+  run: |
+    git config user.name "drone-ah bot"
+    git config user.email "github.actions@drone-ah.com"
+
+    if ! git diff --quiet; then
+      git add -u
+      git commit -m "auto: log post submissions"
+      git push
+    else
+      echo "No changes to commit"
+    fi
 ```
