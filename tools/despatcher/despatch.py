@@ -92,9 +92,9 @@ if __name__ == "__main__":
         if ptype == "reddit":
             url = post_reddit(p)
 
-            if url != '' and url is not None:
-                now = datetime.datetime.now(datetime.timezone.utc).isoformat()
-                p["publishedAt"] = now
-                p["publishedTo"] = url
-                frontmatter.dump(p, path)
+        if url != '' and url is not None:
+            now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+            p["publishedAt"] = now
+            p["publishedTo"] = url
+            frontmatter.dump(p, path)
 
