@@ -8,7 +8,7 @@ import frontmatter
 from pathlib import Path
 
 import praw
-from atproto import Client, client_utils
+from blueskysocial import Client, Post
 
 def find_publishable_files(base_path: Path):
     now = datetime.datetime.now(datetime.timezone.utc)
@@ -37,48 +37,15 @@ def find_publishable_files(base_path: Path):
     return matched
 
 def post_bluesky(post):
-    client = Client()
+
     username = os.environ.get("APP_BLUESKY_USERNAME")
     password = os.environ.get("APP_BLUESKY_PASSWORD")
-    profile = client.login(username, password)
-    text = build_text_with_facets(post.content)
-    res = client.send_post(text)
-    return res.uri
+    client = Client()
+    client.authenticate(username, password)
+    bpost = Post(post.content)
+    res = client.post(bpost)
+    return res['uri']
 
-
-def build_text_with_facets(text: str) -> client_utils.TextBuilder:
-    text_builder = client_utils.TextBuilder()
-    cursor = 0
-
-    # Patterns
-    url_pattern = re.compile(r'https?://\S+')
-    tag_pattern = re.compile(r'#\w+')
-
-    # Combine all matches
-    matches = []
-    for m in url_pattern.finditer(text):
-        matches.append((m.start(), m.end(), 'url', m.group()))
-    for m in tag_pattern.finditer(text):
-        matches.append((m.start(), m.end(), 'tag', m.group()[1:]))
-
-    matches.sort(key=lambda m: m[0])  # ensure correct order
-
-    for start, end, kind, value in matches:
-        if cursor < start:
-            text_builder.text(text[cursor:start])
-
-        label = text[start:end]
-        if kind == 'url':
-            text_builder.link(label, value)
-        elif kind == 'tag':
-            text_builder.tag(label, value)
-
-        cursor = end
-
-    if cursor < len(text):
-        text_builder.text(text[cursor:])
-
-    return text_builder
 
 def post_reddit(post):
     client_id = os.environ.get("APP_REDDIT_CLIENT_ID")
