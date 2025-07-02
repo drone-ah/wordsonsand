@@ -85,12 +85,16 @@ if __name__ == "__main__":
     for path, p in posts.items():
         url = ""
 
-        ptype = p.get("type")
-        if ptype == "bluesky":
-            url = post_bluesky(p)
+        try:
+            ptype = p.get("type")
+            if ptype == "bluesky":
+                url = post_bluesky(p)
 
-        if ptype == "reddit":
-            url = post_reddit(p)
+            if ptype == "reddit":
+                url = post_reddit(p)
+        except Exception as e:
+            print(f"[ERROR] Failed to post to {ptype} for {path}: {e}")
+            continue  # Skip to the next file
 
         if url != '' and url is not None:
             now = datetime.datetime.now(datetime.timezone.utc).isoformat()
