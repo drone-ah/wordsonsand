@@ -294,6 +294,50 @@ commit and push the change. This will also help to keep a log of it.
     fi
 ```
 
+## Partial Successes
+
+Now, I thought I'd covered the worst offenders for risk of repeated posting, but
+I'd missed one case.
+
+What happens when something gets posted, then the script errors?
+
+Well, the git commit won't happen - and sadly this happened to my. My apologies
+to the nice folks at [r/selfhosted](https://www.reddit.com/r/selfhosted/) who
+got a handful of my posts about automated posting - eek :(
+
+Embarrassment aside, it identified at least one fix - probably two. Extra
+embarrassing because something like this has happened to me before - many years
+ago - but you live!
+
+The first update is to get GitHub Actions to carry on even if there is an error:
+
+[.github/workflows/despatcher.yaml](https://github.com/drone-ah/wordsonsand/blob/main/.github/workflows/despatcher.yaml)
+
+```yaml
+- name: Run despatcher script
+  working-directory: tools/despatcher
+  continue-on-error: true
+  run: poetry run ./despatch.py ../../despatches/
+```
+
+The second fix it to catch any errors from the dispatchers.
+
+[tools/despatcher/despatch.py](https://github.com/drone-ah/wordsonsand/tree/main/tools/despatcher/despatch.py)
+
+```python
+try:
+    ptype = p.get("type")
+    if ptype == "bluesky":
+        url = post_bluesky(p)
+
+    if ptype == "reddit":
+        url = post_reddit(p)
+except Exception as e:
+    print(f"[ERROR] Failed to post to {ptype} for {path}: {e}")
+    continue  # Skip to the next file
+
+```
+
 ## Wrap Up
 
 In the end, what I thought was a two hour job took me two days, but such is the
