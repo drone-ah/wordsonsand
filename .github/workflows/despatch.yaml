@@ -47,6 +47,7 @@ jobs:
           APP_REDDIT_CLIENT_ID: ${{ secrets.DESPATCHES_REDDIT_CLIENT_ID }}
           APP_REDDIT_CLIENT_SECRET: ${{ secrets.DESPATCHES_REDDIT_CLIENT_SECRET }}
           APP_REDDIT_REFRESH_TOKEN: ${{ secrets.DESPATCHES_REDDIT_REFRESH_TOKEN }}
+        continue-on-error: true
         run: poetry run ./despatch.py ../../despatches/
 
       - name: Commit and push if changed
