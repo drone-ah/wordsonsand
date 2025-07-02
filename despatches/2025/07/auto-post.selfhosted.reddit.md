@@ -1,8 +1,9 @@
 ---
 publishDate: 2025-07-02 13:35:00+01:00
+publishedAt: '2025-07-02T13:59:43.035482+00:00'
+publishedTo: https://www.reddit.com/r/selfhosted/comments/1lpwlgu/i_automated_sharing_my_hugo_posts_to_reddit_and/
 subreddit: selfhosted
-title:
-  I automated sharing my Hugo posts to Reddit and Bluesky using frontmatter,
+title: I automated sharing my Hugo posts to Reddit and Bluesky using frontmatter,
   GitHub Actions, and Python
 type: reddit
 ---
@@ -38,4 +39,3 @@ mistakes here:
 https://drone-ah.com/2025/07/01/automated-posting-to-bluesky-reddit/
 
 Would you do anything differently? Is there anything I didn't think about?
-
