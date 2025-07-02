@@ -85,6 +85,49 @@ repos - it felt a little abusive to run it every minute.
 Once this has been running safely for a while, I'll consider bumping the
 cadence.
 
+#### Cron is Unreliable on GitHub Actions
+
+After I got this all ready with the two workflows set up to run on GitHub
+Actions, I waited, and waited, and nothing happened.
+
+- [
+
+[GA schedule doc](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule)
+states:
+
+> The schedule event can be delayed during periods of high loads of GitHub
+> Actions workflow runs. High load times include the start of every hour. If the
+> load is sufficiently high enough, some queued jobs may be dropped. To decrease
+> the chance of delay, schedule your workflow to run at a different time of the
+> hour.
+
+The
+[upptime post about GitHub Actions schedule not working](https://upptime.js.org/blog/2021/01/22/github-actions-schedule-not-working/)
+includes some suggested workarounds, namely:
+
+- [IFTTT](https://ifttt.com/) - seems to be limited to a maximum of hourly
+- [Google Cloud Scheduler](https://cloud.google.com/scheduler/docs/) - could be
+  a good solution but a bit of a sledgehammer
+- [Cronhub](https://cronhub.io/) - starts at $19/mo
+
+I also discovered:
+
+- [cron-job.org](https://cron-job.org/) - haven't tried this yet, but looks
+  viable
+
+I was going to try out cron-job.org when ChatGPT suggested a simpler
+alternative - a simple workflow that only triggered the relevant workflows.
+
+According to ChatGPT, the more complex a workflow, the more likely it is to be
+dropped. It makes sense, of course, and while I wasn't fully convinced, I
+decided to
+[give it a go](https://github.com/drone-ah/wordsonsand/blob/main/.github/workflows/cron.yaml).
+
+It's only been 10 minutes, but it has completed one run already - which is
+promising, but the original run also ran once.
+
+I'll have to keep an eye on the reliability of this.
+
 ### BlueSky
 
 This one - posting to BlueSky was far more complicated than I anticipated. All
