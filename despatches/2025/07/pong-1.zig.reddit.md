@@ -1,5 +1,7 @@
 ---
 publishDate: 2025-07-02 10:15:00+01:00
+publishedAt: '2025-07-02T09:51:30.719145+00:00'
+publishedTo: https://www.reddit.com/r/Zig/comments/1lprqfk/built_pong_in_zig_with_raylib_part_1_paddles_ball/
 subreddit: zig
 title: Built Pong in Zig with raylib – part 1 (paddles, ball, setup)
 type: reddit
