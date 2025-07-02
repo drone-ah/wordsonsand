@@ -2,7 +2,8 @@ name: Despatch
 
 on:
   schedule:
-    - cron: "13/30 10-15 * * 1-5"
+    - cron: "13 10-15 * * 1-5"
+    - cron: "43 10-14 * * 1-5"
   workflow_dispatch:
 
 permissions:
