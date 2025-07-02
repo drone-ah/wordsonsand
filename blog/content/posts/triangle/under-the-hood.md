@@ -14,7 +14,7 @@ tags:
 ---
 
 In [this Let's Code video](https://youtu.be/8nA-a5Z1IDc) on
-[**Shri Codes**](http://www.youtube.com/@ShriCodesHere), I walk through some of
+[**shri codes**](http://www.youtube.com/@ShriCodesHere), I walk through some of
 the early systems in place for [_Triangle_](../../tags/triangle/) - my space
 ARPG built in **Zig** with **raylib**.
 
