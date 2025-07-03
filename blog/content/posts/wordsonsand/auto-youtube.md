@@ -29,6 +29,7 @@ title: "{{ replace .Name "-" " " | title }}"
 publishDate: {{ .Date }}
 youtubeId: ""
 playlist: ""
+categoryId: 20
 tags: []
 chapters:
   - "0:00 Intro"
@@ -48,6 +49,9 @@ sitemap: false
 - `publishDate`: When should the video go live
 - `youtubeId`: The video id from YouTube, used to build links
 - `playlist`: Which playlist is this a part of? Used to build links
+- `categoryId`:
+  [YouTube category Id](https://mixedanalytics.com/blog/list-of-youtube-video-category-ids/) -
+  e.g. gaming
 - `tags`: Used to add hashtags at the end of the video
 - `chapters`: Added to description to demarcate chapters
 - `links`: adds each link to the description. Can be other youtube videos

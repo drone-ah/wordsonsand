@@ -3,6 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 publishDate: {{ .Date }}
 youtubeId: ""
 playlist: ""
+categoryId: 20
 tags: []
 chapters:
   - "0:00 Intro"
