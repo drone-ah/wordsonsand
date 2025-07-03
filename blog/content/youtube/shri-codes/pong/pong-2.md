@@ -34,12 +34,6 @@ links:
     url: ./pong-1.md
   - title: Next
     url: ./pong-3.md
-outputs: ["plain"]
-_build:
-  list: never
-  render: always
-  publishResources: false
-sitemap: false
 ---
 
 **In this episode of Building Pong in Zig with Raylib**, we get the ball moving

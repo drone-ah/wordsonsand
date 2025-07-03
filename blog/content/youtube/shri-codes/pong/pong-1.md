@@ -31,12 +31,6 @@ links:
     url: ../../../endeavours/triangle.md
   - title: Next
     url: ./pong-2.md
-outputs: ["plain"]
-_build:
-  list: never
-  render: always
-  publishResources: false
-sitemap: false
 ---
 
 In this video, I start building a simple retro Pong game using **Zig** and

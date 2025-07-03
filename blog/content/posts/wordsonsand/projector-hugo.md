@@ -44,7 +44,6 @@ chapters:
 links:
   - title: <title>
     url: <url>
-outputs: ["plain"]
 _build:
   list: never
   render: always
@@ -65,6 +64,29 @@ sitemap: false
 - `links`: adds each link to the description. Can be other youtube videos
 - `outputs`: needed to output in plaintext format
 - `_build` and `sitemap`: prevent this file getting linked/crawled
+
+### Cascaded Properties
+
+We also want to prevent these pages from showing up on:
+
+- List Pages
+- Sitemap
+
+We also want to prevent them from being published. We could add `_build` to each
+of the `md` files, or we can cascade it (thanks to
+[jmooring](https://discourse.gohugo.io/u/jmooring) from the gohugo discourse).
+
+[content/youtube/\_index.md](https://github.com/drone-ah/wordsonsand/tree/main/blog/content/youtube/_index.md)
+
+```yaml
+title: "YouTube"
+cascade:
+  _build:
+    list: never
+    render: always
+    publishResources: false
+  sitemap: false
+```
 
 ### Layout (plain text)
 
@@ -101,7 +123,19 @@ As far as I could see, there is no way (currently) in hugo to specify a default
 output type for a `type` (i.e. youtube) of content, only a `kind` (e.g. page) of
 content.
 
-We, therefore need `outputs: ["plain"]` to the frontmatter
+However, we can add this to the cascade as well:
+
+```yaml
+cascade:
+  outputs: ["plain"]
+```
+
+I also created a `layouts/youtube/list.plain.txt` file to avoid the error:
+
+`WARN  found no layout file for "plain" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.`
+
+The contents of this file doesn't really matter as we shouldn't be rendering or
+using it.
 
 [hugo.toml](https://github.com/drone-ah/wordsonsand/tree/main/blog/hugo.toml)
 
@@ -203,3 +237,8 @@ There are two more parts, that I'd like to happen automatically:
 
 - [Uploading the video](./projector-upload.md)
 - [Syncing metadata](./projector-sync.md)
+
+## Links / References
+
+- [Suggestions from `jmooring` on hugo discourse](https://discourse.gohugo.io/t/generating-youtube-descriptions-using-hugo/55233/2?u=drone.ah)
+- [cascade](https://gohugo.io/configuration/cascade)
