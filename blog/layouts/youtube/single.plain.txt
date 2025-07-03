@@ -1,0 +1,32 @@
+{{ .Content | plainify | htmlUnescape }}
+
+{{- if .Params.chapters }}
+{{ range .Params.chapters }}
+{{- . }}
+{{ end -}}
+{{ end }}
+
+{{- with .Params.links }}
+Links:
+{{- $this := $.Page }}
+{{ range . -}}
+  {{- $target := $this.GetPage .url -}}
+
+  {{- if and $target (eq $target.Type "youtube") (not ($target.PublishDate.After now)) -}}
+    {{- $href := printf "https://www.youtube.com/watch?v=%s" $target.Params.youtubeId -}}
+    {{- with $target.Params.playlist -}}
+      {{- $href = printf "%s&list=%s" $href . -}}
+    {{- end -}}
+    {{ .title }}: {{ $href }}
+  {{- else if and $target (ne $target.Type "youtube") -}}
+    {{ .title }}: {{ $target.Permalink }}
+  {{- else if not $target -}}
+    {{ .title }}: {{ .url | absURL }}
+  {{- end }}
+{{ end }}
+{{ end }}
+
+{{- if .Params.tags }}
+{{ range .Params.tags }}#{{ . }} {{ end }}
+{{ end }}
+
