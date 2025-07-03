@@ -15,6 +15,9 @@ pub fn main() anyerror!void {
 
     rl.setTargetFPS(60); // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
+    var left_paddle = Paddle.init(Paddle.size.x * 0.5, .left);
+    var right_paddle = Paddle.init(screenWidth - Paddle.size.x * 1.5, .right);
+    var ball = Ball{ .pos = .{ .x = screenWidth * 0.5, .y = screenHeight * 0.5 } };
 
     // Main game loop
     while (!rl.windowShouldClose()) { // Detect window close button or ESC key
@@ -25,14 +28,17 @@ pub fn main() anyerror!void {
 
         // Draw
         //----------------------------------------------------------------------------------
+
+        const dt = rl.getFrameTime();
+
         rl.beginDrawing();
         defer rl.endDrawing();
 
         rl.clearBackground(.black);
 
-        const left_paddle = Paddle.init(Paddle.size.x * 0.5);
-        const right_paddle = Paddle.init(screenWidth - Paddle.size.x * 1.5);
-        const ball = Ball{ .pos = .{ .x = screenWidth * 0.5, .y = screenHeight * 0.5 } };
+        ball.update(dt);
+        ball.checkPaddleCollision(&left_paddle);
+        ball.checkPaddleCollision(&right_paddle);
 
         left_paddle.render();
         right_paddle.render();
