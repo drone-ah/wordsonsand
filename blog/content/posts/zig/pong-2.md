@@ -1,7 +1,7 @@
 ---
 title:
   "Building Pong in Zig with Raylib – Part 2: Ball Movement & Paddle Collisions"
-publishDate: 2025-07-03T11:01:00+01:00
+publishDate: 2025-07-04T12:01:00+01:00
 categories:
   - shri-codes
 tags:
