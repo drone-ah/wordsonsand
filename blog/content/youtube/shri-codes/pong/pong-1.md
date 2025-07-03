@@ -5,9 +5,13 @@ publishDate: 2025-07-03T13:53:56+01:00
 youtubeId: "ICq2D_na6zc"
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
 tags:
-  - zig
+  - ziglang
+  - pongclone
+  - codingvideo
+  - devlog
   - raylib
   - pong
+  - retrodev
   - gamedev
   - retrogames
   - opensource
@@ -26,7 +30,6 @@ links:
   - title: triangle (my main game)
     url: ../../../endeavours/triangle.md
 outputs: ["plain"]
-type: youtube
 _build:
   list: never
   render: always
