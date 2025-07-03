@@ -1,13 +1,21 @@
 ---
 title: "Auto Youtube"
 date: 2025-07-03T13:18:15+01:00
-draft: true
+categories:
+  - wordsonsand
+tags:
+  - wordsonsand
+  - projector
+  - hugo
+  - youtube
+  - automation
 ---
 
-Uploading and setting up YouTube Videos is a nightmare. There area lot of things
-to get just right. I also want to link to it to/from blog posts and social media
-posts. Making sure that I'm using the correct link everywhere is by itself
-annoying.
+Uploading and setting up YouTube videos is fiddly. There are a lot of things to
+get right - title, description, chapters, links, tags - the list goes on.
+
+I also want to link to and from blog posts and social posts - and making sure
+those links stay in sync is a hassle.
 
 It gets more complicated when scheduling multiple videos.
 
@@ -19,7 +27,7 @@ I (at the time of writing) use hugo for this blog site, and I regularly link
 from the YouTube description to a page on here. Since I want to save having to
 copy and paste that link into YouTube, leveraging the CMS felt sensible.
 
-## YouTube Content Type
+## A YouTube Content Type
 
 [archetypes/youtube.md](https://github.com/drone-ah/wordsonsand/tree/main/blog/archetypes/youtube.md)
 
@@ -35,7 +43,7 @@ chapters:
   - "0:00 Intro"
 links:
   - title: <title>
-  - url: <url>
+    url: <url>
 outputs: ["plain"]
 _build:
   list: never
@@ -60,7 +68,7 @@ sitemap: false
 
 ### Layout (plain text)
 
-We'll create a plaintext template to render it as text
+We need a plaintext template to render it as text
 
 [layouts/youtube/single.plain.txt](https://github.com/drone-ah/wordsonsand/tree/main/blog/layout/youtube/single.plain.txt)
 
@@ -89,7 +97,7 @@ Links:
 
 We also need to define plain as an output format.
 
-As fas as I could see, there is no way (currently) in hugo to specify a default
+As far as I could see, there is no way (currently) in hugo to specify a default
 output type for a `type` (i.e. youtube) of content, only a `kind` (e.g. page) of
 content.
 
@@ -108,8 +116,8 @@ We, therefore need `outputs: ["plain"]` to the frontmatter
 
 ## Auto link to YouTube
 
-One nice thing I'd like is to relatively link to YouTube video file in my
-content, and have that send the user to YouTube.
+I'd like to be able to link to a local markdown file, and have that resolve to
+the correct YouTube URL.
 
 ### From Posts
 
@@ -126,7 +134,7 @@ content, and have that send the user to YouTube.
 ```
 
 You know what would be nicer? If it took the user to the video in the playlist -
-if playlist is defined?
+if playlist is defined
 
 ```gotmpl
 {{- if eq $page.Type "youtube" -}}
@@ -167,3 +175,12 @@ Links:
 {{ end }}
 {{ end }}
 ```
+
+## Next
+
+This covers the Hugo-side of things.
+
+There are two more parts, that I'd like to happen automatically:
+
+- [Uploading the video](./projector-upload.md)
+- [Syncing metadata](./projector-sync.md)
