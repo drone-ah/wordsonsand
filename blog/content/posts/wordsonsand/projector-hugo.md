@@ -1,5 +1,5 @@
 ---
-title: "Auto Youtube"
+title: "Generate YouTube Descriptions from Hugo"
 date: 2025-07-03T13:18:15+01:00
 categories:
   - wordsonsand
