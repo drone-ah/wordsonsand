@@ -132,3 +132,10 @@ posts = "/:year/:month/:day/:slug/"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[outputFormats.plain]
+	mediaType = "text/plain"
+	baseName = "index"
+	isPlainText = true
+	isHTML = false
+	noUgly = true

@@ -1,0 +1,19 @@
+{{ .Content | plainify | htmlUnescape }}
+
+{{- if .Params.links }}
+Links:
+{{- range .Params.links }}
+{{ .title }}: {{ .url | absURL }}
+{{- end }}
+{{ end }}
+
+{{- if .Params.chapters }}
+{{ range .Params.chapters }}
+{{- . }}
+{{ end -}}
+{{ end }}
+
+{{- if .Params.tags }}
+{{ range .Params.tags }}#{{ . }} {{ end }}
+{{ end }}
+
