@@ -107,6 +107,10 @@ We, therefore need `outputs: ["plain"]` to the frontmatter
 One nice thing I'd like is to relatively link to YouTube video file in my
 content, and have that send the user to YouTube.
 
+### From Posts
+
+[layouts/\_default/\_markup/render-link.html](https://github.com/drone-ah/wordsonsand/blob/main/blog/layouts/_default/_markup/render-link.html)
+
 ```gotmpl
 {{- if eq $page.Type "youtube" -}}
   {{- $href = printf "https://www.youtube.com/watch?v=%s" $page.Params.youtubeId -}}
@@ -131,4 +135,31 @@ if playlist is defined?
 {{- end -}}
 
 <a href="{{ $href | safeURL }}">{{ $text }}</a>
+```
+
+### From YouTube Description
+
+Let's render links to YouTube from the `links` property:
+
+[layouts/youtube/single.plain.txt](https://github.com/drone-ah/wordsonsand/tree/main/blog/layout/youtube/single.plain.txt)
+
+```gotmpl
+{{ with .Params.links }}
+Links:
+{{- $this := $.Page }}
+{{ range . -}}
+  {{- $target := $this.GetPage .url -}}
+  {{- if and $target (eq $target.Type "youtube") -}}
+    {{- $href := printf "https://www.youtube.com/watch?v=%s" $target.Params.youtubeId -}}
+    {{- with $target.Params.playlist -}}
+      {{- $href = printf "%s&list=%s" $href . -}}
+    {{- end -}}
+    {{ .title }}: {{ $href }}
+  {{- else if $target -}}
+    {{ .title }}: {{ $target.Permalink }}
+  {{- else -}}
+    {{ .title }}: {{ .url | absURL }}
+  {{- end }}
+{{ end }}
+{{ end }}
 ```
