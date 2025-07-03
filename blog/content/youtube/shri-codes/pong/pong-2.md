@@ -32,6 +32,8 @@ links:
     url: ../../../posts/zig/pong-2.md
   - title: Prev
     url: ./pong-1.md
+  - title: Next
+    url: ./pong-3.md
 outputs: ["plain"]
 _build:
   list: never

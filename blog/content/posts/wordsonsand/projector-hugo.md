@@ -176,6 +176,25 @@ Links:
 {{ end }}
 ```
 
+### Future Links
+
+While we're at it, let's skip rendering any links that go live in the future:
+
+```gotmpl
+{{- $target := $this.GetPage .url -}}
+{{- if and $target (eq $target.Type "youtube") (not ($target.PublishDate.After now)) -}}
+  {{- $href := printf "https://www.youtube.com/watch?v=%s" $target.Params.youtubeId -}}
+  {{- with $target.Params.playlist -}}
+    {{- $href = printf "%s&list=%s" $href . -}}
+  {{- end -}}
+  {{ .title }}: {{ $href }}
+{{- else if and $target (ne $target.Type "youtube") -}}
+  {{ .title }}: {{ $target.Permalink }}
+{{- else if not $target -}}
+  {{ .title }}: {{ .url | absURL }}
+{{- end }}
+```
+
 ## Next
 
 This covers the Hugo-side of things.

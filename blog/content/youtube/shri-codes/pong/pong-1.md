@@ -29,6 +29,8 @@ links:
     url: ../../../posts/zig/pong-1.md
   - title: triangle (my main game)
     url: ../../../endeavours/triangle.md
+  - title: Next
+    url: ./pong-2.md
 outputs: ["plain"]
 _build:
   list: never
