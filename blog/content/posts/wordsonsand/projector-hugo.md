@@ -161,7 +161,7 @@ the correct YouTube URL.
 {{- if eq $page.Type "youtube" -}}
   {{- $href = printf "https://www.youtube.com/watch?v=%s" $page.Params.youtubeId -}}
 {{- else -}}
-  {{- $href = $page.RelPermalink -}}
+  <a href="{{ $page.RelPermalink | safeURL }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
 {{- end -}}
 
 <a href="{{ $href | safeURL }}">{{ $text }}</a>
@@ -177,7 +177,7 @@ if playlist is defined
     {{- $href = printf "%s&list=%s" $href . -}}
   {{- end }}
 {{- else -}}
-  {{- $href = $page.RelPermalink -}}
+  <a href="{{ $page.RelPermalink | safeURL }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
 {{- end -}}
 
 <a href="{{ $href | safeURL }}">{{ $text }}</a>
