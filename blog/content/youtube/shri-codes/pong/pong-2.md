@@ -2,7 +2,7 @@
 title:
   "shri codes Pong with Zig and Raylib - Part 2: Ball Movement & Paddle
   Collision"
-publishDate: 2025-07-05T09:45:00+01:00
+publishDate: 2025-07-08T09:45:00+01:00
 youtubeId: "IoOLH1O_a7M"
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
 tags:
