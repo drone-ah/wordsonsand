@@ -116,3 +116,19 @@ content, and have that send the user to YouTube.
 
 <a href="{{ $href | safeURL }}">{{ $text }}</a>
 ```
+
+You know what would be nicer? If it took the user to the video in the playlist -
+if playlist is defined?
+
+```gotmpl
+{{- if eq $page.Type "youtube" -}}
+  {{- $href = printf "https://www.youtube.com/watch?v=%s" $page.Params.youtubeId -}}
+  {{- with $page.Params.playlist }}
+    {{- $href = printf "%s&list=%s" $href . -}}
+  {{- end }}
+{{- else -}}
+  {{- $href = $page.RelPermalink -}}
+{{- end -}}
+
+<a href="{{ $href | safeURL }}">{{ $text }}</a>
+```
