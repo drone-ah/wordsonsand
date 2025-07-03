@@ -101,3 +101,18 @@ We, therefore need `outputs: ["plain"]` to the frontmatter
 	isHTML = false
 	noUgly = true
 ```
+
+## Auto link to YouTube
+
+One nice thing I'd like is to relatively link to YouTube video file in my
+content, and have that send the user to YouTube.
+
+```gotmpl
+{{- if eq $page.Type "youtube" -}}
+  {{- $href = printf "https://www.youtube.com/watch?v=%s" $page.Params.youtubeId -}}
+{{- else -}}
+  {{- $href = $page.RelPermalink -}}
+{{- end -}}
+
+<a href="{{ $href | safeURL }}">{{ $text }}</a>
+```
