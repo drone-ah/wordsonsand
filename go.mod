@@ -1,6 +1,6 @@
 module github.com/drone-ah/wordsonsand
 
-go 1.21
+go 1.22
 
 toolchain go1.23.6
 
@@ -12,7 +12,12 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.25.1
 	github.com/pulumi/pulumi-aws/sdk/v6 v6.8.0
 	github.com/pulumi/pulumi/sdk/v3 v3.93.0
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.10.0
+)
+
+require (
+	github.com/BurntSushi/toml v0.3.1 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
 require (
@@ -20,6 +25,7 @@ require (
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/ProtonMail/go-crypto v0.0.0-20230828082145-3c4c8a2d2371 // indirect
 	github.com/acomagu/bufpipe v1.0.4 // indirect
+	github.com/adrg/frontmatter v0.2.0
 	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
@@ -90,6 +96,7 @@ require (
 	github.com/tweekmonster/luser v0.0.0-20161003172636-3fa38070dbd7 // indirect
 	github.com/uber/jaeger-client-go v2.30.0+incompatible // indirect
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
+	github.com/urfave/cli/v3 v3.3.8
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	github.com/zclconf/go-cty v1.13.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect

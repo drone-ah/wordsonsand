@@ -15,6 +15,7 @@ go_deps = use_extension("@gazelle//:extensions.bzl", "go_deps")
 go_deps.from_file(go_mod = "//:go.mod")
 use_repo(
     go_deps,
+    "com_github_adrg_frontmatter",
     "com_github_aws_aws_sdk_go_v2",
     "com_github_aws_aws_sdk_go_v2_config",
     "com_github_aws_aws_sdk_go_v2_credentials",
@@ -23,6 +24,7 @@ use_repo(
     "com_github_pulumi_pulumi_aws_sdk_v6",
     "com_github_pulumi_pulumi_sdk_v3",
     "com_github_stretchr_testify",
+    "com_github_urfave_cli_v3",
 )
 
 bazel_dep(name = "bazel-diff", version = "9.0.3")
@@ -68,7 +70,6 @@ pip.parse(
     python_version = "3.13",
     requirements_lock = "//:requirements_lock.txt",
 )
-
 use_repo(pip, "pypi")
 
 # The following stanza defines the dependency rules_python_gazelle_plugin.

@@ -1,0 +1,21 @@
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "projector_lib",
+    srcs = [
+        "main.go",
+        "post.go",
+    ],
+    importpath = "github.com/drone-ah/wordsonsand/tools/projector",
+    visibility = ["//visibility:private"],
+    deps = [
+        "@com_github_adrg_frontmatter//:frontmatter",
+        "@com_github_urfave_cli_v3//:cli",
+    ],
+)
+
+go_binary(
+    name = "projector",
+    embed = [":projector_lib"],
+    visibility = ["//visibility:public"],
+)
