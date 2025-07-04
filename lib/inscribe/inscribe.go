@@ -38,6 +38,10 @@ func NewScribedFromFile(path string) (Scribed, error) {
 	return s, nil
 }
 
+func (s *Scribed) FrontMatter(out any) error {
+	return nil
+}
+
 // splitFrontmatter will split frontmatter from Content and store them
 func (s *Scribed) splitFrontmatter(r io.Reader) error {
 	data, err := io.ReadAll(r)
