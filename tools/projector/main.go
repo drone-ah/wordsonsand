@@ -45,13 +45,13 @@ func main() {
 	}
 }
 
-func validate(pathParam string, renderedPath string) error {
-	targetDir, err := getTargetDir(pathParam)
+func validate(sourcePath string, renderedPath string) error {
+	targetSourceDir, err := getTargetDir(sourcePath)
 	if err != nil {
 		return err
 	}
 
-	_, err = findFiles(targetDir)
+	_, err = findRecentVideos(targetSourceDir)
 	return nil
 }
 
@@ -68,11 +68,11 @@ func getTargetDir(basePath string) (string, error) {
 	return targetDir, nil
 }
 
-func findFiles(path string) ([]Post, error) {
+func findRecentVideos(path string) ([]Video, error) {
 	now := time.Now().UTC()
 	cutoff := now.AddDate(0, 0, -30)
 
-	var posts []Post
+	var posts []Video
 
 	err := filepath.Walk(path, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
@@ -80,7 +80,7 @@ func findFiles(path string) ([]Post, error) {
 		}
 		slog.Debug("checking:", "path", path)
 
-		post, err := NewPost(path)
+		post, err := NewVideo(path)
 		if err != nil {
 			return err
 		}
