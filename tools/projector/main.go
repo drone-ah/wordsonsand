@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"errors"
 	"log"
 	"log/slog"
 	"os"
@@ -18,7 +19,9 @@ type Metadata struct {
 
 func main() {
 	// Use regular logging (through slog, so we get the levels)
-	handler := slog.NewTextHandler(os.Stderr, nil)
+	handler := slog.NewTextHandler(os.Stderr, &slog.HandlerOptions{
+		Level: slog.LevelDebug,
+	})
 	logger := slog.New(handler)
 	slog.SetDefault(logger)
 
@@ -51,7 +54,21 @@ func validate(sourcePath string, renderedPath string) error {
 		return err
 	}
 
-	_, err = findRecentVideos(targetSourceDir)
+	targetRenderedDir, err := getTargetDir(renderedPath)
+	if err != nil {
+		return nil
+	}
+
+	videos, err := findRecentVideos(targetSourceDir)
+	for _, video := range videos {
+		relPath := video.path[len(targetSourceDir):]
+		relPath = relPath[:len(relPath)-3] // trim .md at the end
+		renderedPath = filepath.Join(targetRenderedDir, relPath, "index.txt")
+		slog.Debug("paths", "relative", relPath, "rendered", renderedPath)
+		if _, err := os.Stat(renderedPath); errors.Is(err, os.ErrNotExist) {
+			slog.Warn("unable to find rendered file", "file", renderedPath)
+		}
+	}
 	return nil
 }
 

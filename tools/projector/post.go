@@ -8,6 +8,7 @@ import (
 )
 
 type Video struct {
+	path    string
 	meta    Metadata
 	content []byte
 }
@@ -25,6 +26,7 @@ func NewVideo(path string) (Video, error) {
 	}
 
 	return Video{
+		path:    path,
 		meta:    meta,
 		content: content,
 	}, nil
