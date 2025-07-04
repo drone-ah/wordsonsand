@@ -1,5 +1,12 @@
 package inscribe
 
+import (
+	"bytes"
+	"errors"
+	"io"
+	"os"
+)
+
 // A Scribed is a representation of a file that contains frontmatter and markdown content
 type Scribed struct {
 	// HACK: We could store a Reader/Writer if we wanted more flexibility
@@ -13,7 +20,40 @@ func NewScribedFromFile(path string) (Scribed, error) {
 	//TODO: We could auto detect format based on delimiters being present
 	// For the time being though, let's just use YAML
 
-	return Scribed{
+	s := Scribed{
 		format: yamlFormat,
-	}, nil
+	}
+
+	f, err := os.Open(path)
+	if err != nil {
+		return Scribed{}, err
+	}
+	defer f.Close()
+
+	err = s.splitFrontmatter(f)
+	if err != nil {
+		return Scribed{}, err
+	}
+
+	return s, nil
+}
+
+// splitFrontmatter will split frontmatter from Content and store them
+func (s *Scribed) splitFrontmatter(r io.Reader) error {
+	data, err := io.ReadAll(r)
+	if err != nil {
+		return err
+	}
+
+	parts := bytes.SplitN(data, []byte("\n---\n"), 2)
+	if len(parts) != 2 {
+		return errors.New("invalid frontmatter format")
+	}
+
+	// Remove the opening '---\n' from the first part
+	s.frontmatter = bytes.TrimPrefix(parts[0], []byte("---\n"))
+
+	s.Content = string(bytes.TrimLeft(parts[1], "\r\n"))
+
+	return nil
 }
