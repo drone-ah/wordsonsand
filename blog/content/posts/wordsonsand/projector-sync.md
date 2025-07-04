@@ -1,6 +1,6 @@
 ---
 title: "Projector: Keep YouTube Descriptions synced"
-date: 2025-07-03T16:52:21+01:00
+date: 2025-07-04T16:52:21+01:00
 categories:
   - wordsonsand
 tags:
@@ -49,6 +49,8 @@ However, I did not enjoy the experience:
   Zig. But at least with Go, most handleable errors _stay_ errors — they don’t
   crash the whole tool.
 
+<!-- more -->
+
 #### java
 
 Sure, I could do this in Java - but I really don’t want to mess with the JVM.
@@ -73,3 +75,71 @@ Even though I’m not wiring the two directly, the ecosystem fit is nice.
   - If it doesn’t match,
     - Update the metadata on YouTube
     - Update the hash
+
+## Validation
+
+One thing worth being careful about is whether the metadata is valid. We do not
+want the sync to fail during its scheduled run - when it won't have many choices
+on how to resolve it.
+
+In a bid to mitigate this, we'll add a command to validate the source and
+rendered files.
+
+The validation would expect the rendered files to be generated as well, which
+seems reasonable since hugo is probably running as `hugo serve` while the
+content files are being updated.
+
+```go
+func validate(sourcePath string, renderedPath string) error {
+	targetSourceDir, err := getTargetDir(sourcePath)
+	if err != nil {
+		return err
+	}
+
+	targetRenderedDir, err := getTargetDir(renderedPath)
+	if err != nil {
+		return nil
+	}
+
+	videos, err := findRecentVideos(targetSourceDir)
+	for _, video := range videos {
+		_, err := video.getDescription(targetRenderedDir)
+		if err != nil {
+			slog.Warn("unable to find rendered file", "file", video.renderedPath)
+		}
+	}
+	return nil
+}
+```
+
+The validate function will retrieve the relevant files and check that there is a
+corresponding rendered description.
+
+If it errors in that process, we know that it would error out in the sync.
+
+We can't catch errors around the API though at this stage, and that's
+unavoidable.
+
+## Sync
+
+### Hashing the Description
+
+This part was surprisingly easy:
+
+```go
+bdesc, err := video.getDescription(targetRenderedDir)
+if err != nil {
+    slog.Warn("unable to find rendered file", "file", video.renderedPath)
+}
+
+// We want to hash the contents of description
+// Check with the hash in the metadata to see if it matches
+hash := md5.Sum(bdesc)
+strHash := hex.EncodeToString(hash[:])
+```
+
+The challenge was trying to write the updated yaml frontmatter back. I was using
+the `adrg/frontmatter` library to read the frontmatter, but it does not support
+writing it back.
+
+### Detour: Write a small frontmatter Library

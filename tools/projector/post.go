@@ -37,15 +37,15 @@ func NewVideo(sourcePath string, sourceRoot string) (Video, error) {
 	}, nil
 }
 
-func (v *Video) getDescription(renderedRoot string) (string, error) {
+func (v *Video) getDescription(renderedRoot string) ([]byte, error) {
 	relPath := v.path[len(v.sourceRoot):]
 	relPath = relPath[:len(relPath)-3] // trim .md at the end
 	v.renderedPath = filepath.Join(renderedRoot, relPath, "index.txt")
 	slog.Debug("paths", "relative", relPath, "rendered", v.renderedPath)
 	b, err := os.ReadFile(v.renderedPath)
 	if err != nil {
-		return "", err
+		return []byte{}, err
 	}
 
-	return string(b[:]), nil
+	return b, nil
 }
