@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"log"
+	"log/slog"
 	"os"
 	"path/filepath"
 	"time"
@@ -17,6 +17,11 @@ type Metadata struct {
 }
 
 func main() {
+	// Use regular logging (through slog, so we get the levels)
+	handler := slog.NewTextHandler(os.Stderr, nil)
+	logger := slog.New(handler)
+	slog.SetDefault(logger)
+
 	cmd := &cli.Command{
 		Name:  "validate",
 		Usage: "validate metadata",
@@ -73,7 +78,7 @@ func findFiles(path string) ([]Post, error) {
 		if err != nil {
 			return err
 		}
-		fmt.Println(path)
+		slog.Debug("checking:", "path", path)
 
 		post, err := NewPost(path)
 		if err != nil {
@@ -83,9 +88,12 @@ func findFiles(path string) ([]Post, error) {
 		meta := post.meta
 		if meta.PublishDate != "" {
 			pd, err := time.Parse(time.RFC3339, meta.PublishDate)
+			if err != nil {
+				slog.Warn("unable to parse", "path", path, "publishDate", meta.PublishDate)
+			}
 			if err == nil && pd.After(cutoff) {
 				posts = append(posts, post)
-				fmt.Printf("filtered: %s\n", path)
+				slog.Debug("filtered", "path", path)
 			}
 		}
 		return nil
