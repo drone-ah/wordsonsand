@@ -2,19 +2,23 @@ package main
 
 import (
 	"bytes"
+	"log/slog"
 	"os"
+	"path/filepath"
 
 	"github.com/adrg/frontmatter"
 )
 
 type Video struct {
-	path    string
-	meta    Metadata
-	content []byte
+	path         string
+	sourceRoot   string
+	renderedPath string
+	meta         Metadata
+	content      []byte
 }
 
-func NewVideo(path string) (Video, error) {
-	data, err := os.ReadFile(path)
+func NewVideo(sourcePath string, sourceRoot string) (Video, error) {
+	data, err := os.ReadFile(sourcePath)
 	if err != nil {
 		return Video{}, nil
 	}
@@ -26,8 +30,22 @@ func NewVideo(path string) (Video, error) {
 	}
 
 	return Video{
-		path:    path,
-		meta:    meta,
-		content: content,
+		path:       sourcePath,
+		sourceRoot: sourceRoot,
+		meta:       meta,
+		content:    content,
 	}, nil
+}
+
+func (v *Video) getDescription(renderedRoot string) (string, error) {
+	relPath := v.path[len(v.sourceRoot):]
+	relPath = relPath[:len(relPath)-3] // trim .md at the end
+	v.renderedPath = filepath.Join(renderedRoot, relPath, "index.txt")
+	slog.Debug("paths", "relative", relPath, "rendered", v.renderedPath)
+	b, err := os.ReadFile(v.renderedPath)
+	if err != nil {
+		return "", err
+	}
+
+	return string(b[:]), nil
 }

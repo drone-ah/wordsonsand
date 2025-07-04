@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"errors"
 	"log"
 	"log/slog"
 	"os"
@@ -61,12 +60,9 @@ func validate(sourcePath string, renderedPath string) error {
 
 	videos, err := findRecentVideos(targetSourceDir)
 	for _, video := range videos {
-		relPath := video.path[len(targetSourceDir):]
-		relPath = relPath[:len(relPath)-3] // trim .md at the end
-		renderedPath = filepath.Join(targetRenderedDir, relPath, "index.txt")
-		slog.Debug("paths", "relative", relPath, "rendered", renderedPath)
-		if _, err := os.Stat(renderedPath); errors.Is(err, os.ErrNotExist) {
-			slog.Warn("unable to find rendered file", "file", renderedPath)
+		_, err := video.getDescription(targetRenderedDir)
+		if err != nil {
+			slog.Warn("unable to find rendered file", "file", video.renderedPath)
 		}
 	}
 	return nil
@@ -85,19 +81,19 @@ func getTargetDir(basePath string) (string, error) {
 	return targetDir, nil
 }
 
-func findRecentVideos(path string) ([]Video, error) {
+func findRecentVideos(sourceRoot string) ([]Video, error) {
 	now := time.Now().UTC()
 	cutoff := now.AddDate(0, 0, -30)
 
 	var posts []Video
 
-	err := filepath.Walk(path, func(path string, info os.FileInfo, err error) error {
+	err := filepath.Walk(sourceRoot, func(fullPath string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
-		slog.Debug("checking:", "path", path)
+		slog.Debug("checking:", "path", fullPath)
 
-		post, err := NewVideo(path)
+		post, err := NewVideo(fullPath, sourceRoot)
 		if err != nil {
 			return err
 		}
@@ -106,11 +102,11 @@ func findRecentVideos(path string) ([]Video, error) {
 		if meta.PublishDate != "" {
 			pd, err := time.Parse(time.RFC3339, meta.PublishDate)
 			if err != nil {
-				slog.Warn("unable to parse", "path", path, "publishDate", meta.PublishDate)
+				slog.Warn("unable to parse", "path", fullPath, "publishDate", meta.PublishDate)
 			}
 			if err == nil && pd.After(cutoff) {
 				posts = append(posts, post)
-				slog.Debug("filtered", "path", path)
+				slog.Debug("filtered", "path", fullPath)
 			}
 		}
 		return nil
