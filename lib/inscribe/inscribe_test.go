@@ -1,6 +1,7 @@
 package inscribe_test
 
 import (
+	"strings"
 	"testing"
 
 	"github.com/drone-ah/wordsonsand/lib/inscribe"
@@ -39,4 +40,35 @@ func TestReadFrontMatter(t *testing.T) {
 	if fm.KeyId != "abc123" {
 		t.Errorf("Key (%s) doesn't match", fm.KeyId)
 	}
+}
+
+func TestWriteFrontMatter(t *testing.T) {
+	s, err := inscribe.NewScribedFromFile("testdata/md-with-frontmatter.md")
+	if err != nil {
+		t.Errorf("unexpected error: %v", err)
+	}
+
+	var fm fMatter
+	s.FrontMatter(&fm)
+
+	fm.Title = "New Title"
+
+	var o strings.Builder
+	s.Write(fm, &o)
+	if err != nil {
+		t.Errorf("unexpected error in Write: %v", err)
+	}
+
+	expected := `---
+title: New Title
+keyId: abc123
+---
+
+This is the description body.-
+`
+
+	if o.String() != expected {
+		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expected)
+	}
+
 }

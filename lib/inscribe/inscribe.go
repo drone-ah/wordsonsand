@@ -42,6 +42,10 @@ func (s *Scribed) FrontMatter(out any) error {
 	return s.format.Unmarshal(s.frontmatter, out)
 }
 
+func (s *Scribed) Write(fm any, out io.Writer) error {
+	return nil
+}
+
 // splitFrontmatter will split frontmatter from Content and store them
 func (s *Scribed) splitFrontmatter(r io.Reader) error {
 	data, err := io.ReadAll(r)
