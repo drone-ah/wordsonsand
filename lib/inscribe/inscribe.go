@@ -39,7 +39,7 @@ func NewScribedFromFile(path string) (Scribed, error) {
 }
 
 func (s *Scribed) FrontMatter(out any) error {
-	return nil
+	return s.format.Unmarshal(s.frontmatter, out)
 }
 
 // splitFrontmatter will split frontmatter from Content and store them
