@@ -1,0 +1,19 @@
+load("@rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "inscribe",
+    srcs = [
+        "formats.go",
+        "inscribe.go",
+    ],
+    importpath = "github.com/drone-ah/wordsonsand/lib/inscribe",
+    visibility = ["//visibility:public"],
+    deps = ["@in_gopkg_yaml_v2//:yaml_v2"],
+)
+
+go_test(
+    name = "inscribe_test",
+    srcs = ["inscribe_test.go"],
+    data = glob(["testdata/**"]),
+    deps = [":inscribe"],
+)
