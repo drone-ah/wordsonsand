@@ -21,7 +21,6 @@ func TestReadContent(t *testing.T) {
 	if s.Content != "This is the description body.-\n" {
 		t.Errorf("content (%s) does not match", s.Content)
 	}
-
 }
 
 func TestReadFrontMatter(t *testing.T) {
@@ -90,7 +89,6 @@ This is the description body.-
 	if o.String() != expectedWritten {
 		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedWritten)
 	}
-
 }
 
 type titleOnly struct {
@@ -178,7 +176,7 @@ func TestWritingMaps(t *testing.T) {
 	wm.Hashes["new"] = "something"
 
 	var o strings.Builder
-	s.Write(wm, &o)
+	err = s.Write(wm, &o)
 	if err != nil {
 		t.Errorf("unexpected error in Write: %v", err)
 	}

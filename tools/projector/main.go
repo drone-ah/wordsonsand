@@ -14,9 +14,9 @@ import (
 )
 
 type Metadata struct {
-	Title       string `yaml:"title"`
-	PublishDate string `yaml:"publishDate"`
-	Hashes      map[string]string
+	Title       string            `yaml:"title"`
+	PublishDate string            `yaml:"publishDate"`
+	Hashes      map[string]string `yaml:"hashes"`
 }
 
 func main() {
@@ -121,6 +121,11 @@ func sync(sourcePath string, renderedPath string) error {
 
 			// update the hash in the source file
 			video.meta.Hashes["description"] = strHash
+
+			err := video.save()
+			if err != nil {
+				slog.Warn("unable to save file", "file", video.path)
+			}
 		}
 
 	}

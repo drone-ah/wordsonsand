@@ -51,3 +51,23 @@ func (v *Video) getDescription(renderedRoot string) ([]byte, error) {
 
 	return b, nil
 }
+
+func (v *Video) save() error {
+	file, err := os.Create(v.path)
+	if err != nil {
+		return err
+	}
+	defer func() {
+		err := file.Close()
+		if err != nil {
+			slog.Warn("Unable to close file", "file", v.path, "error", err)
+		}
+	}()
+
+	err = v.scribed.Write(v.meta, file)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
