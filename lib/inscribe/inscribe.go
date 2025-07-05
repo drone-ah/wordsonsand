@@ -17,6 +17,17 @@ type Scribed struct {
 
 // NewScribed will return a new Scribed object representing a file with frontmatter
 func NewScribedFromFile(path string) (Scribed, error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return Scribed{}, err
+	}
+	defer f.Close()
+
+	return NewScribed(f)
+
+}
+
+func NewScribed(r io.Reader) (Scribed, error) {
 	//TODO: We could auto detect format based on delimiters being present
 	// For the time being though, let's just use YAML
 
@@ -24,13 +35,7 @@ func NewScribedFromFile(path string) (Scribed, error) {
 		format: yamlFormat,
 	}
 
-	f, err := os.Open(path)
-	if err != nil {
-		return Scribed{}, err
-	}
-	defer f.Close()
-
-	err = s.splitFrontmatter(f)
+	err := s.splitFrontmatter(r)
 	if err != nil {
 		return Scribed{}, err
 	}
