@@ -5,6 +5,8 @@ import (
 	"errors"
 	"io"
 	"os"
+
+	"gopkg.in/yaml.v2"
 )
 
 // A Scribed is a representation of a file that contains frontmatter and markdown content
@@ -43,7 +45,18 @@ func (s *Scribed) FrontMatter(out any) error {
 }
 
 func (s *Scribed) Write(fm any, out io.Writer) error {
-	data, err := s.format.Marshal(fm)
+	// Merge frontmatter
+	var raw map[string]any
+	err := s.format.Unmarshal(s.frontmatter, &raw)
+	updatedBytes, _ := yaml.Marshal(fm)
+
+	var updates map[string]any
+	yaml.Unmarshal(updatedBytes, &updates) // get updated keys
+
+	for k, v := range updates {
+		raw[k] = v // overwrite only touched fields
+	}
+	data, err := s.format.Marshal(raw)
 	if err != nil {
 		return err
 	}

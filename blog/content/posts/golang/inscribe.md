@@ -25,9 +25,7 @@ the [depatcher](../wordsonsand/despatches.md]) but I don't want to write python.
 
 <!-- more -->
 
-## The Basics
-
-### Multiple Formats
+## Multiple Formats
 
 Let's make it extendable by defining a `Format` that will allow us to add in
 other formats later:
@@ -48,7 +46,7 @@ var yamlFormat = Format{
 }
 ```
 
-### Writing Back
+## Writing Back
 
 We could also do with a struct to hold the whole file contents so that we can
 write it back easier.
@@ -64,3 +62,37 @@ type Scribed struct {
 
 By storing the full frontmatter, when we get a partial one back, we can merge
 it, and write the whole thing back.
+
+## Merging Updates
+
+We want the user (in this case also us), to be able to update only the keys they
+are interested in. All the other keys should be preserved.
+
+The easiest way I could find to do this was to Marshal, Unmarshall and then
+merge with the raw Unmarshall:
+
+```go
+// Merge frontmatter
+var raw map[string]any // full unmarshalled frontmatter
+err := s.format.Unmarshal(s.frontmatter, &raw)
+
+updatedBytes, _ := yaml.Marshal(fm) // convert updated to yaml
+
+var updates map[string]any
+yaml.Unmarshal(updatedBytes, &updates) // get updated keys as map
+
+for k, v := range updates {
+    raw[k] = v // overwrite only touched fields
+}
+
+// raw is now the preserved + updated keys
+data, err := s.format.Marshal(raw)
+if err != nil {
+    return err
+}
+```
+
+> ⚠️ **Warning**: Key ordering is lost
+>
+> Due to the way maps work, the key ordering is lost More accurately, the keys
+> end up ordered. I could not figure out an easy way to preserve ordering.

@@ -43,8 +43,8 @@ func TestReadFrontMatter(t *testing.T) {
 }
 
 const expectedWritten = `---
-title: New Title
 keyId: abc123
+title: New Title
 ---
 
 This is the description body.-
