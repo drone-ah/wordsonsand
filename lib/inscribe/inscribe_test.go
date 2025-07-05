@@ -42,6 +42,24 @@ func TestReadFrontMatter(t *testing.T) {
 	}
 }
 
+type withMap struct {
+	Hashes map[string]string `yaml:"hashes"`
+}
+
+func TestReadFrontMatterMap(t *testing.T) {
+	s, err := inscribe.NewScribedFromFile("testdata/md-with-frontmatter.md")
+	if err != nil {
+		t.Errorf("unexpected error: %v", err)
+	}
+
+	var wm withMap
+	s.FrontMatter(&wm)
+
+	if wm.Hashes["description"] != "hashhash" {
+		t.Errorf("Key (%s) doesn't match", wm.Hashes["description"])
+	}
+}
+
 const expectedWritten = `---
 title: "New Title"
 keyId: "abc123"
