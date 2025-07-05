@@ -68,6 +68,7 @@ func MergeYaml(raw []byte, fm any) ([]byte, error) {
 
 	var buf bytes.Buffer
 	enc := yaml.NewEncoder(&buf)
+	enc.SetIndent(2)
 	if err := enc.Encode(&node); err != nil {
 		return nil, err
 	}

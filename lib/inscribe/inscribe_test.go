@@ -45,6 +45,8 @@ func TestReadFrontMatter(t *testing.T) {
 const expectedWritten = `---
 title: "New Title"
 keyId: "abc123"
+hashes:
+  description: hashhash
 ---
 
 This is the description body.-
@@ -102,6 +104,8 @@ func TestWritePartialFrontMatter(t *testing.T) {
 const expectedNewKey = `---
 title: "New Title"
 keyId: "abc123"
+hashes:
+  description: hashhash
 newKey: something
 ---
 
