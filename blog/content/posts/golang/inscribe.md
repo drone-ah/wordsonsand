@@ -1,7 +1,16 @@
 ---
-title: "Inscribe: A simple golang frontmatter parser"
+title: "Inscribe: Updating frontmatter in-place with Go and yaml.Node"
 date: 2025-07-04T16:44:02+01:00
-draft: true
+categories:
+  - golang
+tags:
+  - golang
+  - inscribe
+  - yaml
+  - frontmatter
+  - tooling
+  - markdown
+  - projector
 ---
 
 While building
@@ -15,13 +24,12 @@ I considered contributing to that one, but writing back is a little more complex
 than reading - particularly because the `frontmatter.Parse` in that one is built
 to support partial reading.
 
-A `Write` wouldn't be super hard to write, but the problem is that the full
-frontmatter isn't stored anywhere. As such, if you write back a partially read
-frontmatter, you'd lose the other keys.
+Because adrg/frontmatter only unmarshals into a struct, and doesn’t store the
+original bytes, you can’t write back without losing untouched keys.
 
-Looking around, I could not find another frontmatter library for golang. I know
-that python has a decent library which supports writing back to it (I used it in
-the [depatcher](../wordsonsand/despatches.md]) but I don't want to write python.
+Looking around, I could not find another frontmatter library for Go. I know that
+python has a decent library which supports writing back to it (I used it in the
+[depatcher](../wordsonsand/despatches.md]) but I don't want to write python.
 
 <!-- more -->
 
@@ -60,16 +68,18 @@ type Scribed struct {
 }
 ```
 
-By storing the full frontmatter, when we get a partial one back, we can merge
-it, and write the whole thing back.
+By storing the full frontmatter, we can later accept partial updates without
+losing other keys.
 
 ## Naive Merging of Updates
 
-We want the user (in this case also us), to be able to update only the keys they
-are interested in. All the other keys should be preserved.
+We (the user) should be able to update just the keys we care about. All the
+other keys should be preserved.
 
 The easiest way I could find to do this was to Marshal, Unmarshall and then
 merge with the raw Unmarshall:
+
+### Minimal merge strategy (loses order and formatting)
 
 ```go
 // Merge frontmatter
@@ -95,17 +105,17 @@ if err != nil {
 > ⚠️ **Warning**: Key ordering is lost
 >
 > Due to the way maps work, the key ordering is lost More accurately, the keys
-> end up ordered.
+> are sorted alphabetically during write.
 >
-> It fully rewrites the frontmatter, which also means that double quotes migh
+> It fully rewrites the frontmatter, which also means that double quotes might
 > disappear etc.
 
 ## In Place Merging of Updates
 
 If it is important to keep the frontmatter formatting as much as possible, we
-need to a bigger sledgehammer.
+need to bigger sledgehammer.
 
-ChatGPT helped me figure out a solution which involved using `yaml.Node`
+I explored an approach using yaml.Node with ChatGPT's help.
 
 I fitted it into the `Format` as well
 
@@ -168,8 +178,8 @@ func MergeYaml(raw []byte, fm any) ([]byte, error) {
 }
 ```
 
-The frontmatter is pretty well maintained through updates now. However, it only
-really supports flat yaml. If we need maps etc. we need a tweak.
+This preserves frontmatter formatting well - but it only handles flat YAML.
+Nested maps require a bit more work.
 
 ## Supporting maps etc. as values
 
@@ -265,3 +275,19 @@ func (s *Scribed) splitFrontmatter(r io.Reader) error {
 	return nil
 }
 ```
+
+## Conclusion
+
+This is probably the main bits of functionality I'll need to continue with the
+[projector sync](../wordsonsand/projector-sync.md).
+
+I had considered `frontmatter` to be a blackbox with complicated functionality,
+but cutting it up and working on it has demystified it and made it easier to
+work with. ChatGPT helped.
+
+It should be fairly straightforward to add other frontmatter formats like TOML,
+and to autodetect the formats, but I don't need it right now.
+
+## Links
+
+- [Source Code on GitHub](https://github.com/drone-ah/wordsonsand/tree/main/lib/inscribe)
