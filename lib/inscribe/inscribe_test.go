@@ -42,6 +42,14 @@ func TestReadFrontMatter(t *testing.T) {
 	}
 }
 
+const expectedWritten = `---
+title: New Title
+keyId: abc123
+---
+
+This is the description body.-
+`
+
 func TestWriteFrontMatter(t *testing.T) {
 	s, err := inscribe.NewScribedFromFile("testdata/md-with-frontmatter.md")
 	if err != nil {
@@ -59,16 +67,34 @@ func TestWriteFrontMatter(t *testing.T) {
 		t.Errorf("unexpected error in Write: %v", err)
 	}
 
-	expected := `---
-title: New Title
-keyId: abc123
----
-
-This is the description body.-
-`
-
-	if o.String() != expected {
-		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expected)
+	if o.String() != expectedWritten {
+		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedWritten)
 	}
 
+}
+
+type titleOnly struct {
+	Title string `yaml:"title"`
+}
+
+func TestWritePartialFrontMatter(t *testing.T) {
+	s, err := inscribe.NewScribedFromFile("testdata/md-with-frontmatter.md")
+	if err != nil {
+		t.Errorf("unexpected error: %v", err)
+	}
+
+	var to titleOnly
+	s.FrontMatter(&to)
+
+	to.Title = "New Title"
+
+	var o strings.Builder
+	s.Write(to, &o)
+	if err != nil {
+		t.Errorf("unexpected error in Write: %v", err)
+	}
+
+	if o.String() != expectedWritten {
+		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedWritten)
+	}
 }
