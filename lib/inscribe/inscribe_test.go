@@ -157,3 +157,37 @@ func TestWritingNewKeyToFrontMatter(t *testing.T) {
 		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedNewKey)
 	}
 }
+
+const expectedMapKey = `---
+title: "New Title"
+keyId: "abc123"
+hashes:
+  description: hashhash
+  new: something
+newKey: something
+---
+
+This is the description body.-
+`
+
+func TestWritingMaps(t *testing.T) {
+	s, err := inscribe.NewScribedFromFile("testdata/md-with-frontmatter.md")
+	if err != nil {
+		t.Errorf("unexpected error: %v", err)
+	}
+
+	var wm withMap
+	s.FrontMatter(&wm)
+
+	wm.Hashes["new"] = "something"
+
+	var o strings.Builder
+	s.Write(wm, &o)
+	if err != nil {
+		t.Errorf("unexpected error in Write: %v", err)
+	}
+
+	if o.String() != expectedMapKey {
+		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedMapKey)
+	}
+}
