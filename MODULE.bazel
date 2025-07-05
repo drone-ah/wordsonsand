@@ -26,6 +26,7 @@ use_repo(
     "com_github_stretchr_testify",
     "com_github_urfave_cli_v3",
     "in_gopkg_yaml_v2",
+    "in_gopkg_yaml_v3",
 )
 
 bazel_dep(name = "bazel-diff", version = "9.0.3")

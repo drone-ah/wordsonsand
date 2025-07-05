@@ -63,7 +63,7 @@ type Scribed struct {
 By storing the full frontmatter, when we get a partial one back, we can merge
 it, and write the whole thing back.
 
-## Merging Updates
+## Naive Merging of Updates
 
 We want the user (in this case also us), to be able to update only the keys they
 are interested in. All the other keys should be preserved.
@@ -95,4 +95,79 @@ if err != nil {
 > ⚠️ **Warning**: Key ordering is lost
 >
 > Due to the way maps work, the key ordering is lost More accurately, the keys
-> end up ordered. I could not figure out an easy way to preserve ordering.
+> end up ordered.
+>
+> It fully rewrites the frontmatter, which also means that double quotes migh
+> disappear etc.
+
+## In Place Merging of Updates
+
+If it is important to keep the frontmatter formatting as much as possible, we
+need to a bigger sledgehammer.
+
+ChatGPT helped me figure out a solution which involved using `yaml.Node`
+
+I fitted it into the `Format` as well
+
+```go
+type MergeFunc func(raw []byte, fm any) ([]byte, error)
+
+type Format struct {
+	// TODO: We could add details like delimiter to support other formats
+	// and auto detection of format
+	Unmarshal UnmarshalFunc
+	Marshal   MarshalFunc
+	Merge     MergeFunc
+}
+
+func MergeYaml(raw []byte, fm any) ([]byte, error) {
+	var node yaml.Node
+	if err := yaml.Unmarshal(raw, &node); err != nil {
+		return nil, err
+	}
+
+	// Expecting a document with a single mapping node
+	if len(node.Content) == 0 || node.Content[0].Kind != yaml.MappingNode {
+		return nil, errors.New("invalid frontmatter")
+	}
+
+	b, err := yaml.Marshal(fm)
+	if err != nil {
+		return nil, err
+	}
+
+	var updates map[string]string
+	yaml.Unmarshal(b, &updates)
+
+	m := node.Content[0]
+	for key, value := range updates {
+		// Search for the key and update it, or append a new one
+		found := false
+		for i := 0; i < len(m.Content); i += 2 {
+			k := m.Content[i]
+			if k.Value == key {
+				m.Content[i+1].Value = value
+				found = true
+				break
+			}
+		}
+		if !found {
+			m.Content = append(m.Content,
+				&yaml.Node{Kind: yaml.ScalarNode, Value: key},
+				&yaml.Node{Kind: yaml.ScalarNode, Value: value},
+			)
+		}
+	}
+
+	var buf bytes.Buffer
+	enc := yaml.NewEncoder(&buf)
+	if err := enc.Encode(&node); err != nil {
+		return nil, err
+	}
+	return buf.Bytes(), nil
+}
+```
+
+The frontmatter is pretty well maintained through updates now.
+
+It's funny how things can be more complicated than it first seems.
