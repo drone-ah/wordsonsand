@@ -43,6 +43,16 @@ func (s *Scribed) FrontMatter(out any) error {
 }
 
 func (s *Scribed) Write(fm any, out io.Writer) error {
+	data, err := s.format.Marshal(fm)
+	if err != nil {
+		return err
+	}
+
+	io.WriteString(out, "---\n")
+	out.Write(data)
+	io.WriteString(out, "---\n\n")
+	io.WriteString(out, s.Content)
+
 	return nil
 }
 
