@@ -98,3 +98,40 @@ func TestWritePartialFrontMatter(t *testing.T) {
 		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedWritten)
 	}
 }
+
+const expectedNewKey = `---
+title: "New Title"
+keyId: "abc123"
+newKey: something
+---
+
+This is the description body.-
+`
+
+type newKey struct {
+	Title  string `yaml:"title"`
+	NewKey string `yaml:"newKey"`
+}
+
+func TestWritingNewKeyToFrontMatter(t *testing.T) {
+	s, err := inscribe.NewScribedFromFile("testdata/md-with-frontmatter.md")
+	if err != nil {
+		t.Errorf("unexpected error: %v", err)
+	}
+
+	var nk newKey
+	s.FrontMatter(&nk)
+
+	nk.Title = "New Title"
+	nk.NewKey = "something"
+
+	var o strings.Builder
+	s.Write(nk, &o)
+	if err != nil {
+		t.Errorf("unexpected error in Write: %v", err)
+	}
+
+	if o.String() != expectedNewKey {
+		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedNewKey)
+	}
+}
