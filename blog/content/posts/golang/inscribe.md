@@ -207,3 +207,61 @@ for key, value := range updates {
 ```
 
 It's funny how things can be more complicated than it first seems.
+
+## Minor tweaks
+
+I also wanted to add the delimiter into the format and use that instead of
+hardcoding, which was easy enough.
+
+```go
+// A Format knows how to (un)marshal a particular format of frontmatter.
+// e.g. yaml, toml etc.
+type Format struct {
+	Delimiter string
+	Unmarshal UnmarshalFunc
+	Marshal   MarshalFunc
+	Merge     MergeFunc
+}
+
+var yamlFormat = Format{
+	Delimiter: "---",
+	Unmarshal: yaml.Unmarshal,
+	Marshal:   yaml.Marshal,
+	Merge:     MergeYaml,
+}
+
+func (s *Scribed) Write(fm any, out io.Writer) error {
+	// Merge frontmatter
+	data, err := s.format.Merge(s.frontmatter, fm)
+	if err != nil {
+		return err
+	}
+
+	io.WriteString(out, s.format.Delimiter+"\n")
+	out.Write(data)
+	io.WriteString(out, s.format.Delimiter+"\n\n")
+	io.WriteString(out, s.Content)
+
+	return nil
+}
+
+// splitFrontmatter will split frontmatter from Content and store them
+func (s *Scribed) splitFrontmatter(r io.Reader) error {
+	data, err := io.ReadAll(r)
+	if err != nil {
+		return err
+	}
+
+	parts := bytes.SplitN(data, []byte("\n"+s.format.Delimiter+"\n"), 2)
+	if len(parts) != 2 {
+		return errors.New("invalid frontmatter format")
+	}
+
+	// Remove the opening '---\n' from the first part
+	s.frontmatter = bytes.TrimPrefix(parts[0], []byte("---\n"))
+
+	s.Content = string(bytes.TrimLeft(parts[1], "\r\n"))
+
+	return nil
+}
+```

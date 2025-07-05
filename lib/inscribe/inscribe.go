@@ -49,9 +49,9 @@ func (s *Scribed) Write(fm any, out io.Writer) error {
 		return err
 	}
 
-	io.WriteString(out, "---\n")
+	io.WriteString(out, s.format.Delimiter+"\n")
 	out.Write(data)
-	io.WriteString(out, "---\n\n")
+	io.WriteString(out, s.format.Delimiter+"\n\n")
 	io.WriteString(out, s.Content)
 
 	return nil
@@ -64,7 +64,7 @@ func (s *Scribed) splitFrontmatter(r io.Reader) error {
 		return err
 	}
 
-	parts := bytes.SplitN(data, []byte("\n---\n"), 2)
+	parts := bytes.SplitN(data, []byte("\n"+s.format.Delimiter+"\n"), 2)
 	if len(parts) != 2 {
 		return errors.New("invalid frontmatter format")
 	}

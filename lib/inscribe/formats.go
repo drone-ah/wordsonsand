@@ -14,14 +14,14 @@ type MergeFunc func(raw []byte, fm any) ([]byte, error)
 // A Format knows how to (un)marshal a particular format of frontmatter.
 // e.g. yaml, toml etc.
 type Format struct {
-	// TODO: We could add details like delimiter to support other formats
-	// and auto detection of format
+	Delimiter string
 	Unmarshal UnmarshalFunc
 	Marshal   MarshalFunc
 	Merge     MergeFunc
 }
 
 var yamlFormat = Format{
+	Delimiter: "---",
 	Unmarshal: yaml.Unmarshal,
 	Marshal:   yaml.Marshal,
 	Merge:     MergeYaml,
