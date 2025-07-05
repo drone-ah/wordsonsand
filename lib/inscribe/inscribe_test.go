@@ -60,16 +60,6 @@ func TestReadFrontMatterMap(t *testing.T) {
 	}
 }
 
-const expectedWritten = `---
-title: "New Title"
-keyId: "abc123"
-hashes:
-  description: hashhash
----
-
-This is the description body.-
-`
-
 func TestWriteFrontMatter(t *testing.T) {
 	s, err := inscribe.NewScribedFromFile("testdata/md-with-frontmatter.md")
 	if err != nil {
@@ -86,6 +76,16 @@ func TestWriteFrontMatter(t *testing.T) {
 	if err != nil {
 		t.Errorf("unexpected error in Write: %v", err)
 	}
+
+	const expectedWritten = `---
+title: New Title
+keyId: abc123
+hashes:
+  description: hashhash
+---
+
+This is the description body.-
+`
 
 	if o.String() != expectedWritten {
 		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedWritten)
@@ -114,21 +114,19 @@ func TestWritePartialFrontMatter(t *testing.T) {
 		t.Errorf("unexpected error in Write: %v", err)
 	}
 
-	if o.String() != expectedWritten {
-		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedWritten)
-	}
-}
-
-const expectedNewKey = `---
-title: "New Title"
+	const expectedWritten = `---
+title: New Title
 keyId: "abc123"
 hashes:
   description: hashhash
-newKey: something
 ---
 
 This is the description body.-
 `
+	if o.String() != expectedWritten {
+		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedWritten)
+	}
+}
 
 type newKey struct {
 	Title  string `yaml:"title"`
@@ -153,22 +151,20 @@ func TestWritingNewKeyToFrontMatter(t *testing.T) {
 		t.Errorf("unexpected error in Write: %v", err)
 	}
 
-	if o.String() != expectedNewKey {
-		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedNewKey)
-	}
-}
-
-const expectedMapKey = `---
-title: "New Title"
+	const expectedNewKey = `---
+title: New Title
 keyId: "abc123"
 hashes:
   description: hashhash
-  new: something
 newKey: something
 ---
 
 This is the description body.-
 `
+	if o.String() != expectedNewKey {
+		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedNewKey)
+	}
+}
 
 func TestWritingMaps(t *testing.T) {
 	s, err := inscribe.NewScribedFromFile("testdata/md-with-frontmatter.md")
@@ -187,6 +183,16 @@ func TestWritingMaps(t *testing.T) {
 		t.Errorf("unexpected error in Write: %v", err)
 	}
 
+	const expectedMapKey = `---
+title: "Test Title"
+keyId: "abc123"
+hashes:
+  description: hashhash
+  new: something
+---
+
+This is the description body.-
+`
 	if o.String() != expectedMapKey {
 		t.Errorf("output (%s) doesn't match\n (%s)", o.String(), expectedMapKey)
 	}

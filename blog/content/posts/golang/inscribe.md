@@ -168,6 +168,42 @@ func MergeYaml(raw []byte, fm any) ([]byte, error) {
 }
 ```
 
-The frontmatter is pretty well maintained through updates now.
+The frontmatter is pretty well maintained through updates now. However, it only
+really supports flat yaml. If we need maps etc. we need a tweak.
+
+## Supporting maps etc. as values
+
+We need to switch to `map[string]any` and tweak a bit of the loop
+
+```go
+var updates map[string]any
+yaml.Unmarshal(b, &updates)
+
+m := node.Content[0]
+for key, value := range updates {
+    // Encode value to a yaml.Node
+    valNode := &yaml.Node{}
+    if err := valNode.Encode(value); err != nil {
+        return nil, err
+    }
+
+    // Search and replace or append
+    found := false
+    for i := 0; i < len(m.Content); i += 2 {
+        if m.Content[i].Value == key {
+            m.Content[i+1] = valNode
+            found = true
+            break
+        }
+    }
+    if !found {
+        m.Content = append(m.Content,
+            &yaml.Node{Kind: yaml.ScalarNode, Value: key},
+            valNode,
+        )
+    }
+}
+
+```
 
 It's funny how things can be more complicated than it first seems.

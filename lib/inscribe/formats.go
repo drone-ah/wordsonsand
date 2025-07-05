@@ -43,17 +43,22 @@ func MergeYaml(raw []byte, fm any) ([]byte, error) {
 		return nil, err
 	}
 
-	var updates map[string]string
+	var updates map[string]any
 	yaml.Unmarshal(b, &updates)
 
 	m := node.Content[0]
 	for key, value := range updates {
-		// Search for the key and update it, or append a new one
+		// Encode value to a yaml.Node
+		valNode := &yaml.Node{}
+		if err := valNode.Encode(value); err != nil {
+			return nil, err
+		}
+
+		// Search and replace or append
 		found := false
 		for i := 0; i < len(m.Content); i += 2 {
-			k := m.Content[i]
-			if k.Value == key {
-				m.Content[i+1].Value = value
+			if m.Content[i].Value == key {
+				m.Content[i+1] = valNode
 				found = true
 				break
 			}
@@ -61,7 +66,7 @@ func MergeYaml(raw []byte, fm any) ([]byte, error) {
 		if !found {
 			m.Content = append(m.Content,
 				&yaml.Node{Kind: yaml.ScalarNode, Value: key},
-				&yaml.Node{Kind: yaml.ScalarNode, Value: value},
+				valNode,
 			)
 		}
 	}
