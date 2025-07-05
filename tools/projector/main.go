@@ -121,7 +121,6 @@ func sync(sourcePath string, renderedPath string) error {
 
 			// update the hash in the source file
 			video.meta.Hashes["description"] = strHash
-
 		}
 
 	}

@@ -8,10 +8,7 @@ go_library(
     ],
     importpath = "github.com/drone-ah/wordsonsand/lib/inscribe",
     visibility = ["//visibility:public"],
-    deps = [
-        "@in_gopkg_yaml_v2//:yaml_v2",
-        "@in_gopkg_yaml_v3//:yaml_v3",
-    ],
+    deps = ["@in_gopkg_yaml_v3//:yaml_v3"],
 )
 
 go_test(

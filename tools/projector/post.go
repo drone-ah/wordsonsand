@@ -1,12 +1,11 @@
 package main
 
 import (
-	"bytes"
 	"log/slog"
 	"os"
 	"path/filepath"
 
-	"github.com/adrg/frontmatter"
+	"github.com/drone-ah/wordsonsand/lib/inscribe"
 )
 
 type Video struct {
@@ -14,17 +13,20 @@ type Video struct {
 	sourceRoot   string
 	renderedPath string
 	meta         Metadata
-	content      []byte
+	scribed      inscribe.Scribed
 }
 
 func NewVideo(sourcePath string, sourceRoot string) (Video, error) {
-	data, err := os.ReadFile(sourcePath)
+	scribed, err := inscribe.NewScribedFromFile(sourcePath)
 	if err != nil {
 		return Video{}, nil
 	}
 
-	var meta Metadata
-	content, err := frontmatter.Parse(bytes.NewReader(data), &meta)
+	var meta Metadata = Metadata{
+		Hashes: make(map[string]string),
+	}
+
+	err = scribed.FrontMatter(&meta)
 	if err != nil {
 		return Video{}, nil
 	}
@@ -33,7 +35,7 @@ func NewVideo(sourcePath string, sourceRoot string) (Video, error) {
 		path:       sourcePath,
 		sourceRoot: sourceRoot,
 		meta:       meta,
-		content:    content,
+		scribed:    scribed,
 	}, nil
 }
 
