@@ -5,12 +5,15 @@ go_library(
     srcs = [
         "main.go",
         "post.go",
+        "youtube.go",
     ],
     importpath = "github.com/drone-ah/wordsonsand/tools/projector",
     visibility = ["//visibility:private"],
     deps = [
         "//lib/inscribe",
         "@com_github_urfave_cli_v3//:cli",
+        "@org_golang_google_api//option",
+        "@org_golang_google_api//youtube/v3:youtube",
     ],
 )
 

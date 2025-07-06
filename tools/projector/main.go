@@ -15,6 +15,7 @@ import (
 
 type Metadata struct {
 	Title       string            `yaml:"title"`
+	VideoId     string            `yaml:"youtubeId"`
 	PublishDate string            `yaml:"publishDate"`
 	Hashes      map[string]string `yaml:"hashes"`
 }
@@ -103,6 +104,8 @@ func sync(sourcePath string, renderedPath string) error {
 		return nil
 	}
 
+	vService := YouTube{}
+
 	videos, err := findRecentVideos(targetSourceDir)
 	for _, video := range videos {
 		bdesc, err := video.getDescription(targetRenderedDir)
@@ -119,6 +122,15 @@ func sync(sourcePath string, renderedPath string) error {
 			// update description
 			// call youtube api to update description
 
+			vId := video.meta.VideoId
+			if vId != "" {
+				err := vService.UpdateDescription(video.meta.VideoId, string(bdesc))
+				if err != nil {
+					slog.Warn("Unable to set description", "err", err)
+				}
+			}
+
+			slog.Debug("updated description", "file", video.path)
 			// update the hash in the source file
 			video.meta.Hashes["description"] = strHash
 
