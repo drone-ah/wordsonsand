@@ -1,6 +1,6 @@
 ---
 title: "Inscribe: Updating frontmatter in-place with Go and yaml.Node"
-date: 2025-07-04T16:44:02+01:00
+date: 2025-07-05T10:44:02+01:00
 categories:
   - golang
 tags:
