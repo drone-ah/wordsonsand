@@ -59,9 +59,24 @@ func main() {
 						Name:  "rendered",
 						Usage: "location of rendered descriptions",
 					},
+					&cli.StringFlag{
+						Name:    "client-id",
+						Usage:   "google oauth client id",
+						Sources: cli.EnvVars("GOOGLE_CLIENT_ID"),
+					},
+					&cli.StringFlag{
+						Name:    "client-secret",
+						Usage:   "google oauth client secret",
+						Sources: cli.EnvVars("GOOGLE_CLIENT_SECRET"),
+					},
+					&cli.StringFlag{
+						Name:    "refresh-token",
+						Usage:   "google refresh token",
+						Sources: cli.EnvVars("GOOGLE_REFRESH_TOKEN"),
+					},
 				},
 				Action: func(ctx context.Context, cmd *cli.Command) error {
-					return sync(cmd.String("source"), cmd.String("rendered"))
+					return sync(cmd)
 				},
 			},
 		},
@@ -93,7 +108,13 @@ func validate(sourcePath string, renderedPath string) error {
 	return nil
 }
 
-func sync(sourcePath string, renderedPath string) error {
+func sync(cmd *cli.Command) error {
+	sourcePath := cmd.String("source")
+	renderedPath := cmd.String("rendered")
+	clientId := cmd.String("client-id")
+	clientSecret := cmd.String("client-secret")
+	refreshToken := cmd.String("refresh-token")
+
 	targetSourceDir, err := getTargetDir(sourcePath)
 	if err != nil {
 		return err
@@ -104,7 +125,11 @@ func sync(sourcePath string, renderedPath string) error {
 		return nil
 	}
 
-	vService := YouTube{}
+	vService := YouTube{
+		ClientId:     clientId,
+		ClientSecret: clientSecret,
+		RefreshToken: refreshToken,
+	}
 
 	videos, err := findRecentVideos(targetSourceDir)
 	for _, video := range videos {

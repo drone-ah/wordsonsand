@@ -26,6 +26,7 @@ use_repo(
     "com_github_urfave_cli_v3",
     "in_gopkg_yaml_v3",
     "org_golang_google_api",
+    "org_golang_x_oauth2",
 )
 
 bazel_dep(name = "bazel-diff", version = "9.0.3")
