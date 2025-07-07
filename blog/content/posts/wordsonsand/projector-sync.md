@@ -75,6 +75,7 @@ Even though I’m not wiring the two directly, the ecosystem fit is nice.
   - If it doesn’t match,
     - Update the metadata on YouTube
     - Update the hash
+  - commit and push any updates (should be only hash changes)
 
 ## Validation
 
@@ -143,3 +144,47 @@ the `adrg/frontmatter` library to read the frontmatter, but it does not support
 writing it back.
 
 ### Detour: Write a small frontmatter Library
+
+I took a little detour to build a little
+[frontmatter library that supports reading and writing back in yaml](../golang/inscribe.md).
+
+## Auth
+
+We need the YouTube Client to have an OAuth Token, which we can retrieve by:
+
+- [Create a new OAuth Client](https://console.cloud.google.com/auth/clients) -
+  Type of desktop is probably the easiest
+- add your user account to
+  [test users](https://console.cloud.google.com/auth/audience):
+- go to
+  https://accounts.google.com/o/oauth2/v2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&scope=https://www.googleapis.com/auth/youtube
+  - Remember to substitute your actual client_id
+  - Add any other scopes you might want
+  - Go through the flow steps - it'll warn you that the app is unreleased, which
+    is expected
+- Take the code that it provides
+- Call the following curl command
+
+```bash
+curl -X POST https://oauth2.googleapis.com/token \
+  -d client_id=YOUR_CLIENT_ID \
+  -d client_secret=YOUR_CLIENT_SECRET \
+  -d code=PASTE_THE_CODE_HERE \
+  -d grant_type=authorization_code \
+  -d redirect_uri=urn:ietf:wg:oauth:2.0:oob
+```
+
+You should finally get something like:
+
+```json
+{
+  "access_token": "ya29...",
+  "expires_in": 3599,
+  "refresh_token": "1//0g...",
+  "scope": "https://www.googleapis.com/auth/youtube",
+  "token_type": "Bearer"
+}
+```
+
+The `refresh_token` is what you want to save / use as the `access_token` will
+expire (after an hour in this example).
