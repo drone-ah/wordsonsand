@@ -1,6 +1,54 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "bazel-watcher@latest": {
+      "last_modified": "2025-06-20T02:24:11Z",
+      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#bazel-watcher",
+      "source": "devbox-search",
+      "version": "0.26.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6hyqz58s72ba84gc3xiwh9lq3q550y3v-bazel-watcher-0.26.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6hyqz58s72ba84gc3xiwh9lq3q550y3v-bazel-watcher-0.26.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x3hbdzsd84k170f0xrwikw0sdlpvl86k-bazel-watcher-0.26.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/x3hbdzsd84k170f0xrwikw0sdlpvl86k-bazel-watcher-0.26.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4xmr7pyp7r11wjn1vn4ldgh5bndnwyq9-bazel-watcher-0.26.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4xmr7pyp7r11wjn1vn4ldgh5bndnwyq9-bazel-watcher-0.26.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/c7s70a5kpf6ln8bda99qvf1wrlv68fv2-bazel-watcher-0.26.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/c7s70a5kpf6ln8bda99qvf1wrlv68fv2-bazel-watcher-0.26.1"
+        }
+      }
+    },
     "bazelisk@latest": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#bazelisk",

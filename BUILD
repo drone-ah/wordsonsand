@@ -7,7 +7,6 @@ load("@rules_python_gazelle_plugin//modules_mapping:def.bzl", "modules_mapping")
 
 gazelle(
     name = "gazelle",
-    gazelle = "@rules_python_gazelle_plugin//python:gazelle_binary",
 )
 
 # This rule fetches the metadata for python packages we depend on. That data is

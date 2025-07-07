@@ -1,9 +1,7 @@
 ---
-title:
-  "shri codes Pong with Zig and Raylib - Part 3: Edge Collisions, Scoring &
-  Player Input"
-publishDate: 2025-07-05T09:45:00+01:00
-youtubeId: "https://youtu.be/9TmoiLjtWrg"
+title: 'shri codes Pong with Zig and Raylib - Part 3: Edge Collisions, Scoring & Player Input'
+publishDate: "2025-07-05T09:45:00+01:00"
+youtubeId: 9TmoiLjtWrg
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
 tags:
   - ziglang
@@ -30,6 +28,8 @@ links:
     url: ./pong-1.md
   - title: Part 2
     url: ./pong-2.md
+hashes:
+  description: de1cd101e372aef8630dc2861435cd7f
 ---
 
 **In this episode of Building Pong in Zig with Raylib**, we make the game

@@ -23,6 +23,10 @@ use_repo(
     "com_github_pulumi_pulumi_aws_sdk_v6",
     "com_github_pulumi_pulumi_sdk_v3",
     "com_github_stretchr_testify",
+    "com_github_urfave_cli_v3",
+    "in_gopkg_yaml_v3",
+    "org_golang_google_api",
+    "org_golang_x_oauth2",
 )
 
 bazel_dep(name = "bazel-diff", version = "9.0.3")
@@ -68,7 +72,6 @@ pip.parse(
     python_version = "3.13",
     requirements_lock = "//:requirements_lock.txt",
 )
-
 use_repo(pip, "pypi")
 
 # The following stanza defines the dependency rules_python_gazelle_plugin.
