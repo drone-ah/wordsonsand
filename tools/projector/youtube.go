@@ -11,22 +11,20 @@ import (
 )
 
 type YouTube struct {
-	ClientId     string
-	ClientSecret string
-	RefreshToken string
+	service *youtube.Service
 }
 
-func (y YouTube) UpdateDescription(videoId string, desc string) error {
+func NewYouTube(ClientId string, ClientSecret string, RefreshToken string) (YouTube, error) {
 
 	conf := &oauth2.Config{
-		ClientID:     y.ClientId,
-		ClientSecret: y.ClientSecret,
+		ClientID:     ClientId,
+		ClientSecret: ClientSecret,
 		Endpoint:     google.Endpoint,
 		Scopes:       []string{"https://www.googleapis.com/auth/youtube"},
 	}
 
 	// Construct a token from just the refresh token
-	token := &oauth2.Token{RefreshToken: y.RefreshToken}
+	token := &oauth2.Token{RefreshToken: RefreshToken}
 
 	ctx := context.Background()
 
@@ -35,8 +33,18 @@ func (y YouTube) UpdateDescription(videoId string, desc string) error {
 
 	ytService, err := youtube.NewService(ctx, option.WithHTTPClient(httpClient))
 	if err != nil {
-		return err
+		return YouTube{}, err
 	}
+
+	return YouTube{
+		service: ytService,
+	}, nil
+
+}
+
+func (y YouTube) UpdateDescription(videoId string, desc string) error {
+
+	ytService := y.service
 
 	vListCall := ytService.Videos.List([]string{"snippet"})
 	vListCall = vListCall.Id(videoId)

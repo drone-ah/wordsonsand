@@ -125,10 +125,9 @@ func sync(cmd *cli.Command) error {
 		return nil
 	}
 
-	vService := YouTube{
-		ClientId:     clientId,
-		ClientSecret: clientSecret,
-		RefreshToken: refreshToken,
+	vService, err := NewYouTube(clientId, clientSecret, refreshToken)
+	if err != nil {
+		return err
 	}
 
 	videos, err := findRecentVideos(targetSourceDir)
