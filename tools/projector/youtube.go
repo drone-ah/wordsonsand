@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
@@ -37,17 +38,22 @@ func (y YouTube) UpdateDescription(videoId string, desc string) error {
 		return err
 	}
 
-	ytVideo := youtube.Video{
-		Id: videoId,
-		Snippet: &youtube.VideoSnippet{
-			Title:       "some title",
-			CategoryId:  "20",
-			Description: desc,
-		},
+	vListCall := ytService.Videos.List([]string{"snippet"})
+	vListCall = vListCall.Id(videoId)
+	res, err := vListCall.Do()
+	if err != nil {
+		return err
 	}
 
-	call := ytService.Videos.Update([]string{"snippet"}, &ytVideo)
-	_, err = call.Do()
+	if len(res.Items) != 1 {
+		return fmt.Errorf("wrong number of videos returned: %d", len(res.Items))
+	}
+
+	ytVideo := res.Items[0]
+	ytVideo.Snippet.Description = desc
+
+	vUpdateCall := ytService.Videos.Update([]string{"snippet"}, ytVideo)
+	_, err = vUpdateCall.Do()
 
 	return err
 }
