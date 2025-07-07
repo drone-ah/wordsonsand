@@ -13,6 +13,7 @@ pub const Which = enum {
 pos: rl.Vector2,
 which: Which,
 colour: rl.Color = .white,
+score: u8 = 0,
 
 pub fn init(x: f32, which: Which) Paddle {
     return .{
@@ -46,4 +47,8 @@ pub fn isColliding(self: *Paddle, ball: *const Ball) bool {
 
     self.colour = if (colliding) .red else .white;
     return colliding;
+}
+
+pub fn move(self: *Paddle, y: f32, dt: f32) void {
+    self.pos.y += y * dt;
 }
