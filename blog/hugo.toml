@@ -81,6 +81,11 @@ name = "endeavours"
 url = "/endeavours"
 weight = 5
 
+[[menu.main]]
+name = "excursions"
+url = "/excursions"
+weight = 6
+
 [[params.social]]
 name = "Github"
 icon = "github"

@@ -5,6 +5,7 @@ categories:
   - wordsonsand
 tags:
   - wordsonsand
+  - despatches
   - automation
   - hugo
   - reddit
@@ -382,6 +383,10 @@ life of a software engineer (probably everyone).
 
 I am looking forward to see how it works, and a little scared if it'll go off
 and do random things in my name - but we'll see
+
+## Links
+
+- [Code Repo](../../../../tools/despatcher/)
 
 ## Updates
 
