@@ -23,7 +23,24 @@
       <a href="{{ $page.RelPermalink | safeURL }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
     {{- end }}
   {{- else -}}
-    <span class="unpublished">{{ $text }}</span>
+
+		{{- $linkPath := .Destination -}}                           {{/* e.g. "../scripts/tool.sh" */}}
+		{{- $currentPath := .Page.File.Path -}}                     {{/* e.g. "posts/foo.md" */}}
+		{{- $currentDir := path.Dir $currentPath -}}                {{/* e.g. "posts" */}}
+
+		{{- $combined := path.Join $currentDir $linkPath -}}        {{/* e.g. "posts/../scripts/tool.sh" */}}
+		{{- $resolved := path.Clean $combined -}}                   {{/* e.g. "scripts/tool.sh" */}}
+
+		{{- $fullRepoPath := path.Join "blog/content" $resolved -}} {{/* e.g. "blog/content/scripts/tool.sh" */}}
+
+		{{- $isInContent := strings.HasPrefix $fullRepoPath "blog/content/" -}}
+
+		{{- if $isInContent -}}
+			<span class="unpublished">{{ $text }}</span>
+		{{- else -}}
+			{{- $commit := or .Page.Params.link_commit .Page.GitInfo.Hash -}}
+			<a href="https://github.com/drone-ah/wordsonsand/blob/{{ $commit }}/{{ $fullRepoPath }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
+		{{- end -}}
   {{- end }}
 
 {{- else -}}

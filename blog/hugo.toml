@@ -9,6 +9,9 @@ title = "words on sand"
 
 languageCode = "en"
 
+## Needed to autolink to github based on current commit
+enableGitInfo = true
+
 [params]
 	subtitle = "from shri at drone-ah.com"
 
