@@ -90,8 +90,6 @@ cadence.
 After I got this all ready with the two workflows set up to run on GitHub
 Actions, I waited, and waited, and nothing happened.
 
-- [
-
 [GA schedule doc](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule)
 states:
 
@@ -127,6 +125,45 @@ It's only been 10 minutes, but it has completed one run already - which is
 promising, but the original run also ran once.
 
 I'll have to keep an eye on the reliability of this.
+
+#### Switched to `cron-job.org`
+
+While the above strategy was OK, I wanted something more reliable, so I switched
+to [cron-job.org](https://console.cron-job.org)
+
+I created a new access token, restricted to the repo and with two additional
+permissions:
+
+- actions: read & write
+- contents: read (to read the workflow file, ChatGPT suggests)
+
+I then set up a http call to:
+
+`https://api.github.com/repos/<gh-username>/<repo-name>/actions/workflows/<workflow-filename>/dispatches`
+
+- `<gh-username>`: use your github username from the url
+- `<repo-name>`: name of your repo, again from the url
+- `<workflow-filename>`: The filename of the workflow you want to trigger
+
+To triger my hugo run, I used:
+`https://api.github.com/repos/drone-ah/wordsonsand/actions/workflows/hugo.yaml/dispatches`
+
+Under advanced, I set the following Headers:
+
+- `Accept`: `application/vnd.github+json`
+- `Authorization`: `token <personal-access-token>`
+- `Content-Type`: `application/json`
+- `User-Agent`: `cronjob`
+
+Set `Request method` to `POST`
+
+`Request body`:
+
+```json
+{
+  "ref": "main"
+}
+```
 
 ### BlueSky
 
@@ -345,3 +382,9 @@ life of a software engineer (probably everyone).
 
 I am looking forward to see how it works, and a little scared if it'll go off
 and do random things in my name - but we'll see
+
+## Updates
+
+- 2025-07-08: Switch to `cron-job.org`
+- 2025-07-02: Add note about GA cron unreliability
+- 2025-07-02: Add details of handling partial success
