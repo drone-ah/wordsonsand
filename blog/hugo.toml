@@ -68,22 +68,22 @@ weight = 2
 
 [[menu.main]]
 name = "about"
-url = "/about"
+url = "/about/"
 weight = 1
 
 [[menu.main]]
 name = "tags & stats"
-url = "/tags"
+url = "/tags/"
 weight = 4
 
 [[menu.main]]
 name = "endeavours"
-url = "/endeavours"
+url = "/endeavours/"
 weight = 5
 
 [[menu.main]]
 name = "excursions"
-url = "/excursions"
+url = "/excursions/"
 weight = 6
 
 [[params.social]]
