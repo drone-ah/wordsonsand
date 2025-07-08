@@ -12,4 +12,4 @@ I build a small tool to automate the scheduled posting
 
 - [Intro Post](../posts/wordsonsand/despatches.md)
 - [Source Code](../../../tools/despatcher/)
-- [All posts](../tags/despatcher/_index.md)
+- [All posts](../tags/despatches/_index.md)
