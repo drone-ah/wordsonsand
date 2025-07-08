@@ -113,7 +113,7 @@ menu.
 
 ## Links
 
-- [Watch Video](https://youtu.be/IoOLH1O_a7M)
-- [Source Code (at this point)](https://github.com/drone-ah/wordsonsand/tree/shri-codes/pong/part-3/games/pong)
+- [Watch Video](../../youtube/shri-codes/pong/pong-3.md)
+- [Source Code (at this point)](../../../../games/pong/)
 - Prev: [Ball Movement & Paddle Collisions](./pong-2.md)
 - Next: Code Improvements from Review
