@@ -38,7 +38,7 @@
 		{{- if $isInContent -}}
 			<span class="unpublished">{{ $text }}</span>
 		{{- else -}}
-			{{- $commit := .Page.GitInfo.Hash -}}
+			{{- $commit := or .Page.Params.link_commit .Page.GitInfo.Hash -}}
 			<a href="https://github.com/drone-ah/wordsonsand/blob/{{ $commit }}/{{ $fullRepoPath }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
 		{{- end -}}
   {{- end }}
