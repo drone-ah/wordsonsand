@@ -18,6 +18,26 @@ It currently has two commands:
 More
 [details can be found on the blog post](https://drone-ah.com/2025/07/07/projector-keep-youtube-descriptions-synced/)
 
+## How it works
+
+### Yaml File
+
+This tool expects the descriptions for the youtube files to be defined in a yaml
+file. The supported fields and default content can be found in
+[the archetype](../../blog/archetypes/youtube.md)
+
+You can find some examples of active descriptions in
+[the content section](../../blog/content/youtube/)
+
+### Description File
+
+Hugo then generates the description files.
+
+### projector sync
+
+This tool (projector) then uses information from both those directories to
+detect if the description has changed, and if so, to update them.
+
 ## TODO
 
 - Check Validity of
