@@ -29,7 +29,7 @@ copy and paste that link into YouTube, leveraging the CMS felt sensible.
 
 ## A YouTube Content Type
 
-[archetypes/youtube.md](https://github.com/drone-ah/wordsonsand/tree/main/blog/archetypes/youtube.md)
+[archetypes/youtube.md](../../../archetypes/youtube.md)
 
 ```yaml
 ---
@@ -92,7 +92,7 @@ cascade:
 
 We need a plaintext template to render it as text
 
-[layouts/youtube/single.plain.txt](https://github.com/drone-ah/wordsonsand/tree/main/blog/layout/youtube/single.plain.txt)
+[layouts/\_default/single.plain.txt](https://github.com/drone-ah/wordsonsand/tree/main/blog/layout/_default/single.plain.txt)
 
 ```gotmpl
 {{ .Content | plainify | htmlUnescape }}
@@ -130,7 +130,7 @@ cascade:
   outputs: ["plain"]
 ```
 
-I also created a `layouts/youtube/list.plain.txt` file to avoid the error:
+I also created a `layouts/_default/list.plain.txt` file to avoid the error:
 
 `WARN  found no layout file for "plain" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.`
 
@@ -187,7 +187,7 @@ if playlist is defined
 
 Let's render links to YouTube from the `links` property:
 
-[layouts/youtube/single.plain.txt](https://github.com/drone-ah/wordsonsand/tree/main/blog/layout/youtube/single.plain.txt)
+[layouts/\_default/single.plain.txt](https://github.com/drone-ah/wordsonsand/tree/main/blog/layout/default/single.plain.txt)
 
 ```gotmpl
 {{ with .Params.links }}
