@@ -31,7 +31,7 @@ links:
   - title: Next
     url: ./pong-2.md
 hashes:
-  description: c9cb5b56815d59e56007fc7eaadd9666
+  description: 531aba1df870ed581536f75be709a907
 ---
 
 In this video, I start building a simple retro Pong game using **Zig** and

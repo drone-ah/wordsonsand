@@ -29,7 +29,7 @@ links:
   - title: Part 2
     url: ./pong-2.md
 hashes:
-  description: de1cd101e372aef8630dc2861435cd7f
+  description: ec49b1781d7ce647093acd22106cb993
 ---
 
 **In this episode of Building Pong in Zig with Raylib**, we make the game
