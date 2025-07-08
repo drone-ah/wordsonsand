@@ -11,3 +11,10 @@ This repo contains:
 - `despatches`: source for my automated scheduled social media posts
 - `games`: games that I am working on
 - `tools`: tools that I am using
+
+## Useful Shell Aliases
+
+```bash
+alias bazel=bazelisk
+alias go="bazel run @rules_go//go"
+```
