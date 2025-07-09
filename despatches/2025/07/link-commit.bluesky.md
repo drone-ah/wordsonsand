@@ -1,5 +1,7 @@
 ---
 publishDate: 2025-07-09 09:35:00+01:00
+publishedAt: '2025-07-09T11:43:54.128697+00:00'
+publishedTo: at://did:plc:r767ipdmzywii3zfoxookefx/app.bsky.feed.post/3ltjqfqj3se24
 type: bluesky
 ---
 
