@@ -16,9 +16,9 @@ pub fn main() anyerror!void {
 
     rl.setTargetFPS(60); // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
-    var left_paddle = Paddle.init(Paddle.size.x * 0.5, .left);
-    var right_paddle = Paddle.init(screenWidth - Paddle.size.x * 1.5, .right);
-    var ball = Ball.init(.{ .x = screenWidth * 0.5, .y = screenHeight * 0.5 });
+    var left_paddle: Paddle = .init(Paddle.size.x * 0.5, .left);
+    var right_paddle: Paddle = .init(screenWidth - Paddle.size.x * 1.5, .right);
+    var ball: Ball = .init(.{ .x = screenWidth * 0.5, .y = screenHeight * 0.5 });
 
     // Main game loop
     while (!rl.windowShouldClose()) { // Detect window close button or ESC key
