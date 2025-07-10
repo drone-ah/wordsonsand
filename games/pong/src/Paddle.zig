@@ -32,7 +32,7 @@ pub fn render(self: Paddle) void {
     rl.drawRectangleV(self.pos, size, self.colour);
 }
 
-pub fn isColliding(self: *Paddle, ball: *const Ball) bool {
+pub fn isColliding(self: *const Paddle, ball: *const Ball) bool {
     // which edge do we need to check
     const crossing_x: bool = switch (self.which) {
         .right => ball.pos.x + ball.r >= self.pos.x,
@@ -40,13 +40,11 @@ pub fn isColliding(self: *Paddle, ball: *const Ball) bool {
     };
 
     if (!crossing_x) {
-        self.colour = .white;
         return false;
     }
 
     const colliding = ball.pos.y + ball.r >= self.pos.y and ball.pos.y - ball.r <= self.pos.y + size.y;
 
-    self.colour = if (colliding) .red else .white;
     return colliding;
 }
 
