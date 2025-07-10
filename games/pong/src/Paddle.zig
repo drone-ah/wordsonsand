@@ -1,7 +1,7 @@
 const std = @import("std");
 const rl = @import("raylib");
 
-const Ball = @import("ball.zig");
+const Ball = @import("Ball.zig");
 
 const Paddle = @This();
 

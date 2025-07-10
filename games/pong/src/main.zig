@@ -2,8 +2,8 @@
 
 const std = @import("std");
 const rl = @import("raylib");
-const Paddle = @import("paddle.zig");
-const Ball = @import("ball.zig");
+const Paddle = @import("Paddle.zig");
+const Ball = @import("Ball.zig");
 
 pub fn main() anyerror!void {
     // Initialization
