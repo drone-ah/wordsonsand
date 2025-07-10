@@ -48,6 +48,14 @@ pub fn isColliding(self: *const Paddle, ball: *const Ball) bool {
     return colliding;
 }
 
+pub fn moveUp(self: *Paddle, dt: f32) void {
+    self.move(-100, dt);
+}
+
+pub fn moveDown(self: *Paddle, dt: f32) void {
+    self.move(100, dt);
+}
+
 pub fn move(self: *Paddle, y: f32, dt: f32) void {
     self.pos.y += y * dt;
 }

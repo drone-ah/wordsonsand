@@ -54,19 +54,19 @@ pub fn main() anyerror!void {
         }
 
         if (rl.isKeyDown(.w)) {
-            left_paddle.move(-100, dt);
+            left_paddle.moveUp(dt);
         }
 
         if (rl.isKeyDown(.s)) {
-            left_paddle.move(100, dt);
+            left_paddle.moveDown(dt);
         }
 
         if (rl.isKeyDown(.e)) {
-            right_paddle.move(-100, dt);
+            right_paddle.moveUp(dt);
         }
 
         if (rl.isKeyDown(.d)) {
-            right_paddle.move(100, dt);
+            right_paddle.moveDown(dt);
         }
 
         left_paddle.render();
