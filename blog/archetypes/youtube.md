@@ -1,17 +1,14 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-publishDate: {{ .Date }}
-youtubeId: ""
-playlist: ""
+title: { { replace .Name "-" " " | title } }
+publishDate: { { .Date } }
+youtubeId:
+playlist:
 categoryId: 20
-pinnedComment: ""
+pinnedComment:
 tags: []
 chapters:
   - "0:00 Intro"
-links: []
-_build:
-  list: never
-  render: always
-  publishResources: false
-sitemap: false
+links:
+  - title: <Title>
+    url: <url>
 ---
