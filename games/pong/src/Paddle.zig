@@ -15,11 +15,11 @@ which: Which,
 colour: rl.Color = .white,
 score: u8,
 
-pub fn init(x: f32, which: Which) Paddle {
+pub fn init(x: f32, which: Which, screen_height: f32) Paddle {
     return .{
         .pos = .{
             .x = x,
-            .y = 200,
+            .y = screen_height * 0.5 - size.y * 0.5,
         },
         .which = which,
         .score = 0,
