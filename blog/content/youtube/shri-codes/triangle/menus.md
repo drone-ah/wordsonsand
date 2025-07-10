@@ -1,6 +1,6 @@
 ---
-title: "shri codes triangle in #1.1 | The Pause Menu (zig + raylib + dvui)"
-publishDate: 2025-07-09T20:53:55+01:00
+title: 'shri codes triangle in #1.1 | The Pause Menu (zig + raylib + dvui)'
+publishDate: "2025-07-09T20:53:55+01:00"
 youtubeId: ETrRyTCmcPs
 playlist: PLX7QRDvlHn4KlzfvZ66GPKQl7HEamwM-v
 categoryId: 20
@@ -35,6 +35,8 @@ links:
     url: intro.md
   - title: dvui 0.15.x issues
     url: https://github.com/david-vanderson/dvui/issues/382
+hashes:
+  description: d278ff680dda485ce869e068628de669
 ---
 
 In this episode, I work on building a simple pause menu for triangle, my ARPG

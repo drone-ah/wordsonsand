@@ -1,7 +1,6 @@
 ---
-title:
-  "shri codes triangle #0 | Setup, Crafting Systems & Code Tour (Zig + Raylib)"
-publishDate: 2025-06-27T10:07:09+01:00
+title: 'shri codes triangle #0 | Setup, Crafting Systems & Code Tour (Zig + Raylib)'
+publishDate: "2025-06-27T10:07:09+01:00"
 youtubeId: 8nA-a5Z1IDc
 playlist: PLX7QRDvlHn4KlzfvZ66GPKQl7HEamwM-v
 categoryId: 20
@@ -19,6 +18,8 @@ chapters:
 links:
   - title: Blog Post
     url: ../../../posts/triangle/under-the-hood.md
+hashes:
+  description: 1bc4367509cdd703bd11b66abb55a664
 ---
 
 🚀 **Welcome to shri codes!** In this video, I walk you through the early
