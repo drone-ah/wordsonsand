@@ -7,13 +7,15 @@ const Ball = @This();
 
 home: rl.Vector2,
 pos: rl.Vector2,
-r: f32 = 16,
-vel: rl.Vector2 = .{ .x = 250, .y = 50 },
+r: f32,
+vel: rl.Vector2,
 
 pub fn init(home: rl.Vector2) Ball {
     return .{
         .home = home,
         .pos = home,
+        .r = 16,
+        .vel = .{ .x = 250, .y = 50 },
     };
 }
 
