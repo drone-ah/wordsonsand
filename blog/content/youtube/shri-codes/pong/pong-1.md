@@ -1,5 +1,6 @@
 ---
-title: 'shri codes Pong with Zig and Raylib - Part 1: Draw the Paddles & the Ball'
+title:
+  "shri codes Pong with Zig and Raylib - Part 1: Draw the Paddles & the Ball"
 publishDate: "2025-07-03T13:53:56+01:00"
 youtubeId: ICq2D_na6zc
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -25,7 +26,7 @@ chapters:
   - 23:59 Outro
 links:
   - title: Blog
-    url: ../../../posts/zig/pong-1.md
+    url: ../../../posts/shri-codes/pong/1-setup.md
   - title: triangle (my main game)
     url: ../../../endeavours/triangle.md
   - title: Next

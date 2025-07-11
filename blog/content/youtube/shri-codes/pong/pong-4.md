@@ -27,7 +27,7 @@ chapters:
   - "30:46 Outro"
 links:
   - title: Blog
-    url: ../../../posts/zig/pong-2.md
+    url: ../../../posts/shri-codes/pong/5-ui.md
   - title: Feedback post on ziggit
     url: https://ziggit.dev/t/building-pong-in-zig-with-raylib-part-1-paddles-and-a-ball/10768/1
   - title: Part 1

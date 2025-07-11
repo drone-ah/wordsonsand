@@ -115,5 +115,5 @@ menu.
 
 - [Watch Video](../../youtube/shri-codes/pong/pong-3.md)
 - [Source Code (at this point)](../../../../games/pong/)
-- Prev: [Ball Movement & Paddle Collisions](./pong-2.md)
-- Next: [Code Improvements from Review](./pong-4.md)
+- Prev: [Ball Movement & Paddle Collisions](./2-collisions.md)
+- Next: [Code Improvements from Review](./4-refactor.)

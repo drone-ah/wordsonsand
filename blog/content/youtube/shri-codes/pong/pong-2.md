@@ -1,5 +1,7 @@
 ---
-title: 'shri codes Pong with Zig and Raylib - Part 2: Ball Movement & Paddle Collision'
+title:
+  "shri codes Pong with Zig and Raylib - Part 2: Ball Movement & Paddle
+  Collision"
 publishDate: "2025-07-08T09:45:00+01:00"
 youtubeId: IoOLH1O_a7M
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -27,7 +29,7 @@ chapters:
   - 41:08 Outro
 links:
   - title: Blog
-    url: ../../../posts/zig/pong-2.md
+    url: ../../../posts/shri-codes/pong/2-collisions.md
   - title: Prev
     url: ./pong-1.md
   - title: Next
