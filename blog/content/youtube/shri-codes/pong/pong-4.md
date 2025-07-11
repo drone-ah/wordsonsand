@@ -1,5 +1,7 @@
 ---
-title: 'shri codes Pong with Zig and Raylib - Part 4: Smarter Collisions & Cleaner Code'
+title:
+  "shri codes Pong with Zig and Raylib - Part 4: Smarter Collisions & Cleaner
+  Code"
 publishDate: "2025-07-12T09:45:00+01:00"
 youtubeId: rnOdZyiP7Bg
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -27,7 +29,7 @@ chapters:
   - "30:46 Outro"
 links:
   - title: Blog
-    url: ../../../posts/zig/pong-2.md
+    url: ../../../posts/shri-codes/pong/5-ui.md
   - title: Feedback post on ziggit
     url: https://ziggit.dev/t/building-pong-in-zig-with-raylib-part-1-paddles-and-a-ball/10768/1
   - title: Part 1

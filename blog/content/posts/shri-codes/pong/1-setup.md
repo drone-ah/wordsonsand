@@ -128,4 +128,4 @@ See you in part 2!
 
 - [YouTube Video](../../youtube/shri-codes/pong/pong-1.md)
 - [Full Source Code (at this point)](https://github.com/drone-ah/wordsonsand/tree/shri-codes/pong/part-1/games/pong)
-- Next: [Ball Movement & Paddle Collisions](./pong-2.md)
+- Next: [Ball Movement & Paddle Collisions](./2-collisions.md.md)

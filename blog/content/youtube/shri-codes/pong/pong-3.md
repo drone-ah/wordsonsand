@@ -1,5 +1,7 @@
 ---
-title: 'shri codes Pong with Zig and Raylib - Part 3: Edge Collisions, Scoring & Player Input'
+title:
+  "shri codes Pong with Zig and Raylib - Part 3: Edge Collisions, Scoring &
+  Player Input"
 publishDate: "2025-07-05T09:45:00+01:00"
 youtubeId: 9TmoiLjtWrg
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -23,7 +25,7 @@ chapters:
   - 32:38 Outro
 links:
   - title: Blog
-    url: ../../../posts/zig/pong-2.md
+    url: ../../../posts/shri-codes/pong/3-scoring.md
   - title: Part 1
     url: ./pong-1.md
   - title: Part 2
