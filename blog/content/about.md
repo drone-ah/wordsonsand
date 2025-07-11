@@ -16,3 +16,6 @@ PS: The name drone.ah has nothing to do with drones. It's a pun. drone ah sounds
 like [Drona](https://en.wikipedia.org/wiki/Drona) and was intended to embody the
 acharya, or teacher aspect. It suggested by my brother, and it became my handle
 way before drones "were a thing."
+
+shri, lightkeeper\
+tending to what glows quietly.
