@@ -62,17 +62,14 @@ pub fn render(self: *const Game) void {
     self.right_paddle.render();
     self.ball.render();
 
-    {
-        var left = dvui.box(@src(), .horizontal, .{ .rect = .{ .x = self.screen_width * 0.25, .y = 50, .w = 50, .h = 50 } });
-        defer left.deinit();
+    showScore(self.screen_width * 0.25, self.left_paddle.score);
+    showScore(self.screen_width * 0.75, self.right_paddle.score);
+}
 
-        dvui.label(@src(), "{d}", .{self.left_paddle.score}, .{ .color_text = .white, .font_style = .title });
-    }
+fn showScore(xpos: f32, score: u8) void {
+    const id: usize = @intFromFloat(xpos);
+    var right = dvui.box(@src(), .horizontal, .{ .rect = .{ .x = xpos, .y = 50, .w = 50, .h = 50 }, .id_extra = id });
+    defer right.deinit();
 
-    {
-        var right = dvui.box(@src(), .horizontal, .{ .rect = .{ .x = self.screen_width * 0.75, .y = 50, .w = 50, .h = 50 } });
-        defer right.deinit();
-
-        dvui.label(@src(), "{d}", .{self.right_paddle.score}, .{ .color_text = .white, .font_style = .title });
-    }
+    dvui.label(@src(), "{d}", .{score}, .{ .color_text = .white, .font_style = .title });
 }
