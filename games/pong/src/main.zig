@@ -44,13 +44,13 @@ pub fn main() anyerror!void {
         ball.checkPaddleCollision(&right_paddle);
         if (ball.pos.x > screen_width) {
             left_paddle.score += 1;
-            std.debug.print("scores: l: {d}, r: {d}", .{ left_paddle.score, right_paddle.score });
+            std.debug.print("scores: l: {d}, r: {d}\n", .{ left_paddle.score, right_paddle.score });
             ball.reset();
         }
 
         if (ball.pos.x < 0) {
             right_paddle.score += 1;
-            std.debug.print("scores: l: {d}, r: {d}", .{ left_paddle.score, right_paddle.score });
+            std.debug.print("scores: l: {d}, r: {d}\n", .{ left_paddle.score, right_paddle.score });
             ball.reset();
         }
 
