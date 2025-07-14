@@ -119,4 +119,4 @@ Thanks for following along!
 - [Watch Video](https://youtu.be/IoOLH1O_a7M)
 - [Source Code (at this point)](https://github.com/drone-ah/wordsonsand/tree/shri-codes/pong/part-2/games/pong)
 - Prev: [Place Paddles & Ball](./1-setup.md)
-- Next: Edge Collisions, Scoring & Inputs
+- Next: [Edge Collisions, Scoring & Inputs](./3-scoring.md)

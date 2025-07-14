@@ -3,6 +3,7 @@ title:
   "Building Pong in Zig with Raylib – Part 3: Edge Collisions, Scoring & Player
   Input"
 publishDate: 2025-07-07T12:01:00+01:00
+link_commit: ea4924031e7e55d2e82c785c767c95081dc21e2b
 categories:
   - shri-codes
 tags:
@@ -113,7 +114,7 @@ menu.
 
 ## Links
 
-- [Watch Video](../../youtube/shri-codes/pong/pong-3.md)
-- [Source Code (at this point)](../../../../games/pong/)
+- [Watch Video](../../../youtube/shri-codes/pong/pong-3.md)
+- [Source Code (at this point)](../../../../../games/pong/)
 - Prev: [Ball Movement & Paddle Collisions](./2-collisions.md)
-- Next: [Code Improvements from Review](./4-refactor.)
+- Next: [Code Improvements from Review](./4-refactor.md)
