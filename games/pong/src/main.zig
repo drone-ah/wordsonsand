@@ -4,6 +4,15 @@ const std = @import("std");
 const rl = @import("raylib");
 const Paddle = @import("Paddle.zig");
 const Ball = @import("Ball.zig");
+const dvui = @import("dvui");
+
+const Game = @import("Game.zig");
+
+const RaylibBackend = dvui.backend;
+comptime {
+    std.debug.assert(@hasDecl(RaylibBackend, "RaylibBackend"));
+}
+const ray = RaylibBackend.c;
 
 pub fn main() anyerror!void {
     // Initialization
@@ -16,10 +25,23 @@ pub fn main() anyerror!void {
 
     rl.setTargetFPS(60); // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
+    var gpa: std.heap.GeneralPurposeAllocator(.{}) = .init;
+    const allocator = gpa.allocator();
+    defer _ = gpa.deinit();
 
-    var left_paddle: Paddle = .init(Paddle.size.x * 0.5, .left, screen_height);
-    var right_paddle: Paddle = .init(screen_width - Paddle.size.x * 1.5, .right, screen_height);
-    var ball: Ball = .init(.{ .x = screen_width * 0.5, .y = screen_height * 0.5 });
+    //--------------------------------------------------------------------------
+    // init Raylib backend
+    // init() means the app owns the window (and must call CloseWindow itself)
+    var backend = RaylibBackend.init(allocator);
+    defer backend.deinit();
+    backend.log_events = true;
+
+    // init dvui Window (maps onto a single OS window)
+    // OS window is managed by raylib, not dvui
+    var win = try dvui.Window.init(@src(), allocator, backend.backend(), .{});
+    defer win.deinit();
+
+    var game: Game = .init(screen_width, screen_height);
 
     // Main game loop
     while (!rl.windowShouldClose()) { // Detect window close button or ESC key
@@ -36,44 +58,27 @@ pub fn main() anyerror!void {
         rl.beginDrawing();
         defer rl.endDrawing();
 
+        // marks the beginning of a frame for dvui, can call dvui functions after this
+        try win.begin(std.time.nanoTimestamp());
+
+        // send all Raylib events to dvui for processing
+        _ = try backend.addAllEvents(&win);
+
         rl.clearBackground(.black);
 
-        ball.checkEdgeCollisions(@floatFromInt(rl.getScreenHeight()));
-        ball.update(dt);
-        ball.checkPaddleCollision(&left_paddle);
-        ball.checkPaddleCollision(&right_paddle);
-        if (ball.pos.x > screen_width) {
-            left_paddle.score += 1;
-            std.debug.print("scores: l: {d}, r: {d}", .{ left_paddle.score, right_paddle.score });
-            ball.reset();
-        }
-
-        if (ball.pos.x < 0) {
-            right_paddle.score += 1;
-            std.debug.print("scores: l: {d}, r: {d}", .{ left_paddle.score, right_paddle.score });
-            ball.reset();
-        }
-
-        if (rl.isKeyDown(.w)) {
-            left_paddle.moveUp(dt);
-        }
-
-        if (rl.isKeyDown(.s)) {
-            left_paddle.moveDown(dt);
-        }
-
-        if (rl.isKeyDown(.e)) {
-            right_paddle.moveUp(dt);
-        }
-
-        if (rl.isKeyDown(.d)) {
-            right_paddle.moveDown(dt);
-        }
-
-        left_paddle.render();
-        right_paddle.render();
-        ball.render();
+        game.update(dt);
+        game.render();
 
         //----------------------------------------------------------------------------------
+        _ = try win.end(.{});
+
+        // cursor management
+        if (win.cursorRequestedFloating()) |cursor| {
+            // cursor is over floating window, dvui sets it
+            backend.setCursor(cursor);
+        } else {
+            // cursor should be handled by application
+            backend.setCursor(.arrow);
+        }
     }
 }

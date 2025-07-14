@@ -178,5 +178,5 @@ Until then, thanks for reading (and watching) - see you in the next one.
 
 - [Watch Video](../../youtube/shri-codes/pong/pong-4.md)
 - [Source Code (at this point)](../../../../games/pong/)
-- Prev: [Ball Movement & Paddle Collisions](./pong-3.md)
-- Next: Display Score, Menu and other UI.
+- Prev: [Ball Movement & Paddle Collisions](./3-scoring.md)
+- Next: [Integrate DVUI & Show Score](./5-ui.md)
