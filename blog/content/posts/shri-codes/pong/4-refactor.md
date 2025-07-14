@@ -2,6 +2,7 @@
 title:
   "Building Pong with Zig and Raylib - Part 4: Smarter Collisions, Cleaner Code"
 date: 2025-07-10T15:33:34+01:00
+link_commit: d6495d9d2a8a0cf1521204a5d8629ab7ecd67277
 categories:
   - shri-codes
 tags:
@@ -176,7 +177,7 @@ Until then, thanks for reading (and watching) - see you in the next one.
 
 ## Links
 
-- [Watch Video](../../youtube/shri-codes/pong/pong-4.md)
-- [Source Code (at this point)](../../../../games/pong/)
+- [Watch Video](../../../youtube/shri-codes/pong/pong-4.md)
+- [Source Code (at this point)](../../../../../games/pong/)
 - Prev: [Ball Movement & Paddle Collisions](./3-scoring.md)
 - Next: [Integrate DVUI & Show Score](./5-ui.md)

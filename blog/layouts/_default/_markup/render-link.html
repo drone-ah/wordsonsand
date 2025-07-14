@@ -12,7 +12,14 @@
       (resources.Get $path)
   -}}
 
-  {{- if and $page (not ($page.PublishDate.After now)) -}}
+  {{- $scheduled := false -}}
+  {{- if $page }}
+    {{- if $page.Params.scheduledDate }}
+      {{- $scheduled = (time $page.Params.scheduledDate).After now }}
+    {{- end }}
+  {{- end }}
+
+  {{- if and $page (not ($page.PublishDate.After now)) (not $scheduled) -}}
     {{- if eq $page.Type "youtube" -}}
       {{- $href := printf "https://www.youtube.com/watch?v=%s" $page.Params.youtubeId -}}
       {{- with $page.Params.playlist }}

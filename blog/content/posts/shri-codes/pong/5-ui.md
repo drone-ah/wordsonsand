@@ -202,7 +202,7 @@ tips. That kind of thoughtful review really helps.
 
 ## Links
 
-- [Watch Video](../../youtube/shri-codes/pong/pong-5.md)
+- [Watch Video](../../../youtube/shri-codes/pong/pong-5.md)
 - [Source Code (at this point)](../../../../games/pong/)
 - Prev: [Smarter Collisions & Cleaner Code](./4-refactor.md)
 - Next: More UI
