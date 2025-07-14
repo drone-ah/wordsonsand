@@ -60,8 +60,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --cacheDir "${{ runner.temp }}/hugo_cache" \
-            --buildFuture
+            --cacheDir "${{ runner.temp }}/hugo_cache"
       - uses: bazel-contrib/setup-bazel@0.15.0
         with:
           # Avoid downloading Bazel every time.
