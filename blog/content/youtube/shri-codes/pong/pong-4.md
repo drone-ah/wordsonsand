@@ -39,7 +39,7 @@ links:
   - title: "next: Part 5"
     url: ./pong-5.md
 hashes:
-  description: bf988edb6459883683bfc27ce12d9585
+  description: d83acc9333a291ba8b59de82086302ef
 ---
 
 In this fourth part of my Pong series in Zig + Raylib, I take a detour from UI

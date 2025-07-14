@@ -1,6 +1,5 @@
 ---
-title:
-  "shri codes Pong with Zig and Raylib - Part 1: Draw the Paddles & the Ball"
+title: 'shri codes Pong with Zig and Raylib - Part 1: Draw the Paddles & the Ball'
 publishDate: "2025-07-03T13:53:56+01:00"
 youtubeId: ICq2D_na6zc
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -32,7 +31,7 @@ links:
   - title: Next
     url: ./pong-2.md
 hashes:
-  description: cd2d0802b0afa3698a8d8a17798c1d18
+  description: a9095acb64a35ef641555bb3a98906be
 ---
 
 In this video, I start building a simple retro Pong game using **Zig** and

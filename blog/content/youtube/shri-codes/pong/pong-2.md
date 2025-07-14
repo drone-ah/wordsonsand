@@ -1,7 +1,5 @@
 ---
-title:
-  "shri codes Pong with Zig and Raylib - Part 2: Ball Movement & Paddle
-  Collision"
+title: 'shri codes Pong with Zig and Raylib - Part 2: Ball Movement & Paddle Collision'
 publishDate: "2025-07-08T09:45:00+01:00"
 youtubeId: IoOLH1O_a7M
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -35,7 +33,7 @@ links:
   - title: Next
     url: ./pong-3.md
 hashes:
-  description: 8d6e72c22b0e8478f833fcefd390b709
+  description: 95e74aa4b07227a1b73eaf7d34d607b5
 ---
 
 **In this episode of Building Pong in Zig with Raylib**, we get the ball moving

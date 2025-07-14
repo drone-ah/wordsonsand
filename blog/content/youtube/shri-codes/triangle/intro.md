@@ -19,7 +19,7 @@ links:
   - title: Blog Post
     url: ../../../posts/triangle/under-the-hood.md
 hashes:
-  description: 1bc4367509cdd703bd11b66abb55a664
+  description: f9582a4e6dd9916ee5f3fe9001fc57c9
 ---
 
 🚀 **Welcome to shri codes!** In this video, I walk you through the early
