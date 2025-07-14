@@ -1,5 +1,7 @@
 ---
-title: 'shri codes Pong with Zig and Raylib - Part 4: Smarter Collisions & Cleaner Code'
+title:
+  "shri codes Pong with Zig and Raylib - Part 4: Smarter Collisions & Cleaner
+  Code"
 publishDate: "2025-07-12T09:45:00+01:00"
 youtubeId: rnOdZyiP7Bg
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -36,6 +38,8 @@ links:
     url: ./pong-2.md
   - title: Part 3
     url: ./pong-3.md
+  - title: "next: Part 5"
+    url: ./pong-5.md
 hashes:
   description: e6ea30da35774089ea86759996de49d9
 ---
