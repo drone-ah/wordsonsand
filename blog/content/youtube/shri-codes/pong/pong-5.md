@@ -38,7 +38,7 @@ links:
   - title: "prev: "
     url: ./pong-4.md
   - title: "next: "
-    url: ./pong-5.md
+    url: ./pong-6.md
 ---
 
 In this episode, we're diving into **UI work in Zig** using **DVUI**, adding
