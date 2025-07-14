@@ -38,7 +38,7 @@ links:
   - title: "prev: "
     url: ./pong-4.md
   - title: "next: "
-    url: ./pong-6.md
+    url: ./pong-5.md
 hashes:
   description: ff5de54b61d9e4473df33d9205893c29
 ---
