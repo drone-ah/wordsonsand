@@ -1,5 +1,5 @@
 ---
-title: "shri codes triangle in #1.2 | The Pause Menu (zig + raylib + dvui)"
+title: 'shri codes triangle in #1.2 | The Pause Menu (zig + raylib + dvui)'
 scheduledDate: "2025-07-16T10:00:00+01:00"
 youtubeId: dtbXUQjnm30
 playlist: PLX7QRDvlHn4KlzfvZ66GPKQl7HEamwM-v
@@ -32,6 +32,9 @@ links:
     url: intro.md
   - title: triangle menu #1.1
     url: ./menus-start.md
+publishDate: ""
+hashes:
+  description: 5343d44e9631ab2597d7f62b72945554
 ---
 
 In this devlog, I keep building out the pause menu for _Triangle_ - my Zig +

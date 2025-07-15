@@ -1,5 +1,5 @@
 ---
-title: "shri codes Pong with Zig and Raylib #5: Show the Scores with dvui"
+title: 'shri codes Pong with Zig and Raylib #5: Show the Scores with dvui'
 scheduledDate: "2025-07-15T09:45:00+01:00"
 youtubeId: laPvy6CVUx0
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -38,7 +38,8 @@ links:
   - title: "prev: "
     url: ./pong-4.md
 hashes:
-  description: ff5de54b61d9e4473df33d9205893c29
+  description: e68414c76d970d49d2c453382651dc4b
+publishDate: ""
 ---
 
 In this episode, we're diving into **UI work in Zig** using **DVUI**, adding
