@@ -140,7 +140,7 @@ posts = "/:year/:month/:day/:slug/"
   [caches.images]
     dir = ':cacheDir/images'
 
-[outputFormats.plain]
+[outputFormats.youtube]
 	mediaType = "text/plain"
 	baseName = "index"
 	isPlainText = true

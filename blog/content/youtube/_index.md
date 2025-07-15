@@ -1,8 +1,8 @@
 ---
 title: YouTube
 cascade:
-  outputs: ["plain"]
-  _build:
+  outputs: ["youtube"]
+  build:
     list: never
     render: always
     publishResources: false
