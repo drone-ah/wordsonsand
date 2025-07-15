@@ -23,13 +23,13 @@ In my mind, a good agile team works in this fashion. The team has a shared
 vision, a goal and everyone is empowered to make choices they feel contributes
 to progress to the shared goal.
 
-With [my recent post on collaboration](2023/11/21/muster/), I have been thinking
-about how a concept like this applies within a truly collaborative environment.
-In the quote, there is clearly a group of people and one of them wants to build
-a ship. We do not know what the rest of the group desires. In the context of
-traditional leadership, what the rest of the group wants is importance mainly in
-the context of understanding how their wants and needs align with those of the
-ones in leadership.
+With [my recent post on collaboration](./muster/2023-11-21-muster.md), I have
+been thinking about how a concept like this applies within a truly collaborative
+environment. In the quote, there is clearly a group of people and one of them
+wants to build a ship. We do not know what the rest of the group desires. In the
+context of traditional leadership, what the rest of the group wants is
+importance mainly in the context of understanding how their wants and needs
+align with those of the ones in leadership.
 
 <!--more-->
 

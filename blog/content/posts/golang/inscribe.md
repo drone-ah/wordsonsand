@@ -29,7 +29,7 @@ original bytes, you can’t write back without losing untouched keys.
 
 Looking around, I could not find another frontmatter library for Go. I know that
 python has a decent library which supports writing back to it (I used it in the
-[depatcher](../wordsonsand/despatches.md]) but I don't want to write python.
+[depatcher](../wordsonsand/despatches.md) but I don't want to write python.
 
 <!-- more -->
 

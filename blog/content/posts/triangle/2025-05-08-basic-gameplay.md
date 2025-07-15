@@ -55,7 +55,7 @@ wrapped around. I needed to expand this to:
 - Figure out how to handle asteroids moving out of the screen
 
 The above will be covered in a bit more depth in the
-[next devlog](/2025/05/08/asteroid-field/).
+[next devlog](./2025-05-10-asteroid-field.md).
 
 ## The Camera
 
@@ -122,7 +122,7 @@ there, we just don't track what happens out there.
 
 I considered wrapping around on the left and right, but that felt more like the
 ship was trapped in that zone. I want the feeling of
-[being trapped in vengeance](/2025/04/26/a-lonely-triangle/#story) to be more
+[being trapped in vengeance](./2025-04-26-a-lonely-triangle.md#story) to be more
 subtle ;)
 
 ## Combat
@@ -133,7 +133,7 @@ though I didn't have some of the helper functions. I learned some math :)
 Initially, the update loop only handled asteroid collisions. I added bullets as
 a separate field in the update loop. It then checks each bullet with every
 asteroid in the active chunks (covered in
-[devlog #2](/2025/05/08/asteroid-field/)).
+[devlog #2](./2025-05-10-asteroid-field.md)).
 
 If there is collision, the asteroid is split into two, moved apart a bit, and
 given opposite linear momentum. The bullet also takes "damage" at this point,
@@ -183,5 +183,5 @@ ironed out, but so far, it feels good :)
 ## Other posts
 
 - [Companion vlog for this post](https://youtu.be/F2ITT2-uKso)
-- [Prev: A lone triangle vs the universe](/2025/04/26/a-lonely-triangle/)
-- [Next: Procedural Asteroid Field](/2025/05/10/asteroid-field/)
+- [Prev: A lone triangle vs the universe](./2025-04-26-a-lonely-triangle.md)
+- [Next: Procedural Asteroid Field](./2025-05-10-asteroid-field.md)
