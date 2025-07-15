@@ -1,7 +1,5 @@
 ---
-title:
-  "shri codes Pong with Zig and Raylib - Part 4: Smarter Collisions & Cleaner
-  Code"
+title: 'shri codes Pong with Zig and Raylib - Part 4: Smarter Collisions & Cleaner Code'
 publishDate: "2025-07-12T09:45:00+01:00"
 youtubeId: rnOdZyiP7Bg
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -41,7 +39,7 @@ links:
   - title: "next: Part 5"
     url: ./pong-5.md
 hashes:
-  description: 7af1a4eab61de1c4f6de129224c34865
+  description: e4a3759e10d8e74315450b7162e946fe
 ---
 
 In this fourth part of my Pong series in Zig + Raylib, I take a detour from UI
