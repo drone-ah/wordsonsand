@@ -33,7 +33,7 @@ links:
   - title: Next
     url: ./pong-3.md
 hashes:
-  description: 95e74aa4b07227a1b73eaf7d34d607b5
+  description: a710c243ddfa5c158d263eb6e35610b2
 ---
 
 **In this episode of Building Pong in Zig with Raylib**, we get the ball moving

@@ -36,7 +36,7 @@ links:
   - title: dvui 0.15.x issues
     url: https://github.com/david-vanderson/dvui/issues/382
 hashes:
-  description: fc039a7dde80727d014e9ab6f8b22185
+  description: 6da0102fe0d874dc2a2459cdf7e3db69
 ---
 
 In this episode, I work on building a simple pause menu for triangle, my ARPG
