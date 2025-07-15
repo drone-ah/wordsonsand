@@ -195,7 +195,7 @@ If the idea or any of the concepts resonate with you, I’d love to hear from yo
 
 ## Other Posts
 
-- [Next: Basic Gameplay](/2025/05/08/basic-gameplay/)
+- [Next: Basic Gameplay](./2025-05-08-basic-gameplay.md)
 
 ## Updates
 

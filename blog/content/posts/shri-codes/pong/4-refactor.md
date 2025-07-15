@@ -35,7 +35,7 @@ It’s a small thing, but one that helps be a bit more idiomatic - and avoids
 confusion when others are reading it.
 
 (now to make the same change across many more files in
-[triangle](../../endeavours/triangle.md))
+[triangle](../../../endeavours/triangle.md))
 
 ## 🛠️ Default Field Initializers (and When _Not_ to Use Them)
 

@@ -10,8 +10,8 @@ tags:
 title: Slack Channels for ClickUp Tickets
 ---
 
-I mentioned GiToLink in the [post about collaboration](2023/11/21/muster/) as
-the tool I am building to link GitHub and Slack together, creating Slack
+I mentioned GiToLink in the [post about collaboration](./2023-11-21-muster.md)
+as the tool I am building to link GitHub and Slack together, creating Slack
 channels as the communication platform for PRs. I have been working on this for
 a few weeks and have gotten as far as linking up the Auth for Slack and GitHub.
 
