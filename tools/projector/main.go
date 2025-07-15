@@ -208,6 +208,9 @@ func findRecentVideos(sourceRoot string) ([]Video, error) {
 				posts = append(posts, post)
 				slog.Debug("filtered", "path", fullPath)
 			}
+		} else if meta.Title != "" {
+			posts = append(posts, post)
+			slog.Debug("filtered", "path", fullPath)
 		}
 		return nil
 	})
