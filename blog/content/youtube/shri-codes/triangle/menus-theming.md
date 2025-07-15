@@ -1,7 +1,7 @@
 ---
 title: "shri codes triangle in #1.2 | The Pause Menu (zig + raylib + dvui)"
 scheduledDate: "2025-07-16T10:00:00+01:00"
-youtubeId:
+youtubeId: dtbXUQjnm30
 playlist: PLX7QRDvlHn4KlzfvZ66GPKQl7HEamwM-v
 categoryId: 20
 pinnedComment: ""
