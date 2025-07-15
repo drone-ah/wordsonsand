@@ -43,6 +43,13 @@
 		{{- $isInContent := strings.HasPrefix $fullRepoPath "blog/content/" -}}
 
 		{{- if $isInContent -}}
+			{{- $resolved := path.Clean (path.Join (path.Dir .Page.File.Path) .Destination) -}}
+			{{- $exists := fileExists $resolved -}}
+			{{- $logPath := path.Join "content" $resolved -}}  {{/* for logging only */}}
+			{{- if not $exists -}}
+				{{ warnf "Broken link in %q → %q (resolved to %q)" .Page.File.Path .Destination $logPath }}
+			{{- end }}
+
 			<span class="unpublished">{{ $text }}</span>
 		{{- else -}}
 			{{- $commit := or .Page.Params.link_commit .Page.GitInfo.Hash -}}
