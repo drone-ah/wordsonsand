@@ -8,7 +8,7 @@
 
 {{- with .Params.links }}
 Links:
-{{- $this := $.Page }}
+{{ $this := $.Page }}
 {{- range . -}}
   {{- $target := $this.GetPage .url -}}
 
@@ -19,20 +19,30 @@ Links:
     {{- end }}
   {{- end }}
 
-  {{- if and $target (not ($target.PublishDate.After now)) (not $scheduled) -}}
+	{{- $isLive := and (not $target.Draft) (not ($target.PublishDate.After now)) (not $scheduled) -}}
+	{{- if and $target $isLive -}}
     {{- if eq $target.Type "youtube" -}}
       {{- $href := printf "https://www.youtube.com/watch?v=%s" $target.Params.youtubeId -}}
       {{- with $target.Params.playlist -}}
         {{- $href = printf "%s&list=%s" $href . -}}
       {{- end -}}
-      {{ .title }}: {{ $href }}
+      {{ .title }}: {{ $href }} {{ "\n" }}
     {{- else -}}
-      {{ .title }}: {{ $target.Permalink }}
+      {{ .title }}: {{ $target.Permalink }} {{ "\n" }}
     {{- end }}
-  {{- else if not $target -}}
-    {{ .title }}: {{ .url | absURL }}
+	{{- else if not $target -}}
+		{{- $url := .url -}}
+		{{- $isExternal := or (strings.HasPrefix $url "http") (strings.HasPrefix $url "mailto:") (strings.HasPrefix $url "#") -}}
+		{{- $isTag := strings.HasPrefix $url "/tags/" -}}
+
+		{{- if or $isExternal $isTag -}}
+			{{ .title }}: {{ $url | absURL }} {{ "\n" }}
+		{{- else -}}
+			{{- warnf "Unresolved internal link: %q in %q" $url $this.File.Path -}}
+		{{- end -}}
   {{- end }}
-{{ end }}
+
+{{- end -}}
 {{- end -}}
 
 {{- if .Params.tags }}

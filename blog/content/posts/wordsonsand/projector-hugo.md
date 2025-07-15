@@ -29,7 +29,7 @@ copy and paste that link into YouTube, leveraging the CMS felt sensible.
 
 ## A YouTube Content Type
 
-[archetypes/youtube.md](https://github.com/drone-ah/wordsonsand/tree/main/blog/archetypes/youtube.md)
+[archetypes/youtube.md](../../../archetypes/youtube.md)
 
 ```yaml
 ---
@@ -76,7 +76,7 @@ We also want to prevent them from being published. We could add `_build` to each
 of the `md` files, or we can cascade it (thanks to
 [jmooring](https://discourse.gohugo.io/u/jmooring) from the gohugo discourse).
 
-[content/youtube/\_index.md](https://github.com/drone-ah/wordsonsand/tree/main/blog/content/youtube/_index.md)
+[content/youtube/\_index.md](../../youtube/_index.md)
 
 ```yaml
 title: "YouTube"
@@ -92,7 +92,7 @@ cascade:
 
 We need a plaintext template to render it as text
 
-[layouts/\_default/single.plain.txt](https://github.com/drone-ah/wordsonsand/tree/main/blog/layout/_default/single.plain.txt)
+[layouts/\_default/single.plain.txt](../../../layouts/_default/single.plain.txt)
 
 ```gotmpl
 {{ .Content | plainify | htmlUnescape }}
@@ -137,7 +137,7 @@ I also created a `layouts/_default/list.plain.txt` file to avoid the error:
 The contents of this file doesn't really matter as we shouldn't be rendering or
 using it.
 
-[hugo.toml](https://github.com/drone-ah/wordsonsand/tree/main/blog/hugo.toml)
+[hugo.toml](../../../hugo.toml)
 
 ```toml
 [outputFormats.plain]
@@ -155,7 +155,7 @@ the correct YouTube URL.
 
 ### From Posts
 
-[layouts/\_default/\_markup/render-link.html](https://github.com/drone-ah/wordsonsand/blob/main/blog/layouts/_default/_markup/render-link.html)
+[layouts/\_default/\_markup/render-link.html](../../../layouts/_default/_markup/render-link.html)
 
 ```gotmpl
 {{- if eq $page.Type "youtube" -}}
@@ -187,7 +187,7 @@ if playlist is defined
 
 Let's render links to YouTube from the `links` property:
 
-[layouts/\_default/single.plain.txt](https://github.com/drone-ah/wordsonsand/tree/main/blog/layout/default/single.plain.txt)
+[layouts/\_default/single.plain.txt](../../../layouts/_default/single.plain.txt)
 
 ```gotmpl
 {{ with .Params.links }}
@@ -229,6 +229,22 @@ While we're at it, let's skip rendering any links that go live in the future:
 {{- end }}
 ```
 
+### Let's also skip draft posts
+
+```gotmpl
+{{- else if not $target -}}
+    {{- $url := .url -}}
+    {{- $isExternal := or (strings.HasPrefix $url "http") (strings.HasPrefix $url "mailto:") (strings.HasPrefix $url "#") -}}
+    {{- $isTag := strings.HasPrefix $url "/tags/" -}}
+
+    {{- if or $isExternal $isTag -}}
+        {{ .title }}: {{ $url | absURL }} {{ "\n" }}
+    {{- else -}}
+        {{- warnf "Unresolved internal link: %q in %q" $url $this.File.Path -}}
+    {{- end -}}
+{{- end }}
+```
+
 ## Next
 
 This covers the Hugo-side of things.
@@ -242,3 +258,8 @@ There are two more parts, that I'd like to happen automatically:
 
 - [Suggestions from `jmooring` on hugo discourse](https://discourse.gohugo.io/t/generating-youtube-descriptions-using-hugo/55233/2?u=drone.ah)
 - [cascade](https://gohugo.io/configuration/cascade)
+
+## Updates
+
+- 2025-07-15: add note about skipping draft posts
+- 2025-07-15: permalink file references to this commit
