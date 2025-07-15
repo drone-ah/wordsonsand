@@ -37,6 +37,8 @@ confusion when others are reading it.
 (now to make the same change across many more files in
 [triangle](../../../endeavours/triangle.md))
 
+<!-- more -->
+
 ## 🛠️ Default Field Initializers (and When _Not_ to Use Them)
 
 Another thing I learned: structs that aren’t used as config objects shouldn’t

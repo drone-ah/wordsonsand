@@ -125,10 +125,10 @@ These are the next things I’ll either build or record:
 - A **build+deploy system** to generate early test builds
 - Possibly a **contact/feedback** form directly in-game or on the site
 
-I’m releasing this in what I’m calling a **"Sprout" build** - a playable seed, a
-form of extremely early access. Feedback and collaboration is really important
-to me and I want to get this out there as soon as there is the tiniest spark of
-"life."
+I’ll be releasing this in what I’m calling a [**"Sprout" build**](./sprout.md) -
+a playable seed, a form of extremely early access. Feedback and collaboration is
+really important to me and I want to get this out there as soon as there is the
+tiniest spark of "life."
 
 If you’d like to follow the journey, you can
 [watch the video devlog](https://youtu.be/8nA-a5Z1IDc)

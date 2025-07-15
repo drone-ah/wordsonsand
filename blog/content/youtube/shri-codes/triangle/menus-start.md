@@ -1,5 +1,5 @@
 ---
-title: 'shri codes triangle in #1.1 | The Pause Menu (zig + raylib + dvui)'
+title: "shri codes triangle in #1.1 | The Pause Menu (zig + raylib + dvui)"
 publishDate: "2025-07-09T20:53:55+01:00"
 youtubeId: ETrRyTCmcPs
 playlist: PLX7QRDvlHn4KlzfvZ66GPKQl7HEamwM-v
@@ -30,7 +30,7 @@ chapters:
   - "1:11:05 Outro"
 links:
   - title: Blog
-    url: ../../../posts/triangle/menu.md
+    url: ../../../posts/triangle/menu/index.md
   - title: Intro to triangle codebase
     url: intro.md
   - title: dvui 0.15.x issues

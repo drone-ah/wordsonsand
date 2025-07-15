@@ -37,6 +37,8 @@ There was a small detour where I realised `screen_height` wasn’t giving the
 expected value - using `GetScreenHeight()` directly from raylib helped resolve
 that.
 
+<!-- more -->
+
 ## 🏁 Scoring System
 
 Once edge collisions were in place, it was time to detect goals. If the ball
