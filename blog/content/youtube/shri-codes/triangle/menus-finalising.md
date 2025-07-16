@@ -34,7 +34,7 @@ links:
     url: ./menus-theming.md
 publishDate: ""
 hashes:
-  description: 52f85516c81dba9a891ff1b4ad51c348
+  description: a75816b067f3150947db5dd27da07678
 ---
 
 In this devlog, I wrap up the core functionality of triangle’s pause menu. We
