@@ -14,7 +14,6 @@ pub const Which = enum {
 pos: rl.Vector2,
 which: Which,
 colour: rl.Color = .white,
-score: u8,
 play_area: dvui.Rect,
 
 pub fn init(x: f32, which: Which, screen_width: f32, screen_height: f32) Paddle {
@@ -29,7 +28,6 @@ pub fn init(x: f32, which: Which, screen_width: f32, screen_height: f32) Paddle 
             .y = screen_height * 0.5 - size.y * 0.5,
         },
         .which = which,
-        .score = 0,
 
         .play_area = play_area,
     };
