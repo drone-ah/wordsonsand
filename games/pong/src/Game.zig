@@ -15,8 +15,8 @@ screen_width: f32,
 
 pub fn init(screen_width: f32, screen_height: f32) Game {
     return .{
-        .left_paddle = .init(Paddle.size.x * 0.5, .left, screen_height),
-        .right_paddle = .init(screen_width - Paddle.size.x * 1.5, .right, screen_height),
+        .left_paddle = .init(Paddle.size.x * 0.5, .left, screen_width, screen_height),
+        .right_paddle = .init(screen_width - Paddle.size.x * 1.5, .right, screen_width, screen_height),
         .ball = .init(.{ .x = screen_width * 0.5, .y = screen_height * 0.5 }),
         .screen_height = screen_height,
         .screen_width = screen_width,
@@ -62,11 +62,13 @@ pub fn render(self: *const Game) void {
     self.right_paddle.render();
     self.ball.render();
 
-    showScore(self.screen_width * 0.25, self.left_paddle.score);
-    showScore(self.screen_width * 0.75, self.right_paddle.score);
+    showScore(self.left_paddle);
+    showScore(self.right_paddle);
 }
 
-fn showScore(xpos: f32, score: u8) void {
+fn showScore(paddle: Paddle) void {
+    const xpos = paddle.play_area.x + (paddle.play_area.w * 0.5);
+
     const id: usize = @intFromFloat(xpos);
     var right = dvui.box(@src(), .horizontal, .{ .rect = .{ .x = xpos, .y = 50, .w = 150, .h = 150 }, .id_extra = id });
     defer right.deinit();
@@ -77,5 +79,5 @@ fn showScore(xpos: f32, score: u8) void {
         .font_style = .title,
     };
     label_options.font = label_options.fontGet().resize(font_size);
-    dvui.label(@src(), "{d}", .{score}, label_options);
+    dvui.label(@src(), "{d}", .{paddle.score}, label_options);
 }
