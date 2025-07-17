@@ -28,13 +28,13 @@ pub fn update(self: *Game, dt: f32) void {
     self.ball.update(dt);
     self.ball.checkPaddleCollision(&self.left_paddle);
     self.ball.checkPaddleCollision(&self.right_paddle);
-    if (self.ball.pos.x > self.screen_width) {
+    if (self.ball.pos.x + self.ball.r > self.screen_width) {
         self.left_paddle.score += 1;
         std.debug.print("scores: l: {d}, r: {d}\n", .{ self.left_paddle.score, self.right_paddle.score });
         self.ball.reset();
     }
 
-    if (self.ball.pos.x < 0) {
+    if (self.ball.pos.x < self.ball.r) {
         self.right_paddle.score += 1;
         std.debug.print("scores: l: {d}, r: {d}\n", .{ self.left_paddle.score, self.right_paddle.score });
         self.ball.reset();
