@@ -68,8 +68,14 @@ pub fn render(self: *const Game) void {
 
 fn showScore(xpos: f32, score: u8) void {
     const id: usize = @intFromFloat(xpos);
-    var right = dvui.box(@src(), .horizontal, .{ .rect = .{ .x = xpos, .y = 50, .w = 50, .h = 50 }, .id_extra = id });
+    var right = dvui.box(@src(), .horizontal, .{ .rect = .{ .x = xpos, .y = 50, .w = 150, .h = 150 }, .id_extra = id });
     defer right.deinit();
 
-    dvui.label(@src(), "{d}", .{score}, .{ .color_text = .white, .font_style = .title });
+    const font_size: f32 = 64;
+    var label_options: dvui.Options = .{
+        .color_text = .white,
+        .font_style = .title,
+    };
+    label_options.font = label_options.fontGet().resize(font_size);
+    dvui.label(@src(), "{d}", .{score}, label_options);
 }
