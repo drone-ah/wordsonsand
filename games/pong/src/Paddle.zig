@@ -1,5 +1,6 @@
 const std = @import("std");
 const rl = @import("raylib");
+const dvui = @import("dvui");
 
 const Ball = @import("Ball.zig");
 
@@ -13,16 +14,22 @@ pub const Which = enum {
 pos: rl.Vector2,
 which: Which,
 colour: rl.Color = .white,
-score: u8,
+play_area: dvui.Rect,
 
-pub fn init(x: f32, which: Which, screen_height: f32) Paddle {
+pub fn init(x: f32, which: Which, screen_width: f32, screen_height: f32) Paddle {
+    const play_area: dvui.Rect = switch (which) {
+        .left => .{ .x = 0, .y = 0, .w = screen_width * 0.5, .h = screen_height },
+        .right => .{ .x = screen_width * 0.5, .y = 0, .w = screen_width * 0.5, .h = screen_height },
+    };
+
     return .{
         .pos = .{
             .x = x,
             .y = screen_height * 0.5 - size.y * 0.5,
         },
         .which = which,
-        .score = 0,
+
+        .play_area = play_area,
     };
 }
 
@@ -34,9 +41,11 @@ pub fn render(self: Paddle) void {
 
 pub fn isColliding(self: *const Paddle, ball: *const Ball) bool {
     // which edge do we need to check
-    const crossing_x: bool = switch (self.which) {
-        .right => ball.pos.x + ball.r >= self.pos.x,
-        .left => ball.pos.x - ball.r <= self.pos.x + size.x,
+    const crossing_x = switch (self.which) {
+        .right => ball.vel.x > 0 and
+            ball.pos.x + ball.r >= self.pos.x,
+        .left => ball.vel.x < 0 and
+            ball.pos.x - ball.r <= self.pos.x + size.x,
     };
 
     if (!crossing_x) {
