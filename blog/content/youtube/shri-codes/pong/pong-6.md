@@ -24,7 +24,7 @@ chapters:
   - "08:35 fix: prevent ball getting stuck in the paddle"
   - "17:48 fix: score on edge of ball going past screen"
   - "20:80 refactor: show score based on paddle play area"
-  - "37:31 refactor: move score to `Game` (HEAD -> pong/pt-6)"
+  - "37:31 refactor: move score to `Game`"
   - "43:59 outro"
 links:
   - title: Blog
