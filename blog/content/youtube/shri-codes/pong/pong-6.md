@@ -1,7 +1,5 @@
 ---
-title:
-  "shri codes Pong with Zig and Raylib #6: Font Size, Collision Bugs, and
-  Refactors"
+title: 'shri codes Pong with Zig and Raylib #6: Font Size, Collision Bugs, and Refactors'
 scheduledDate: "2025-07-15T09:45:00+01:00"
 youtubeId: opuoMiMNkok
 playlist: "PLX7QRDvlHn4J5uVbmVlkyDaGJ8utKR9K_"
@@ -36,6 +34,8 @@ links:
   - title: "prev: "
     url: ./pong-5.md
 publishDate: ""
+hashes:
+  description: 2c27c234965add0b79625b131d4bba99
 ---
 
 In this episode of building Pong with Zig and Raylib, we fix some key bugs,
