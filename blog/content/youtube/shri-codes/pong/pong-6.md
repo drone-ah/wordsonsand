@@ -35,7 +35,7 @@ links:
     url: ./pong-5.md
 publishDate: ""
 hashes:
-  description: 0f9acf131387d608765ecb26228c1e71
+  description: 1226ac617828f5775177c25455d3723d
 ---
 
 In this episode of building Pong with Zig and Raylib, we fix some key bugs,
