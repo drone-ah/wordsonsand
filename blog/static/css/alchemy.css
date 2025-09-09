@@ -1,0 +1,28 @@
+/* Full-bleed band that respects dark/light mode */
+.pullband{
+  width:100vw;          /* full width edge-to-edge */
+  position:relative;
+  left:50%;             /* center the 100vw band within the content column */
+  right:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+  padding:1.25rem 0;    /* top/bottom spacing */
+  background:rgba(0,0,0,.04);
+  border-top:1px solid rgba(0,0,0,.06);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.pullband__inner{
+  max-width:44rem;      /* match your content width */
+  margin:0 auto;
+  padding:0 1rem;       /* side breathing room at small widths */
+  font-style:italic;
+  line-height:1.6;
+}
+@media (prefers-color-scheme: dark){
+  .pullband{
+    background:rgba(255,255,255,.06);
+    border-top:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+}
+
