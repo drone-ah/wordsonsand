@@ -1,0 +1,14 @@
+{{- /* With thanks to Seirdy https://github.com/gohugoio/hugo/issues/7272#issuecomment-861189292 */ -}}
+{{- $parsedDest := urls.Parse (.Destination | absURL) -}}
+{{- if (strings.HasPrefix .Destination "#") -}}
+<a href="{{ .Destination }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- else if not (strings.HasPrefix .Destination $parsedDest.Scheme) -}}
+{{- $baseURL := trim .Page.Site.BaseURL "/" -}}
+{{- $fragment := "" -}}
+{{- with $parsedDest.Fragment -}}{{- $fragment = printf "#%s" . -}}{{- end -}}
+{{- $href := printf "%s%s%s" $baseURL $parsedDest.Path $fragment | absURL -}}
+<a href="{{ $href }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- else -}}
+<a href="{{ .Destination }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}
+
