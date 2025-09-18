@@ -4,10 +4,11 @@ date: 2025-09-16T15:56:42+01:00
 tags:
   - learning-zig
   - zig
-  - wasm
+  - webassembly
   - mobile-dev
   - supabase
   - imgui
+  - deno
   - lume
 ---
 
@@ -136,8 +137,9 @@ wasm_install.step.dependOn(&link_step.step);
 
 These steps will copy across the wasm and the js file across to `static/shine`.
 I wanted to put the js in `src/js` and the wasm in the static dir. However, the
-js file expects the wasm in the same dir. I tried overriding `locateFile` but it
-didn't work.
+js file expects the wasm in the same dir. ~~I tried overriding `locateFile` but
+it didn't
+work.~~([you can use a different location by overriding `locateFile`](../lume/wasm.md))
 
 ```html
 <!-- index.vto -->
