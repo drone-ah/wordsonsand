@@ -1,5 +1,6 @@
 ---
-title: "Wasm"
+title:
+  "Using `locateFile` to have js and wasm in different locations with emscripten"
 date: 2025-09-18T10:15:42+01:00
 tags:
   - lume
@@ -41,7 +42,7 @@ file that is included automatically.
 
 ```javascript
 window.Module = {
-  locateFile: function (path, scriptDir) {
+  locateFile: function (path, scriptDirectory) {
     if (path === "shine.wasm") {
       return "/static/shine/shine.wasm";
     } else {
