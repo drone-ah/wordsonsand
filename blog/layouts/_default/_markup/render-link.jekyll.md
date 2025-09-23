@@ -1,0 +1,62 @@
+{{- $u := urls.Parse .Destination -}}
+{{- $text := .Text | safeHTML -}}
+
+{{- if strings.HasPrefix $u.String "#" -}}
+  <a href="{{ printf "%s#%s" .PageInner.Permalink $u.Fragment | safeURL }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
+
+{{- else if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- $page := or
+      ($.PageInner.GetPage $path)
+      ($.PageInner.Resources.Get $path)
+      (resources.Get $path)
+  -}}
+
+  {{- $scheduled := false -}}
+  {{- if $page }}
+    {{- if $page.Params.scheduledDate }}
+      {{- $scheduled = (time $page.Params.scheduledDate).After now }}
+    {{- end }}
+  {{- end }}
+
+  {{- if and $page (not ($page.PublishDate.After now)) (not $scheduled) -}}
+    {{- if eq $page.Type "youtube" -}}
+      {{- $href := printf "https://www.youtube.com/watch?v=%s" $page.Params.youtubeId -}}
+      {{- with $page.Params.playlist }}
+        {{- $href = printf "%s&list=%s" $href . -}}
+      {{- end }}
+      <a href="{{ $href | safeURL }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
+    {{- else -}}
+      <a href="{{ $page.Permalink | safeURL }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
+    {{- end }}
+  {{- else -}}
+
+		{{- $linkPath := .Destination -}}                           {{/* e.g. "../scripts/tool.sh" */}}
+		{{- $currentPath := .Page.File.Path -}}                     {{/* e.g. "posts/foo.md" */}}
+		{{- $currentDir := path.Dir $currentPath -}}                {{/* e.g. "posts" */}}
+
+		{{- $combined := path.Join $currentDir $linkPath -}}        {{/* e.g. "posts/../scripts/tool.sh" */}}
+		{{- $resolved := path.Clean $combined -}}                   {{/* e.g. "scripts/tool.sh" */}}
+
+		{{- $fullRepoPath := path.Join "blog/content" $resolved -}} {{/* e.g. "blog/content/scripts/tool.sh" */}}
+
+		{{- $isInContent := strings.HasPrefix $fullRepoPath "blog/content/" -}}
+
+		{{- if $isInContent -}}
+			{{- $resolved := path.Clean (path.Join (path.Dir .Page.File.Path) .Destination) -}}
+			{{- $exists := fileExists $resolved -}}
+			{{- $logPath := path.Join "content" $resolved -}}  {{/* for logging only */}}
+			{{- if not $exists -}}
+				{{ warnf "Broken link in %q → %q (resolved to %q)" .Page.File.Path .Destination $logPath }}
+			{{- end }}
+
+			<span class="unpublished">{{ $text }}</span>
+		{{- else -}}
+			{{- $commit := or .Page.Params.link_commit .Page.GitInfo.Hash -}}
+			<a href="https://github.com/drone-ah/wordsonsand/blob/{{ $commit }}/{{ $fullRepoPath }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
+		{{- end -}}
+  {{- end }}
+
+{{- else -}}
+  <a href="{{ .Destination | safeURL }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ $text }}</a>
+{{- end }}
