@@ -136,7 +136,6 @@ posts = "/:year/:month/:day/:slug/"
   name = "title"
   weight = 20
 
-
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
@@ -147,3 +146,14 @@ posts = "/:year/:month/:day/:slug/"
 	isPlainText = true
 	isHTML = false
 	noUgly = true
+
+[outputFormats.jekyll]
+	mediaType = "text/markdown"
+	baseName = "index"
+	isPlainText = true
+	isHTML = false
+  notAlternative = true
+  path = 'jekyll'
+
+[outputs]
+  page = ['html', 'jekyll']
