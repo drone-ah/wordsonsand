@@ -29,13 +29,14 @@ leaves danced,
 The sound of water lapping.
 
 A boat inched its way to shore,
-With nary a soul on board,
-None that were still alive.
-
-The hold overflowed,
+Its hold overflowed,
 locked behind a heavy door,
 
 On the deck,
+a man sat against the black wall,
+his charred chest rasped,
+A crow watched from a mast.
+
+In his half open hand,
 A half written poem,
-Discarded and abandoned on the floor.
 ```
