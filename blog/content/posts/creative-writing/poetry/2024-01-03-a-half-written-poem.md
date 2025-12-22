@@ -19,24 +19,23 @@ title: A Half Written Poem
 url: /2024/01/03/a-half-written-poem/
 ---
 
-In the middle of the night,\
-When the moon was gone.
+```
+The middle of the night,
+When the moon had eloped.
 
-The gentle breeze caressed my face,\
-Pregnant with salt, cool to touch.
+A cool breeze drifted,
+sails fluttered,
+leaves danced,
+The sound of water lapping.
 
-Fireflies glowing with all their might,\
-And lighting up barely nothing.
+A boat inched its way to shore,
+With nary a soul on board,
+None that were still alive.
 
-A boat slowly made its way to shore,\
-With nary a soul on board,\
-None that was still alive.
+The hold overflowed,
+locked behind a heavy door,
 
-The hold though, was overflowing,\
-Food, wine, silks and fine leather,\
-Not to mention all the gold and silver.
-
-Of value on the boat,\
-There was but one small thing,\
-A half written poem,\
+On the deck,
+A half written poem,
 Discarded and abandoned on the floor.
+```
