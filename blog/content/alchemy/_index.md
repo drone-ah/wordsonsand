@@ -13,19 +13,17 @@ compounds on its own.
 
 My work brings the situation into focus. Together, we surface what is actually
 happening — real constraints, structural tensions, decisions carrying weight,
-and opportunities with genuine leverage. What once felt tangled becomes visible,
-ordered, and workable.
+and opportunities with genuine leverage.
 
 My work is steady, discerning, and grounded in a deep understanding of technical
 systems, organisations, and human dynamics. I engage directly with the substance
 of the problem — architecture, strategy, delivery, leadership context, and the
 realities of day-to-day execution. I work within the system, shaping what needs
-to change, in the places where it matters.
+to change.
 
 What typically emerges is:
 
 - Clear priorities
-- Shorter, more focused conversations
 - Settled architectural decisions
 - Delivery aligns more closely with intent
 
@@ -34,17 +32,15 @@ coherent.
 
 This is the core of alchemy: strategic direction, architectural judgment,
 executional shaping, and organisational clarity — brought together through a way
-of working that is considered, perceptive, and focused on what moves the system
-forward.
+of working that is focused on what moves the system forward.
 
 ## When alchemy matters most
 
 alchemy becomes valuable when things feel harder than they should be.
 
 These are inflection points — the organisation remains capable, but something
-essential has become obscured. Progress slows despite effort. Decisions carry
-more weight than they should. Too much of the system lives in a few people’s
-heads.
+essential has become obscured. Progress slows despite effort. Too much of the
+system lives in a few people’s heads.
 
 Organisations harden around partial understanding over time — decisions get
 embedded without ever being made explicitly, and the ability to choose
@@ -66,8 +62,7 @@ aligns effort with purpose.
 
 ## What this practice is
 
-alchemy exists to support leaders through moments of transition and
-re-orientation.
+alchemy exists to support leaders.
 
 For over two decades I’ve worked across engineering, architecture, product,
 DevOps, data, and organisational leadership — building global platforms,
@@ -83,8 +78,8 @@ reclaim them as conscious choice.
 
 I work best when invited into spaces where leaders want to be understood, where
 teams need alignment, and where an organisation or product is ready for its next
-form. My contribution is not volume or velocity. It is discernment, judgment,
-and direction — the kind that changes how an organisation moves.
+form. My contribution is discernment, judgment, and direction — the kind that
+changes how an organisation moves.
 
 alchemy is for founders, CTOs, heads of product, and leadership teams navigating
 change: scaling, rebuilding, re-orienting, or preparing for a significant shift.
@@ -97,7 +92,6 @@ Clients come to alchemy when they need:
 - a trusted advisor who sees across architecture, people, and delivery
 - strategic clarity that holds the immediate moment and the longer arc
 - sound judgment when decisions carry real consequence
-- steady leadership presence under pressure
 - help strengthening or repairing engineering culture
 - language for dynamics that are felt but hard to name
 
@@ -109,9 +103,9 @@ grounded, coherent, and true to the organisation they are building.
 
 Every engagement starts with a focused working conversation.
 
-This is a short, high-bandwidth session. There’s no preparation required. We
-look directly at what is happening: the pressure points, the decisions waiting
-to be made, and the complexity beneath the surface.
+This is a short, high-bandwidth session. We look directly at what is happening:
+the pressure points, the decisions waiting to be made, and the complexity
+beneath the surface.
 
 Through this conversation, the shape of the system often becomes clearer: what
 actually matters, where friction is accumulating, what is holding momentum back,
@@ -155,8 +149,8 @@ designed to unlock momentum rather than create dependency. The cadence adapts to
 what the organisation needs: high-context leadership conversations, embedded
 work with a team, or guidance through a critical transition.
 
-What remains constant is the way we work: steady, perceptive, hands-on when
-needed, and always oriented toward clarity, alignment, and forward movement.
+What remains constant is the way we work: steady, perceptive, hands-on, and
+always oriented toward clarity, alignment, and forward movement.
 
 ## Examples of the work
 
@@ -189,12 +183,11 @@ The work tends to result in:
 - systems become steadier and more resilient
 - teams move with shared understanding
 - leaders make decisions with clearer judgment
-- momentum becomes easier to sustain
 - understanding is less concentrated in individual heads
 - organisations operate from a clearer, truer centre
 
 The journey reshapes the people walking it. As clarity deepens, choices evolve.
-Sometimes the path holds. Sometimes it changes. Both outcomes matter.
+Sometimes the path holds. Sometimes it changes.
 
 alchemy supports people and organisations in making those choices consciously —
 aligned with who they are becoming and what they are stewarding.
@@ -204,8 +197,6 @@ aligned with who they are becoming and what they are stewarding.
 If you’re carrying complexity that needs to be seen clearly, and you’re looking
 for someone who can hold the full picture with you, this work was built for
 that.
-
-When things feel pivotal, clarity creates room for what comes next.
 
 If this is the moment you’re in, a single focused conversation is often enough
 to tell whether clarity will change how the organisation moves — or whether the
