@@ -86,6 +86,11 @@ name = "excursions"
 url = "/excursions"
 weight = 6
 
+[[menu.main]]
+name = "work"
+url = "/alchemy"
+weight = 7
+
 [[params.social]]
 name = "Github"
 icon = "github"
