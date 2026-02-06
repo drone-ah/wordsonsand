@@ -153,7 +153,8 @@ fine.
 
 I’ll probably tackle that - and maybe finally add a quadtree - soon.
 
-**Next up:** crafting systems and how I’m handling material drops and recipes.
+**Next up:**
+[crafting systems and how I’m handling material drops and recipes.](./2025-05-20-crafting-machines.md)
 
 ## Other posts
 
