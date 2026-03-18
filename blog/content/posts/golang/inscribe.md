@@ -5,7 +5,6 @@ categories:
   - golang
 tags:
   - golang
-  - production
   - inscribe
   - yaml
   - frontmatter

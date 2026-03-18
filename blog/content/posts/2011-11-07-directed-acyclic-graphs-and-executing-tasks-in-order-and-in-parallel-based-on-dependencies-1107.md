@@ -5,7 +5,6 @@ date: "2011-11-07T23:44:36Z"
 status: publish
 tags:
   - sfeng
-  - production
   - directed-acyclic-graph
   - dependency
   - graphs
