@@ -2,19 +2,10 @@
 categories:
   - Software Development
 date: "2011-11-07T23:44:36Z"
-meta:
-  _edit_last: "48492462"
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:52"
-  _publicize_pending: "1"
-  _wp_old_slug: "723"
-  oc_commit_id: http://drone-ah.com/2011/11/07/directed-acyclic-graphs-and-executing-tasks-in-order-and-in-parallel-based-on-dependencies-1107/1320709479
-  original_post_id: "723"
-  restapi_import_id: 591d994f7aad5
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - sfeng
+  - production
   - directed-acyclic-graph
   - dependency
   - graphs
@@ -23,7 +14,7 @@ tags:
   - task
 title:
   Directed Acyclic Graphs and Executing Tasks in Order (and in Parallel) Based
-  on Dependencies [1107]
+  on Dependencies
 url: /2011/11/07/directed-acyclic-graphs-and-executing-tasks-in-order-and-in-parallel-based-on-dependencies-1107/
 ---
 
@@ -161,7 +152,7 @@ As a basic algorithm, we pick up the number of available processors and use that
 many threads. scheduleTasks is a pseudo-recursive function whose role is to add
 the currently executable list of tasks into the executor to execute.
 
-```
+```java
        private void scheduleTasks() {
             if (graph.vertexSet().size() == 0) {
                 executor.shutdown();
@@ -193,7 +184,7 @@ executed are queued.
 
 We use a custom version of the threadpool as follows:
 
-```
+```java
        private class ThreadExecutor extends ThreadPoolExecutor {
 
             public ThreadExecutor(int corePoolSize, long keepAliveSeconds, BlockingQueue workQueue) {

@@ -2,16 +2,6 @@
 categories:
   - Systems (Administration)
 date: "2011-12-20T13:26:55Z"
-meta:
-  _edit_last: "48492462"
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:53"
-  _publicize_job_id: "5181540093"
-  _wp_old_slug: "746"
-  oc_commit_id: http://drone-ah.com/2011/12/20/expanding-glusterfs-volumes-1112/1324387621
-  original_post_id: "746"
-  restapi_import_id: 591d994f7aad5
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - sysadmin

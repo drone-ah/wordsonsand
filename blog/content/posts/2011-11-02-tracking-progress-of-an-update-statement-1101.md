@@ -2,25 +2,17 @@
 categories:
   - Database Systems
 date: "2011-11-02T19:59:02Z"
-meta:
-  _edit_last: "48492462"
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:51"
-  _publicize_pending: "1"
-  _wp_old_slug: "688"
-  original_post_id: "688"
-  restapi_import_id: 591d994f7aad5
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - database-systems
+  - production
   - database
   - databases
   - postgresql
   - sql
   - sql-keywords
   - update
-title: Tracking progress of an update statement [1101]
+title: Tracking progress of an update statement
 url: /2011/11/02/tracking-progress-of-an-update-statement-1101/
 ---
 

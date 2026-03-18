@@ -3,17 +3,6 @@ categories:
   - Systems (Administration)
 date: "2009-03-04T17:36:35Z"
 excerpt: An idea for making twitter perform better, be more stable and scalable.
-meta:
-  _edit_last: "48492462"
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:37"
-  _publicize_job_id: "5181540479"
-  _wp_old_slug: "185"
-  geo_public: "0"
-  oc_commit_id: http://drone-ah.com/2009/03/04/making-twitter-faster/1236792306
-  original_post_id: "185"
-  restapi_import_id: 591d994f7aad5
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - sysadmin

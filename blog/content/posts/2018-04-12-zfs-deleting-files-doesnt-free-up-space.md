@@ -2,14 +2,6 @@
 categories:
   - Systems (Administration)
 date: "2018-04-12T10:15:02Z"
-meta:
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:55:02"
-  _publicize_job_id: "16719033684"
-  _rest_api_client_id: "-1"
-  _rest_api_published: "1"
-  timeline_notification: "1523528103"
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - sysadmin

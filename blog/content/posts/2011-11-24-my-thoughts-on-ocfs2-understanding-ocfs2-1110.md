@@ -2,15 +2,6 @@
 categories:
   - Systems (Administration)
 date: "2011-11-24T21:42:09Z"
-meta:
-  _edit_last: "48492462"
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:52"
-  _publicize_job_id: "5181540161"
-  _wp_old_slug: "744"
-  original_post_id: "744"
-  restapi_import_id: 591d994f7aad5
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - sysadmin

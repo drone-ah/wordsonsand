@@ -2,18 +2,10 @@
 categories:
   - Java (EE)
 date: "2011-04-25T15:58:00Z"
-meta:
-  _edit_last: "48492462"
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:42"
-  _publicize_job_id: "5181432565"
-  _wp_old_slug: "445"
-  original_post_id: "445"
-  restapi_import_id: 591d994f7aad5
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - java-ee
+  - production
   - caching
   - garbage-collection
   - hibernate

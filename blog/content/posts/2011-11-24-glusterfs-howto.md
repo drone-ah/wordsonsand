@@ -2,16 +2,6 @@
 categories:
   - Systems (Administration)
 date: "2011-11-24T20:53:33Z"
-meta:
-  _edit_last: "48492462"
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:52"
-  _publicize_job_id: "5181540343"
-  _wp_old_slug: "738"
-  oc_commit_id: http://drone-ah.com/2011/11/24/glusterfs-howto/1322168013
-  original_post_id: "738"
-  restapi_import_id: 591d994f7aad5
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - sysadmin

@@ -8,6 +8,7 @@ categories:
   - leadership
 tags:
   - leadership
+  - production
   - alchemy
   - product
   - decision-making

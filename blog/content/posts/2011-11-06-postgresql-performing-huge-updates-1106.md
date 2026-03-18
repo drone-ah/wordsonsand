@@ -2,19 +2,10 @@
 categories:
   - Database Systems
 date: "2011-11-06T12:45:41Z"
-meta:
-  _edit_last: "48492462"
-  _elasticsearch_data_sharing_indexed_on: "2024-11-18 14:54:52"
-  _publicize_pending: "1"
-  _wp_old_slug: "718"
-  oc_commit_id: http://drone-ah.com/2011/11/06/postgresql-performing-huge-updates-1106/1320583543
-  original_post_id: "718"
-  restapi_import_id: 591d994f7aad5
-parent_id: "0"
-password: ""
 status: publish
 tags:
   - database-systems
+  - production
   - data-management
   - databases
   - memory-configuration
@@ -22,7 +13,7 @@ tags:
   - postgresql
   - sql
   - temporary-file
-title: PostgreSQL performing huge updates [1106]
+title: PostgreSQL performing huge updates
 url: /2011/11/06/postgresql-performing-huge-updates-1106/
 ---
 
