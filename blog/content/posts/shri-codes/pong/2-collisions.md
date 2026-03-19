@@ -29,6 +29,8 @@ We also fixed a small oversight: the ball and paddles were being recreated every
 frame inside the game loop. Moving their initialization outside meant we could
 actually observe state changes between frames.
 
+<!-- more -->
+
 ## Frame-Rate Independence
 
 Raylib provides `GetFrameTime()` which returns the time in seconds since the

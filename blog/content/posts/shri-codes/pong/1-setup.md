@@ -33,6 +33,8 @@ and wanted a fast feedback loop to:
 - Have a bit of fun
 - Remind myself why I made certain decisions in the first place
 
+<!-- more -->
+
 ## Project Setup
 
 I'm using [`raylib-zig`](https://github.com/Not-Nik/raylib-zig) for this. You

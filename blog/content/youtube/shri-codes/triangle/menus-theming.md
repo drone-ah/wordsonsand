@@ -27,7 +27,7 @@ chapters:
   - "1:17:20 closing"
 links:
   - title: Blog
-    url: ../../../posts/triangle/menu.md
+    url: ../../../posts/triangle/menu/index.md
   - title: Intro to triangle codebase
     url: intro.md
   - title: triangle menu #1.1
