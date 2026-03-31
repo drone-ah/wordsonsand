@@ -2,7 +2,7 @@ baseURL = "https://drone-ah.com"
 disablePathToLower = false
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
-theme = "ink-free"
+theme = "github.com/chollinger93/ink-free"
 enableRobotsTXT = false ## set to true to enable inbuilt robots.txt
 
 title = "words on sand"
@@ -157,3 +157,7 @@ posts = "/:year/:month/:day/:slug/"
 
 [outputs]
   page = ['html', 'jekyll']
+
+[module]
+  [[module.imports]]
+    path = 'github.com/chollinger93/ink-free'
