@@ -63,9 +63,9 @@ across the two servers on a return purchase - but because the IDs were
 consistent within each server, it never caused a real problem. It held the fort
 until I could replace it with something better.
 
-A senior engineer within me was not happy with this solution. I occassionally
-lie awake at night imagining the databases diverging and figuring out how I
-would fix it.
+A senior engineer within me was not happy with this solution. I occasionally lie
+awake at night imagining the databases diverging and figuring out how I would
+fix it.
 
 I picked PostgreSQL for two reasons. Under heavy load it stays up — it slows to
 a crawl, but it keeps going. And it had transactions. I was building an
@@ -75,7 +75,7 @@ transactions, and under sustained load it had a habit of just giving up.
 
 At the same time, MySQL was super popular - it was known to be fast - it had a
 query cache and it had replication. But... it did not have transactions - and it
-also had a habit of giving ut and just crashing under high load.
+also had a habit of giving up and just crashing under high load.
 
 I still pick PostgreSQL - but nowadays - so do most other people.
 
