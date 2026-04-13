@@ -24,7 +24,7 @@ When I built the original prototype for megabus.com, I built it using PHP +
 PostgreSQL. I put together a document detailing my reasoning for these choices.
 I quoted 33 days for it, built it over six weeks and charged £13,200.
 
-The support contract was £300/month - for one day a month. On the first day,
+The support contract was £350/month - for one day a month. On the first day,
 megabus.com sold 200 orders.
 
 When megabus had its first expansion, I was up overnight bringing new servers
