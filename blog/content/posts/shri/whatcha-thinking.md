@@ -129,7 +129,7 @@ trying to build a java EE ticketing system over six months for £500k. I thought
 it would take a year and cost £1m. In hindsight, it needed two years and
 probably three million pounds.
 
-Over 18 months, I personally answered over 250 out of hours emergency calls. We
+Over 18 months, I personally answered over 150 out of hours emergency calls. We
 had a rota and others on call too - but I took the vast majority of these calls.
 I felt bad putting others through what I knew was gruelling.
 
