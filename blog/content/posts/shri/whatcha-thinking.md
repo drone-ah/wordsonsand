@@ -81,8 +81,7 @@ it still felt bad. kraya had other clients at the time, but my time wasn't
 monopolised by other clients, or indeed by kraya - my heart still belonged to
 megabus.
 
-And it would all have been all fine too, except for a grave miscalculation I
-made.
+And it would all have been fine too, except for a grave miscalculation I made.
 
 In 2010, after trying to rebuild the ticketing system for £500k, and making some
 mistakes with people I trusted, kraya ended up in £150k in the hole. We needed
