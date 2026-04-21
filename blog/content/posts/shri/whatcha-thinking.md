@@ -24,7 +24,7 @@ When I built the original prototype for megabus.com, I built it using PHP +
 PostgreSQL. I put together a document detailing my reasoning for these choices.
 I quoted 33 days for it, built it over six weeks and charged £13,200.
 
-The support contract was £300/month - for one day a month. On the first day,
+The support contract was £350/month - for one day a month. On the first day,
 megabus.com sold 200 orders.
 
 When megabus had its first expansion, I was up overnight bringing new servers
@@ -81,8 +81,7 @@ it still felt bad. kraya had other clients at the time, but my time wasn't
 monopolised by other clients, or indeed by kraya - my heart still belonged to
 megabus.
 
-And it would all have been all fine too, except for a grave miscalculation I
-made.
+And it would all have been fine too, except for a grave miscalculation I made.
 
 In 2010, after trying to rebuild the ticketing system for £500k, and making some
 mistakes with people I trusted, kraya ended up in £150k in the hole. We needed
@@ -130,7 +129,7 @@ trying to build a java EE ticketing system over six months for £500k. I thought
 it would take a year and cost £1m. In hindsight, it needed two years and
 probably three million pounds.
 
-Over 18 months, I personally answered over 250 out of hours emergency calls. We
+Over 18 months, I personally answered over 150 out of hours emergency calls. We
 had a rota and others on call too - but I took the vast majority of these calls.
 I felt bad putting others through what I knew was gruelling.
 
