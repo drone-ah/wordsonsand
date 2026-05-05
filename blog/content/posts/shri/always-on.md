@@ -60,11 +60,11 @@ wasn't the core ticketing system. In the end, what pushed it over the line were
 two unexpected changes. Automated nightly restarts of each node in the cluster
 and a rate limiter.
 
-On the 10th December 2012, the system had a sale event. We had a bank of screens
-on a wall with all the key stats for the system. It looked cool, and we felt a
-bit like we were on a TV show. At peak, nearly 15,000 concurrent sessions — six
-or seven times the average. Over 30,000 bookings in a single day, three times
-more than the normal amounts across all systems.
+On the 10th December 2012, the system, now serving Polskibus, had a sale event.
+We had a bank of screens on a wall with all the key stats for the system. It
+looked cool, and we felt a bit like we were on a TV show. At peak, nearly 15,000
+concurrent sessions — six or seven times the average. Over 30,000 bookings in a
+single day, three times more than the normal amounts across all systems.
 
 We watched it closely, all day. Nothing broke. Nothing screamed. Everyone
 smiled, but there was no celebration.
