@@ -46,7 +46,7 @@ jobs:
           fetch-depth: 0
       - name: Cache Restore
         id: cache-restore
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: |
             ${{ runner.temp }}/hugo_cache
